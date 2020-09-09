@@ -47,8 +47,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 	app.setWindowIcon(QIcon(":/sol.svg"));
 	MauiApp::instance()->setHandleAccounts(false); //for now nota can not handle cloud accounts
 	MauiApp::instance()->setCredits ({QVariantMap({{"name", "Camilo Higuita"}, {"email", "milo.h@aol.com"}, {"year", "2019-2020"}})});
-
-	MauiApp::instance()->setIconName("qrc:/img/sol.svg");
+	MauiApp::instance ()->setDescription ("Sol allows you to browse the web and organize the web.");
+	MauiApp::instance()->setIconName("qrc:/sol.svg");
 	MauiApp::instance()->setWebPage("https://mauikit.org");
 	MauiApp::instance()->setReportPage("https://invent.kde.org/maui/sol/-/issues");
 

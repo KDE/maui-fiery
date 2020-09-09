@@ -1,24 +1,20 @@
-import QtQuick 2.13
-import QtQuick.Controls 2.13
+import QtQuick 2.14
+import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.7 as Kirigami
 import org.kde.mauikit 1.2 as Maui
-import QtWebView 1.1
+
+import "views/browser"
 
 Maui.ApplicationWindow
 {
     id: root
 
-    Maui.App.description: i18n("Nota allows you to edit text files.")
     Maui.App.handleAccounts: false
 
     autoHideHeader: true
-    Maui.Doodle
-    {
-        id: _doodleDialog
-    }
 
-
+    readonly property var views : ({browser: 0, tabs: 1, history: 2})
 
     Component
     {
@@ -54,13 +50,14 @@ Maui.ApplicationWindow
     headBar.middleContent: Maui.TextField
     {
         Layout.fillWidth: true
-        onAccepted: _webView.url = text
+        onAccepted: _browserView.currentTab? _browserView.currentTab.url = text : _browserView.openTab(text)
     }
 
     headBar.rightContent: [
         ToolButton
         {
             icon.name: "tab-new"
+            onClicked: _browserView.openTab("")
         },
 
         ToolButton
@@ -69,32 +66,16 @@ Maui.ApplicationWindow
         }
     ]
 
-    DropArea
+    Maui.AppViews
     {
-        id: _dropArea
-        property var urls : []
+        id: _swipeView
         anchors.fill: parent
-        onDropped:
+        currentIndex: views.browser
+
+        BrowserView
         {
-            if(drop.urls)
-            {
-                var m_urls = drop.urls.join(",")
-                _dropArea.urls = m_urls.split(",")
-                Nota.Nota.requestFiles( _dropArea.urls )
-            }
+            id: _browserView
         }
     }
-
-//    Component.onCompleted:if(root.defaultBlankFile)
-//    {
-//        editorView.openTab("")
-//    }
-
-
- WebView
- {
-     id: _webView
-     anchors.fill: parent
- }
 
 }
