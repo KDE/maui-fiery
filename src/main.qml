@@ -12,28 +12,13 @@ Maui.ApplicationWindow
     Maui.App.description: i18n("Nota allows you to edit text files.")
     Maui.App.handleAccounts: false
 
-
+    autoHideHeader: true
     Maui.Doodle
     {
         id: _doodleDialog
     }
 
 
-    mainMenu: [
-
-        MenuItem
-        {
-            text: i18n("Settings")
-            icon.name: "settings-configure"
-        },
-
-        MenuItem
-        {
-            text: "Load plugin"
-            icon.name: "plugin"
-            onTriggered: _pluginLoader.open()
-        }
-    ]
 
     Component
     {
