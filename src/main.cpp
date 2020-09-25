@@ -26,10 +26,16 @@
 #endif
 
 #include <KI18n/KLocalizedContext>
+#include <KI18n/KLocalizedString>
+
+#define SOL_URI "org.maui.sol"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
-	QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    QCoreApplication::setAttribute(Qt::AA_DontCreateNativeWidgetSiblings);
+    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps, true);
+    QCoreApplication::setAttribute(Qt::AA_DisableSessionManager, true);
 
 #ifdef Q_OS_ANDROID
 	QGuiApplication app(argc, argv);
@@ -39,26 +45,28 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 	QApplication app(argc, argv);
 #endif
 
-	app.setApplicationName("sol");
-	app.setApplicationVersion(SOL_VERSION_STRING);
-	app.setApplicationDisplayName("Sol");
 	app.setOrganizationName("Maui");
-	app.setOrganizationDomain("org.maui.sol");
 	app.setWindowIcon(QIcon(":/sol.svg"));
-	MauiApp::instance()->setHandleAccounts(false); //for now nota can not handle cloud accounts
-	MauiApp::instance()->setCredits ({QVariantMap({{"name", "Camilo Higuita"}, {"email", "milo.h@aol.com"}, {"year", "2019-2020"}})});
-	MauiApp::instance ()->setDescription ("Sol allows you to browse the web and organize the web.");
+
 	MauiApp::instance()->setIconName("qrc:/sol.svg");
-	MauiApp::instance()->setWebPage("https://mauikit.org");
-	MauiApp::instance()->setReportPage("https://invent.kde.org/maui/sol/-/issues");
 
-	QCommandLineParser parser;
-	parser.setApplicationDescription("Simple web browser");
-	const QCommandLineOption versionOption = parser.addVersionOption();
-	parser.addOption(versionOption);
-	parser.process(app);
+    KLocalizedString::setApplicationDomain("sol");
+    KAboutData about(QStringLiteral("sol"), i18n("Sol"), SOL_VERSION_STRING, i18n("Sol allows you to browse the web and organize the web."),
+                     KAboutLicense::LGPL_V3, i18n("© 2020 Nitrux Development Team"));
+    about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
+    about.setHomepage("https://mauikit.org");
+    about.setProductName("maui/sol");
+    about.setBugAddress("https://invent.kde.org/maui/sol/-/issues");
+    about.setOrganizationDomain(SOL_URI);
+    about.setProgramLogo(app.windowIcon());
 
-	const QStringList args = parser.positionalArguments();
+    KAboutData::setApplicationData(about);
+
+    QCommandLineParser parser;
+    parser.process(app);
+
+    about.setupCommandLine(&parser);
+    about.processCommandLine(&parser);
 
 #ifdef STATIC_KIRIGAMI
 	KirigamiPlugin::getInstance().registerTypes();
@@ -71,7 +79,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 	QQmlApplicationEngine engine;
 	const QUrl url(QStringLiteral("qrc:/main.qml"));
 	QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
-					 &app, [url, args](QObject *obj, const QUrl &objUrl)
+                     &app, [url](QObject *obj, const QUrl &objUrl)
 	{
 		if (!obj && url == objUrl)
 			QCoreApplication::exit(-1);
