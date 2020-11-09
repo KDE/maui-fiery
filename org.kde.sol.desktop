@@ -1,11 +1,23 @@
 [Desktop Entry]
 Name=Sol
+Name[nl]=Sol
+Name[pt]=Sol
+Name[uk]=Sol
+Name[x-test]=xxSolxx
 Comment=Web Browser and Manager
+Comment[nl]=Webbrowser en beheerder
+Comment[pt]=Navegador Web e Gestor
+Comment[uk]=Програма для перегляду і керування сторінками інтернету
+Comment[x-test]=xxWeb Browser and Managerxx
 TryExec=Sol
 Exec=Sol %U
 Terminal=false
 Type=Application
 Categories=Qt;KDE;Utility;Web;
 GenericName=Web Browser
+GenericName[nl]=Webbrowser
+GenericName[pt]=Navegador Web
+GenericName[uk]=Переглядач інтернету
+GenericName[x-test]=xxWeb Browserxx
 StartupNotify=true
 Icon=maui-sol
