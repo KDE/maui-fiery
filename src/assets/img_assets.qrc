@@ -4,5 +4,6 @@
     </qresource>
     <qresource prefix="/">
         <file>sol.svg</file>
+        <file>internet.svg</file>
     </qresource>
 </RCC>
