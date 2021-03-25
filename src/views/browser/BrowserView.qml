@@ -23,7 +23,7 @@ Maui.Page
         holder.emoji: "qrc:/internet.svg"
 
         holder.title: i18n("Start Browsing")
-        holder.body: i18n("Enter anew URl or open a recent site.")
+        holder.body: i18n("Enter a new URL or open a recent site.")
 
         onNewTabClicked: control.openTab("")
 
