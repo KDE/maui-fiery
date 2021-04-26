@@ -2,7 +2,7 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.7 as Kirigami
-import org.kde.mauikit 1.2 as Maui
+import org.mauikit.controls 1.2 as Maui
 
 import "views/browser"
 
@@ -16,17 +16,17 @@ Maui.ApplicationWindow
 
     readonly property var views : ({browser: 0, tabs: 1, history: 2})
 
-    Component
-    {
-        id: _fileDialogComponent
-        Maui.FileDialog
-        {
-            settings.onlyDirs: false
-            settings.filterType: Maui.FMList.TEXT
-            settings.sortBy: Maui.FMList.MODIFIED
-            mode: modes.OPEN
-        }
-    }
+//    Component
+//    {
+//        id: _fileDialogComponent
+//        Maui.FileDialog
+//        {
+//            settings.onlyDirs: false
+//            settings.filterType: Maui.FMList.TEXT
+//            settings.sortBy: Maui.FMList.MODIFIED
+//            mode: modes.OPEN
+//        }
+//    }
 
     headBar.leftContent:  Maui.ToolActions
     {

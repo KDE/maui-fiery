@@ -1,12 +1,7 @@
 #include <QQmlApplicationEngine>
 #include <QCommandLineParser>
 #include <QQmlContext>
-
 #include <QIcon>
-
-#ifndef STATIC_MAUIKIT
-#include "sol_version.h"
-#endif
 
 #ifdef Q_OS_ANDROID
 #include <QGuiApplication>
@@ -14,19 +9,12 @@
 #include <QApplication>
 #endif
 
-#ifdef STATIC_KIRIGAMI
-#include "3rdparty/kirigami/src/kirigamiplugin.h"
-#endif
-
-#ifdef STATIC_MAUIKIT
-#include "3rdparty/mauikit/src/mauikit.h"
-#include "mauiapp.h"
-#else
-#include <MauiKit/mauiapp.h>
-#endif
+#include <MauiKit/Core/mauiapp.h>
 
 #include <KI18n/KLocalizedContext>
 #include <KI18n/KLocalizedString>
+
+#include "sol_version.h"
 
 #define SOL_URI "org.maui.sol"
 
