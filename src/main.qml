@@ -10,8 +10,6 @@ Maui.ApplicationWindow
 {
     id: root
 
-    Maui.App.handleAccounts: false
-
     autoHideHeader: true
 
     readonly property var views : ({browser: 0, tabs: 1, history: 2})
