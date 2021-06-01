@@ -29,16 +29,47 @@ Maui.Page
 
     }
 
+    Component.onCompleted: openTab("https://duckduckgo.com")
+
+    Component
+    {
+        id: _browserComponent
+
+        Browser
+        {
+
+        }
+    }
+
     function openTab(path)
     {
         _swipeView.currentIndex = views.browser
+        _browserListView.addTab(_browserComponent, {"url": path});
+    }
 
-        var component = Qt.createComponent("qrc:/views/browser/Browser.qml");
-        if (component.status === Component.Ready)
+    function openUrl(path)
+    {
+        _swipeView.currentIndex = views.browser
+
+        if(validURL(path))
         {
-            _browserListView.addTab(component, {"url": path});
-            _browserListView.currentIndex = _browserListView.count -1
+            control.currentTab.url = path
+        }else
+        {
+           control.currentTab.url = "https://duckduckgo.com/?q="+path
         }
+
+        control.currentTab.forceActiveFocus()
+    }
+
+    function validURL(str) {
+      var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+        '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+        '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+        '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+      return !!pattern.test(str);
     }
 
 }

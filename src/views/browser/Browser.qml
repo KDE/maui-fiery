@@ -1,4 +1,8 @@
-import QtQuick 2.0
+import QtQuick 2.14
+import QtQml 2.12
+import QtQuick.Controls 2.13
+import QtQuick.Layouts 1.3
+
 import QtWebView 1.1
 import org.mauikit.controls 1.3 as Maui
 

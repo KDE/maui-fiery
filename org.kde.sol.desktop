@@ -77,4 +77,4 @@ GenericName[sv]=Webbläsare
 GenericName[uk]=Переглядач інтернету
 GenericName[x-test]=xxWeb Browserxx
 StartupNotify=true
-Icon=maui-sol
+Icon=sol
