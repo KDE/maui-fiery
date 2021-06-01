@@ -14,7 +14,7 @@
 
 #include <KI18n/KLocalizedString>
 
-#include "sol_version.h"
+#include "../sol_version.h"
 
 #define SOL_URI "org.maui.sol"
 

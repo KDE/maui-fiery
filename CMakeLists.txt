@@ -1,25 +1,52 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.14)
+
 set(SOL_VERSION 1.0.0)
-project(sol VERSION ${SOL_VERSION})
 
-find_package(ECM 1.7.0 REQUIRED NO_MODULE)
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${ECM_MODULE_PATH})
-
-find_package(MauiKit REQUIRED)
-find_package(Qt5 REQUIRED NO_MODULE COMPONENTS Qml Sql Svg)
-find_package(KF5 ${KF5_VERSION} REQUIRED COMPONENTS I18n Notifications Config KIO )
-
-include(KDEInstallDirs)
-include(ECMSourceVersionControl)
-include(KDECompilerSettings NO_POLICY_SCOPE)
-include(KDECMakeSettings)
-include(ECMInstallIcons)
-include(ECMAddAppIcon)
-include(ECMSetupVersion)
-include(FeatureSummary)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
+
+project(sol VERSION ${SOL_VERSION})
+
+set(REQUIRED_QT_VERSION 5.14.0)
+set(REQUIRED_KF5_VERSION 5.40.0)
+
+find_package(ECM ${REQUIRED_KF5_VERSION} REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${ECM_MODULE_PATH})
+
+if(UNIX AND NOT APPLE AND NOT ANDROID)
+    include(KDEInstallDirs)
+    include(KDECMakeSettings)
+    include(ECMInstallIcons)
+    include(ECMAddAppIcon)
+endif()
+
+include(KDECompilerSettings NO_POLICY_SCOPE)
+include(KDEClangFormat)
+include(ECMSetupVersion)
+include(ECMSourceVersionControl)
+include(FeatureSummary)
+include(ECMQMLModules)
+
+find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Sql Svg)
+find_package(KF5 ${KF5_VERSION} REQUIRED COMPONENTS I18n Notifications Config KIO )
+find_package(MauiKit REQUIRED)
+
+if(ANDROID)
+    find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS AndroidExtras WebView)
+    message("CURRENT DIR" ${CMAKE_CURRENT_SOURCE_DIR})
+    set(ANDROID_PACKAGE_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/android_files)
+    set(ANDROID_ABIS "armeabi-v7a")
+elseif(UNIX)
+    find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS Config KIO)
+    find_package(Qt5 REQUIRED COMPONENTS WebEngine)
+endif()
 
 if(${ECM_SOURCE_UNDER_VERSION_CONTROL})
 execute_process(
@@ -45,53 +72,20 @@ else()
     add_definitions(-DGIT_BRANCH="Stable")
 endif()
 
-
-set(sol_SRCS
-    src/main.cpp
-    src/models/historymodel.cpp
-    src/controllers/downloadsmanager.cpp
-    src/models/downloadsmodel.cpp
-    src/models/recentmodel.cpp
-    src/models/bookmarksmodel.cpp
-    )
-
-set(sol_HDRS
-#    src/sol.h
-    )
-
-set(sol_ASSETS
-    src/qml.qrc
-    src/assets/img_assets.qrc
-    )
-
-add_executable(sol
-    ${sol_SRCS}
-    ${sol_HDRS}
-    ${sol_ASSETS}
-    )
-
 ecm_setup_version(${SOL_VERSION}
     VARIABLE_PREFIX SOL
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/sol_version.h"
     )
 
-if (ANDROID)
-    find_package(Qt5 REQUIRED COMPONENTS AndroidExtras WebView)
+add_subdirectory(src)
 
-    target_link_libraries(sol MauiKit Qt5::AndroidExtras)
-else()
-    find_package(Qt5 REQUIRED COMPONENTS WebEngine)
-
+if(UNIX AND NOT APPLE AND NOT ANDROID)
+    install(TARGETS sol ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+    install(FILES org.kde.sol.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
+    install(FILES org.kde.sol.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+    ecm_install_icons(ICONS src/assets/sol.svg DESTINATION share/icons)
 endif()
 
-target_link_libraries(sol MauiKit Qt5::Sql Qt5::Qml Qt5::Svg KF5::ConfigCore KF5::Notifications KF5::KIOCore KF5::I18n)
-
-install(TARGETS sol ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
-install(FILES org.kde.sol.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
-#install(FILES org.kde.sol.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
-
-#TODO: port to ecm_install_icons()
-ecm_install_icons(ICONS src/assets/sol.svg
-                  DESTINATION share/icons)
-
 feature_summary(WHAT ALL   FATAL_ON_MISSING_REQUIRED_PACKAGES)
+file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)
+kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
