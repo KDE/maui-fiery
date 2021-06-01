@@ -7,8 +7,10 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${ECM_MODULE_PATH})
 
 find_package(MauiKit REQUIRED)
 find_package(Qt5 REQUIRED NO_MODULE COMPONENTS Qml Sql Svg)
-find_package(KF5 ${KF5_VERSION} REQUIRED COMPONENTS I18n Notifications Config KIO Attica SyntaxHighlighting)
+find_package(KF5 ${KF5_VERSION} REQUIRED COMPONENTS I18n Notifications Config KIO )
+
 include(KDEInstallDirs)
+include(ECMSourceVersionControl)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDECMakeSettings)
 include(ECMInstallIcons)
@@ -19,8 +21,38 @@ include(FeatureSummary)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTORCC ON)
 
+if(${ECM_SOURCE_UNDER_VERSION_CONTROL})
+execute_process(
+  COMMAND git rev-parse --abbrev-ref HEAD
+  WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+  OUTPUT_VARIABLE GIT_BRANCH
+  OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+
+# Get the latest abbreviated commit hash of the working branch
+execute_process(
+  COMMAND git log -1 --format=%h
+  WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+  OUTPUT_VARIABLE GIT_COMMIT_HASH
+  OUTPUT_STRIP_TRAILING_WHITESPACE
+)
+
+add_definitions(-DGIT_COMMIT_HASH="${GIT_COMMIT_HASH}")
+add_definitions(-DGIT_BRANCH="${GIT_BRANCH}")
+
+else()
+    add_definitions(-DGIT_COMMIT_HASH="${INDEX_VERSION}")
+    add_definitions(-DGIT_BRANCH="Stable")
+endif()
+
+
 set(sol_SRCS
     src/main.cpp
+    src/models/historymodel.cpp
+    src/controllers/downloadsmanager.cpp
+    src/models/downloadsmodel.cpp
+    src/models/recentmodel.cpp
+    src/models/bookmarksmodel.cpp
     )
 
 set(sol_HDRS
@@ -52,7 +84,7 @@ else()
 
 endif()
 
-target_link_libraries(sol MauiKit Qt5::Sql Qt5::Qml Qt5::Svg  KF5::ConfigCore KF5::Notifications KF5::KIOCore KF5::I18n KF5::Attica)
+target_link_libraries(sol MauiKit Qt5::Sql Qt5::Qml Qt5::Svg KF5::ConfigCore KF5::Notifications KF5::KIOCore KF5::I18n)
 
 install(TARGETS sol ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES org.kde.sol.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})

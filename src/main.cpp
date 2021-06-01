@@ -2,6 +2,7 @@
 #include <QCommandLineParser>
 #include <QQmlContext>
 #include <QIcon>
+#include <QDate>
 
 #ifdef Q_OS_ANDROID
 #include <QGuiApplication>
@@ -11,7 +12,6 @@
 
 #include <MauiKit/Core/mauiapp.h>
 
-#include <KI18n/KLocalizedContext>
 #include <KI18n/KLocalizedString>
 
 #include "sol_version.h"
@@ -40,7 +40,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     KLocalizedString::setApplicationDomain("sol");
     KAboutData about(QStringLiteral("sol"), i18n("Sol"), SOL_VERSION_STRING, i18n("Sol allows you to browse the web and organize the web."),
-                     KAboutLicense::LGPL_V3, i18n("© 2020 Nitrux Development Team"));
+                     KAboutLicense::LGPL_V3,  i18n("© 2019-%1 Nitrux Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
     about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
     about.setHomepage("https://mauikit.org");
     about.setProductName("maui/sol");
@@ -56,14 +56,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     about.setupCommandLine(&parser);
     about.processCommandLine(&parser);
 
-#ifdef STATIC_KIRIGAMI
-	KirigamiPlugin::getInstance().registerTypes();
-#endif
-
-#ifdef STATIC_MAUIKIT
-	MauiKit::getInstance().registerTypes();
-#endif
-
 	QQmlApplicationEngine engine;
 	const QUrl url(QStringLiteral("qrc:/main.qml"));
 	QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
@@ -76,8 +68,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 //			nota->requestFiles(args);
 
 	}, Qt::QueuedConnection);
-
-	engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
 	engine.load(url);
 
