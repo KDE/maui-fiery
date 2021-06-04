@@ -5,6 +5,7 @@ import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.2 as Maui
 
 import "views/browser"
+import "views/widgets"
 
 Maui.ApplicationWindow
 {
@@ -14,14 +15,22 @@ Maui.ApplicationWindow
 
     readonly property var views : ({browser: 0, tabs: 1, history: 2})
 
-readonly property bool entryFocused : !root.isWide && _entryField.activeFocus
+    property bool editMode: false
+
+    mainMenu:[
+
+    Action
+        {
+            text: i18n("Settings")
+        }
+
+    ]
 
     headBar.leftContent:  Maui.ToolActions
     {
-        expanded: root.isWide
+//        expanded: root.isWide
         autoExclusive: false
         checkable: false
-        visible: !entryFocused
         defaultIconName: "go-previous"
 
         Action
@@ -37,40 +46,44 @@ readonly property bool entryFocused : !root.isWide && _entryField.activeFocus
         }
     }
 
+    footBar.visible: _swipeView.currentIndex !== views.browser
+
     Component
     {
-        id: _entryFieldComponent
-        Maui.TextField
+        id: _navBarComponent
+
+        NavigationBar
         {
-            placeholderText: i18n("Search or enter URL")
-            text: _browserView.currentTab.url
-            onAccepted: _browserView.openUrl(text)
+            implicitWidth: 0
+
         }
     }
 
-//    page.showTitle: !root.isWide
-//    page.title: root.title
-    footBar.visible: _swipeView.currentIndex !== views.browser
-//    footBar.middleContent: Loader
-//    {
-//        visible: active
-//        active: !root.isWide
-//        Layout.fillWidth: true
-//        sourceComponent: _entryFieldComponent
-//    }
-
-    headBar.middleContent: Maui.TextField
+    altHeader: !root.isWide
+    headBar.forceCenterMiddleContent: false
+    headBar.middleContent: Loader
     {
-        id: _entryField
-        Layout.fillWidth: true
-        Layout.maximumWidth: 500
-        placeholderText: i18n("Search or enter URL")
-        text: _browserView.currentTab.url
-        onAccepted: _browserView.openUrl(text)
+        visible: active
+        active: root.isWide
+        sourceComponent: _navBarComponent
+        Layout.fillWidth: visible
+        Layout.maximumWidth: visible ? 500 : 0
+        Layout.minimumWidth: 0
+    }
 
-        actions: Action
+    page.headerColumn: Maui.ToolBar
+    {
+        visible: !root.isWide
+        width: parent.width
+        position: root.headBar.position
+        middleContent:  Loader
         {
-            icon.name: "love"
+            visible: active
+            active: !root.isWide
+            sourceComponent: _navBarComponent
+            Layout.fillWidth: true
+            Layout.maximumWidth: 500
+            Layout.minimumWidth: visible ? 150 : 0
         }
     }
 
@@ -78,14 +91,12 @@ readonly property bool entryFocused : !root.isWide && _entryField.activeFocus
 
         ToolButton
         {
-            visible: !entryFocused
             icon.name: "list-add"
             onClicked: _browserView.openTab("")
         },
 
         Maui.ToolButtonMenu
         {
-            visible: !entryFocused
             icon.name: "overflow-menu"
 
             MenuItem

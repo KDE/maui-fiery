@@ -7,5 +7,6 @@
         <file>views/history/HistoryView.qml</file>
         <file>views/browser/BrowserLayout.qml</file>
         <file>views/browser/Browser.qml</file>
+        <file>views/widgets/NavigationBar.qml</file>
     </qresource>
 </RCC>

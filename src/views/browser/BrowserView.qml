@@ -1,6 +1,7 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
+import QtWebEngine 1.10
 
 import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.3 as Maui
@@ -9,6 +10,7 @@ Maui.Page
 {
     id: control
     property alias currentTab : _browserListView.currentItem
+    readonly property WebEngineView currentBrowser : _browserListView.currentItem.webView
     property alias listView: _browserListView
     property alias count: _browserListView.count
     readonly property alias model : _browserListView.contentModel
@@ -19,7 +21,7 @@ Maui.Page
     {
         id: _browserListView
         anchors.fill: parent
-
+mobile: true
         holder.emoji: "qrc:/internet.svg"
 
         holder.title: i18n("Start Browsing")
