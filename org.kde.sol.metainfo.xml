@@ -9,17 +9,20 @@ SPDX-License-Identifier: CC0-1.0
   <project_license>LGPL-3.0</project_license>
   <name>Sol</name>
   <name xml:lang="ca">Sol</name>
+  <name xml:lang="ca-valencia">Sol</name>
   <name xml:lang="cs">Sol</name>
   <name xml:lang="de">Sol</name>
   <name xml:lang="es">Sol</name>
   <name xml:lang="ko">Sol</name>
   <name xml:lang="nl">Sol</name>
+  <name xml:lang="pt">Sol</name>
   <name xml:lang="sk">Sol</name>
   <name xml:lang="sl">Sol</name>
   <name xml:lang="uk">Sol</name>
   <name xml:lang="x-test">xxSolxx</name>
   <summary>Web browser</summary>
   <summary xml:lang="ca">Navegador web</summary>
+  <summary xml:lang="ca-valencia">Navegador web</summary>
   <summary xml:lang="cs">Webový prohlížeč</summary>
   <summary xml:lang="de">Webbrowser</summary>
   <summary xml:lang="es">Navegador web</summary>
@@ -32,6 +35,7 @@ SPDX-License-Identifier: CC0-1.0
   <description>
     <p>Sol is a convergent web browser.</p>
     <p xml:lang="ca">El Sol és un navegador web convergent.</p>
+    <p xml:lang="ca-valencia">El Sol és un navegador web convergent.</p>
     <p xml:lang="de">Sol ist ein konvergenter Webbrowser.</p>
     <p xml:lang="es">Sol es un navegador web convergente.</p>
     <p xml:lang="ko">Sol은 올인원 웹 브라우저입니다.</p>
@@ -48,11 +52,13 @@ SPDX-License-Identifier: CC0-1.0
     <screenshot type="default">
       <caption>Sol</caption>
       <caption xml:lang="ca">Sol</caption>
+      <caption xml:lang="ca-valencia">Sol</caption>
       <caption xml:lang="cs">Sol</caption>
       <caption xml:lang="de">Sol</caption>
       <caption xml:lang="es">Sol</caption>
       <caption xml:lang="ko">Sol</caption>
       <caption xml:lang="nl">Sol</caption>
+      <caption xml:lang="pt">Sol</caption>
       <caption xml:lang="sk">Sol</caption>
       <caption xml:lang="sl">Sol</caption>
       <caption xml:lang="uk">Sol</caption>
