@@ -28,6 +28,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="es">Navegador web</summary>
   <summary xml:lang="ko">웹 브라우저</summary>
   <summary xml:lang="nl">Webbrowser</summary>
+  <summary xml:lang="pt">Navegador Web</summary>
   <summary xml:lang="sk">Webový prehliadač</summary>
   <summary xml:lang="sl">Spletni brskalnik</summary>
   <summary xml:lang="uk">Переглядач інтернету</summary>
@@ -40,6 +41,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="es">Sol es un navegador web convergente.</p>
     <p xml:lang="ko">Sol은 올인원 웹 브라우저입니다.</p>
     <p xml:lang="nl">Sol is een convergente webbrowser.</p>
+    <p xml:lang="pt">O Sol é um navegador Web convergente.</p>
     <p xml:lang="sk">Sol je konvergentný webový prehliadač.</p>
     <p xml:lang="sl">Sol je konvergentni spletni brskalnik.</p>
     <p xml:lang="uk">Sol — зручна програма для перегляду інтернету.</p>
