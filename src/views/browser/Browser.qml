@@ -3,8 +3,9 @@ import QtQml 2.12
 import QtQuick.Controls 2.13
 import QtQuick.Layouts 1.3
 
- import QtWebEngine 1.10
+import QtWebEngine 1.10
 import org.mauikit.controls 1.3 as Maui
+import org.maui.sol 1.0 as Sol
 
 Item
 {
@@ -12,51 +13,18 @@ Item
     property alias url : _webView.url
     property alias webView : _webView
     readonly property string title : _webView.title.length ? _webView.title : "Sol-"
-     readonly property string iconName: _webView.icon
+    readonly property string iconName: _webView.icon
+
     height: ListView.view.height
     width:  ListView.view.width
 
     Maui.TabViewInfo.tabTitle: title
     Maui.TabViewInfo.tabToolTipText:  _webView.url
 
-Maui.ContextualMenu
-{
-    id: _menu
-        property ContextMenuRequest request
-    MenuItem
+    ActionsMenu
     {
-        text: i18n("Open in new tab")
-        onTriggered:
-        {
-            console.log(_menu.request.linkUrl)
-            openTab(_menu.request.linkUrl)
-        }
+        id: _menu
     }
-
-    MenuItem
-    {
-        text: i18n("Download")
-    }
-
-    MenuItem
-    {
-        text: i18n("Inspect")
-    }
-
-    MenuItem
-    {
-        text: i18n("Search...")
-    }
-    MenuItem
-    {
-        text: i18n("Copy")
-    }
-    MenuItem
-    {
-        text: i18n("Copy link")
-    }
-
-}
 
     WebEngineView
     {
@@ -64,11 +32,46 @@ Maui.ContextualMenu
         anchors.fill: parent
 
         onContextMenuRequested: {
-               request.accepted = true // Make sure QtWebEngine doesn't show its own context menu.
-               _menu.request = request
-               _menu.open(request.x, request.y)
+            request.accepted = true // Make sure QtWebEngine doesn't show its own context menu.
+            _menu.request = request
+            _menu.open(request.x, request.y)
+        }
+
+        onLoadingChanged:
+        {
+            if(loadRequest.status === WebEngineView.LoadSucceededStatus)
+            {
+                Sol.History.appendUrl(control.url, control.title, control.iconName)
+            }
+        }
+
+        onIconChanged: {
+               if (icon)
+               {
+                   Sol.History.updateIcon(url, icon)
+               }
            }
 
+        settings.accelerated2dCanvasEnabled : appSettings.accelerated2dCanvasEnabled
+        settings.allowGeolocationOnInsecureOrigins : appSettings.allowGeolocationOnInsecureOrigins
+        settings.allowRunningInsecureContent : appSettings.allowRunningInsecureContent
+        settings.allowWindowActivationFromJavaScript : appSettings.allowWindowActivationFromJavaScript
+        settings.autoLoadImages : appSettings.autoLoadImages
+        settings.dnsPrefetchEnabled : appSettings.dnsPrefetchEnabled
+        settings.hyperlinkAuditingEnabled : appSettings.hyperlinkAuditingEnabled
+        settings.javascriptCanAccessClipboard : appSettings.javascriptCanAccessClipboard
+        settings.javascriptCanOpenWindows : appSettings.javascriptCanOpenWindows
+        settings.javascriptCanPaste : appSettings.javascriptCanPaste
+        settings.javascriptEnabled : appSettings.javascriptEnabled
+        settings.linksIncludedInFocusChain : appSettings.linksIncludedInFocusChain
+        settings.localContentCanAccessFileUrls : appSettings.localContentCanAccessFileUrls
+        settings.localContentCanAccessRemoteUrls : appSettings.localContentCanAccessRemoteUrls
+        settings.localStorageEnabled : appSettings.localStorageEnabled
+        settings.pdfViewerEnabled : appSettings.pdfViewerEnabled
+        settings.playbackRequiresUserGesture : appSettings.playbackRequiresUserGesture
+        settings.pluginsEnabled : appSettings.pluginsEnabled
+        settings.webGLEnabled : appSettings.webGLEnabled
+        settings. webRTCPublicInterfacesOnly : appSettings.webRTCPublicInterfacesOnly
     }
 }
 

@@ -4,8 +4,11 @@ import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.2 as Maui
 
+import Qt.labs.settings 1.0
+
 import "views/browser"
 import "views/widgets"
+import "views/history"
 
 Maui.ApplicationWindow
 {
@@ -15,36 +18,96 @@ Maui.ApplicationWindow
 
     readonly property var views : ({browser: 0, tabs: 1, history: 2})
 
+    readonly property alias currentBrowser : _browserView.currentBrowser
     property bool editMode: false
 
-    mainMenu:[
-
-    Action
+    mainMenu: [Action
         {
             text: i18n("Settings")
-        }
+            icon.name: "settings-configure"
+            onTriggered: _settingsDialog.open()
+        }]
 
-    ]
-
-    headBar.leftContent:  Maui.ToolActions
+    Settings
     {
-//        expanded: root.isWide
-        autoExclusive: false
-        checkable: false
-        defaultIconName: "go-previous"
+        id: appSettings
+        category: "Browser"
 
-        Action
-        {
-            text: i18n("Previous")
-            icon.name: "go-previous"
-        }
+        property url homePage: "https://duckduckgo.com"
+        property url searchEnginePage: "https://duckduckgo.com/?q="
+        property color backgroundColor : root.Kirigami.Theme.backgroundColor
 
-        Action
-        {
-            text: i18n("Next")
-            icon.name: "go-next"
-        }
+        property bool accelerated2dCanvasEnabled : true
+        property bool allowGeolocationOnInsecureOrigins : false
+        property bool allowRunningInsecureContent : false
+        property bool allowWindowActivationFromJavaScript : false
+        property bool autoLoadIconsForPage : true
+        property bool autoLoadImages : true
+        //        property bool defaultTextEncoding : string
+        property bool dnsPrefetchEnabled : false
+        property bool errorPageEnabled : true
+        property bool focusOnNavigationEnabled : false
+        property bool fullscreenSupportEnabled : false
+        property bool hyperlinkAuditingEnabled : false
+        property bool javascriptCanAccessClipboard : true
+        property bool javascriptCanOpenWindows : true
+        property bool javascriptCanPaste : true
+        property bool javascriptEnabled : true
+        property bool linksIncludedInFocusChain : true
+        property bool localContentCanAccessFileUrls : true
+        property bool localContentCanAccessRemoteUrls : false
+        property bool localStorageEnabled : true
+        property bool pdfViewerEnabled : true
+        property bool playbackRequiresUserGesture : true
+        property bool pluginsEnabled : false
+        property bool printElementBackgrounds : true
+        property bool screenCaptureEnabled : true
+        property bool showScrollBars : true
+        property bool spatialNavigationEnabled : false
+        property bool touchIconsEnabled : false
+        //        property bool unknownUrlSchemePolicy : WebEngineSettings::UnknownUrlSchemePolicy
+        property bool webGLEnabled : true
+        property bool  webRTCPublicInterfacesOnly : false
+
     }
+
+    SettingsDialog
+    {
+        id: _settingsDialog
+    }
+
+    headBar.visible: _swipeView.currentIndex === views.browser
+
+    headBar.leftContent:  [Maui.ToolActions
+        {
+            //        expanded: root.isWide
+            autoExclusive: false
+            checkable: false
+            defaultIconName: "go-previous"
+
+            Action
+            {
+                text: i18n("Previous")
+                enabled: currentBrowser.canGoBack
+                icon.name: "go-previous"
+                onTriggered: currentBrowser.goBack()
+            }
+
+            Action
+            {
+                text: i18n("Next")
+                enabled: currentBrowser.canGoForward
+                icon.name: "go-next"
+                onTriggered: currentBrowser.goForward()
+
+            }
+        },
+
+        ToolButton
+        {
+            icon.name: "view-refresh"
+            onClicked: currentBrowser.reload()
+        }    ]
 
     footBar.visible: _swipeView.currentIndex !== views.browser
 
@@ -55,6 +118,7 @@ Maui.ApplicationWindow
         NavigationBar
         {
             implicitWidth: 0
+            position: _navBar1Loader.active ? ToolBar.Header :ToolBar.Footer
 
         }
     }
@@ -63,8 +127,9 @@ Maui.ApplicationWindow
     headBar.forceCenterMiddleContent: false
     headBar.middleContent: Loader
     {
+        id: _navBar1Loader
         visible: active
-        active: root.isWide
+        active: root.width > Kirigami.Units.gridUnit * 40
         sourceComponent: _navBarComponent
         Layout.fillWidth: visible
         Layout.maximumWidth: visible ? 500 : 0
@@ -73,21 +138,28 @@ Maui.ApplicationWindow
 
     page.headerColumn: Maui.ToolBar
     {
-        visible: !root.isWide
+        visible: !_navBar1Loader.active && root.headBar.visible
+
         width: parent.width
-        position: root.headBar.position
-        middleContent:  Loader
+        position: headBar.position
+        middleContent: Loader
         {
             visible: active
-            active: !root.isWide
+            active: !_navBar1Loader.active
             sourceComponent: _navBarComponent
             Layout.fillWidth: true
-            Layout.maximumWidth: 500
             Layout.minimumWidth: visible ? 150 : 0
         }
     }
 
     headBar.rightContent: [
+
+
+        ToolButton
+        {
+            icon.name: "love"
+            //                    onClicked: _browserView.openTab("")
+        },
 
         ToolButton
         {
@@ -188,16 +260,16 @@ Maui.ApplicationWindow
             Maui.AppView.iconName: "internet-web-browser"
         }
 
-        Item
+        HistoryView
         {
-            id : _historyView //recent and history
+            id : _historyView //recent and history && bookmarks
             Maui.AppView.title: i18n("Recent")
             Maui.AppView.iconName: "shallow-history"
         }
 
         Item
         {
-            id : _homeView // bookmarks & downloads
+            id : _homeView // downloads
             Maui.AppView.title: i18n("Home")
             Maui.AppView.iconName: "go-home"
         }

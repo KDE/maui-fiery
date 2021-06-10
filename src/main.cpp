@@ -14,7 +14,11 @@
 
 #include <KI18n/KLocalizedString>
 
+#include "models/historymodel.h"
+
 #include "../sol_version.h"
+
+#include <QtWebEngine/QtWebEngine>
 
 #define SOL_URI "org.maui.sol"
 
@@ -24,6 +28,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_DontCreateNativeWidgetSiblings);
     QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps, true);
     QCoreApplication::setAttribute(Qt::AA_DisableSessionManager, true);
+
+    QtWebEngine::initialize();
 
 #ifdef Q_OS_ANDROID
 	QGuiApplication app(argc, argv);
@@ -39,7 +45,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 	MauiApp::instance()->setIconName("qrc:/sol.svg");
 
     KLocalizedString::setApplicationDomain("sol");
-    KAboutData about(QStringLiteral("sol"), i18n("Sol"), SOL_VERSION_STRING, i18n("Sol allows you to browse the web and organize the web."),
+    KAboutData about(QStringLiteral("sol"), i18n("Sol"), SOL_VERSION_STRING, i18n("Browse and organize the web."),
                      KAboutLicense::LGPL_V3,  i18n("© 2019-%1 Nitrux Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
     about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
     about.setHomepage("https://mauikit.org");
@@ -65,9 +71,18 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 			QCoreApplication::exit(-1);
 
 //		if(!args.isEmpty())
-//			nota->requestFiles(args);
+//			Sol::getInstance()->requestUrls(args);
 
 	}, Qt::QueuedConnection);
+
+
+    qmlRegisterSingletonType<HistoryModel>(SOL_URI, 1, 0, "History", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
+        Q_UNUSED(scriptEngine)
+        Q_UNUSED(engine)
+
+//           engine->setObjectOwnership(platform, QQmlEngine::CppOwnership);
+           return new HistoryModel;
+       });
 
 	engine.load(url);
 

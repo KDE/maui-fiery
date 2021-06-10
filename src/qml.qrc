@@ -8,5 +8,7 @@
         <file>views/browser/BrowserLayout.qml</file>
         <file>views/browser/Browser.qml</file>
         <file>views/widgets/NavigationBar.qml</file>
+        <file>views/browser/ActionsMenu.qml</file>
+        <file>db/script.sql</file>
     </qresource>
 </RCC>

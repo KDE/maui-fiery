@@ -1,289 +1,288 @@
 import QtQuick 2.13
 import QtQuick.Controls 2.13
 import QtQuick.Layouts 1.3
+
 import org.kde.kirigami 2.7 as Kirigami
-import org.mauikit.controls 1.0 as Maui
-import org.mauikit.controls 1.1 as MauiLab
-import org.maui.nota 1.0 as Nota
+import org.mauikit.controls 1.3 as Maui
 
-MauiLab.SettingsDialog
+Maui.SettingsDialog
 {
-    MauiLab.SettingsSection
+    id: control
+
+    Maui.SettingsSection
     {
-        title: i18n("General")
-        description: i18n("Configure the app UI, behaviour and plugins.")
+        title: i18n("Navigation")
+        description: i18n("Configure the app basic navigation features.")
 
-        Switch
+        Maui.SettingTemplate
         {
-            Layout.fillWidth: true
-            checkable: true
-            checked: root.enableSidebar
-            Kirigami.FormData.label: i18n("Enable places sidebar")
-            onToggled:
+            id: _homePageEntry
+            label1.text: i18n("Home Page")
+            label2.text: i18n("Page to load initially and default.")
+
+            TextField
             {
-                root.enableSidebar = !root.enableSidebar
-                Maui.FM.saveSettings("ENABLE_SIDEBAR", enableSidebar, "EXTENSIONS")
+                Layout.minimumWidth: _homePageEntry.width * 0.9
+                text: appSettings.homePage
             }
         }
 
-        Switch
+        Maui.SettingTemplate
         {
-            Layout.fillWidth: true
-            checkable: true
-            checked: root.defaultBlankFile
-            Kirigami.FormData.label: i18n("Open blank file by default")
-            onToggled:
+            id: _searchEngineEntry
+            label1.text: i18n("Search Engine")
+            label2.text: i18n("Engine to be use for default searching content.")
+
+            TextField
             {
-                root.defaultBlankFile = !root.defaultBlankFile
-                Maui.FM.saveSettings("DEFAULT_BLANK_FILE", defaultBlankFile, "SETTINGS")
+                Layout.minimumWidth: _searchEngineEntry.width* 0.9
+                text: appSettings.searchEnginePage
             }
         }
 
-        Switch
+        Maui.SettingTemplate
         {
-            enabled: Nota.Nota.supportsEmbededTerminal()
-            Layout.fillWidth: true
-            checkable: true
-            checked: root.terminalVisible
-            Kirigami.FormData.label: i18n("Enable embedded terminal")
-            onToggled:
+            label1.text: i18n("Auto Load Images")
+            label2.text: i18n("Automatically loads images on web pages.")
+
+            Switch
             {
-                root.terminalVisible = !root.terminalVisible
-                Maui.FM.saveSettings("TERMINAL", terminalVisible, "EXTENSIONS")
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.autoLoadImages
+                onToggled: appSettings.autoLoadImages = ! appSettings.autoLoadImages
+            }
+        }
+
+        Maui.SettingTemplate
+        {
+            label1.text: i18n("Hyperlink Auditing")
+            label2.text: i18n("Enables support for the ping attribute for hyperlinks.")
+
+            Switch
+            {
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.hyperlinkAuditingEnabled
+                onToggled: appSettings.hyperlinkAuditingEnabled = ! appSettings.hyperlinkAuditingEnabled
             }
         }
     }
 
-    MauiLab.SettingsSection
+    Maui.SettingsSection
     {
-        title: i18n("Editor")
+        title: i18n("Features")
+        description: i18n("Configure the browser plugins and features.")
+
+        Maui.SettingTemplate
+        {
+            label1.text: i18n("Accelerated 2D Canvas")
+            label2.text: i18n("Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This makes many painting operations faster, but slows down pixel access.")
+
+            Switch
+            {
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.accelerated2dCanvasEnabled
+                onToggled: appSettings.accelerated2dCanvasEnabled = ! appSettings.accelerated2dCanvasEnabled
+            }
+        }
+
+        Maui.SettingTemplate
+        {
+            label1.text: i18n("PDF Viewer")
+            label2.text: i18n("PDF documents will be opened in the internal PDF viewer instead of being downloaded.")
+
+            Switch
+            {
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.pdfViewerEnabled
+                onToggled: appSettings.pdfViewerEnabled = ! appSettings.pdfViewerEnabled
+            }
+        }
+
+        Maui.SettingTemplate
+        {
+            label1.text: i18n("Plugins Enabled")
+            label2.text: i18n("Enables support for Pepper plugins, such as the Flash player.")
+
+            Switch
+            {
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.pluginsEnabled
+                onToggled: appSettings.pluginsEnabled = ! appSettings.pluginsEnabled
+            }
+        }
+    }
+
+    Maui.SettingsSection
+    {
+        title: i18n("JavaScript")
+        description: i18n("Configure JavaScript behaviour")
+
+        Maui.SettingTemplate
+        {
+            label1.text: i18n("Javascript Enabled")
+            label2.text: i18n("Enables the running of JavaScript programs.")
+
+            Switch
+            {
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.javascriptEnabled
+                onToggled: appSettings.javascriptEnabled = ! appSettings.javascriptEnabled
+            }
+        }
+
+        Maui.SettingTemplate
+        {
+            label1.text: i18n("Javascript Can Access Clipboard")
+            label2.text: i18n("Allows JavaScript programs to read from or write to the clipboard.")
+
+            Switch
+            {
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.javascriptCanAccessClipboard
+                onToggled: appSettings.javascriptCanAccessClipboard = ! appSettings.javascriptCanAccessClipboard
+            }
+        }
+
+        Maui.SettingTemplate
+        {
+            label1.text: i18n("Javascript Can Paste")
+            label2.text: i18n("Enables JavaScript execCommand(paste).")
+
+            Switch
+            {
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.javascriptCanPaste
+                onToggled: appSettings.javascriptCanPaste = ! appSettings.javascriptCanPaste
+            }
+        }
+
+        Maui.SettingTemplate
+        {
+            label1.text: i18n("Allow Window Activation From JavaScript")
+            label2.text: i18n("Allows the window.focus() method in JavaScript.")
+
+            Switch
+            {
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.allowWindowActivationFromJavaScript
+                onToggled: appSettings.allowWindowActivationFromJavaScript = ! appSettings.allowWindowActivationFromJavaScript
+            }
+        }
+
+    }
+
+    Maui.SettingsSection
+    {
+        title: i18n("Security & Privacy")
         description: i18n("Configure the look and feel of the editor. The settings are applied globally")
 
-        Switch
+        Maui.SettingTemplate
         {
-            Layout.fillWidth: true
-            checkable: true
-            checked: root.showLineNumbers
-            Kirigami.FormData.label: i18n("Show line numbers")
-            onToggled:
+            label1.text: i18n("Allow Geolocation On Insecure Origins")
+            label2.text: i18n("Only secure origins such as HTTPS have been able to request Geolocation features.")
+
+            Switch
             {
-                root.showLineNumbers = !root.showLineNumbers
-                Maui.FM.saveSettings("SHOW_LINE_NUMBERS", showLineNumbers, "EDITOR")
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.allowGeolocationOnInsecureOrigins
+                onToggled: appSettings.allowGeolocationOnInsecureOrigins = ! appSettings.allowGeolocationOnInsecureOrigins
             }
         }
 
-        Switch
+        Maui.SettingTemplate
         {
-            Layout.fillWidth: true
-            checkable: true
-            checked: root.showSyntaxHighlightingLanguages
-            Kirigami.FormData.label: i18n("Show syntax highlighting languages")
-            onToggled:
+            label1.text: i18n("Allow Running Insecure Content")
+            label2.text: i18n("By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets from HTTP URLs.")
+
+            Switch
             {
-                root.showSyntaxHighlightingLanguages = !root.showSyntaxHighlightingLanguages
-                Maui.FM.saveSettings("SHOW_SYNTAXHIGHLIGHTING_BOX", showSyntaxHighlightingLanguages, "EDITOR")
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.allowRunningInsecureContent
+                onToggled: appSettings.allowRunningInsecureContent = ! appSettings.allowRunningInsecureContent
             }
         }
 
-        Switch
-        {
-            Layout.fillWidth: true
-            Kirigami.FormData.label: i18n("Enable syntax highlighting")
-            checkable: true
-            checked: root.enableSyntaxHighlighting
-            onToggled:
-            {
-                root.enableSyntaxHighlighting = !root.enableSyntaxHighlighting
-                Maui.FM.saveSettings("ENABLE_SYNTAX_HIGHLIGHTING", enableSyntaxHighlighting, "EDITOR")
-            }
-        }
-    }
 
-    MauiLab.SettingsSection
-    {
-        title: i18n("Fonts")
-        description: i18n("Configure the global editor font family and size")
-
-        ComboBox
+        Maui.SettingTemplate
         {
-            Layout.fillWidth: true
-            Kirigami.FormData.label: i18n("Family")
-            model: Qt.fontFamilies()
-            Component.onCompleted: currentIndex = find(root.font.family, Qt.MatchExactly)
-            onActivated:
+            label1.text: i18n("DNS Prefetch Enabled")
+            label2.text: i18n("Enables speculative prefetching of DNS records for HTML links before they are activated.")
+
+            Switch
             {
-                root.font.family = currentText
-                Maui.FM.saveSettings("FONT", root.font, "EDITOR")
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.dnsPrefetchEnabled
+                onToggled: appSettings.dnsPrefetchEnabled = ! appSettings.dnsPrefetchEnabled
             }
         }
 
-        SpinBox
+        Maui.SettingTemplate
         {
-            Layout.fillWidth: true
-            Kirigami.FormData.label: i18n("Size")
-            from: 0; to : 500
-            value: root.font.pointSize
-            onValueChanged:
+            label1.text: i18n("Local Content Can Access File Urls")
+            label2.text: i18n("Allows locally loaded documents to access other local URLs.")
+
+            Switch
             {
-                root.font.pointSize = value
-                Maui.FM.saveSettings("FONT", root.font, "EDITOR")
-            }
-        }
-    }
-
-    MauiLab.SettingsSection
-    {
-        title: i18n("Style")
-        description: i18n("Configure the style of the syntax highlighting. This configuration in not applied for rich text formats.")
-        visible: root.enableSyntaxHighlighting
-
-        ComboBox
-        {
-            Layout.fillWidth: true
-            Kirigami.FormData.label: i18n("Theme")
-            model:  _dummyDocumentHandler.getThemes()
-            Component.onCompleted: currentIndex = find(root.theme, Qt.MatchExactly)
-
-            onActivated:
-            {
-                root.theme = currentText
-                Maui.FM.saveSettings("THEME", root.theme, "EDITOR")
-            }
-
-            Maui.DocumentHandler
-            {
-                id: _dummyDocumentHandler
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.localContentCanAccessFileUrls
+                onToggled: appSettings.localContentCanAccessFileUrls = ! appSettings.localContentCanAccessFileUrls
             }
         }
 
-        Row
+        Maui.SettingTemplate
         {
-            Layout.fillWidth: true
-            Kirigami.FormData.label: i18n("Color")
-            spacing: Maui.Style.space.medium
+            label1.text: i18n("Local Content Can Access Remote Urls")
+            label2.text: i18n("Allows locally loaded documents to access remote URLs.")
 
-            Rectangle
+            Switch
             {
-                height: 22
-                width: 22
-                radius: Maui.Style.radiusV
-                color: "#333"
-                border.color: Qt.darker(color)
-
-                MouseArea
-                {
-                    anchors.fill: parent
-                    onClicked: switchBackgroundColor(parent.color, "#fafafa")
-                }
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.localContentCanAccessRemoteUrls
+                onToggled: appSettings.localContentCanAccessRemoteUrls = ! appSettings.localContentCanAccessRemoteUrls
             }
+        }
 
-            Rectangle
+        Maui.SettingTemplate
+        {
+            label1.text: i18n("Local Storage")
+            label2.text: i18n("Enables support for the HTML 5 local storage feature.")
+
+            Switch
             {
-                height: 22
-                width: 22
-                radius: Maui.Style.radiusV
-                color: "#fafafa"
-                border.color: Qt.darker(color)
-
-                MouseArea
-                {
-                    anchors.fill: parent
-                    onClicked: switchBackgroundColor(parent.color, "#333")
-                }
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.localStorageEnabled
+                onToggled: appSettings.localStorageEnabled = ! appSettings.localStorageEnabled
             }
+        }
 
-            Rectangle
+        Maui.SettingTemplate
+        {
+            label1.text: i18n("WebRTC Public Interfaces Only")
+            label2.text: i18n("Limits WebRTC to public IP addresses only. When disabled WebRTC may also use local network IP addresses, but remote hosts can also see your local network IP address.")
+
+            Switch
             {
-                height: 22
-                width: 22
-                radius: Maui.Style.radiusV
-                color: "#fff3e6"
-                border.color: Qt.darker(color)
-                MouseArea
-                {
-                    anchors.fill: parent
-                    onClicked: switchBackgroundColor(parent.color, Qt.darker(parent.color, 2))
-
-                }
-            }
-
-            Rectangle
-            {
-                height: 22
-                width: 22
-                radius: Maui.Style.radiusV
-                color: "#4c425b"
-                border.color: Qt.darker(color)
-                MouseArea
-                {
-                    anchors.fill: parent
-                    onClicked: switchBackgroundColor(parent.color, Qt.lighter(parent.color, 2.5))
-                }
-            }
-
-            Rectangle
-            {
-                height: 22
-                width: 22
-                radius: Maui.Style.radiusV
-                color: "transparent"
-                border.color: Kirigami.Theme.textColor
-                Maui.X
-                {
-                    height: 16
-                    width: 16
-                    anchors.centerIn: parent
-                    color: Kirigami.Theme.textColor
-                }
-
-                MouseArea
-                {
-                    anchors.fill: parent
-                    onClicked: switchBackgroundColor(Kirigami.Theme.backgroundColor, Kirigami.Theme.textColor)
-                }
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.webRTCPublicInterfacesOnly
+                onToggled: appSettings.webRTCPublicInterfacesOnly = ! appSettings.webRTCPublicInterfacesOnly
             }
         }
     }
 
-    MauiLab.SettingsSection
-    {
-        title: i18n("Interface")
-        description: i18n("Configure the app UI.")
-
-        Switch
-        {
-            Kirigami.FormData.label: i18n("Focus Mode")
-            checkable: true
-            checked:  root.focusMode
-            onToggled:
-            {
-                root.focusMode = !root.focusMode
-            }
-        }
-
-        Switch
-        {
-            Kirigami.FormData.label: i18n("Translucent Sidebar")
-            checkable: true
-            enabled: root.enableSidebar && Maui.Handy.isLinux
-            checked:  root.translucency
-            onToggled:  root.translucency = !root.translucency
-        }
-
-        Switch
-        {
-            Kirigami.FormData.label: i18n("Dark Mode")
-            checkable: true
-            enabled: false
-        }
-    }
-
-    function switchBackgroundColor(backgroundColor, textColor)
-    {
-        root.backgroundColor = backgroundColor
-        root.textColor = textColor
-
-        Maui.FM.saveSettings("BACKGROUND_COLOR", root.backgroundColor, "EDITOR")
-        Maui.FM.saveSettings("TEXT_COLOR", root.textColor, "EDITOR")
-    }
 }

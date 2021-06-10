@@ -21,17 +21,15 @@ Maui.Page
     {
         id: _browserListView
         anchors.fill: parent
-mobile: true
         holder.emoji: "qrc:/internet.svg"
 
         holder.title: i18n("Start Browsing")
         holder.body: i18n("Enter a new URL or open a recent site.")
 
         onNewTabClicked: control.openTab("")
-
     }
 
-    Component.onCompleted: openTab("https://duckduckgo.com")
+    Component.onCompleted: openTab(appSettings.homePage)
 
     Component
     {
@@ -58,7 +56,7 @@ mobile: true
             control.currentTab.url = path
         }else
         {
-           control.currentTab.url = "https://duckduckgo.com/?q="+path
+           control.currentTab.url = appSettings.searchEnginePage+path
         }
 
         control.currentTab.forceActiveFocus()

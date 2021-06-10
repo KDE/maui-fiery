@@ -7,6 +7,8 @@ set(sol_SRCS
     main.cpp
     models/historymodel.cpp
     controllers/downloadsmanager.cpp
+    controllers/dbactions.cpp
+    db/db.cpp
     models/downloadsmodel.cpp
     models/recentmodel.cpp
     models/bookmarksmodel.cpp
@@ -26,4 +28,4 @@ else()
 endif()
 
 
-target_link_libraries(${PROJECT_NAME} MauiKit Qt5::Sql Qt5::Qml Qt5::Svg KF5::ConfigCore KF5::Notifications KF5::KIOCore KF5::I18n)
+target_link_libraries(${PROJECT_NAME} MauiKit Qt5::WebEngine Qt5::Sql Qt5::Qml Qt5::Svg KF5::ConfigCore KF5::Notifications KF5::KIOCore KF5::I18n)
