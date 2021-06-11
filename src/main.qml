@@ -119,7 +119,7 @@ Maui.ApplicationWindow
         {
             implicitWidth: 0
             position: _navBar1Loader.active ? ToolBar.Header :ToolBar.Footer
-
+            mobile : !_navBar1Loader.active
         }
     }
 
@@ -141,7 +141,7 @@ Maui.ApplicationWindow
         visible: !_navBar1Loader.active && root.headBar.visible
 
         width: parent.width
-        position: headBar.position
+        position: ToolBar.Header
         middleContent: Loader
         {
             visible: active
@@ -153,7 +153,6 @@ Maui.ApplicationWindow
     }
 
     headBar.rightContent: [
-
 
         ToolButton
         {

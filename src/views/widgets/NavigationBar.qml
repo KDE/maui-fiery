@@ -23,6 +23,7 @@ Rectangle
     clip: false
 
     property int position: ToolBar.Header
+    property bool mobile: false
 
     ProgressBar
     {
@@ -81,7 +82,7 @@ Rectangle
         {
             if(!_entryField.activeFocus)
             {
-                 root.editMode = false
+                root.editMode = false
             }
         }
 
@@ -90,8 +91,9 @@ Rectangle
         Popup
         {
             id: _historyPopup
+
             width: _entryField.width
-            height: _historyListView.contentHeight + Maui.Style.space.big
+            height: Math.min(_historyListView.contentHeight + Maui.Style.space.big, root.height * 0.7)
 
             Binding on visible
             {
@@ -102,26 +104,28 @@ Rectangle
             parent: _entryField
             y: control.position === ToolBar.Header ? parent.height + Maui.Style.space.medium : (0 - height - Maui.Style.space.medium )
             closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
+            clip: true
+            padding: 0
 
-            ListView
+            Maui.ListBrowser
             {
                 id: _historyListView
                 width: parent.width
-                height: contentHeight
+                height: parent.height
                 anchors.centerIn:  parent
                 currentIndex: -1
                 orientation: ListView.Vertical
                 spacing: Maui.Style.space.medium
-                keyNavigationEnabled: true
-                highlightFollowsCurrentItem: true
-//                KeyNavigationWraps: true
+//                margins: 0
+
+                //                KeyNavigationWraps: true
 
                 onCurrentItemChanged:
                 {
                     _entryField.text = currentItem.label2.text
                 }
 
-                header: Maui.ListBrowserDelegate
+                flickable.header: Maui.ListBrowserDelegate
                 {
                     width: ListView.view.width
 
@@ -146,7 +150,7 @@ Rectangle
                     sortOrder: Qt.AscendingOrder
                     recursiveFilteringEnabled: true
                     sortCaseSensitivity: Qt.CaseInsensitive
-                    filterCaseSensitivity: Qt.CaseInsensitive                
+                    filterCaseSensitivity: Qt.CaseInsensitive
                 }
 
                 delegate: Maui.ListBrowserDelegate
