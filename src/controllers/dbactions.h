@@ -49,7 +49,10 @@ public:
 
     void urlIcon(const QUrl &url, const QString &icon);
 
-    FMH::MODEL_LIST getHistory();
+    FMH::MODEL_LIST getHistory() const;
+    FMH::MODEL_LIST getBookmarks() const;
+
+    bool isBookmark(const QUrl &url);
 
 private:
     static DBActions *m_instance;
@@ -60,7 +63,7 @@ private:
     DBActions(DBActions &&) = delete;
     DBActions &operator=(DBActions &&) = delete;
 
-    const QVariantList get(const QString &query, std::function<bool(QVariantMap &item)> modifier = nullptr);
+    const QVariantList get(const QString &query, std::function<bool(QVariantMap &item)> modifier = nullptr) const;
 
 signals:
     void historyUrlInserted(UrlData data);

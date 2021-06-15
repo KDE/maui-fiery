@@ -16,8 +16,6 @@ private:
     FMH::MODEL_LIST m_list;
 
     void setList();
-    QList<QUrl> getHistory();
-
 
 public slots:
     void appendUrl(const QUrl &url, const QString &title);

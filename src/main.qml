@@ -1,14 +1,18 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
+
+import Qt.labs.settings 1.0
+
 import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.2 as Maui
 
-import Qt.labs.settings 1.0
+import org.maui.sol 1.0 as Sol
 
 import "views/browser"
 import "views/widgets"
 import "views/history"
+import "views/home"
 
 Maui.ApplicationWindow
 {
@@ -157,7 +161,9 @@ Maui.ApplicationWindow
         ToolButton
         {
             icon.name: "love"
-            //                    onClicked: _browserView.openTab("")
+            checked: Sol.Bookmarks.isBookmark(currentBrowser.url)
+            checkable: true
+            onClicked: Sol.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
         },
 
         ToolButton
@@ -266,7 +272,7 @@ Maui.ApplicationWindow
             Maui.AppView.iconName: "shallow-history"
         }
 
-        Item
+        HomeView
         {
             id : _homeView // downloads
             Maui.AppView.title: i18n("Home")

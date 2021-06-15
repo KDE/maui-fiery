@@ -142,7 +142,7 @@ bool DB::checkExistance(const QString &queryStr)
     return false;
 }
 
-QSqlQuery DB::getQuery(const QString &queryTxt)
+QSqlQuery DB::getQuery(const QString &queryTxt) const
 {
     QSqlQuery query(queryTxt, this->m_db);
     return query;

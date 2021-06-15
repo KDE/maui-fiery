@@ -19,7 +19,9 @@ void DBActions::addToHistory(const UrlData &data)
 
 void DBActions::addBookmark(const UrlData &data)
 {
-    if(this->insert("BOOKMARKS", data.toMap()))
+    auto mData = data.toMap();
+    mData.insert("adddate",  QDateTime::currentDateTime().toString(Qt::TextDate));
+    if(this->insert("BOOKMARKS", mData))
     {
         emit this->bookmarkInserted(data);
     }
@@ -35,9 +37,19 @@ void DBActions::urlIcon(const QUrl &url, const QString &icon)
     emit this->iconInserted(url, icon);
 }
 
-FMH::MODEL_LIST DBActions::getHistory()
+FMH::MODEL_LIST DBActions::getHistory() const
 {
 return FMH::toModelList(this->get("select * from HISTORY h inner join ICONS i where i.url = h.url"));
+}
+
+FMH::MODEL_LIST DBActions::getBookmarks() const
+{
+    return FMH::toModelList(this->get("select * from BOOKMARKS b inner join ICONS i where i.url = b.url"));
+}
+
+bool DBActions::isBookmark(const QUrl &url)
+{
+    return checkExistance("BOOKMARKS", "url", url.toString());
 }
 
 DBActions::DBActions(QObject *parent) : DB(parent)
@@ -50,7 +62,7 @@ DBActions::DBActions(QObject *parent) : DB(parent)
     });
 }
 
-const QVariantList DBActions::get(const QString &queryTxt, std::function<bool(QVariantMap &item)> modifier)
+const QVariantList DBActions::get(const QString &queryTxt, std::function<bool(QVariantMap &item)> modifier) const
 {
     QVariantList mapList;
 

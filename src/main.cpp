@@ -15,6 +15,7 @@
 #include <KI18n/KLocalizedString>
 
 #include "models/historymodel.h"
+#include "models/bookmarksmodel.h"
 
 #include "../sol_version.h"
 
@@ -82,6 +83,15 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
 //           engine->setObjectOwnership(platform, QQmlEngine::CppOwnership);
            return new HistoryModel;
+       });
+
+
+    qmlRegisterSingletonType<BookMarksModel>(SOL_URI, 1, 0, "Bookmarks", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
+        Q_UNUSED(scriptEngine)
+        Q_UNUSED(engine)
+
+//           engine->setObjectOwnership(platform, QQmlEngine::CppOwnership);
+           return new BookMarksModel;
        });
 
 	engine.load(url);

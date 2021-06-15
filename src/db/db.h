@@ -66,7 +66,7 @@ protected:
      * @param queryTxt
      * @return
      */
-    QSqlQuery getQuery(const QString &queryTxt);
+    QSqlQuery getQuery(const QString &queryTxt) const;
 
     /**
      * @brief openDB

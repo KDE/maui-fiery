@@ -3,7 +3,6 @@ CREATE TABLE IF NOT EXISTS BOOKMARKS (
 url TEXT,
 title TEXT,
 adddate DATE,
-modified DATE,
 PRIMARY KEY(url)
 );
 
