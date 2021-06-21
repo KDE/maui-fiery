@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.16)
 
 set(SOL_VERSION 1.0.0)
 
@@ -38,16 +38,6 @@ find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Sql Sv
 find_package(KF5 ${KF5_VERSION} REQUIRED COMPONENTS I18n Notifications Config KIO )
 find_package(MauiKit REQUIRED)
 
-if(ANDROID)
-    find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS AndroidExtras WebView)
-    message("CURRENT DIR" ${CMAKE_CURRENT_SOURCE_DIR})
-    set(ANDROID_PACKAGE_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/android_files)
-    set(ANDROID_ABIS "armeabi-v7a")
-elseif(UNIX)
-    find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS Config KIO)
-    find_package(Qt5 REQUIRED COMPONENTS WebEngine)
-endif()
-
 if(${ECM_SOURCE_UNDER_VERSION_CONTROL})
 execute_process(
   COMMAND git rev-parse --abbrev-ref HEAD
@@ -68,7 +58,7 @@ add_definitions(-DGIT_COMMIT_HASH="${GIT_COMMIT_HASH}")
 add_definitions(-DGIT_BRANCH="${GIT_BRANCH}")
 
 else()
-    add_definitions(-DGIT_COMMIT_HASH="${INDEX_VERSION}")
+    add_definitions(-DGIT_COMMIT_HASH="${SOL_VERSION}")
     add_definitions(-DGIT_BRANCH="Stable")
 endif()
 
@@ -79,13 +69,11 @@ ecm_setup_version(${SOL_VERSION}
 
 add_subdirectory(src)
 
-if(UNIX AND NOT APPLE AND NOT ANDROID)
     install(TARGETS sol ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
     install(FILES org.kde.sol.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
     install(FILES org.kde.sol.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
     #ecm_install_icons(ICONS src/assets/sol.svg DESTINATION share/icons)
     install(FILES src/assets/sol.svg DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps)
-endif()
 
 feature_summary(WHAT ALL   FATAL_ON_MISSING_REQUIRED_PACKAGES)
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h)

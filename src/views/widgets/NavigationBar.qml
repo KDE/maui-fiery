@@ -17,7 +17,7 @@ Rectangle
     readonly property color m_color : Qt.tint(root.Kirigami.Theme.textColor, Qt.rgba(root.Kirigami.Theme.backgroundColor.r, root.Kirigami.Theme.backgroundColor.g, root.Kirigami.Theme.backgroundColor.b, 0.6))
 
     radius: Maui.Style.radiusV
-    color : editMode ? _entryField.Kirigami.Theme.backgroundColor : Qt.rgba(m_color.r, m_color.g, m_color.b, 0.3)
+    color : editMode ? _entryField.Kirigami.Theme.backgroundColor : Qt.lighter(Kirigami.Theme.backgroundColor)
 
     border.color: editMode ? control.Kirigami.Theme.highlightColor : "transparent"
     clip: false
@@ -27,32 +27,51 @@ Rectangle
 
     ProgressBar
     {
-        id: _progressBar
-        anchors.fill: parent
-        from : 0
-        to : 1
+        id: _progress
+        width: parent.width
+        anchors.centerIn: parent
         value: _browserView.currentBrowser.loadProgress
         visible: _browserView.currentBrowser.loading
-
-        background: Rectangle {
-            implicitWidth: 200
-            implicitHeight: 6
-            color: "transparent"
-            radius: control.radius
-        }
+        indeterminate: true
 
         contentItem: Item {
-            implicitWidth: 200
-            implicitHeight: 4
+            x: _progress.leftPadding
+            y: _progress.topPadding
+            width: _progress.availableWidth
+            height: _progress.availableHeight
 
-            Rectangle {
-                width: _progressBar.visualPosition * parent.width
-                height: parent.height
-                radius: control.radius
-                color: control.Kirigami.Theme.highlightColor
-                opacity: 0.3
+            scale: _progress.mirrored ? -1 : 1
+
+            Repeater {
+                model: 2
+
+                Rectangle {
+                    property real offset: 0
+
+                    x: (_progress.indeterminate ? offset * parent.width : 0)
+                    y: (parent.height - height) / 2
+                    width: offset * (parent.width - x)
+                    height: 4
+
+                    color: "violet"
+
+                    SequentialAnimation on offset {
+                        loops: Animation.Infinite
+                        running: _progress.indeterminate && _progress.visible
+                        PauseAnimation { duration: index ? 520 : 0 }
+                        NumberAnimation {
+                            easing.type: Easing.OutCubic
+                            duration: 1240
+                            from: 0
+                            to: 1
+                        }
+                        PauseAnimation { duration: index ? 0 : 520 }
+                    }
+                }
             }
         }
+
+        background: null
     }
 
     Maui.TextField
