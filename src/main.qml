@@ -180,6 +180,7 @@ Maui.ApplicationWindow
             {
                 text: i18n("New Tab")
                 icon.name: "list-add"
+                onTriggered: _browserView.openTab("")
             }
 
             MenuItem
