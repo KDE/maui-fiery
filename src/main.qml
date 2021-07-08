@@ -25,12 +25,24 @@ Maui.ApplicationWindow
     readonly property alias currentBrowser : _browserView.currentBrowser
     property bool editMode: false
 
-    mainMenu: [Action
+    headBar.farLeftContent: Maui.ToolButtonMenu
+    {
+        icon.name: "application-menu"
+
+        MenuItem
         {
             text: i18n("Settings")
             icon.name: "settings-configure"
             onTriggered: _settingsDialog.open()
-        }]
+        }
+
+        MenuItem
+        {
+            text: i18n("About")
+            icon.name: "documentinfo"
+            onTriggered: root.about()
+        }
+    }
 
     Settings
     {
