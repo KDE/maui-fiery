@@ -25,25 +25,6 @@ Maui.ApplicationWindow
     readonly property alias currentBrowser : _browserView.currentBrowser
     property bool editMode: false
 
-    headBar.farLeftContent: Maui.ToolButtonMenu
-    {
-        icon.name: "application-menu"
-
-        MenuItem
-        {
-            text: i18n("Settings")
-            icon.name: "settings-configure"
-            onTriggered: _settingsDialog.open()
-        }
-
-        MenuItem
-        {
-            text: i18n("About")
-            icon.name: "documentinfo"
-            onTriggered: root.about()
-        }
-    }
-
     Settings
     {
         id: appSettings
@@ -94,174 +75,24 @@ Maui.ApplicationWindow
 
     headBar.visible: _swipeView.currentIndex === views.browser
 
-    headBar.leftContent:  [Maui.ToolActions
-        {
-            //        expanded: root.isWide
-            autoExclusive: false
-            checkable: false
-            defaultIconName: "go-previous"
-
-            Action
-            {
-                text: i18n("Previous")
-                enabled: currentBrowser.canGoBack
-                icon.name: "go-previous"
-                onTriggered: currentBrowser.goBack()
-            }
-
-            Action
-            {
-                text: i18n("Next")
-                enabled: currentBrowser.canGoForward
-                icon.name: "go-next"
-                onTriggered: currentBrowser.goForward()
-
-            }
-        },
-
-        ToolButton
-        {
-            icon.name: "view-refresh"
-            onClicked: currentBrowser.reload()
-        }    ]
-
     footBar.visible: _swipeView.currentIndex !== views.browser
 
-    Component
-    {
-        id: _navBarComponent
-
-        NavigationBar
-        {
-            implicitWidth: 0
-            position: _navBar1Loader.active ? ToolBar.Header :ToolBar.Footer
-            mobile : !_navBar1Loader.active
-        }
-    }
 
     altHeader: !root.isWide
     headBar.forceCenterMiddleContent: false
-    headBar.middleContent: Loader
+    headBar.middleContent: NavigationBar
     {
-        id: _navBar1Loader
-        visible: active
-        active: root.width > Kirigami.Units.gridUnit * 40
-        sourceComponent: _navBarComponent
-        Layout.fillWidth: visible
-        Layout.maximumWidth: visible ? 500 : 0
-        Layout.minimumWidth: 0
+        Layout.fillWidth: true
+        Layout.maximumWidth: 500
+        position: root.altHeader ? ToolBar.Footer : ToolBar.Header
     }
 
-    page.headerColumn: Maui.ToolBar
+
+    headBar.rightContent: ToolButton
     {
-        visible: !_navBar1Loader.active && root.headBar.visible
-
-        width: parent.width
-        position: ToolBar.Header
-        middleContent: Loader
-        {
-            visible: active
-            active: !_navBar1Loader.active
-            sourceComponent: _navBarComponent
-            Layout.fillWidth: true
-            Layout.minimumWidth: visible ? 150 : 0
-        }
+        icon.name: "list-add"
+        onClicked: _browserView.openTab("")
     }
-
-    headBar.rightContent: [
-
-        ToolButton
-        {
-            icon.name: "love"
-            checked: Sol.Bookmarks.isBookmark(currentBrowser.url)
-            checkable: true
-            onClicked: Sol.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
-        },
-
-        ToolButton
-        {
-            icon.name: "list-add"
-            onClicked: _browserView.openTab("")
-        },
-
-        Maui.ToolButtonMenu
-        {
-            icon.name: "overflow-menu"
-
-            MenuItem
-            {
-                text: i18n("New Tab")
-                icon.name: "list-add"
-            }
-
-            MenuItem
-            {
-                text: i18n("Incognito Tab")
-                icon.name: "actor"
-            }
-
-            MenuSeparator {}
-
-            MenuItem
-            {
-                text: i18n("History")
-                icon.name: "deep-history"
-                onTriggered:
-                {
-                    _swipeView.currentIndex = 1
-                }
-            }
-
-            MenuItem
-            {
-                text: i18n("Downloads")
-                icon.name: "folder-downloads"
-                onTriggered:
-                {
-                    _swipeView.currentIndex = 2
-                }
-            }
-
-            MenuItem
-            {
-                text: i18n("BookMarks")
-                icon.name: "bookmarks"
-                onTriggered:
-                {
-                    _swipeView.currentIndex = 2
-                }
-            }
-
-            MenuItem
-            {
-                text: i18n("Recent")
-                icon.name: "document-open-recent"
-                onTriggered:
-                {
-                    _swipeView.currentIndex = 1
-                }
-            }
-
-            MenuSeparator {}
-            MenuItem
-            {
-                text: i18n("Share")
-                icon.name: "edit-share"
-            }
-
-            MenuItem
-            {
-                text: i18n("BookMark")
-                icon.name: "bookmarks"
-            }
-
-            MenuItem
-            {
-                text: i18n("Find")
-                icon.name: "edit-find"
-            }
-        }
-    ]
 
     Maui.AppViews
     {
