@@ -27,6 +27,7 @@ Maui.Page
         holder.body: i18n("Enter a new URL or open a recent site.")
 
         onNewTabClicked: control.openTab("")
+        onCloseTabClicked: _browserListView.closeTab(index)
     }
 
     Component.onCompleted: openTab(appSettings.homePage)
