@@ -22,4 +22,4 @@ set(sol_ASSETS
 add_executable(${PROJECT_NAME}  ${sol_SRCS}
     ${sol_ASSETS})
 
-target_link_libraries(${PROJECT_NAME} MauiKit Qt5::Widgets Qt5::WebEngine Qt5::Sql Qt5::Qml KF5::I18n KF5::CoreAddons)
+target_link_libraries(${PROJECT_NAME} MauiKit MauiKit::FileBrowsing Qt5::Widgets Qt5::WebEngine Qt5::Sql Qt5::Qml KF5::I18n KF5::CoreAddons)
