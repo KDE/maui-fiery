@@ -34,8 +34,8 @@ include(ECMSourceVersionControl)
 include(FeatureSummary)
 include(ECMQMLModules)
 
-find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Sql WebEngine)
-find_package(KF5 ${KF5_VERSION} REQUIRED COMPONENTS I18n Notifications)
+find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Widgets Qml Sql WebEngine)
+find_package(KF5 ${KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
 find_package(MauiKit REQUIRED)
 
 if(${ECM_SOURCE_UNDER_VERSION_CONTROL})
