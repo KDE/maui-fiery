@@ -19,6 +19,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="it">Sol</name>
   <name xml:lang="ko">Sol</name>
   <name xml:lang="nl">Sol</name>
+  <name xml:lang="pl">Sol</name>
   <name xml:lang="pt">Sol</name>
   <name xml:lang="sk">Sol</name>
   <name xml:lang="sl">Sol</name>
@@ -38,6 +39,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="it">Browser web</summary>
   <summary xml:lang="ko">웹 브라우저</summary>
   <summary xml:lang="nl">Webbrowser</summary>
+  <summary xml:lang="pl">Przeglądarka sieciowa</summary>
   <summary xml:lang="pt">Navegador Web</summary>
   <summary xml:lang="sk">Webový prehliadač</summary>
   <summary xml:lang="sl">Spletni brskalnik</summary>
@@ -57,6 +59,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="it">Sol è un browser web convergente.</p>
     <p xml:lang="ko">Sol은 올인원 웹 브라우저입니다.</p>
     <p xml:lang="nl">Sol is een convergente webbrowser.</p>
+    <p xml:lang="pl">Sol jest dostosowującą się przeglądarką sieciową.</p>
     <p xml:lang="pt">O Sol é um navegador Web convergente.</p>
     <p xml:lang="sk">Sol je konvergentný webový prehliadač.</p>
     <p xml:lang="sl">Sol je konvergentni spletni brskalnik.</p>
@@ -82,6 +85,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="it">Sol</caption>
       <caption xml:lang="ko">Sol</caption>
       <caption xml:lang="nl">Sol</caption>
+      <caption xml:lang="pl">Sol</caption>
       <caption xml:lang="pt">Sol</caption>
       <caption xml:lang="sk">Sol</caption>
       <caption xml:lang="sl">Sol</caption>
