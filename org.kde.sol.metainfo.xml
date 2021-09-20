@@ -18,6 +18,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="fr">Sol</name>
   <name xml:lang="it">Sol</name>
   <name xml:lang="ko">Sol</name>
+  <name xml:lang="my">ဆိုလ်</name>
   <name xml:lang="nl">Sol</name>
   <name xml:lang="pl">Sol</name>
   <name xml:lang="pt">Sol</name>
@@ -38,6 +39,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="fr">Navigateur Internet</summary>
   <summary xml:lang="it">Browser web</summary>
   <summary xml:lang="ko">웹 브라우저</summary>
+  <summary xml:lang="my">ဝက်ဘ်ဘရောက်ဇာ</summary>
   <summary xml:lang="nl">Webbrowser</summary>
   <summary xml:lang="pl">Przeglądarka sieciowa</summary>
   <summary xml:lang="pt">Navegador Web</summary>
@@ -58,6 +60,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="fr">Sol est un navigateur Internet convergent.</p>
     <p xml:lang="it">Sol è un browser web convergente.</p>
     <p xml:lang="ko">Sol은 올인원 웹 브라우저입니다.</p>
+    <p xml:lang="my">ဆိုလ်သည် မိုဘိုင်း၊ ဒက်စ်တော့ပ်ပေါင်းစည်းထားသော ဝက်ဘ်ဘရောက်ဇာဖြစ်သည်။</p>
     <p xml:lang="nl">Sol is een convergente webbrowser.</p>
     <p xml:lang="pl">Sol jest dostosowującą się przeglądarką sieciową.</p>
     <p xml:lang="pt">O Sol é um navegador Web convergente.</p>
@@ -84,6 +87,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="fr">Sol</caption>
       <caption xml:lang="it">Sol</caption>
       <caption xml:lang="ko">Sol</caption>
+      <caption xml:lang="my">ဆိုလ်</caption>
       <caption xml:lang="nl">Sol</caption>
       <caption xml:lang="pl">Sol</caption>
       <caption xml:lang="pt">Sol</caption>
