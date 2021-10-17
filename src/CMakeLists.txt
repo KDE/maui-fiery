@@ -12,6 +12,7 @@ set(sol_SRCS
     models/downloadsmodel.cpp
     models/recentmodel.cpp
     models/bookmarksmodel.cpp
+    controllers/surf.cpp
     )
 
 set(sol_ASSETS

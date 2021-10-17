@@ -6,6 +6,8 @@ import QtWebEngine 1.10
 import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 
+import org.maui.sol 1.0 as Sol
+
 Maui.Page
 {
     id: control
@@ -36,16 +38,13 @@ Maui.Page
     {
         id: _browserComponent
 
-        Browser
-        {
-
-        }
+        Browser {}
     }
 
     function openTab(path)
     {
         _swipeView.currentIndex = views.browser
-        _browserListView.addTab(_browserComponent, {"url": path});
+        _browserListView.addTab(_browserComponent, {"url": _surf.formatUrl(path)});
     }
 
     function openUrl(path)

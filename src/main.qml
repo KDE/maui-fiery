@@ -68,6 +68,11 @@ Maui.ApplicationWindow
 
     }
 
+    Sol.Surf
+    {
+        id: _surf
+    }
+
     SettingsDialog
     {
         id: _settingsDialog
@@ -77,16 +82,19 @@ Maui.ApplicationWindow
 
     footBar.visible: _swipeView.currentIndex !== views.browser
 
-
     altHeader: !root.isWide
-    headBar.forceCenterMiddleContent: false
-    headBar.middleContent: NavigationBar
+    headBar.forceCenterMiddleContent: root.isWide
+    headBar.middleContent: Loader
     {
         Layout.fillWidth: true
         Layout.maximumWidth: 500
-        position: root.altHeader ? ToolBar.Footer : ToolBar.Header
-    }
+        asynchronous: true
 
+        sourceComponent: NavigationBar
+        {
+            position: root.altHeader ? ToolBar.Footer : ToolBar.Header
+        }
+    }
 
     headBar.rightContent: ToolButton
     {
@@ -99,7 +107,7 @@ Maui.ApplicationWindow
         id: _swipeView
         anchors.fill: parent
         currentIndex: views.browser
-        toolbar: root.footBar
+        headBar.visible: currentIndex !== 0
 
         BrowserView
         {
@@ -108,19 +116,20 @@ Maui.ApplicationWindow
             Maui.AppView.iconName: "internet-web-browser"
         }
 
-        HistoryView
+        Maui.AppViewLoader
         {
-            id : _historyView //recent and history && bookmarks
             Maui.AppView.title: i18n("Recent")
             Maui.AppView.iconName: "shallow-history"
+
+            HistoryView {}
         }
 
-        HomeView
+        Maui.AppViewLoader
         {
-            id : _homeView // downloads
             Maui.AppView.title: i18n("Home")
             Maui.AppView.iconName: "go-home"
+
+            HomeView {}
         }
     }
-
 }

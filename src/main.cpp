@@ -1,14 +1,9 @@
+#include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QCommandLineParser>
 #include <QQmlContext>
 #include <QIcon>
 #include <QDate>
-
-#ifdef Q_OS_ANDROID
-#include <QGuiApplication>
-#else
-#include <QApplication>
-#endif
 
 #include <MauiKit/Core/mauiapp.h>
 
@@ -16,6 +11,8 @@
 
 #include "models/historymodel.h"
 #include "models/bookmarksmodel.h"
+
+#include "controllers/surf.h"
 
 #include "../sol_version.h"
 
@@ -26,19 +23,10 @@
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-    QCoreApplication::setAttribute(Qt::AA_DontCreateNativeWidgetSiblings);
     QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps, true);
-    QCoreApplication::setAttribute(Qt::AA_DisableSessionManager, true);
 
     QtWebEngine::initialize();
-
-#ifdef Q_OS_ANDROID
-	QGuiApplication app(argc, argv);
-	if (!MAUIAndroid::checkRunTimePermissions({"android.permission.WRITE_EXTERNAL_STORAGE"}))
-		return -1;
-#else
 	QApplication app(argc, argv);
-#endif
 
 	app.setOrganizationName("Maui");
 	app.setWindowIcon(QIcon(":/sol.svg"));
@@ -47,7 +35,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     KLocalizedString::setApplicationDomain("sol");
     KAboutData about(QStringLiteral("sol"), i18n("Sol"), SOL_VERSION_STRING, i18n("Browse and organize the web."),
-                     KAboutLicense::LGPL_V3,  i18n("© 2019-%1 Nitrux Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
+                     KAboutLicense::LGPL_V3,  i18n("© 2020-%1 Maui Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
     about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
     about.setHomepage("https://mauikit.org");
     about.setProductName("maui/sol");
@@ -58,9 +46,10 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     KAboutData::setApplicationData(about);
 
     QCommandLineParser parser;
-    parser.process(app);
 
     about.setupCommandLine(&parser);
+    parser.process(app);
+
     about.processCommandLine(&parser);
 
 	QQmlApplicationEngine engine;
@@ -76,6 +65,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
 	}, Qt::QueuedConnection);
 
+    qmlRegisterType<surf>(SOL_URI, 1, 0, "Surf");
 
     qmlRegisterSingletonType<HistoryModel>(SOL_URI, 1, 0, "History", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
         Q_UNUSED(scriptEngine)
