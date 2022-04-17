@@ -25,6 +25,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="sk">Sol</name>
   <name xml:lang="sl">Sol</name>
   <name xml:lang="sv">Sol</name>
+  <name xml:lang="tr">Sol</name>
   <name xml:lang="uk">Sol</name>
   <name xml:lang="x-test">xxSolxx</name>
   <name xml:lang="zh-CN">Sol</name>
@@ -46,6 +47,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="sk">Webový prehliadač</summary>
   <summary xml:lang="sl">Spletni brskalnik</summary>
   <summary xml:lang="sv">Webbläsare</summary>
+  <summary xml:lang="tr">Web tarayıcı</summary>
   <summary xml:lang="uk">Переглядач інтернету</summary>
   <summary xml:lang="x-test">xxWeb browserxx</summary>
   <summary xml:lang="zh-CN">网页浏览器</summary>
@@ -67,6 +69,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="sk">Sol je konvergentný webový prehliadač.</p>
     <p xml:lang="sl">Sol je konvergentni spletni brskalnik.</p>
     <p xml:lang="sv">Sol är en konvergent webbläsare.</p>
+    <p xml:lang="tr">Sol, yakınsak bir web tarayıcıdır.</p>
     <p xml:lang="uk">Sol — зручна програма для перегляду інтернету.</p>
     <p xml:lang="x-test">xxSol is a convergent web browser.xx</p>
     <p xml:lang="zh-CN">Sol 是一款桌面手机融合网页浏览器。</p>
@@ -94,6 +97,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="sk">Sol</caption>
       <caption xml:lang="sl">Sol</caption>
       <caption xml:lang="sv">Sol</caption>
+      <caption xml:lang="tr">Sol</caption>
       <caption xml:lang="uk">Sol</caption>
       <caption xml:lang="x-test">xxSolxx</caption>
       <caption xml:lang="zh-CN">Sol</caption>
