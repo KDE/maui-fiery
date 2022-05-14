@@ -22,7 +22,7 @@ Maui.SettingsDialog
 
             TextField
             {
-                Layout.minimumWidth: _homePageEntry.width * 0.9
+               width: _homePageEntry.width - _homePageEntry.leftPadding - _homePageEntry.rightPadding
                 text: appSettings.homePage
             }
         }
@@ -35,7 +35,7 @@ Maui.SettingsDialog
 
             TextField
             {
-                Layout.minimumWidth: _searchEngineEntry.width* 0.9
+                width: _searchEngineEntry.width - _searchEngineEntry.leftPadding - _searchEngineEntry.rightPadding
                 text: appSettings.searchEnginePage
             }
         }

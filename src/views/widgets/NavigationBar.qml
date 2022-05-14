@@ -43,7 +43,7 @@ Item
 
             background: Kirigami.ShadowedRectangle
             {
-               color: Qt.lighter(Kirigami.Theme.backgroundColor)
+                color: Qt.lighter(Kirigami.Theme.backgroundColor)
                 corners
                 {
                     topLeftRadius: Maui.Style.radiusV
@@ -58,7 +58,7 @@ Item
         {
             Layout.fillWidth: true
             Layout.fillHeight: true
-
+            hoverEnabled: true
             onClicked:
             {
                 editMode = true
@@ -196,11 +196,13 @@ Item
                 visible: !editMode
 
                 anchors.fill: parent
+                leftLabels.spacing: 0
                 label1.text:  _browserView.currentTab.title
                 label1.horizontalAlignment: Qt.AlignHCenter
                 label2.horizontalAlignment: Qt.AlignHCenter
                 label2.font.pointSize: Maui.Style.fontSizes.small
                 label2.text:  _browserView.currentTab.url
+                label2.visible: parent.hovered
                 imageSource:  _browserView.currentTab.iconName
                 imageSizeHint: Maui.Style.iconSizes.medium
             }
@@ -247,29 +249,28 @@ Item
             {
                 id: _browserMenu
 
-                Row
+                Maui.MenuItemActionRow
                 {
-                    width: parent.width
-                    ToolButton
+                    Action
                     {
                         icon.name: "love"
                         checked: Sol.Bookmarks.isBookmark(currentBrowser.url)
                         checkable: true
-                        onClicked: Sol.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
+                        onTriggered:  Sol.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
                     }
 
-                    ToolButton
+                    Action
                     {
                         text: i18n("Next")
                         enabled: currentBrowser.canGoForward
                         icon.name: "go-next"
-                        onClicked: currentBrowser.goForward()
+                        onTriggered: currentBrowser.goForward()
                     }
 
-                    ToolButton
+                    Action
                     {
                         icon.name: "view-refresh"
-                        onClicked: currentBrowser.reload()
+                        onTriggered: currentBrowser.reload()
                     }
                 }
 
@@ -318,33 +319,27 @@ Item
                     }
                 }
 
-                MenuItem
-                {
-                    text: i18n("Recent")
-                    icon.name: "document-open-recent"
-                    onTriggered:
-                    {
-                        _swipeView.currentIndex = 1
-                    }
-                }
-
                 MenuSeparator {}
-                MenuItem
+
+                Maui.MenuItemActionRow
+                {
+                Action
                 {
                     text: i18n("Share")
                     icon.name: "edit-share"
                 }
 
-                MenuItem
+                Action
                 {
                     text: i18n("BookMark")
-                    icon.name: "bookmarks"
+                    icon.name: "draw-star"
                 }
 
-                MenuItem
+                Action
                 {
                     text: i18n("Find")
                     icon.name: "edit-find"
+                }
                 }
 
                 MenuSeparator {}

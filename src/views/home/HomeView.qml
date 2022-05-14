@@ -12,11 +12,12 @@ Maui.Page
 {
     id: control
 
-    headBar.middleContent: Maui.TextField
+    headBar.middleContent: Maui.SearchField
     {
         id: _entryField
         Layout.fillWidth: true
         Layout.maximumWidth: 500
+        Layout.alignment: Qt.AlignCenter
     }
 
     Maui.GridView
@@ -37,19 +38,23 @@ Maui.Page
             filterCaseSensitivity: Qt.CaseInsensitive
         }
 
-        delegate: Maui.GridBrowserDelegate
+        delegate: Item
         {
             width: GridView.view.cellWidth
             height: GridView.view.cellHeight
-padding: Maui.Style.space.medium
-            label1.text: model.title
-            label2.text: model.url
-            imageSource: model.icon.replace("image://favicon/", "")
-//            template.imageSizeHint: Maui.Style.iconSizes.medium
-
-            onClicked:
+            Maui.GridBrowserDelegate
             {
-                _listView.currentIndex = index
+               anchors.fill: parent
+               anchors.margins: Maui.Style.space.medium
+                label1.text: model.title
+                label2.text: model.url
+                imageSource: model.icon.replace("image://favicon/", "")
+                            template.imageSizeHint: Maui.Style.iconSizes.large
+template.labelSizeHint: 64
+                onClicked:
+                {
+                    _listView.currentIndex = index
+                }
             }
         }
     }

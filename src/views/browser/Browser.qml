@@ -7,6 +7,7 @@ import QtWebEngine 1.10
 import org.mauikit.controls 1.3 as Maui
 import org.maui.sol 1.0 as Sol
 
+import "../home"
 Item
 {
     id: control
@@ -26,7 +27,7 @@ Item
         id: _menu
     }
 
-    StackView
+    Maui.StackView
     {
         id: _stackView
         anchors.fill: parent
@@ -88,36 +89,8 @@ Item
     {
         id: _startComponent
 
-        Item
-        {
-            ColumnLayout
-            {
-                anchors.fill: parent
-                anchors.margins: Maui.Style.space.huge
-
-                Maui.TextField
-                {
-                    Layout.fillWidth: true
-                    Layout.margins: Maui.Style.space.huge
-                }
-
-                Maui.GridView
-                {
-                    Layout.fillHeight: true
-                    Layout.fillWidth: true
-                    model: 7
-
-                    itemSize: 160
-                    itemHeight: 200
-
-                    delegate: Rectangle
-                    {
-                        height: GridView.view.height
-                        width: GridView.view.width
-                    }
-                }
-            }
-        }
+        HomeView
+        {}
     }
 
     Component.onCompleted:

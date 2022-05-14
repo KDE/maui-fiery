@@ -88,6 +88,7 @@ Maui.ApplicationWindow
     {
         Layout.fillWidth: true
         Layout.maximumWidth: 500
+        Layout.alignment:Qt.AlignCenter
         asynchronous: true
 
         sourceComponent: NavigationBar

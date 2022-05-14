@@ -12,11 +12,21 @@ Maui.Page
 {
     id: control
 
-    headBar.middleContent: Maui.TextField
+    footBar.visible: false
+    headBar.middleContent: Maui.SearchField
     {
         id: _entryField
         Layout.fillWidth: true
         Layout.maximumWidth: 500
+        Layout.alignment: Qt.AlignCenter
+        onAccepted:
+        {
+            _listView.model.filter = text
+        }
+        onCleared:
+        {
+            _listView.model.clearFilters()
+        }
     }
 
     Maui.ListBrowser
@@ -27,6 +37,7 @@ Maui.Page
 
         model: Maui.BaseModel
         {
+
             list: Sol.History
             filter: _entryField.text
             sort: "adddate"
