@@ -22,7 +22,10 @@ Item
         spacing: 2
 
         AbstractButton
-        {
+        {            
+            Maui.Theme.colorSet: Maui.Theme.Button
+            Maui.Theme.inherit: false
+
             enabled: currentBrowser.canGoBack()
             onClicked: currentBrowser.goBack()
 
@@ -35,7 +38,7 @@ Item
                 {
                     anchors.centerIn: parent
                     source: "go-previous"
-                    color: Kirigami.Theme.textColor
+                    color: Maui.Theme.textColor
                     width: Maui.Style.iconSizes.small
                     height: width
                 }
@@ -43,7 +46,7 @@ Item
 
             background: Kirigami.ShadowedRectangle
             {
-                color: Qt.lighter(Kirigami.Theme.backgroundColor)
+                color: Maui.Theme.backgroundColor
                 corners
                 {
                     topLeftRadius: Maui.Style.radiusV
@@ -55,7 +58,10 @@ Item
         }
 
         AbstractButton
-        {
+        {            
+            Maui.Theme.colorSet: Maui.Theme.Button
+            Maui.Theme.inherit: false
+
             Layout.fillWidth: true
             Layout.fillHeight: true
             hoverEnabled: true
@@ -209,8 +215,8 @@ Item
 
             background: Rectangle
             {
-                color : editMode ? _entryField.Kirigami.Theme.backgroundColor : Qt.lighter(Kirigami.Theme.backgroundColor)
-                border.color: editMode ? control.Kirigami.Theme.highlightColor : "transparent"
+                color : editMode ? _entryField.Maui.Theme.backgroundColor : Maui.Theme.backgroundColor
+                border.color: editMode ? Maui.Theme.highlightColor : "transparent"
 
             }
         }
@@ -220,6 +226,9 @@ Item
             Layout.fillHeight: true
             implicitWidth: height
 
+            Maui.Theme.colorSet: Maui.Theme.Button
+            Maui.Theme.inherit: false
+
             onClicked: _browserMenu.show((width*0.5)-(_browserMenu.width *0.5), height+ Maui.Style.space.medium)
             contentItem: Item
             {
@@ -227,7 +236,7 @@ Item
                 {
                     anchors.centerIn: parent
                     source: "overflow-menu"
-                    color: Kirigami.Theme.textColor
+                    color: Maui.Theme.textColor
                     width: Maui.Style.iconSizes.small
                     height: width
                 }
@@ -235,7 +244,7 @@ Item
 
             background: Kirigami.ShadowedRectangle
             {
-                color : _browserMenu.visible ? Kirigami.Theme.highlightColor : Qt.lighter(Kirigami.Theme.backgroundColor)
+                color : _browserMenu.visible ? Maui.Theme.highlightColor : Maui.Theme.backgroundColor
                 corners
                 {
                     topLeftRadius: 0

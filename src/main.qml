@@ -4,8 +4,7 @@ import QtQuick.Layouts 1.3
 
 import Qt.labs.settings 1.0
 
-import org.kde.kirigami 2.7 as Kirigami
-import org.mauikit.controls 1.2 as Maui
+import org.mauikit.controls 1.3 as Maui
 
 import org.maui.sol 1.0 as Sol
 
@@ -32,7 +31,7 @@ Maui.ApplicationWindow
 
         property url homePage: "https://duckduckgo.com"
         property url searchEnginePage: "https://duckduckgo.com/?q="
-        property color backgroundColor : root.Kirigami.Theme.backgroundColor
+        property color backgroundColor : root.Maui.Theme.backgroundColor
 
         property bool accelerated2dCanvasEnabled : true
         property bool allowGeolocationOnInsecureOrigins : false
