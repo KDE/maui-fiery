@@ -80,7 +80,7 @@ Maui.ApplicationWindow
     {
         id: _mainPage
         anchors.fill: parent
-
+        showCSDControls: true
 
         headBar.visible: _swipeView.currentIndex === views.browser
 
