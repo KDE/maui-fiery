@@ -3,7 +3,7 @@
         <file>document-edit.svg</file>
     </qresource>
     <qresource prefix="/">
-        <file>sol.svg</file>
         <file>internet.svg</file>
+        <file>fiery.svg</file>
     </qresource>
 </RCC>

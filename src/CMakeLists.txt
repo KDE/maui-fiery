@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-set(sol_SRCS
+set(fiery_SRCS
     main.cpp
     models/historymodel.cpp
     controllers/downloadsmanager.cpp
@@ -15,12 +15,19 @@ set(sol_SRCS
     controllers/surf.cpp
     )
 
-set(sol_ASSETS
-    qml.qrc
+set(fiery_ASSETS
     assets/img_assets.qrc
     )
 
-add_executable(${PROJECT_NAME}  ${sol_SRCS}
-    ${sol_ASSETS})
+if(QUICK_COMPILER)
+    qtquick_compiler_add_resources(fiery_QML_QRC qml.qrc)
+else()
+    qt5_add_resources(fiery_QML_QRC qml.qrc)
+endif()
+
+add_executable(${PROJECT_NAME}
+    ${fiery_SRCS}
+    ${fiery_QML_QRC}
+    ${fiery_ASSETS})
 
 target_link_libraries(${PROJECT_NAME} MauiKit MauiKit::FileBrowsing Qt5::Widgets Qt5::WebEngine Qt5::Sql Qt5::Qml KF5::I18n KF5::CoreAddons)

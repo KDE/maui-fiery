@@ -4,7 +4,7 @@ import QtQuick.Layouts 1.3
 
 import org.mauikit.controls 1.3 as Maui
 
-import org.maui.sol 1.0 as Sol
+import org.maui.fiery 1.0 as Fiery
 
 
 Maui.Page
@@ -37,7 +37,7 @@ Maui.Page
         model: Maui.BaseModel
         {
 
-            list: Sol.History
+            list: Fiery.History
             filter: _entryField.text
             sort: "adddate"
             sortOrder: Qt.DescendingOrder

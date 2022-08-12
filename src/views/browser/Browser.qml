@@ -5,7 +5,7 @@ import QtQuick.Layouts 1.3
 
 import QtWebEngine 1.10
 import org.mauikit.controls 1.3 as Maui
-import org.maui.sol 1.0 as Sol
+import org.maui.fiery 1.0 as Fiery
 
 import "../home"
 Item
@@ -46,7 +46,7 @@ Item
             {
                 if(loadRequest.status === WebEngineView.LoadSucceededStatus)
                 {
-                    Sol.History.appendUrl(control.url, control.title, control.iconName)
+                    Fiery.History.appendUrl(control.url, control.title, control.iconName)
                 }
 
                 if (_stackView.depth === 2)
@@ -58,7 +58,7 @@ Item
             onIconChanged: {
                 if (icon)
                 {
-                    Sol.History.updateIcon(url, icon)
+                    Fiery.History.updateIcon(url, icon)
                 }
             }
 

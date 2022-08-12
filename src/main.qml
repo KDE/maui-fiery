@@ -6,7 +6,7 @@ import Qt.labs.settings 1.0
 
 import org.mauikit.controls 1.3 as Maui
 
-import org.maui.sol 1.0 as Sol
+import org.maui.fiery 1.0 as Fiery
 
 import "views/browser"
 import "views/widgets"
@@ -66,7 +66,7 @@ Maui.ApplicationWindow
 
     }
 
-    Sol.Surf
+    Fiery.Surf
     {
         id: _surf
     }

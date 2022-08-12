@@ -5,7 +5,7 @@ import QtWebEngine 1.10
 
 import org.mauikit.controls 1.3 as Maui
 
-import org.maui.sol 1.0 as Sol
+import org.maui.fiery 1.0 as Fiery
 
 Maui.Page
 {

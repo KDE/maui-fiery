@@ -6,7 +6,7 @@ import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.14 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 
-import org.maui.sol 1.0 as Sol
+import org.maui.fiery 1.0 as Fiery
 
 Item
 {
@@ -168,7 +168,7 @@ Item
 
                         model: Maui.BaseModel
                         {
-                            list: Sol.History
+                            list: Fiery.History
                             filter: _entryField.text
                             sort: "adddate"
                             sortOrder: Qt.AscendingOrder
@@ -263,9 +263,9 @@ Item
                     Action
                     {
                         icon.name: "love"
-                        checked: Sol.Bookmarks.isBookmark(currentBrowser.url)
+                        checked: Fiery.Bookmarks.isBookmark(currentBrowser.url)
                         checkable: true
-                        onTriggered:  Sol.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
+                        onTriggered:  Fiery.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
                     }
 
                     Action
