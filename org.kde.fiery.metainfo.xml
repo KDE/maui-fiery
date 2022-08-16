@@ -12,7 +12,9 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="ca-valencia">Fiery</name>
   <name xml:lang="es">Fiery</name>
   <name xml:lang="fr">Fiery</name>
+  <name xml:lang="nl">Fiery</name>
   <name xml:lang="pt">Fiery</name>
+  <name xml:lang="sk">Fiery</name>
   <name xml:lang="sl">Fiery</name>
   <name xml:lang="tr">Fiery</name>
   <name xml:lang="uk">Fiery</name>
@@ -22,7 +24,9 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="ca-valencia">Navegador web</summary>
   <summary xml:lang="es">Navegador web</summary>
   <summary xml:lang="fr">Navigateur Internet</summary>
+  <summary xml:lang="nl">Webbrowser</summary>
   <summary xml:lang="pt">Navegador Web</summary>
+  <summary xml:lang="sk">Webový prehliadač</summary>
   <summary xml:lang="sl">Spletni brskalnik</summary>
   <summary xml:lang="tr">Web Tarayıcı</summary>
   <summary xml:lang="uk">Переглядач інтернету</summary>
@@ -33,7 +37,9 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="ca-valencia">Fiery és un navegador web convergent.</p>
     <p xml:lang="es">Fiery es un navegador web convergente.</p>
     <p xml:lang="fr">Fiery est un navigateur Internet convergent</p>
+    <p xml:lang="nl">Fiery is een convergente webbrowser.</p>
     <p xml:lang="pt">O Fiery é um navegador Web convergente.</p>
+    <p xml:lang="sk">Fiery je konvergentný webový prehliadač.</p>
     <p xml:lang="sl">Fiery je konvergentni spletni brskalnik.</p>
     <p xml:lang="tr">Fiery, yakınsak bir web tarayıcıdır.</p>
     <p xml:lang="uk">Fiery — зручна програма для перегляду інтернету.</p>
@@ -49,7 +55,9 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="ca-valencia">Fiery</caption>
       <caption xml:lang="es">Fiery</caption>
       <caption xml:lang="fr">Fiery</caption>
+      <caption xml:lang="nl">Fiery</caption>
       <caption xml:lang="pt">Fiery</caption>
+      <caption xml:lang="sk">Fiery</caption>
       <caption xml:lang="sl">Fiery</caption>
       <caption xml:lang="tr">Fiery</caption>
       <caption xml:lang="uk">Fiery</caption>
