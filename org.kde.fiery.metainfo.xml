@@ -13,6 +13,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="en-GB">Fiery</name>
   <name xml:lang="es">Fiery</name>
   <name xml:lang="fr">Fiery</name>
+  <name xml:lang="it">Fiery</name>
   <name xml:lang="nl">Fiery</name>
   <name xml:lang="pt">Fiery</name>
   <name xml:lang="sk">Fiery</name>
@@ -26,6 +27,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="en-GB">Web browser</summary>
   <summary xml:lang="es">Navegador web</summary>
   <summary xml:lang="fr">Navigateur Internet</summary>
+  <summary xml:lang="it">Browser web</summary>
   <summary xml:lang="nl">Webbrowser</summary>
   <summary xml:lang="pt">Navegador Web</summary>
   <summary xml:lang="sk">Webový prehliadač</summary>
@@ -40,6 +42,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="en-GB">Fiery is a convergent web browser.</p>
     <p xml:lang="es">Fiery es un navegador web convergente.</p>
     <p xml:lang="fr">Fiery est un navigateur Internet convergent</p>
+    <p xml:lang="it">Fiery è un browser web convergente.</p>
     <p xml:lang="nl">Fiery is een convergente webbrowser.</p>
     <p xml:lang="pt">O Fiery é um navegador Web convergente.</p>
     <p xml:lang="sk">Fiery je konvergentný webový prehliadač.</p>
@@ -59,6 +62,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="en-GB">Fiery</caption>
       <caption xml:lang="es">Fiery</caption>
       <caption xml:lang="fr">Fiery</caption>
+      <caption xml:lang="it">Fiery</caption>
       <caption xml:lang="nl">Fiery</caption>
       <caption xml:lang="pt">Fiery</caption>
       <caption xml:lang="sk">Fiery</caption>
