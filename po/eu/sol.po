@@ -1,0 +1,417 @@
+# Translation for sol.po to Euskara/Basque (eu).
+# Copyright (C) 2022 This file is copyright:
+# This file is distributed under the same license as the maui-sol package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+#
+# Translators:
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-sol\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-13 00:44+0000\n"
+"PO-Revision-Date: 2022-08-27 08:39+0200\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.04.3\n"
+
+#: src/main.cpp:37
+#, kde-format
+msgid "Fiery"
+msgstr "Fiery"
+
+#: src/main.cpp:37
+#, kde-format
+msgid "Browse and organize the web."
+msgstr "Amaraunean arakatu eta antolatu."
+
+#: src/main.cpp:38
+#, kde-format
+msgid "© 2020-%1 Maui Development Team"
+msgstr "© 2020-%1 Maui Garatzeko Taldea"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Developer"
+msgstr "Garatzailea"
+
+#: src/main.qml:121
+#, kde-format
+msgid "Browser"
+msgstr "Arakatzailea"
+
+#: src/main.qml:127
+#, kde-format
+msgid "Recent"
+msgstr "Azken aldikoa"
+
+#: src/main.qml:135
+#, kde-format
+msgid "Home"
+msgstr "Etxea"
+
+#: src/views/browser/ActionsMenu.qml:16
+#, kde-format
+msgid "Open in new tab"
+msgstr "Ireki fitxa berrian"
+
+#: src/views/browser/ActionsMenu.qml:26
+#, kde-format
+msgid "Download"
+msgstr "Zama-jaitsi"
+
+#: src/views/browser/ActionsMenu.qml:31
+#, kde-format
+msgid "Inspect"
+msgstr "Ikuskatu"
+
+#: src/views/browser/ActionsMenu.qml:36
+#, kde-format
+msgid "Search..."
+msgstr "Bilatu..."
+
+#: src/views/browser/ActionsMenu.qml:40
+#, kde-format
+msgid "Copy"
+msgstr "Kopiatu"
+
+#: src/views/browser/ActionsMenu.qml:44
+#, kde-format
+msgid "Copy link"
+msgstr "Kopiatu esteka"
+
+#: src/views/browser/BrowserView.qml:27
+#, kde-format
+msgid "Start Browsing"
+msgstr "Hasi arakatzen"
+
+#: src/views/browser/BrowserView.qml:28
+#, kde-format
+msgid "Enter a new URL or open a recent site."
+msgstr "Ireki URL berri bat edo ireki azken aldiko gune bat."
+
+#: src/views/widgets/NavigationBar.qml:88
+#, kde-format
+msgid "Search or enter URL"
+msgstr "Bilatu edo sartu URL bat"
+
+#: src/views/widgets/NavigationBar.qml:157
+#, kde-format
+msgid "Search on default search engine"
+msgstr "Bilatu bilatzaile lehenetsian"
+
+#: src/views/widgets/NavigationBar.qml:273
+#, kde-format
+msgid "Next"
+msgstr "Hurrengoa"
+
+#: src/views/widgets/NavigationBar.qml:288
+#, kde-format
+msgid "New Tab"
+msgstr "Fitxa berria"
+
+#: src/views/widgets/NavigationBar.qml:295
+#, kde-format
+msgid "Incognito Tab"
+msgstr "Isilkako fitxa"
+
+#: src/views/widgets/NavigationBar.qml:303
+#, kde-format
+msgid "History"
+msgstr "Historia"
+
+#: src/views/widgets/NavigationBar.qml:313
+#, kde-format
+msgid "Downloads"
+msgstr "Zama-jaitsitakoak"
+
+#: src/views/widgets/NavigationBar.qml:323
+#, kde-format
+msgid "BookMarks"
+msgstr "Laster-markak"
+
+#: src/views/widgets/NavigationBar.qml:337
+#, kde-format
+msgid "Share"
+msgstr "Partekatu"
+
+#: src/views/widgets/NavigationBar.qml:343
+#, kde-format
+msgid "BookMark"
+msgstr "Laster-marka"
+
+#: src/views/widgets/NavigationBar.qml:349
+#, kde-format
+msgid "Find"
+msgstr "Bilatu"
+
+#: src/views/widgets/NavigationBar.qml:359
+#, kde-format
+msgid "Settings"
+msgstr "Ezarpenak"
+
+#: src/views/widgets/NavigationBar.qml:366
+#, kde-format
+msgid "About"
+msgstr "Honi buruz"
+
+#: src/views/widgets/SettingsDialog.qml:13
+#, kde-format
+msgid "Navigation"
+msgstr "Nabigatzea"
+
+#: src/views/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Configure the app basic navigation features."
+msgstr "Konfiguratu aplikazioaren nabigatzeko oinarrizko ezaugarriak."
+
+#: src/views/widgets/SettingsDialog.qml:19
+#, kde-format
+msgid "Home Page"
+msgstr "Etxeko orria"
+
+#: src/views/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Page to load initially and default."
+msgstr "Hasieran eta lehenespenez kargatzeko orria."
+
+#: src/views/widgets/SettingsDialog.qml:32
+#, kde-format
+msgid "Search Engine"
+msgstr "Bilatzailea"
+
+#: src/views/widgets/SettingsDialog.qml:33
+#, kde-format
+msgid "Engine to be use for default searching content."
+msgstr "Lehenetsitako bilaketa-edukirako erabili behar den motorra."
+
+#: src/views/widgets/SettingsDialog.qml:44
+#, kde-format
+msgid "Auto Load Images"
+msgstr "Zamatu irudiak automatikoki"
+
+#: src/views/widgets/SettingsDialog.qml:45
+#, kde-format
+msgid "Automatically loads images on web pages."
+msgstr "Web-orrietako irudiak automatikoki zamatzen ditu."
+
+#: src/views/widgets/SettingsDialog.qml:58
+#, kde-format
+msgid "Hyperlink Auditing"
+msgstr "Hiperesteken ikuskapena"
+
+#: src/views/widgets/SettingsDialog.qml:59
+#, kde-format
+msgid "Enables support for the ping attribute for hyperlinks."
+msgstr "Hiperesteken «ping» atributuarentzako euskarria gaitzen du."
+
+#: src/views/widgets/SettingsDialog.qml:73
+#, kde-format
+msgid "Features"
+msgstr "Ezaugarriak"
+
+#: src/views/widgets/SettingsDialog.qml:74
+#, kde-format
+msgid "Configure the browser plugins and features."
+msgstr "Konfiguratu arakatzailearen pluginak eta ezaugarriak."
+
+#: src/views/widgets/SettingsDialog.qml:78
+#, kde-format
+msgid "Accelerated 2D Canvas"
+msgstr "2D oihal azeleratua"
+
+#: src/views/widgets/SettingsDialog.qml:79
+#, kde-format
+msgid ""
+"Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
+"makes many painting operations faster, but slows down pixel access."
+msgstr ""
+"HTML 5eko 2D oihala OpenGL «framebuffer» bat izan behar den zehazten du. "
+"Horrek margotzeko eragiketa asko azkartzen ditu, baina pixelak atzitzea "
+"moteltzen du."
+
+#: src/views/widgets/SettingsDialog.qml:92
+#, kde-format
+msgid "PDF Viewer"
+msgstr "PDF erakuslea"
+
+#: src/views/widgets/SettingsDialog.qml:93
+#, kde-format
+msgid ""
+"PDF documents will be opened in the internal PDF viewer instead of being "
+"downloaded."
+msgstr "PDF dokumentuak zama-jaitsi ordez barneko PDF erakuslean irekiko dira."
+
+#: src/views/widgets/SettingsDialog.qml:106
+#, kde-format
+msgid "Plugins Enabled"
+msgstr "Pluginak gaituta"
+
+#: src/views/widgets/SettingsDialog.qml:107
+#, kde-format
+msgid "Enables support for Pepper plugins, such as the Flash player."
+msgstr ""
+"Pepper pluginentzako euskarria gaitzen du, Flash player-rentzat adibidez."
+
+#: src/views/widgets/SettingsDialog.qml:121
+#, kde-format
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: src/views/widgets/SettingsDialog.qml:122
+#, kde-format
+msgid "Configure JavaScript behaviour"
+msgstr "Konfiguratu JavaScript-en jokabidea"
+
+#: src/views/widgets/SettingsDialog.qml:126
+#, kde-format
+msgid "Javascript Enabled"
+msgstr "Javascript gaituta"
+
+#: src/views/widgets/SettingsDialog.qml:127
+#, kde-format
+msgid "Enables the running of JavaScript programs."
+msgstr "JavaScript-en programak ibiltzea gaitzen du."
+
+#: src/views/widgets/SettingsDialog.qml:140
+#, kde-format
+msgid "Javascript Can Access Clipboard"
+msgstr "Javascript-ek arbela atzi dezake"
+
+#: src/views/widgets/SettingsDialog.qml:141
+#, kde-format
+msgid "Allows JavaScript programs to read from or write to the clipboard."
+msgstr ""
+"JavaScript programei arbeletik irakurtzeko eta arbelean idazteko baimena "
+"ematen die."
+
+#: src/views/widgets/SettingsDialog.qml:154
+#, kde-format
+msgid "Javascript Can Paste"
+msgstr "Javascript-ek itsas dezake"
+
+#: src/views/widgets/SettingsDialog.qml:155
+#, kde-format
+msgid "Enables JavaScript execCommand(paste)."
+msgstr "JavaScript-en «execCommand(paste)» gaitzen du."
+
+#: src/views/widgets/SettingsDialog.qml:168
+#, kde-format
+msgid "Allow Window Activation From JavaScript"
+msgstr "JavaScript-etik leihoak aktibatzeko baimena ematen du"
+
+#: src/views/widgets/SettingsDialog.qml:169
+#, kde-format
+msgid "Allows the window.focus() method in JavaScript."
+msgstr "JavaScript-eko «window.focus()» metodoa erabiltzeko baimena ematen du."
+
+#: src/views/widgets/SettingsDialog.qml:184
+#, kde-format
+msgid "Security & Privacy"
+msgstr "Segurtasuna eta pribatutasuna"
+
+#: src/views/widgets/SettingsDialog.qml:185
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+"Konfiguratu editorearen itxura eta izaera. Ezarpenak osotasunari ezarriko "
+"zaizkio"
+
+#: src/views/widgets/SettingsDialog.qml:189
+#, kde-format
+msgid "Allow Geolocation On Insecure Origins"
+msgstr "Baimendu geo-kokapena jatorri ez-seguruetan"
+
+#: src/views/widgets/SettingsDialog.qml:190
+#, kde-format
+msgid ""
+"Only secure origins such as HTTPS have been able to request Geolocation "
+"features."
+msgstr ""
+"HTTPS gisako sorburu seguruak dira geo-kokapen ezaugarriak eskatzeko gai."
+
+#: src/views/widgets/SettingsDialog.qml:203
+#, kde-format
+msgid "Allow Running Insecure Content"
+msgstr "Eduki ez-segurua exekutatzeko aukera ematen du"
+
+#: src/views/widgets/SettingsDialog.qml:204
+#, kde-format
+msgid ""
+"By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
+"from HTTP URLs."
+msgstr ""
+"Era lehenetsian, HTTP orriek ezin dute HTTP URLetatik JavaScript, CSS, "
+"pluginik edo web-hargunerik exekutatu."
+
+#: src/views/widgets/SettingsDialog.qml:218
+#, kde-format
+msgid "DNS Prefetch Enabled"
+msgstr "DNS aurrez eskuratzea gaitzen du"
+
+#: src/views/widgets/SettingsDialog.qml:219
+#, kde-format
+msgid ""
+"Enables speculative prefetching of DNS records for HTML links before they "
+"are activated."
+msgstr ""
+"HTML estekak aktibatu aurretik, haietarako aurrez eskuratze espekulatiboa "
+"gaitzen du."
+
+#: src/views/widgets/SettingsDialog.qml:232
+#, kde-format
+msgid "Local Content Can Access File Urls"
+msgstr "Eduki lokalak fitxategien URLak atzi ditzake"
+
+#: src/views/widgets/SettingsDialog.qml:233
+#, kde-format
+msgid "Allows locally loaded documents to access other local URLs."
+msgstr ""
+"Lokalean zamatutako dokumentuei beste URL lokal batzuk atzitzen uzten die."
+
+#: src/views/widgets/SettingsDialog.qml:246
+#, kde-format
+msgid "Local Content Can Access Remote Urls"
+msgstr "Eduki lokalak urreneko URLak atzi ditzake"
+
+#: src/views/widgets/SettingsDialog.qml:247
+#, kde-format
+msgid "Allows locally loaded documents to access remote URLs."
+msgstr "Lokalean zamatutako dokumentuei urruneko URLak atzitzen uzten die."
+
+#: src/views/widgets/SettingsDialog.qml:260
+#, kde-format
+msgid "Local Storage"
+msgstr "Biltegiratze lokala"
+
+#: src/views/widgets/SettingsDialog.qml:261
+#, kde-format
+msgid "Enables support for the HTML 5 local storage feature."
+msgstr "HTML 5eko biltegiratze lokala ezaugarriaren euskarria gaitzen du."
+
+#: src/views/widgets/SettingsDialog.qml:274
+#, kde-format
+msgid "WebRTC Public Interfaces Only"
+msgstr "WebRTC-ren interfaze publikoak bakarrik"
+
+#: src/views/widgets/SettingsDialog.qml:275
+#, kde-format
+msgid ""
+"Limits WebRTC to public IP addresses only. When disabled WebRTC may also use "
+"local network IP addresses, but remote hosts can also see your local network "
+"IP address."
+msgstr ""
+"WebRTC bakarrik IP publikoetara mugatzen du. Ezgaituta dagoenean, WebRTC-ek "
+"sare lokaleko IP helbideak ere erabil ditzake, baina urruneko ostalariek ere "
+"ikus ditzakete zure sare lokaleko IP helbidea."

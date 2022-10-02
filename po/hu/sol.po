@@ -1,0 +1,485 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-sol package.
+#
+# Kristóf Kiszel <kiszel.kristof@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-sol\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-13 00:44+0000\n"
+"PO-Revision-Date: 2021-01-02 15:00+0100\n"
+"Last-Translator: Kristóf Kiszel <kiszel.kristof@gmail.com>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 21.03.70\n"
+
+#: src/main.cpp:37
+#, kde-format
+msgid "Fiery"
+msgstr ""
+
+#: src/main.cpp:37
+#, fuzzy, kde-format
+#| msgid "Sol allows you to browse the web and organize the web."
+msgid "Browse and organize the web."
+msgstr "A Sol lehetővé teszi a web böngészését és rendezését."
+
+#: src/main.cpp:38
+#, fuzzy, kde-format
+#| msgid "© 2020 Nitrux Development Team"
+msgid "© 2020-%1 Maui Development Team"
+msgstr "© A Nitrux fejlesztői, 2020."
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: src/main.cpp:39
+#, kde-format
+msgid "Developer"
+msgstr "Fejlesztő"
+
+#: src/main.qml:121
+#, kde-format
+msgid "Browser"
+msgstr ""
+
+#: src/main.qml:127
+#, kde-format
+msgid "Recent"
+msgstr ""
+
+#: src/main.qml:135
+#, kde-format
+msgid "Home"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:16
+#, kde-format
+msgid "Open in new tab"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:26
+#, kde-format
+msgid "Download"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:31
+#, kde-format
+msgid "Inspect"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:36
+#, kde-format
+msgid "Search..."
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:40
+#, kde-format
+msgid "Copy"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:44
+#, kde-format
+msgid "Copy link"
+msgstr ""
+
+#: src/views/browser/BrowserView.qml:27
+#, kde-format
+msgid "Start Browsing"
+msgstr ""
+
+#: src/views/browser/BrowserView.qml:28
+#, kde-format
+msgid "Enter a new URL or open a recent site."
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:88
+#, kde-format
+msgid "Search or enter URL"
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:157
+#, kde-format
+msgid "Search on default search engine"
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:273
+#, kde-format
+msgid "Next"
+msgstr "Következő"
+
+#: src/views/widgets/NavigationBar.qml:288
+#, kde-format
+msgid "New Tab"
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:295
+#, kde-format
+msgid "Incognito Tab"
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:303
+#, kde-format
+msgid "History"
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:313
+#, kde-format
+msgid "Downloads"
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:323
+#, kde-format
+msgid "BookMarks"
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:337
+#, kde-format
+msgid "Share"
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:343
+#, kde-format
+msgid "BookMark"
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:349
+#, kde-format
+msgid "Find"
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:359
+#, kde-format
+msgid "Settings"
+msgstr ""
+
+#: src/views/widgets/NavigationBar.qml:366
+#, kde-format
+msgid "About"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:13
+#, kde-format
+msgid "Navigation"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:14
+#, fuzzy, kde-format
+#| msgid "Configure the app UI, behaviour and plugins."
+msgid "Configure the app basic navigation features."
+msgstr "Az alkalmazás felületének, működésének és bővítményeinek beállítása."
+
+#: src/views/widgets/SettingsDialog.qml:19
+#, kde-format
+msgid "Home Page"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Page to load initially and default."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:32
+#, kde-format
+msgid "Search Engine"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:33
+#, kde-format
+msgid "Engine to be use for default searching content."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:44
+#, kde-format
+msgid "Auto Load Images"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:45
+#, kde-format
+msgid "Automatically loads images on web pages."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:58
+#, kde-format
+msgid "Hyperlink Auditing"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:59
+#, kde-format
+msgid "Enables support for the ping attribute for hyperlinks."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:73
+#, kde-format
+msgid "Features"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:74
+#, kde-format
+msgid "Configure the browser plugins and features."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:78
+#, kde-format
+msgid "Accelerated 2D Canvas"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:79
+#, kde-format
+msgid ""
+"Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
+"makes many painting operations faster, but slows down pixel access."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:92
+#, kde-format
+msgid "PDF Viewer"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:93
+#, kde-format
+msgid ""
+"PDF documents will be opened in the internal PDF viewer instead of being "
+"downloaded."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:106
+#, kde-format
+msgid "Plugins Enabled"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:107
+#, kde-format
+msgid "Enables support for Pepper plugins, such as the Flash player."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:121
+#, kde-format
+msgid "JavaScript"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:122
+#, kde-format
+msgid "Configure JavaScript behaviour"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:126
+#, kde-format
+msgid "Javascript Enabled"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:127
+#, kde-format
+msgid "Enables the running of JavaScript programs."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:140
+#, kde-format
+msgid "Javascript Can Access Clipboard"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:141
+#, kde-format
+msgid "Allows JavaScript programs to read from or write to the clipboard."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:154
+#, kde-format
+msgid "Javascript Can Paste"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:155
+#, kde-format
+msgid "Enables JavaScript execCommand(paste)."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:168
+#, kde-format
+msgid "Allow Window Activation From JavaScript"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:169
+#, kde-format
+msgid "Allows the window.focus() method in JavaScript."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:184
+#, kde-format
+msgid "Security & Privacy"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:185
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr "A szerkesztő megjelenésének beállítása. Ezek a beállítások globálisak"
+
+#: src/views/widgets/SettingsDialog.qml:189
+#, kde-format
+msgid "Allow Geolocation On Insecure Origins"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:190
+#, kde-format
+msgid ""
+"Only secure origins such as HTTPS have been able to request Geolocation "
+"features."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:203
+#, kde-format
+msgid "Allow Running Insecure Content"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:204
+#, kde-format
+msgid ""
+"By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
+"from HTTP URLs."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:218
+#, kde-format
+msgid "DNS Prefetch Enabled"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:219
+#, kde-format
+msgid ""
+"Enables speculative prefetching of DNS records for HTML links before they "
+"are activated."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:232
+#, kde-format
+msgid "Local Content Can Access File Urls"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:233
+#, kde-format
+msgid "Allows locally loaded documents to access other local URLs."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:246
+#, kde-format
+msgid "Local Content Can Access Remote Urls"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:247
+#, kde-format
+msgid "Allows locally loaded documents to access remote URLs."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:260
+#, kde-format
+msgid "Local Storage"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:261
+#, kde-format
+msgid "Enables support for the HTML 5 local storage feature."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:274
+#, kde-format
+msgid "WebRTC Public Interfaces Only"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:275
+#, kde-format
+msgid ""
+"Limits WebRTC to public IP addresses only. When disabled WebRTC may also use "
+"local network IP addresses, but remote hosts can also see your local network "
+"IP address."
+msgstr ""
+
+#~ msgid "Sol"
+#~ msgstr "Sol"
+
+#~ msgid "Previous"
+#~ msgstr "Előző"
+
+#~ msgid "General"
+#~ msgstr "Általános"
+
+#~ msgid "Enable places sidebar"
+#~ msgstr "Helyek oldalsáv bekapcsolása"
+
+#~ msgid "Open blank file by default"
+#~ msgstr "Üres fájl megnyitása alapértelmezés szerint"
+
+#~ msgid "Enable embedded terminal"
+#~ msgstr "Beágyazott terminál bekapcsolása"
+
+#~ msgid "Editor"
+#~ msgstr "Szerkesztő"
+
+#~ msgid "Show line numbers"
+#~ msgstr "Sorszámok megjelenítése"
+
+#~ msgid "Show syntax highlighting languages"
+#~ msgstr "A kiemelhető szintaxisú nyelvek megjelenítése"
+
+#~ msgid "Enable syntax highlighting"
+#~ msgstr "Szintaxiskiemelés bekapcsolása"
+
+#~ msgid "Fonts"
+#~ msgstr "Betűkészletek"
+
+#~ msgid "Configure the global editor font family and size"
+#~ msgstr "A szerkesztő betűkészletének és betűméretének beállítása"
+
+#~ msgid "Family"
+#~ msgstr "Család"
+
+#~ msgid "Size"
+#~ msgstr "Méret"
+
+#~ msgid "Style"
+#~ msgstr "Stílus"
+
+#~ msgid ""
+#~ "Configure the style of the syntax highlighting. This configuration in not "
+#~ "applied for rich text formats."
+#~ msgstr ""
+#~ "A szintaxiskiemelés stílusának beállítása. Ez a beállítás nem érvényes a "
+#~ "Rich Text formátumokra."
+
+#~ msgid "Theme"
+#~ msgstr "Téma"
+
+#~ msgid "Color"
+#~ msgstr "Szín"
+
+#~ msgid "Interface"
+#~ msgstr "Felület"
+
+#~ msgid "Configure the app UI."
+#~ msgstr "Az alkalmazás felületének beállítása."
+
+#~ msgid "Focus Mode"
+#~ msgstr "Fókusz mód"
+
+#~ msgid "Translucent Sidebar"
+#~ msgstr "Áttetsző oldalsáv"
+
+#~ msgid "Dark Mode"
+#~ msgstr "Sötét mód"
+
+#~ msgid "Create a new document"
+#~ msgstr "Új dokumentum létrehozása"
+
+#~ msgid ""
+#~ "You can create a new document by clicking the New File button, or here."
+#~ "<br>Alternative you can open existing files from the left places sidebar "
+#~ "or by clicking the Open button"
+#~ msgstr ""
+#~ "Új dokumentumot az Új fájl gombra vagy ide kattintva hozhat létre."
+#~ "<br>Megnyithat egy meglévő fájlt is a bal oldali Helyek oldalsávról, vagy "
+#~ "a Megnyitás gombra kattintva"
