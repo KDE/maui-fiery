@@ -182,7 +182,7 @@ msgstr "Pàgina d'inici"
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Page to load initially and default."
-msgstr "Pàgina a carregar inicialment i predeterminada."
+msgstr "Pàgina que es carregarà inicialment i predeterminada."
 
 #: src/views/widgets/SettingsDialog.qml:32
 #, kde-format
@@ -192,7 +192,7 @@ msgstr "Motor de busca"
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Engine to be use for default searching content."
-msgstr "El motor a utilitzar per a la busca predeterminada de contingut."
+msgstr "El motor que s'utilitzarà per a la busca predeterminada de contingut."
 
 #: src/views/widgets/SettingsDialog.qml:44
 #, kde-format
