@@ -292,7 +292,7 @@ msgstr "JavaScript pot accedir al porta-retalls"
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr ""
-"Permet que els programes JavaScript lligguen o escriguen al porta-retalls."
+"Permet que els programes JavaScript lligen o escriguen al porta-retalls."
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
