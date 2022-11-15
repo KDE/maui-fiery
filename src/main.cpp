@@ -30,9 +30,7 @@ int main(int argc, char *argv[])
 
     app.setOrganizationName("Maui");
     app.setWindowIcon(QIcon(":/fiery.svg"));
-
-    MauiApp::instance()->setIconName("qrc:/fiery.svg");
-
+    
     KLocalizedString::setApplicationDomain("fiery");
     KAboutData about(QStringLiteral("fiery"), i18n("Fiery"), FIERY_VERSION_STRING, i18n("Browse and organize the web."),
                      KAboutLicense::LGPL_V3,  i18n("© 2020-%1 Maui Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
@@ -44,6 +42,7 @@ int main(int argc, char *argv[])
     about.setProgramLogo(app.windowIcon());
 
     KAboutData::setApplicationData(about);
+    MauiApp::instance()->setIconName("qrc:/fiery.png");
 
     QCommandLineParser parser;
 
@@ -64,6 +63,8 @@ int main(int argc, char *argv[])
         //			Sol::getInstance()->requestUrls(args);
 
     }, Qt::QueuedConnection);
+
+        engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
     qmlRegisterType<surf>(FIERY_URI, 1, 0, "Surf");
 

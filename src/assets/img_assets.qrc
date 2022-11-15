@@ -5,5 +5,6 @@
     <qresource prefix="/">
         <file>internet.svg</file>
         <file>fiery.svg</file>
+        <file>fiery.png</file>
     </qresource>
 </RCC>
