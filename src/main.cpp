@@ -64,7 +64,8 @@ int main(int argc, char *argv[])
 
     }, Qt::QueuedConnection);
 
-        engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+
+    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
     qmlRegisterType<surf>(FIERY_URI, 1, 0, "Surf");
 

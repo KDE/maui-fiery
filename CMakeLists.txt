@@ -78,6 +78,8 @@ ecm_setup_version(${FIERY_VERSION}
 
 add_subdirectory(src)
 
+ki18n_install(po)
+
 install(TARGETS ${PROJECT_NAME} ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES org.kde.fiery.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
 install(FILES org.kde.fiery.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
