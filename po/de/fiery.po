@@ -1,232 +1,230 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-sol package.
+# Burkhard Lück <lueck@hube-lueck.de>, 2021.
 #
-# Łukasz Wojniłowicz <<lukasz.wojnilowicz@gmail.com>>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-13 00:44+0000\n"
-"PO-Revision-Date: 2021-10-31 07:55+0100\n"
-"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
-"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
-"Language: pl\n"
+"POT-Creation-Date: 2022-11-16 00:46+0000\n"
+"PO-Revision-Date: 2021-06-11 17:16+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 20.12.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/main.cpp:37
+#: src/main.cpp:35
 #, kde-format
 msgid "Fiery"
 msgstr ""
 
-#: src/main.cpp:37
+#: src/main.cpp:35
 #, kde-format
 msgid "Browse and organize the web."
-msgstr "Przeglądaj i organizuj sieć."
+msgstr "Das Web durchsuchen und organisieren."
 
-#: src/main.cpp:38
+#: src/main.cpp:36
 #, kde-format
 msgid "© 2020-%1 Maui Development Team"
-msgstr "© 2020-%1 Zespół programistów Maui"
+msgstr ""
 
-#: src/main.cpp:39
+#: src/main.cpp:37
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "Camilo Higuita"
 
-#: src/main.cpp:39
+#: src/main.cpp:37
 #, kde-format
 msgid "Developer"
-msgstr "Programista"
+msgstr "Entwickler"
 
 #: src/main.qml:121
 #, kde-format
 msgid "Browser"
-msgstr "Przeglądarka"
+msgstr "Browser"
 
 #: src/main.qml:127
 #, kde-format
 msgid "Recent"
-msgstr "Ostatnie"
+msgstr "Zuletzt verwendet"
 
 #: src/main.qml:135
 #, kde-format
 msgid "Home"
-msgstr "Dom"
+msgstr "Startseite"
 
 #: src/views/browser/ActionsMenu.qml:16
 #, kde-format
 msgid "Open in new tab"
-msgstr "Otwórz w nowej karcie"
+msgstr "In neuem Unterfenster öffnen"
 
 #: src/views/browser/ActionsMenu.qml:26
 #, kde-format
 msgid "Download"
-msgstr "Pobierz"
+msgstr "Herunterladen"
 
 #: src/views/browser/ActionsMenu.qml:31
 #, kde-format
 msgid "Inspect"
-msgstr "Inspekcja"
+msgstr "Untersuchen"
 
 #: src/views/browser/ActionsMenu.qml:36
 #, kde-format
 msgid "Search..."
-msgstr "Szukaj..."
+msgstr "Suchen ..."
 
 #: src/views/browser/ActionsMenu.qml:40
 #, kde-format
 msgid "Copy"
-msgstr "Skopiuj"
+msgstr "Kopieren"
 
 #: src/views/browser/ActionsMenu.qml:44
 #, kde-format
 msgid "Copy link"
-msgstr "Skopiuj odnośnik"
+msgstr "Verknüpfung kopieren"
 
 #: src/views/browser/BrowserView.qml:27
 #, kde-format
 msgid "Start Browsing"
-msgstr "Rozpocznij przeglądanie"
+msgstr "Browsen starten"
 
 #: src/views/browser/BrowserView.qml:28
 #, kde-format
 msgid "Enter a new URL or open a recent site."
-msgstr "Wpisz nowy adres URL lub otwórz ostatnią stronę."
+msgstr "Geben Sie eine URL ein oder öffnen Sie eine zuletzt besuchte Seite."
 
 #: src/views/widgets/NavigationBar.qml:88
 #, kde-format
 msgid "Search or enter URL"
-msgstr "Wyszukaj lub wpisz adres URL"
+msgstr "Suchen oder eine URL eingeben"
 
 #: src/views/widgets/NavigationBar.qml:157
 #, kde-format
 msgid "Search on default search engine"
-msgstr "Szukaj przy pomocy domyślnego silnika wyszukiwania"
+msgstr "Suche mit Standardsuchmaschine"
 
 #: src/views/widgets/NavigationBar.qml:273
 #, kde-format
 msgid "Next"
-msgstr "Następny"
+msgstr "Weiter"
 
 #: src/views/widgets/NavigationBar.qml:288
 #, kde-format
 msgid "New Tab"
-msgstr "Nowa karta"
+msgstr "Neues Unterfenster"
 
 #: src/views/widgets/NavigationBar.qml:295
 #, kde-format
 msgid "Incognito Tab"
-msgstr "Karta incognito"
+msgstr "Inkognito-Unterfenster"
 
 #: src/views/widgets/NavigationBar.qml:303
 #, kde-format
 msgid "History"
-msgstr "Historia"
+msgstr "Verlauf"
 
 #: src/views/widgets/NavigationBar.qml:313
 #, kde-format
 msgid "Downloads"
-msgstr "Pobierane"
+msgstr "Downloads"
 
 #: src/views/widgets/NavigationBar.qml:323
 #, kde-format
 msgid "BookMarks"
-msgstr "Zakładki"
+msgstr "Lesezeichen"
 
 #: src/views/widgets/NavigationBar.qml:337
 #, kde-format
 msgid "Share"
-msgstr "Udostępnij"
+msgstr "Teilen"
 
 #: src/views/widgets/NavigationBar.qml:343
 #, kde-format
 msgid "BookMark"
-msgstr "Zakładka"
+msgstr "Lesezeichen"
 
 #: src/views/widgets/NavigationBar.qml:349
 #, kde-format
 msgid "Find"
-msgstr "Znajdź"
+msgstr "Suchen"
 
 #: src/views/widgets/NavigationBar.qml:359
 #, kde-format
 msgid "Settings"
-msgstr "Ustawienia"
+msgstr "Einstellungen"
 
 #: src/views/widgets/NavigationBar.qml:366
 #, kde-format
 msgid "About"
-msgstr "O programie"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:13
 #, kde-format
 msgid "Navigation"
-msgstr "Poruszanie się"
+msgstr "Navigation"
 
 #: src/views/widgets/SettingsDialog.qml:14
 #, kde-format
 msgid "Configure the app basic navigation features."
-msgstr "Ustawienia podstawowych cech poruszania się."
+msgstr "Einrichtung der grundlegenden Navigationsfunktionen der App."
 
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Home Page"
-msgstr "Strona domowa"
+msgstr "Startseite"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Page to load initially and default."
-msgstr "Strona do wczytania na początku i w domyśle."
+msgstr "Standardseite, die beim Start geladen werden soll."
 
 #: src/views/widgets/SettingsDialog.qml:32
 #, kde-format
 msgid "Search Engine"
-msgstr "Wyszukiwarka"
+msgstr "Suchmaschine"
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Engine to be use for default searching content."
-msgstr "Silnik domyślnie używany do wyszukiwania treści."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:44
 #, kde-format
 msgid "Auto Load Images"
-msgstr "Sam wczytuj obrazy"
+msgstr "Bilder automatisch laden"
 
 #: src/views/widgets/SettingsDialog.qml:45
 #, kde-format
 msgid "Automatically loads images on web pages."
-msgstr "Sam wczytuje obrazy na stronach sieciowych."
+msgstr "Lädt automatisch Bilder von Webseiten."
 
 #: src/views/widgets/SettingsDialog.qml:58
 #, kde-format
 msgid "Hyperlink Auditing"
-msgstr "Audyt hiperłączy"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:59
 #, kde-format
 msgid "Enables support for the ping attribute for hyperlinks."
-msgstr "Włącza obsługę atrybutu ping dla hiperłączy."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:73
 #, kde-format
 msgid "Features"
-msgstr "Możliwości"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:74
 #, kde-format
 msgid "Configure the browser plugins and features."
-msgstr "Ustawienia wtyczek i możliwości przeglądarki."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:78
 #, kde-format
 msgid "Accelerated 2D Canvas"
-msgstr "Przyspieszone płótno 2D"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:79
 #, kde-format
@@ -234,13 +232,11 @@ msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
 "makes many painting operations faster, but slows down pixel access."
 msgstr ""
-"Określa czy płótno 2D HTML 5 powinno być buforem klatek OpenGL. Przyspiesza "
-"to wiele działań malowania, spowalniając dostęp do pikseli."
 
 #: src/views/widgets/SettingsDialog.qml:92
 #, kde-format
 msgid "PDF Viewer"
-msgstr "Przeglądarka PDF"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:93
 #, kde-format
@@ -248,18 +244,16 @@ msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
 msgstr ""
-"Dokumenty PDF będą otwierane w wewnętrznej przeglądarce PDF zamiast być "
-"pobieranymi."
 
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "Plugins Enabled"
-msgstr "Wtyczki włączone"
+msgstr "Module aktiviert"
 
 #: src/views/widgets/SettingsDialog.qml:107
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
-msgstr "Włącza obsługę wtyczek Pepper, takich jak odtwarzacz Flash."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:121
 #, kde-format
@@ -269,63 +263,65 @@ msgstr "JavaScript"
 #: src/views/widgets/SettingsDialog.qml:122
 #, kde-format
 msgid "Configure JavaScript behaviour"
-msgstr "Ustawienia zachowania JavaScript"
+msgstr "Einstellungen für das Verhalten von JavaScript"
 
 #: src/views/widgets/SettingsDialog.qml:126
 #, kde-format
 msgid "Javascript Enabled"
-msgstr "Javascript włączone"
+msgstr "JavaScript aktiviert"
 
 #: src/views/widgets/SettingsDialog.qml:127
 #, kde-format
 msgid "Enables the running of JavaScript programs."
-msgstr "Umożliwia uruchamianie programów JavaScript."
+msgstr "Aktiviert die Ausführung von JavaScript-Programmen."
 
 #: src/views/widgets/SettingsDialog.qml:140
 #, kde-format
 msgid "Javascript Can Access Clipboard"
-msgstr "Javascript ma dostęp do schowka"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:141
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
-msgstr "Zezwól programom JavaScript odczyt i zapis do schowka."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
 msgid "Javascript Can Paste"
-msgstr "Javascript może wklejać"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:155
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
-msgstr "Włącz JavaScript execCommand(paste)."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:168
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
-msgstr "Zezwól na podnoszenie oknie z poziomu JavaScriptu"
+msgstr "Fensteraktivierung mit JavaScript erlauben"
 
 #: src/views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
-msgstr "Daje możliwość używania metody window.focus() w JavaScript."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:184
 #, kde-format
 msgid "Security & Privacy"
-msgstr "Bezpieczeństwo i prywatność"
+msgstr "Sicherheit & Privatsphäre"
 
 #: src/views/widgets/SettingsDialog.qml:185
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
-msgstr "Ustaw wygląd edytora. Ustawienia te są stosowane globalnie"
+msgstr ""
+"Einstellungen für das Erscheinungsbild des Editors, die Einstellungen werden "
+"global angewendet"
 
 #: src/views/widgets/SettingsDialog.qml:189
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
-msgstr "Zezwól na geopołożenie na niebezpiecznych adresach"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:190
 #, kde-format
@@ -333,13 +329,11 @@ msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
 "features."
 msgstr ""
-"Tylko bezpieczne adresy takie jak HTTPS mają zgodę na żądanie danych "
-"geopołożenia."
 
 #: src/views/widgets/SettingsDialog.qml:203
 #, kde-format
 msgid "Allow Running Insecure Content"
-msgstr "Zezwól na uruchamianie niebezpiecznej treści"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:204
 #, kde-format
@@ -347,13 +341,11 @@ msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
 "from HTTP URLs."
 msgstr ""
-"Domyślnie, strony HTTPS nie mogą uruchamiać JavaScript, CSS, wtyczek lub "
-"gniazd sieciowych z adresów URL HTTP."
 
 #: src/views/widgets/SettingsDialog.qml:218
 #, kde-format
 msgid "DNS Prefetch Enabled"
-msgstr "Włączone pobieranie DNS z wyprzedzeniem"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:219
 #, kde-format
@@ -361,46 +353,41 @@ msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
 "are activated."
 msgstr ""
-"Włącza spekulacyjne pobieranie wstępne rekordów DNS z odnośników HTML przed "
-"ich włączeniem."
 
 #: src/views/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Local Content Can Access File Urls"
-msgstr "Lokalna treść może uzyskiwać dostęp do adresów URL plików"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:233
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
-"Zezwól lokalnie wczytanym dokumentom na dostęp do innych lokalnych adresów "
-"URL."
 
 #: src/views/widgets/SettingsDialog.qml:246
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
-msgstr "Lokalna treść może uzyskiwać dostęp do zdalnych adresów URL"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
 msgstr ""
-"Zezwala lokalnie wczytanym dokumentom na dostęp do zdalnych adresów URL."
 
 #: src/views/widgets/SettingsDialog.qml:260
 #, kde-format
 msgid "Local Storage"
-msgstr "Lokalna przestrzeń dyskowa"
+msgstr "Lokaler Speicher"
 
 #: src/views/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
-msgstr "Włącza obsługę lokalnego przechowywania HTML 5."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
-msgstr "Tylko publiczne interfejsy WebRTC"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:275
 #, kde-format
@@ -409,91 +396,3 @@ msgid ""
 "local network IP addresses, but remote hosts can also see your local network "
 "IP address."
 msgstr ""
-"Ogranicza WebRTC tylko do publicznych adresów IP. Gdy wyłączone WebRTC może "
-"używać także adresów IP z lokalnej sieci, jednakże umożliwi to zdalnym "
-"gospodarzą widok adresów IP z twojej lokalnej sieci."
-
-#~ msgid "Sol"
-#~ msgstr "Sol"
-
-#~ msgid "Previous"
-#~ msgstr "Poprzedni"
-
-#~ msgid "General"
-#~ msgstr "Ogólne"
-
-#~ msgid "Enable places sidebar"
-#~ msgstr "Włącz pasek boczny miejsc"
-
-#~ msgid "Open blank file by default"
-#~ msgstr "Domyślnie otwórz pusty plik"
-
-#~ msgid "Enable embedded terminal"
-#~ msgstr "Włącz osadzony terminal"
-
-#~ msgid "Editor"
-#~ msgstr "Edytor"
-
-#~ msgid "Show line numbers"
-#~ msgstr "Pokaż numery wierszy"
-
-#~ msgid "Show syntax highlighting languages"
-#~ msgstr "Pokaż języki podświetlania składni"
-
-#~ msgid "Enable syntax highlighting"
-#~ msgstr "Włącz podświetlanie składni"
-
-#~ msgid "Fonts"
-#~ msgstr "Czcionki"
-
-#~ msgid "Configure the global editor font family and size"
-#~ msgstr "Ustawienia rodzaju czcionki i jej rozmiaru globalnie dla edytora"
-
-#~ msgid "Family"
-#~ msgstr "Rodzina"
-
-#~ msgid "Size"
-#~ msgstr "Rozmiar"
-
-#~ msgid "Style"
-#~ msgstr "Wygląd"
-
-#~ msgid ""
-#~ "Configure the style of the syntax highlighting. This configuration in not "
-#~ "applied for rich text formats."
-#~ msgstr ""
-#~ "Ustawienia wyglądu podświetlania składni. Ustawienia te nie są stosowane "
-#~ "dla tekstu formatowanego."
-
-#~ msgid "Theme"
-#~ msgstr "Wygląd"
-
-#~ msgid "Color"
-#~ msgstr "Barwa"
-
-#~ msgid "Interface"
-#~ msgstr "Interfejs"
-
-#~ msgid "Configure the app UI."
-#~ msgstr "Ustawienia interfejsu programu."
-
-#~ msgid "Focus Mode"
-#~ msgstr "Tryb skupienia"
-
-#~ msgid "Translucent Sidebar"
-#~ msgstr "Prześwitujący pasek boczny"
-
-#~ msgid "Dark Mode"
-#~ msgstr "Tryb ciemny"
-
-#~ msgid "Create a new document"
-#~ msgstr "Utwórz nowy dokument"
-
-#~ msgid ""
-#~ "You can create a new document by clicking the New File button, or here."
-#~ "<br>Alternative you can open existing files from the left places sidebar "
-#~ "or by clicking the Open button"
-#~ msgstr ""
-#~ "Możesz utworzyć nowy dokument, naciskając na przycisk nowy plik lub tutaj."
-#~ "<br>Zamiennie możesz otworzyć istniejące pliki z paska miejsc po lewej "
-#~ "lub po naciśnięciu przycisku otwarcia"

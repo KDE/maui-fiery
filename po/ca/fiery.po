@@ -1,231 +1,233 @@
-# Copyright (C) YEAR This file is copyright:
-# This file is distributed under the same license as the maui-sol package.
+# Translation of fiery.po to Catalan
+# Copyright (C) 2022 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2020, 2021, 2022.
+# Josep M. Ferrer <txemaq@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-13 00:44+0000\n"
-"PO-Revision-Date: 2022-08-15 15:35+0200\n"
-"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
-"Language-Team: \n"
-"Language: nl\n"
+"POT-Creation-Date: 2022-11-16 00:46+0000\n"
+"PO-Revision-Date: 2022-11-16 09:39+0100\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.04.3\n"
+"X-Generator: Lokalize 20.12.0\n"
 
-#: src/main.cpp:37
+#: src/main.cpp:35
 #, kde-format
 msgid "Fiery"
 msgstr "Fiery"
 
-#: src/main.cpp:37
+#: src/main.cpp:35
 #, kde-format
 msgid "Browse and organize the web."
-msgstr "Bladeren in het web en het organiseren."
+msgstr "Navega i organitza la web."
 
-#: src/main.cpp:38
+#: src/main.cpp:36
 #, kde-format
 msgid "© 2020-%1 Maui Development Team"
-msgstr "© 2020-%1 Ontwikkelteam van Maui"
+msgstr "© 2020-%1 Maui Development Team"
 
-#: src/main.cpp:39
+#: src/main.cpp:37
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "Camilo Higuita"
 
-#: src/main.cpp:39
+#: src/main.cpp:37
 #, kde-format
 msgid "Developer"
-msgstr "Ontwikkelaar"
+msgstr "Desenvolupador"
 
 #: src/main.qml:121
 #, kde-format
 msgid "Browser"
-msgstr "Browser"
+msgstr "Navegador"
 
 #: src/main.qml:127
 #, kde-format
 msgid "Recent"
-msgstr "Recent"
+msgstr "Recents"
 
 #: src/main.qml:135
 #, kde-format
 msgid "Home"
-msgstr "Home"
+msgstr "Inici"
 
 #: src/views/browser/ActionsMenu.qml:16
 #, kde-format
 msgid "Open in new tab"
-msgstr "In nieuw tabblad openen"
+msgstr "Obre en una pestanya nova"
 
 #: src/views/browser/ActionsMenu.qml:26
 #, kde-format
 msgid "Download"
-msgstr "Downloaden"
+msgstr "Baixada"
 
 #: src/views/browser/ActionsMenu.qml:31
 #, kde-format
 msgid "Inspect"
-msgstr "Inspecteren"
+msgstr "Inspecciona"
 
 #: src/views/browser/ActionsMenu.qml:36
 #, kde-format
 msgid "Search..."
-msgstr "Zoeken..."
+msgstr "Cerca..."
 
 #: src/views/browser/ActionsMenu.qml:40
 #, kde-format
 msgid "Copy"
-msgstr "Kopiëren"
+msgstr "Copia"
 
 #: src/views/browser/ActionsMenu.qml:44
 #, kde-format
 msgid "Copy link"
-msgstr "Koppeling kopiëren"
+msgstr "Copia l'enllaç"
 
 #: src/views/browser/BrowserView.qml:27
 #, kde-format
 msgid "Start Browsing"
-msgstr "Bladeren starten"
+msgstr "Inicia la navegació"
 
 #: src/views/browser/BrowserView.qml:28
 #, kde-format
 msgid "Enter a new URL or open a recent site."
-msgstr "Een nieuwe URL invoeren of een recente site openen."
+msgstr "Introduïu un URL nou o obriu un lloc recent."
 
 #: src/views/widgets/NavigationBar.qml:88
 #, kde-format
 msgid "Search or enter URL"
-msgstr "Zoek of voer een URL in"
+msgstr "Cerca o introduïu un URL"
 
 #: src/views/widgets/NavigationBar.qml:157
 #, kde-format
 msgid "Search on default search engine"
-msgstr "Zoeken op de standaard zoekmachine"
+msgstr "Cerca amb motor predeterminat de cerca"
 
 #: src/views/widgets/NavigationBar.qml:273
 #, kde-format
 msgid "Next"
-msgstr "Volgende"
+msgstr "Següent"
 
 #: src/views/widgets/NavigationBar.qml:288
 #, kde-format
 msgid "New Tab"
-msgstr "Nieuw tabblad"
+msgstr "Pestanya nova"
 
 #: src/views/widgets/NavigationBar.qml:295
 #, kde-format
 msgid "Incognito Tab"
-msgstr "Incognito tabblad"
+msgstr "Pestanya d'incògnit"
 
 #: src/views/widgets/NavigationBar.qml:303
 #, kde-format
 msgid "History"
-msgstr "Geschiedenis"
+msgstr "Historial"
 
 #: src/views/widgets/NavigationBar.qml:313
 #, kde-format
 msgid "Downloads"
-msgstr "Downloads"
+msgstr "Baixades"
 
 #: src/views/widgets/NavigationBar.qml:323
 #, kde-format
 msgid "BookMarks"
-msgstr "Bladwijzers"
+msgstr "Adreces d'interès"
 
 #: src/views/widgets/NavigationBar.qml:337
 #, kde-format
 msgid "Share"
-msgstr "Delen"
+msgstr "Comparteix"
 
 #: src/views/widgets/NavigationBar.qml:343
 #, kde-format
 msgid "BookMark"
-msgstr "Bladwijzer"
+msgstr "Adreça d'interès"
 
 #: src/views/widgets/NavigationBar.qml:349
 #, kde-format
 msgid "Find"
-msgstr "Zoeken"
+msgstr "Cerca"
 
 #: src/views/widgets/NavigationBar.qml:359
 #, kde-format
 msgid "Settings"
-msgstr "Instellingen"
+msgstr "Configuració"
 
 #: src/views/widgets/NavigationBar.qml:366
 #, kde-format
 msgid "About"
-msgstr "Info over"
+msgstr "Quant al"
 
 #: src/views/widgets/SettingsDialog.qml:13
 #, kde-format
 msgid "Navigation"
-msgstr "Navigatie"
+msgstr "Navegació"
 
 #: src/views/widgets/SettingsDialog.qml:14
 #, kde-format
 msgid "Configure the app basic navigation features."
-msgstr "De basis navigatiefuncties van de toepassing configureren."
+msgstr "Configura les característiques bàsiques de navegació de l'aplicació."
 
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Home Page"
-msgstr "Homepagina"
+msgstr "Pàgina d'inici"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Page to load initially and default."
-msgstr "Initieel en standaard te laden pagina."
+msgstr "Pàgina a carregar inicialment i predeterminada."
 
 #: src/views/widgets/SettingsDialog.qml:32
 #, kde-format
 msgid "Search Engine"
-msgstr "Zoekmachine"
+msgstr "Motor de cerca"
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Engine to be use for default searching content."
-msgstr "Te gebruiken machine voor standaard zoeken naar inhoud."
+msgstr "El motor a usar per a la cerca predeterminada de contingut."
 
 #: src/views/widgets/SettingsDialog.qml:44
 #, kde-format
 msgid "Auto Load Images"
-msgstr "Afbeeldingen automatisch laden"
+msgstr "Carrega automàticament les imatges"
 
 #: src/views/widgets/SettingsDialog.qml:45
 #, kde-format
 msgid "Automatically loads images on web pages."
-msgstr "Laad automatisch afbeeldingen in webpagina's."
+msgstr "Carrega les imatges automàticament de les pàgines web."
 
 #: src/views/widgets/SettingsDialog.qml:58
 #, kde-format
 msgid "Hyperlink Auditing"
-msgstr "Controleren van hyperlink"
+msgstr "Auditoria dels enllaços"
 
 #: src/views/widgets/SettingsDialog.qml:59
 #, kde-format
 msgid "Enables support for the ping attribute for hyperlinks."
-msgstr "Schakelt ondersteuning in voor het ping-attribuut voor hyperlinks."
+msgstr "Activa la implementació de l'atribut «ping» per als enllaços."
 
 #: src/views/widgets/SettingsDialog.qml:73
 #, kde-format
 msgid "Features"
-msgstr "Mogelijkheden"
+msgstr "Característiques"
 
 #: src/views/widgets/SettingsDialog.qml:74
 #, kde-format
 msgid "Configure the browser plugins and features."
-msgstr "De browser-plug-ins en functies configureren."
+msgstr "Configura els connectors i les característiques del navegador."
 
 #: src/views/widgets/SettingsDialog.qml:78
 #, kde-format
 msgid "Accelerated 2D Canvas"
-msgstr "Versneld 2D werkveld"
+msgstr "Llenç accelerat 2D"
 
 #: src/views/widgets/SettingsDialog.qml:79
 #, kde-format
@@ -233,13 +235,14 @@ msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
 "makes many painting operations faster, but slows down pixel access."
 msgstr ""
-"Specificeert of het HTML 5 2D werkveld een OpenGL framebuffer moet zijn. Dit "
-"maakt veel tekenbewerkingen sneller, maar vertraagt toegang tot pixels."
+"Especifica si el llenç 2D de l'HTML 5 hauria de ser un «framebuffer» OpenGL. "
+"Això fa més ràpides moltes operacions de pintat, però alenteix l'accés als "
+"píxels."
 
 #: src/views/widgets/SettingsDialog.qml:92
 #, kde-format
 msgid "PDF Viewer"
-msgstr "PDF-viewer"
+msgstr "Visualitzador de PDF"
 
 #: src/views/widgets/SettingsDialog.qml:93
 #, kde-format
@@ -247,18 +250,19 @@ msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
 msgstr ""
-"PDF-documenten zullen in de interne PDF-viewer geopend worden in plaats van "
-"gedownload."
+"Els documents PDF s'obriran al visualitzador intern de PDF en lloc de baixar-"
+"los."
 
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "Plugins Enabled"
-msgstr "Plug-ins ingeschakeld"
+msgstr "Connectors activats"
 
 #: src/views/widgets/SettingsDialog.qml:107
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
-msgstr "Schakelt ondersteuning in voor Pepper-plug-ins, zoals de Flash-player."
+msgstr ""
+"Activa la implementació dels connectors Pepper, com el reproductor Flash."
 
 #: src/views/widgets/SettingsDialog.qml:121
 #, kde-format
@@ -268,67 +272,66 @@ msgstr "JavaScript"
 #: src/views/widgets/SettingsDialog.qml:122
 #, kde-format
 msgid "Configure JavaScript behaviour"
-msgstr "Gedrag van JavaScript configureren"
+msgstr "Configura el comportament del JavaScript"
 
 #: src/views/widgets/SettingsDialog.qml:126
 #, kde-format
 msgid "Javascript Enabled"
-msgstr "Javascript ingeschakeld"
+msgstr "JavaScript activat"
 
 #: src/views/widgets/SettingsDialog.qml:127
 #, kde-format
 msgid "Enables the running of JavaScript programs."
-msgstr "Schakelt het uitvoeren van JavaScript-programma's in."
+msgstr "Activa l'execució de programes JavaScript."
 
 #: src/views/widgets/SettingsDialog.qml:140
 #, kde-format
 msgid "Javascript Can Access Clipboard"
-msgstr "Javascript heeft toegang tot het klembord"
+msgstr "El JavaScript pot accedir al porta-retalls"
 
 #: src/views/widgets/SettingsDialog.qml:141
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr ""
-"Staat JavaScript programma's toe van en naar het klembord te lezen of te "
-"schrijven."
+"Permet que els programes JavaScript llegeixin o escriguin al porta-retalls."
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
 msgid "Javascript Can Paste"
-msgstr "Javascript kan plakken"
+msgstr "El JavaScript pot enganxar"
 
 #: src/views/widgets/SettingsDialog.qml:155
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
-msgstr "Schakelt JavaScript execCommand(paste) in."
+msgstr "Activa l'ordre JavaScript «execCommand(paste)»."
 
 #: src/views/widgets/SettingsDialog.qml:168
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
-msgstr "Staat activering van een venster toe vanuit JavaScript"
+msgstr "Permet l'activació de finestres des del JavaScript"
 
 #: src/views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
-msgstr "Staat de methode window.focus() in JavaScript toe."
+msgstr "Permet el mètode «window.focus()» en el JavaScript."
 
 #: src/views/widgets/SettingsDialog.qml:184
 #, kde-format
 msgid "Security & Privacy"
-msgstr "Beveiliging & privacy"
+msgstr "Seguretat i privadesa"
 
 #: src/views/widgets/SettingsDialog.qml:185
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
 msgstr ""
-"Het uiterlijk en gedrag van de tekstbewerker configureren. De instellingen "
-"worden globaal toegepast"
+"Configura l'aspecte i comportament de l'editor. La configuració s'aplica "
+"globalment"
 
 #: src/views/widgets/SettingsDialog.qml:189
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
-msgstr "Staat geolocatie toe op onveilige oorsprong"
+msgstr "Permet la geolocalització en orígens insegurs"
 
 #: src/views/widgets/SettingsDialog.qml:190
 #, kde-format
@@ -336,13 +339,13 @@ msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
 "features."
 msgstr ""
-"Alleen veilige oorsprongen zoals HTTPS zijn in staat om functies voor "
-"geolocatie op te vragen."
+"Només els orígens segurs com HTTPS poden requerir les característiques de "
+"geolocalització."
 
 #: src/views/widgets/SettingsDialog.qml:203
 #, kde-format
 msgid "Allow Running Insecure Content"
-msgstr "Uitvoeren van onveilige inhoud toestaan"
+msgstr "Permet l'execució de contingut insegur"
 
 #: src/views/widgets/SettingsDialog.qml:204
 #, kde-format
@@ -350,13 +353,13 @@ msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
 "from HTTP URLs."
 msgstr ""
-"Standaard kunnen HTTPS pagina's geen JavaScript, CSS, plug-ins of web-"
-"sockets uit HTTP-URL's uitvoeren."
+"De manera predeterminada, les pàgines HTTPS no poden executar JavaScript, "
+"CSS, connectors o WebSockets des d'URL HTTP."
 
 #: src/views/widgets/SettingsDialog.qml:218
 #, kde-format
 msgid "DNS Prefetch Enabled"
-msgstr "Vooraf DNS ophalen ingeschakeld"
+msgstr "Precàrrega DNS activada"
 
 #: src/views/widgets/SettingsDialog.qml:219
 #, kde-format
@@ -364,48 +367,47 @@ msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
 "are activated."
 msgstr ""
-"Speculatief vooraf ophalen van DNS records inschakelen voor HTML koppelingen "
-"voordat ze geactiveerd zijn."
+"Activa la precàrrega especulativa dels registres DNS per als enllaços HTML "
+"abans que s'activin."
 
 #: src/views/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Local Content Can Access File Urls"
-msgstr "Locale inhoud heeft toegang tot bestand-Url's"
+msgstr "El contingut local pot accedir a URL de fitxers"
 
 #: src/views/widgets/SettingsDialog.qml:233
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
-"Staat lokaal geladen documenten toe om toegang te hebben tot andere lokale "
-"URL's."
+"Permet que els documents carregats localment puguin accedir a altres URL "
+"locals."
 
 #: src/views/widgets/SettingsDialog.qml:246
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
-msgstr "Locale inhoud heeft toegang tot Url's op afstand"
+msgstr "El contingut local pot accedir a URL remots"
 
 #: src/views/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
-msgstr ""
-"Staat lokaal geladen documenten toe om toegang te hebben tot URL's op "
-"afstand."
+msgstr "Permet que els documents carregats localment accedeixin a URL remots."
 
 #: src/views/widgets/SettingsDialog.qml:260
 #, kde-format
 msgid "Local Storage"
-msgstr "Lokale opslag"
+msgstr "Emmagatzematge local"
 
 #: src/views/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
 msgstr ""
-"Schakelt ondersteuning in voor de functie voor lokale opslag in HTML 5."
+"Activa la implementació de la característica d'emmagatzematge local de "
+"l'HTML 5."
 
 #: src/views/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
-msgstr "Alleen publieke interfaces van WebRTC"
+msgstr "Només les interfícies públiques de WebRTC"
 
 #: src/views/widgets/SettingsDialog.qml:275
 #, kde-format
@@ -414,91 +416,6 @@ msgid ""
 "local network IP addresses, but remote hosts can also see your local network "
 "IP address."
 msgstr ""
-"Beperkt WebRTC tot publieke alleen IP-adressen. Indien uitgeschakeld kan "
-"WebRTC ook lokale netwerk IP-adressen gebruiken, maar hosts op afstand "
-"kunnen ook uw lokale netwerk IP-adres zien."
-
-#~ msgid "Sol"
-#~ msgstr "Sol"
-
-#~ msgid "Previous"
-#~ msgstr "Vorige"
-
-#~ msgid "General"
-#~ msgstr "Algemeen"
-
-#~ msgid "Enable places sidebar"
-#~ msgstr "Zijbalk met plaatsen inschakelen"
-
-#~ msgid "Open blank file by default"
-#~ msgstr "Leeg bestand als standaard openen"
-
-#~ msgid "Enable embedded terminal"
-#~ msgstr "Ingebedde terminal inschakelen"
-
-#~ msgid "Editor"
-#~ msgstr "Bewerker"
-
-#~ msgid "Show line numbers"
-#~ msgstr "Regelnummering tonen"
-
-#~ msgid "Show syntax highlighting languages"
-#~ msgstr "Talen met syntaxisaccentuering tonen"
-
-#~ msgid "Enable syntax highlighting"
-#~ msgstr "Syntaxisaccentuering aanzetten"
-
-#~ msgid "Fonts"
-#~ msgstr "Lettertypen"
-
-#~ msgid "Configure the global editor font family and size"
-#~ msgstr "De globale lettertypefamilie en -grootte configureren"
-
-#~ msgid "Family"
-#~ msgstr "Familie"
-
-#~ msgid "Size"
-#~ msgstr "Grootte"
-
-#~ msgid "Style"
-#~ msgstr "Stijl"
-
-#~ msgid ""
-#~ "Configure the style of the syntax highlighting. This configuration in not "
-#~ "applied for rich text formats."
-#~ msgstr ""
-#~ "De stijl van de syntaxisaccentuering configureren. Deze configuratie "
-#~ "wordt niet toegepast voor indelingen met opgemaakte tekst."
-
-#~ msgid "Theme"
-#~ msgstr "Thema"
-
-#~ msgid "Color"
-#~ msgstr "Kleur"
-
-#~ msgid "Interface"
-#~ msgstr "Interface"
-
-#~ msgid "Configure the app UI."
-#~ msgstr "De app-UI configureren."
-
-#~ msgid "Focus Mode"
-#~ msgstr "Modus Focus"
-
-#~ msgid "Translucent Sidebar"
-#~ msgstr "Doorzichtige zijbalk"
-
-#~ msgid "Dark Mode"
-#~ msgstr "Donkere modus"
-
-#~ msgid "Create a new document"
-#~ msgstr "Maak een nieuw document aan"
-
-#~ msgid ""
-#~ "You can create a new document by clicking the New File button, or here."
-#~ "<br>Alternative you can open existing files from the left places sidebar "
-#~ "or by clicking the Open button"
-#~ msgstr ""
-#~ "U kunt een nieuw document aanmaken door te klikken op de knop Nieuw "
-#~ "bestand of hier.<br>Alternatief kunt u bestaande bestanden openen uit de "
-#~ "linker zijbalk of door op de knop Openen te klikken"
+"Limita el WebRTC a només les adreces IP públiques. En desactivar el WebRTC "
+"també es poden usar les adreces IP de la xarxa local, però els servidors "
+"remots també poden veure l'adreça IP de la xarxa local."
