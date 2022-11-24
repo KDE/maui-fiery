@@ -87,7 +87,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="uk">Fiery</caption>
       <caption xml:lang="x-test">xxFieryxx</caption>
       <image type="source" width="1024" height="723">
-        https://nxos.org/wp-content/uploads/2021/05/buho-stable-1024x723.png
+        https://mauikit.org/wp-content/uploads/2022/11/fiery.jpg
       </image>
     </screenshot>
   </screenshots>
@@ -102,6 +102,8 @@ SPDX-License-Identifier: CC0-1.0
   <content_rating type="oars-1.0"/>
   <project_group>KDE</project_group>
   <releases>
-
+    <release version="1.0.1" date="2022-11-25">
+      <url>https://mauikit.org/blog/maui-2-2-1-release/</url>
+    </release>
   </releases>
 </component>
