@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-26 00:45+0000\n"
-"PO-Revision-Date: 2022-11-25 23:14+0100\n"
+"PO-Revision-Date: 2022-11-27 22:23+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -316,12 +316,12 @@ msgstr "უსაფრთხოება & კონფიდენციალ
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
-msgstr ""
+msgstr "მოირგეთ რედაქტორის გარეგნობა. პარამეტრები გლობალურია"
 
 #: src/views/widgets/SettingsDialog.qml:189
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
-msgstr ""
+msgstr "დაუცველ წყაროებზე გეოლოკაციის ჩართვა"
 
 #: src/views/widgets/SettingsDialog.qml:190
 #, kde-format
@@ -333,7 +333,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:203
 #, kde-format
 msgid "Allow Running Insecure Content"
-msgstr ""
+msgstr "დაუცველი შემცველობის შესრულების დაშვება"
 
 #: src/views/widgets/SettingsDialog.qml:204
 #, kde-format
@@ -387,7 +387,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
-msgstr ""
+msgstr "WebRTC -ის მხოლოდ გარე ინტერფეისები"
 
 #: src/views/widgets/SettingsDialog.qml:275
 #, kde-format
