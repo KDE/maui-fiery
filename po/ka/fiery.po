@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-26 00:45+0000\n"
-"PO-Revision-Date: 2022-11-27 22:23+0100\n"
+"PO-Revision-Date: 2022-11-29 07:26+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -211,7 +211,7 @@ msgstr "ჰიპერბმულის აუდიტი"
 #: src/views/widgets/SettingsDialog.qml:59
 #, kde-format
 msgid "Enables support for the ping attribute for hyperlinks."
-msgstr ""
+msgstr "ჰიპერბმულებისთვის ping ატრიბუტის მხარდაჭერის ჩართვა."
 
 #: src/views/widgets/SettingsDialog.qml:73
 #, kde-format
@@ -255,7 +255,7 @@ msgstr "დამატებები ცართულია"
 #: src/views/widgets/SettingsDialog.qml:107
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
-msgstr ""
+msgstr "Pepper-ის გაფართოების ჩართვა (მაგ: FlashPlayer)"
 
 #: src/views/widgets/SettingsDialog.qml:121
 #, kde-format
@@ -286,6 +286,8 @@ msgstr "JavaScript -ს აქვს ბუფერზე წვდომა"
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr ""
+"JavaScript-ის პროგრამებისთვის ბუფერიდან კითხვის და მასში ჩაწერის უფლების "
+"დართვა."
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
