@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-26 00:45+0000\n"
-"PO-Revision-Date: 2022-11-29 07:26+0100\n"
+"PO-Revision-Date: 2022-12-03 07:06+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -234,6 +234,8 @@ msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
 "makes many painting operations faster, but slows down pixel access."
 msgstr ""
+"უნდა იყოს HTML5 2D ტილო OpenGL კადრების ბუფერში, თუ არა. ეს ხატვის "
+"ოპერაციებს გაჩქარებს, მაგრამ პიქსელებთან წვდომა შენელდება."
 
 #: src/views/widgets/SettingsDialog.qml:92
 #, kde-format
@@ -245,7 +247,7 @@ msgstr "PDF-ების დათვალიერება"
 msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
-msgstr ""
+msgstr "PDF დოკუმენტები გადმოწერის მაგიერ შიდა PDF დამთვალიერებელში გაიხსნება."
 
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
@@ -331,6 +333,7 @@ msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
 "features."
 msgstr ""
+"გეოლოკაციის ფუნქციების მოთხოვნა მხოლოდ დაცულ წყაროებს (HTTPS) შეუძლიათ."
 
 #: src/views/widgets/SettingsDialog.qml:203
 #, kde-format
@@ -343,6 +346,8 @@ msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
 "from HTTP URLs."
 msgstr ""
+"ნაგულისხმებად HTTPS გვერდებს JavasScript_ის გაშვება, CSS, დამატებების და "
+"სოკეტების გამოძახება HTTP ბმულებიდან არ შეუძლია."
 
 #: src/views/widgets/SettingsDialog.qml:218
 #, kde-format
@@ -355,6 +360,7 @@ msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
 "are activated."
 msgstr ""
+"DNS ჩანაწერების წინასწარი გამოთხოვა HTML ბმულებისთვის მათ აქტივაციამდე."
 
 #: src/views/widgets/SettingsDialog.qml:232
 #, kde-format
@@ -365,6 +371,8 @@ msgstr "ლოკალურ შემცველობას URL-ის მ�
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
+"ლოკალურად ჩატვირთული დოკუმენტებისთვის სხვა ლოკალური ბმულებზე წვდომის "
+"ნებართვა."
 
 #: src/views/widgets/SettingsDialog.qml:246
 #, kde-format
@@ -375,6 +383,7 @@ msgstr "ლოკალურ შემცველობას URL-ებთა
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
 msgstr ""
+"ლოკალურად ჩატვირთული დოკუმენტებისთვის დაშორებულ ბმულებზე წვდომის ნებართვა."
 
 #: src/views/widgets/SettingsDialog.qml:260
 #, kde-format
@@ -384,7 +393,7 @@ msgstr "ლოკალური საცავი"
 #: src/views/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
-msgstr ""
+msgstr "HTML5 ლოკალური საცავის მხარდაჭერის ჩართვა."
 
 #: src/views/widgets/SettingsDialog.qml:274
 #, kde-format
@@ -398,3 +407,6 @@ msgid ""
 "local network IP addresses, but remote hosts can also see your local network "
 "IP address."
 msgstr ""
+"WebRTC-ის მხოლოდ საჯარო IP მისამართებზე შეზღუდვა. როცა გათიშულია, WebRTC-ს "
+"შიდა ქსელის IP მისამართის გამოყენებაც შეუძლია, მაგრამ დაშორებული ჰოსტების "
+"შიდა მისამართს დანახავენ."
