@@ -10,6 +10,7 @@ SPDX-License-Identifier: CC0-1.0
   <name>Fiery</name>
   <name xml:lang="ca">Fiery</name>
   <name xml:lang="ca-valencia">Fiery</name>
+  <name xml:lang="cs">Fiery</name>
   <name xml:lang="en-GB">Fiery</name>
   <name xml:lang="es">Fiery</name>
   <name xml:lang="eu">Fiery</name>
@@ -28,6 +29,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary>Web browser</summary>
   <summary xml:lang="ca">Navegador web</summary>
   <summary xml:lang="ca-valencia">Navegador web</summary>
+  <summary xml:lang="cs">Webový prohlížeč</summary>
   <summary xml:lang="en-GB">Web browser</summary>
   <summary xml:lang="es">Navegador web</summary>
   <summary xml:lang="eu">Web arakatzailea</summary>
@@ -71,6 +73,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption>Fiery</caption>
       <caption xml:lang="ca">Fiery</caption>
       <caption xml:lang="ca-valencia">Fiery</caption>
+      <caption xml:lang="cs">Fiery</caption>
       <caption xml:lang="en-GB">Fiery</caption>
       <caption xml:lang="es">Fiery</caption>
       <caption xml:lang="eu">Fiery</caption>
