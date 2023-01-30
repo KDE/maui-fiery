@@ -79,7 +79,7 @@ Item
                 visible: _browserView.currentBrowser.loading
             }
 
-            Maui.TextField
+            TextField
             {
                 id: _entryField
                 visible: editMode

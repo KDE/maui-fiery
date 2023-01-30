@@ -8,12 +8,12 @@ Maui.SettingsDialog
 {
     id: control
 
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         title: i18n("Navigation")
         description: i18n("Configure the app basic navigation features.")
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             id: _homePageEntry
             label1.text: i18n("Home Page")
@@ -26,7 +26,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             id: _searchEngineEntry
             label1.text: i18n("Search Engine")
@@ -39,7 +39,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Auto Load Images")
             label2.text: i18n("Automatically loads images on web pages.")
@@ -53,7 +53,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Hyperlink Auditing")
             label2.text: i18n("Enables support for the ping attribute for hyperlinks.")
@@ -68,12 +68,12 @@ Maui.SettingsDialog
         }
     }
 
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         title: i18n("Features")
         description: i18n("Configure the browser plugins and features.")
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Accelerated 2D Canvas")
             label2.text: i18n("Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This makes many painting operations faster, but slows down pixel access.")
@@ -87,7 +87,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("PDF Viewer")
             label2.text: i18n("PDF documents will be opened in the internal PDF viewer instead of being downloaded.")
@@ -101,7 +101,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Plugins Enabled")
             label2.text: i18n("Enables support for Pepper plugins, such as the Flash player.")
@@ -116,12 +116,12 @@ Maui.SettingsDialog
         }
     }
 
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         title: i18n("JavaScript")
         description: i18n("Configure JavaScript behaviour")
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Javascript Enabled")
             label2.text: i18n("Enables the running of JavaScript programs.")
@@ -135,7 +135,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Javascript Can Access Clipboard")
             label2.text: i18n("Allows JavaScript programs to read from or write to the clipboard.")
@@ -149,7 +149,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Javascript Can Paste")
             label2.text: i18n("Enables JavaScript execCommand(paste).")
@@ -163,7 +163,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Allow Window Activation From JavaScript")
             label2.text: i18n("Allows the window.focus() method in JavaScript.")
@@ -179,12 +179,12 @@ Maui.SettingsDialog
 
     }
 
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         title: i18n("Security & Privacy")
         description: i18n("Configure the look and feel of the editor. The settings are applied globally")
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Allow Geolocation On Insecure Origins")
             label2.text: i18n("Only secure origins such as HTTPS have been able to request Geolocation features.")
@@ -198,7 +198,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Allow Running Insecure Content")
             label2.text: i18n("By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets from HTTP URLs.")
@@ -213,7 +213,7 @@ Maui.SettingsDialog
         }
 
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("DNS Prefetch Enabled")
             label2.text: i18n("Enables speculative prefetching of DNS records for HTML links before they are activated.")
@@ -227,7 +227,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Local Content Can Access File Urls")
             label2.text: i18n("Allows locally loaded documents to access other local URLs.")
@@ -241,7 +241,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Local Content Can Access Remote Urls")
             label2.text: i18n("Allows locally loaded documents to access remote URLs.")
@@ -255,7 +255,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Local Storage")
             label2.text: i18n("Enables support for the HTML 5 local storage feature.")
@@ -269,7 +269,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("WebRTC Public Interfaces Only")
             label2.text: i18n("Limits WebRTC to public IP addresses only. When disabled WebRTC may also use local network IP addresses, but remote hosts can also see your local network IP address.")

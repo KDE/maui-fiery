@@ -27,7 +27,7 @@ Item
         id: _menu
     }
 
-    Maui.StackView
+    StackView
     {
         id: _stackView
         anchors.fill: parent

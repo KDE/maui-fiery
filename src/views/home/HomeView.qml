@@ -18,7 +18,7 @@ Maui.Page
         Layout.alignment: Qt.AlignCenter
     }
 
-    Maui.GridView
+    Maui.GridBrowser
     {
         id: _listView
         anchors.fill: parent
