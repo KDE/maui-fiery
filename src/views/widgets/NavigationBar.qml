@@ -3,7 +3,6 @@ import QtQml 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 
-import org.kde.kirigami 2.14 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 
 import org.maui.fiery 1.0 as Fiery
@@ -26,15 +25,17 @@ Item
             Maui.Theme.colorSet: Maui.Theme.Button
             Maui.Theme.inherit: false
 
-            enabled: currentBrowser.canGoBack()
+            enabled: currentBrowser.canGoBack
             onClicked: currentBrowser.goBack()
+
+            opacity: enabled ? 1 : 0.5
 
             Layout.fillHeight: true
             implicitWidth: height
 
             contentItem: Item
             {
-                Kirigami.Icon
+                Maui.Icon
                 {
                     anchors.centerIn: parent
                     source: "go-previous"
@@ -44,7 +45,7 @@ Item
                 }
             }
 
-            background: Kirigami.ShadowedRectangle
+            background: Maui.ShadowedRectangle
             {
                 color: Maui.Theme.backgroundColor
                 corners
@@ -86,7 +87,7 @@ Item
                 anchors.fill: parent
 
                 placeholderText: i18n("Search or enter URL")
-                text: _browserView.currentTab.url
+                text: currentBrowser.url
 
                 activeFocusOnPress : true
                 inputMethodHints: Qt.ImhUrlCharactersOnly  | Qt.ImhNoAutoUppercase
@@ -116,8 +117,8 @@ Item
                 {
                     id: _historyPopup
 
-                    width: _entryField.width
-                    height: Math.min(_historyListView.contentHeight + Maui.Style.space.big, root.height * 0.7)
+                    width: Math.max(Math.min(root.width, 500), _entryField.width)
+                    height: Math.min(_historyListView.contentHeight, root.height * 0.7)
 
                     Binding on visible
                     {
@@ -126,17 +127,17 @@ Item
                     }
 
                     parent: _entryField
-                    y: control.position === ToolBar.Header ? parent.height + Maui.Style.space.medium : (0 - height - Maui.Style.space.medium )
+                    y: control.position === ToolBar.Header ? parent.height + Maui.Style.space.medium : (0 - (height+ Maui.Style.space.medium ))
                     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
-                    clip: true
-                    padding: 0
+                    modal: false
 
                     Maui.ListBrowser
                     {
                         id: _historyListView
+                        clip: true
+
                         width: parent.width
                         height: parent.height
-                        anchors.centerIn:  parent
                         currentIndex: -1
                         orientation: ListView.Vertical
                         spacing: Maui.Style.space.medium
@@ -203,13 +204,10 @@ Item
 
                 anchors.fill: parent
                 leftLabels.spacing: 0
-                label1.text:  _browserView.currentTab.title
+                label1.text: parent.hovered ?  _browserView.currentBrowser.url : _browserView.currentBrowser.title
                 label1.horizontalAlignment: Qt.AlignHCenter
-                label2.horizontalAlignment: Qt.AlignHCenter
-                label2.font.pointSize: Maui.Style.fontSizes.small
-                label2.text:  _browserView.currentTab.url
-                label2.visible: parent.hovered
-                imageSource:  _browserView.currentTab.iconName
+
+                imageSource:  _browserView.currentBrowser.iconName
                 imageSizeHint: Maui.Style.iconSizes.medium
             }
 
@@ -232,7 +230,7 @@ Item
             onClicked: _browserMenu.show((width*0.5)-(_browserMenu.width *0.5), height+ Maui.Style.space.medium)
             contentItem: Item
             {
-                Kirigami.Icon
+                Maui.Icon
                 {
                     anchors.centerIn: parent
                     source: "overflow-menu"
@@ -242,7 +240,7 @@ Item
                 }
             }
 
-            background: Kirigami.ShadowedRectangle
+            background: Maui.ShadowedRectangle
             {
                 color : _browserMenu.visible ? Maui.Theme.highlightColor : Maui.Theme.backgroundColor
                 corners
@@ -304,7 +302,7 @@ Item
                     icon.name: "deep-history"
                     onTriggered:
                     {
-                        _swipeView.currentIndex = 1
+                        _sidebarSwipeView.currentIndex = 1
                     }
                 }
 
@@ -314,17 +312,17 @@ Item
                     icon.name: "folder-downloads"
                     onTriggered:
                     {
-                        _swipeView.currentIndex = 2
+                        _sidebarSwipeView.currentIndex = 2
                     }
                 }
 
                 MenuItem
                 {
-                    text: i18n("BookMarks")
+                    text: i18n("Bookmarks")
                     icon.name: "bookmarks"
                     onTriggered:
                     {
-                        _swipeView.currentIndex = 2
+                        _sidebarSwipeView.currentIndex = 2
                     }
                 }
 
@@ -338,17 +336,15 @@ Item
                     icon.name: "edit-share"
                 }
 
-                Action
-                {
-                    text: i18n("BookMark")
-                    icon.name: "draw-star"
+
                 }
 
-                Action
+                MenuItem
                 {
-                    text: i18n("Find")
+                    text: i18n("Find In Page")
                     icon.name: "edit-find"
-                }
+                    checked: _browserView.searchFieldVisible
+                    onTriggered: _browserView.searchFieldVisible = !_browserView.searchFieldVisible
                 }
 
                 MenuSeparator {}
@@ -370,5 +366,11 @@ Item
             }
 
         }
+    }
+
+    function openEditMode()
+    {
+        editMode = true
+        _entryField.forceActiveFocus()
     }
 }

@@ -51,13 +51,14 @@ Maui.Page
             width: ListView.view.width
 
             label1.text: model.title
-            label2.text: model.url
+            tooltipText: model.url
             imageSource: model.icon.replace("image://favicon/", "")
-            template.imageSizeHint: Maui.Style.iconSizes.medium
+            iconSizeHint: Maui.Style.iconSizes.medium
 
             onClicked:
             {
                 _listView.currentIndex = index
+                _browserView.openTab(model.url)
             }
         }
     }

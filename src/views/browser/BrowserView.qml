@@ -11,12 +11,50 @@ Maui.Page
 {
     id: control
     property alias currentTab : _browserListView.currentItem
-    readonly property WebEngineView currentBrowser : _browserListView.currentItem.webView
+    readonly property WebEngineView currentBrowser : currentTab.currentItem.webView
     property alias listView: _browserListView
     property alias count: _browserListView.count
     readonly property alias model : _browserListView.contentModel
+    property alias searchFieldVisible: _searchField.visible
 
-    headBar.visible: false
+    footBar.middleContent: Maui.SearchField
+    {
+        id: _searchField
+        visible: false
+        Layout.maximumWidth: 500
+        Layout.fillWidth: true
+        Layout.alignment: Qt.AlignHCenter
+        onAccepted:  control.currentBrowser.findText(text)
+        onCleared:  control.currentBrowser.findText("")
+        actions: [
+
+            Action
+            {
+                icon.name: "go-up"
+                onTriggered:
+                {
+                    console.log("Find previous")
+                    control.currentBrowser.findText(_searchField.text, WebEngineView.FindBackward)
+                }
+            },
+
+            Action
+            {
+                icon.name: "go-down"
+                onTriggered:
+                {
+
+                    console.log("Find next")
+
+                    control.currentBrowser.findText(_searchField.text)
+                }
+
+            }
+
+        ]
+    }
+
+
 
     Maui.TabView
     {
@@ -37,39 +75,100 @@ Maui.Page
     {
         id: _browserComponent
 
-        Browser {}
+        BrowserLayout {}
     }
 
-    function openTab(path)
+    function findTab(path) : Boolean
     {
-        _swipeView.currentIndex = views.browser
-        _browserListView.addTab(_browserComponent, {"url": _surf.formatUrl(path)});
-    }
+        var index = browserIndex(path)
 
-    function openUrl(path)
-    {
-        _swipeView.currentIndex = views.browser
+        if(index[0] >= 0 && index [1] >= 0)
+        {
 
-        if(validURL(path))
-        {
-            control.currentTab.url = path
-        }else
-        {
-           control.currentTab.url = appSettings.searchEnginePage+path
+            _browserListView.currentIndex = index[0]
+
+            var tab = control.model.get(index[0])
+            tab.currentIndex = index[1]
+            return true;
         }
 
-        control.currentTab.forceActiveFocus()
-    }
+            return false;
+        }
 
-    function validURL(str)
-    {
-      var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
-        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
-        '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
-        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
-        '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
-        '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
-      return !!pattern.test(str);
-    }
+            function browserIndex(path) //find the [tab, split] index for a path
+            {
+                if(path.length === 0)
+                {
+                    return [-1, -1]
+                }
 
-}
+                for(var i = 0; i < control.count; i++)
+                {
+                    const tab =  control.model.get(i)
+                    for(var j = 0; j < tab.count; j++)
+                    {
+                        const browser = tab.model.get(j)
+                        if(browser.url.toString() === path)
+                        {
+                            return [i, j]
+                        }
+                        }
+                        }
+                            return [-1,-1]
+                        }
+
+                            function openTab(path)
+                            {
+
+
+                                if(findTab(path))
+                                {
+                                    return;
+                                }
+
+                                _browserListView.addTab(_browserComponent, {"url": _surf.formatUrl(path)});
+
+                                    if(path.length === 0)
+                                    {
+                                        _navBar.openEditMode();
+                                    }
+                                }
+
+                                function openSplit(path)
+                                {
+                                    console.log(currentTab.count)
+                                    if(currentTab.count === 1)
+                                    {
+                                        currentTab.split(path)
+                                        return
+                                    }
+
+                                    openTab(path)
+                                }
+
+                                function openUrl(path)
+                                {
+
+                                    if(validURL(path))
+                                    {
+                                        control.currentBrowser.url = path
+                                    }else
+                                    {
+                                        control.currentBrowser.url = appSettings.searchEnginePage+path
+                                    }
+
+                                    control.currentTab.forceActiveFocus()
+                                }
+
+                                function validURL(str)
+                                {
+                                    var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+                                                             '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+                                                             '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+                                                             '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+                                                             '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+                                                             '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+                                    return !!pattern.test(str);
+                                }
+
+                            }

@@ -10,6 +10,7 @@ Maui.Page
 {
     id: control
 
+    background: null
     headBar.middleContent: Maui.SearchField
     {
         id: _entryField
@@ -18,12 +19,11 @@ Maui.Page
         Layout.alignment: Qt.AlignCenter
     }
 
-    Maui.GridBrowser
+    Maui.ListBrowser
     {
         id: _listView
         anchors.fill: parent
-        itemSize: 150
-        itemHeight: 190
+
 
         model: Maui.BaseModel
         {
@@ -36,24 +36,19 @@ Maui.Page
             filterCaseSensitivity: Qt.CaseInsensitive
         }
 
-        delegate: Item
+        delegate:  Maui.ListBrowserDelegate
         {
-            width: GridView.view.cellWidth
-            height: GridView.view.cellHeight
-            Maui.GridBrowserDelegate
+            width: ListView.view.width
+            label1.text: model.title
+            tooltipText: model.url
+            imageSource: model.icon.replace("image://favicon/", "")
+            iconSizeHint: Maui.Style.iconSizes.medium
+            onClicked:
             {
-               anchors.fill: parent
-               anchors.margins: Maui.Style.space.medium
-                label1.text: model.title
-                label2.text: model.url
-                imageSource: model.icon.replace("image://favicon/", "")
-                            template.imageSizeHint: Maui.Style.iconSizes.large
-template.labelSizeHint: 64
-                onClicked:
-                {
-                    _listView.currentIndex = index
-                }
+                _listView.currentIndex = index
+                _browserView.openTab(model.url)
             }
         }
+
     }
 }

@@ -76,66 +76,101 @@ Maui.ApplicationWindow
         id: _settingsDialog
     }
 
-    Maui.Page
+    Maui.SideBarView
     {
-        id: _mainPage
+        id: _sideBarView
         anchors.fill: parent
-        showCSDControls: true
-
-        headBar.visible: _swipeView.currentIndex === views.browser
-
-        footBar.visible: _swipeView.currentIndex !== views.browser
-        autoHideHeader: false
-
-        altHeader: !root.isWide
-        headBar.forceCenterMiddleContent: root.isWide
-        headBar.middleContent: Loader
+        sideBar.autoShow: false
+        sideBar.autoHide: true
+        sideBar.preferredWidth: 400
+        sideBar.content: Maui.Page
         {
-            Layout.fillWidth: true
-            Layout.maximumWidth: 500
-            Layout.alignment:Qt.AlignCenter
-            asynchronous: true
-
-            sourceComponent: NavigationBar
-            {
-                position: root.altHeader ? ToolBar.Footer : ToolBar.Header
-            }
-        }
-
-        headBar.rightContent: ToolButton
-        {
-            icon.name: "list-add"
-            onClicked: _browserView.openTab("")
-        }
-
-        Maui.AppViews
-        {
-            id: _swipeView
             anchors.fill: parent
-            currentIndex: views.browser
-            headBar.visible: currentIndex !== 0
+Maui.Theme.colorSet: Maui.Theme.Window
+Maui.Theme.inherit: false
 
-            BrowserView
+            headBar.middleContent: Maui.ToolActions
             {
-                id: _browserView
-                Maui.AppView.title: i18n("Browser")
-                Maui.AppView.iconName: "internet-web-browser"
+                id: _sidebarActions
+                autoExclusive: true
+                currentIndex: _sidebarSwipeView.currentIndex
+                display: ToolButton.IconOnly
+                Layout.alignment: Qt.AlignHCenter
+
+                Action
+                {
+                    text: i18n("Home")
+                    icon.name: "go-home"
+
+                }
+
+
+                Action
+                {
+                    text: i18n("Recent")
+                    icon.name: "shallow-history"
+
+
+                }
+                Action
+                {
+                    text: i18n("Downloads")
+                    icon.name: "folder-download"
+
+                }
             }
 
-            Maui.AppViewLoader
+
+            SwipeView
             {
-                Maui.AppView.title: i18n("Recent")
-                Maui.AppView.iconName: "shallow-history"
+                anchors.fill: parent
+                id: _sidebarSwipeView
+                currentIndex: _sidebarActions.currentIndex
+                HomeView {}
 
                 HistoryView {}
+
+                Item{}
+            }
+        }
+
+        BrowserView
+        {
+            id: _browserView
+
+            anchors.fill: parent
+            showCSDControls: true
+
+
+            autoHideHeader: false
+
+            altHeader: Maui.Handy.isMobile
+            headBar.forceCenterMiddleContent: width > 1000
+            headBar.middleContent: NavigationBar
+                {
+                    id: _navBar
+                    position: _browserView.headBar.position
+                    Layout.fillWidth: true
+                    Layout.maximumWidth: 500
+                    Layout.alignment:Qt.AlignCenter
+                }
+
+
+            headBar.rightContent: ToolButton
+            {
+                icon.name: "list-add"
+                onClicked: _browserView.openTab("")
             }
 
-            Maui.AppViewLoader
+            headBar.leftContent: ToolButton
             {
-                Maui.AppView.title: i18n("Home")
-                Maui.AppView.iconName: "go-home"
-
-                HomeView {}
+                icon.name: _sideBarView.sideBar.visible ? "sidebar-collapse" : "sidebar-expand"
+                onClicked: _sideBarView.sideBar.toggle()
+                checked: _sideBarView.sideBar.visible
+                ToolTip.delay: 1000
+                ToolTip.timeout: 5000
+                ToolTip.visible: hovered
+                ToolTip.text: i18n("Toggle sidebar")
             }
         }
     }

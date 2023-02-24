@@ -8,12 +8,12 @@ import org.mauikit.controls 1.3 as Maui
 import org.maui.fiery 1.0 as Fiery
 
 import "../home"
-Item
+Maui.SplitViewItem
 {
     id: control
     property alias url : _webView.url
     property alias webView : _webView
-    readonly property string title : _webView.title.length ? _webView.title : "Sol-"
+    readonly property string title : _webView.title.length ? _webView.title : "Fiery"
     readonly property string iconName: _webView.icon
 
     height: ListView.view.height
@@ -25,21 +25,22 @@ Item
     ActionsMenu
     {
         id: _menu
+        webView: _webView
     }
 
-    StackView
-    {
-        id: _stackView
-        anchors.fill: parent
 
-        initialItem: WebEngineView
+
+   WebEngineView
         {
             id: _webView
+            anchors.fill: parent
 
             onContextMenuRequested: {
                 request.accepted = true // Make sure QtWebEngine doesn't show its own context menu.
                 _menu.request = request
-                _menu.open(request.x, request.y)
+                        _menu.show()
+
+//                _menu.show()
             }
 
             onLoadingChanged:
@@ -47,11 +48,6 @@ Item
                 if(loadRequest.status === WebEngineView.LoadSucceededStatus)
                 {
                     Fiery.History.appendUrl(control.url, control.title, control.iconName)
-                }
-
-                if (_stackView.depth === 2)
-                {
-                   _stackView.pop()
                 }
             }
 
@@ -61,6 +57,12 @@ Item
                     Fiery.History.updateIcon(url, icon)
                 }
             }
+
+            onFindTextFinished: {
+//                   findInPageResultIndex = result.activeMatch;
+//                   findInPageResultCount = result.numberOfMatches;
+               }
+
 
             settings.accelerated2dCanvasEnabled : appSettings.accelerated2dCanvasEnabled
             settings.allowGeolocationOnInsecureOrigins : appSettings.allowGeolocationOnInsecureOrigins
@@ -83,21 +85,22 @@ Item
             settings.webGLEnabled : appSettings.webGLEnabled
             settings. webRTCPublicInterfacesOnly : appSettings.webRTCPublicInterfacesOnly
         }
-    }
 
-    Component
-    {
-        id: _startComponent
+   Maui.Holder
+   {
+       anchors.fill: parent
+       visible: control.url.toString().length <= 0 || _webView.status === WebEngineView.LoadFailedStatus
+       emoji: "qrc:/internet.svg"
 
-        HomeView
-        {}
-    }
+       title: _webView.status === WebEngineView.LoadFailedStatus ? i18n("Error") : i18n("Start Browsing")
+       body: i18n("Enter a new URL or open a recent site.")
+   }
 
     Component.onCompleted:
     {
         if(!control.url || !control.url.length || !validURL(control.url))
         {
-            _stackView.push(_startComponent)
+//            _stackView.push(_startComponent)
         }
     }
 }
