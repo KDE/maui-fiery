@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-26 00:45+0000\n"
+"POT-Creation-Date: 2023-02-25 00:59+0000\n"
 "PO-Revision-Date: 2023-02-03 16:47+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -43,122 +43,210 @@ msgstr "კამილო ჰიგუიტა"
 msgid "Developer"
 msgstr "პროგრამისტი"
 
-#: src/main.qml:121
-#, kde-format
-msgid "Browser"
-msgstr "Browser-ი"
-
-#: src/main.qml:127
-#, kde-format
-msgid "Recent"
-msgstr "Ბოლო"
-
-#: src/main.qml:135
+#: src/main.qml:102
 #, kde-format
 msgid "Home"
 msgstr "საწყისი"
 
-#: src/views/browser/ActionsMenu.qml:16
+#: src/main.qml:110
 #, kde-format
-msgid "Open in new tab"
-msgstr "ახალ ჩანართში გახსნა"
+msgid "Recent"
+msgstr "Ბოლო"
 
-#: src/views/browser/ActionsMenu.qml:26
-#, kde-format
-msgid "Download"
-msgstr "ჩამოტვირთვა"
-
-#: src/views/browser/ActionsMenu.qml:31
-#, kde-format
-msgid "Inspect"
-msgstr "შეამოწმეთ"
-
-#: src/views/browser/ActionsMenu.qml:36
-#, kde-format
-msgid "Search..."
-msgstr "ძებნა..."
-
-#: src/views/browser/ActionsMenu.qml:40
-#, kde-format
-msgid "Copy"
-msgstr "კოპირება"
-
-#: src/views/browser/ActionsMenu.qml:44
-#, kde-format
-msgid "Copy link"
-msgstr "Ბმულის კოპირება"
-
-#: src/views/browser/BrowserView.qml:27
-#, kde-format
-msgid "Start Browsing"
-msgstr "ბრაუზინგის დაწყება"
-
-#: src/views/browser/BrowserView.qml:28
-#, kde-format
-msgid "Enter a new URL or open a recent site."
-msgstr "შეიყვანეთ ახალი ბმული ან გახსენით ახლახანს გახსნილი საიტი."
-
-#: src/views/widgets/NavigationBar.qml:88
-#, kde-format
-msgid "Search or enter URL"
-msgstr "მოძებნეთ ან შეიყვანეთ URL"
-
-#: src/views/widgets/NavigationBar.qml:157
-#, kde-format
-msgid "Search on default search engine"
-msgstr "ნაგულისხმებ საძიებო სისტემაში მოძებნა"
-
-#: src/views/widgets/NavigationBar.qml:273
-#, kde-format
-msgid "Next"
-msgstr "შემდეგი"
-
-#: src/views/widgets/NavigationBar.qml:288
-#, kde-format
-msgid "New Tab"
-msgstr "ახალი ჩანართი"
-
-#: src/views/widgets/NavigationBar.qml:295
-#, kde-format
-msgid "Incognito Tab"
-msgstr "ინკოგნიტო ჩანართი"
-
-#: src/views/widgets/NavigationBar.qml:303
-#, kde-format
-msgid "History"
-msgstr "ისტორია"
-
-#: src/views/widgets/NavigationBar.qml:313
+#: src/main.qml:117 src/views/widgets/NavigationBar.qml:311
 #, kde-format
 msgid "Downloads"
 msgstr "გადმოწერები"
 
-#: src/views/widgets/NavigationBar.qml:323
+#: src/main.qml:173
 #, kde-format
-msgid "BookMarks"
+msgid "Toggle sidebar"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:45
+#, kde-format
+msgid "Paste"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:58
+#, kde-format
+msgid "Translate"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:69
+#, kde-format
+msgid "Select All"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:81
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgid "Copy Text"
+msgstr "კოპირება"
+
+#: src/views/browser/ActionsMenu.qml:94
+#, fuzzy, kde-format
+#| msgid "Copy link"
+msgid "Copy Link"
+msgstr "Ბმულის კოპირება"
+
+#: src/views/browser/ActionsMenu.qml:108
+#, kde-format
+msgid "Open Link"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:120
+#, kde-format
+msgid "Open Link in Split View"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:152
+#, kde-format
+msgid "Save Video"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:160
+#, kde-format
+msgid "Open Video"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:160
+#, kde-format
+msgid "Open Audio"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:172
+#, kde-format
+msgid "Save Image"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:180
+#, kde-format
+msgid "Copy Image"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:188
+#, kde-format
+msgid "Open Image"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:203
+#, kde-format
+msgid "Play"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:204
+#, kde-format
+msgid "Pause"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:213
+#, kde-format
+msgid "Unmute"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:214
+#, kde-format
+msgid "Mute"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:227
+#, kde-format
+msgid "Speed"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:253
+#, kde-format
+msgid "Loop"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:262
+#, kde-format
+msgid "Exit fullscreen"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:262
+#, kde-format
+msgid "Fullscreen"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:277
+#, kde-format
+msgid "Hide controls"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:278
+#, kde-format
+msgid "Show controls"
+msgstr ""
+
+#: src/views/browser/Browser.qml:95
+#, kde-format
+msgid "Error"
+msgstr ""
+
+#: src/views/browser/Browser.qml:95 src/views/browser/BrowserView.qml:65
+#, kde-format
+msgid "Start Browsing"
+msgstr "ბრაუზინგის დაწყება"
+
+#: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:66
+#, kde-format
+msgid "Enter a new URL or open a recent site."
+msgstr "შეიყვანეთ ახალი ბმული ან გახსენით ახლახანს გახსნილი საიტი."
+
+#: src/views/widgets/NavigationBar.qml:89
+#, kde-format
+msgid "Search or enter URL"
+msgstr "მოძებნეთ ან შეიყვანეთ URL"
+
+#: src/views/widgets/NavigationBar.qml:158
+#, kde-format
+msgid "Search on default search engine"
+msgstr "ნაგულისხმებ საძიებო სისტემაში მოძებნა"
+
+#: src/views/widgets/NavigationBar.qml:271
+#, kde-format
+msgid "Next"
+msgstr "შემდეგი"
+
+#: src/views/widgets/NavigationBar.qml:286
+#, kde-format
+msgid "New Tab"
+msgstr "ახალი ჩანართი"
+
+#: src/views/widgets/NavigationBar.qml:293
+#, kde-format
+msgid "Incognito Tab"
+msgstr "ინკოგნიტო ჩანართი"
+
+#: src/views/widgets/NavigationBar.qml:301
+#, kde-format
+msgid "History"
+msgstr "ისტორია"
+
+#: src/views/widgets/NavigationBar.qml:321
+#, fuzzy, kde-format
+#| msgid "BookMarks"
+msgid "Bookmarks"
 msgstr "სანიშნები"
 
-#: src/views/widgets/NavigationBar.qml:337
+#: src/views/widgets/NavigationBar.qml:335
 #, kde-format
 msgid "Share"
 msgstr "გაზიარება"
 
-#: src/views/widgets/NavigationBar.qml:343
+#: src/views/widgets/NavigationBar.qml:344
 #, kde-format
-msgid "BookMark"
-msgstr "სანიშნე"
+msgid "Find In Page"
+msgstr ""
 
-#: src/views/widgets/NavigationBar.qml:349
-#, kde-format
-msgid "Find"
-msgstr "მოძებნა"
-
-#: src/views/widgets/NavigationBar.qml:359
+#: src/views/widgets/NavigationBar.qml:355
 #, kde-format
 msgid "Settings"
 msgstr "მორგება"
 
-#: src/views/widgets/NavigationBar.qml:366
+#: src/views/widgets/NavigationBar.qml:362
 #, kde-format
 msgid "About"
 msgstr "შესახებ"
@@ -213,22 +301,24 @@ msgstr "ჰიპერბმულის აუდიტი"
 msgid "Enables support for the ping attribute for hyperlinks."
 msgstr "ჰიპერბმულებისთვის ping ატრიბუტის მხარდაჭერის ჩართვა."
 
-#: src/views/widgets/SettingsDialog.qml:73
+#: src/views/widgets/SettingsDialog.qml:74
+#: src/views/widgets/SettingsDialog.qml:92
 #, kde-format
 msgid "Features"
 msgstr "თვისებები"
 
-#: src/views/widgets/SettingsDialog.qml:74
+#: src/views/widgets/SettingsDialog.qml:75
+#: src/views/widgets/SettingsDialog.qml:93
 #, kde-format
 msgid "Configure the browser plugins and features."
 msgstr "ბრაუზერის დამატებებისა და თვისებების მორგება."
 
-#: src/views/widgets/SettingsDialog.qml:78
+#: src/views/widgets/SettingsDialog.qml:97
 #, kde-format
 msgid "Accelerated 2D Canvas"
 msgstr "აჩქარებული 2D ტილო"
 
-#: src/views/widgets/SettingsDialog.qml:79
+#: src/views/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
@@ -237,97 +327,102 @@ msgstr ""
 "უნდა იყოს HTML5 2D ტილო OpenGL კადრების ბუფერში, თუ არა. ეს ხატვის "
 "ოპერაციებს გაჩქარებს, მაგრამ პიქსელებთან წვდომა შენელდება."
 
-#: src/views/widgets/SettingsDialog.qml:92
+#: src/views/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "PDF Viewer"
 msgstr "PDF-ების დათვალიერება"
 
-#: src/views/widgets/SettingsDialog.qml:93
+#: src/views/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
 msgstr "PDF დოკუმენტები გადმოწერის მაგიერ შიდა PDF დამთვალიერებელში გაიხსნება."
 
-#: src/views/widgets/SettingsDialog.qml:106
+#: src/views/widgets/SettingsDialog.qml:125
 #, kde-format
 msgid "Plugins Enabled"
 msgstr "დამატებები ცართულია"
 
-#: src/views/widgets/SettingsDialog.qml:107
+#: src/views/widgets/SettingsDialog.qml:126
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
 msgstr "Pepper-ის გაფართოების ჩართვა (მაგ: FlashPlayer)"
 
-#: src/views/widgets/SettingsDialog.qml:121
+#: src/views/widgets/SettingsDialog.qml:142
+#: src/views/widgets/SettingsDialog.qml:161
 #, kde-format
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: src/views/widgets/SettingsDialog.qml:122
-#, kde-format
-msgid "Configure JavaScript behaviour"
+#: src/views/widgets/SettingsDialog.qml:143
+#: src/views/widgets/SettingsDialog.qml:162
+#, fuzzy, kde-format
+#| msgid "Configure JavaScript behaviour"
+msgid "Configure JavaScript behaviour."
 msgstr "JavaScript -ის ქცევის მორგება"
 
-#: src/views/widgets/SettingsDialog.qml:126
+#: src/views/widgets/SettingsDialog.qml:166
 #, kde-format
 msgid "Javascript Enabled"
 msgstr "Javascript -ი ჩართულია"
 
-#: src/views/widgets/SettingsDialog.qml:127
+#: src/views/widgets/SettingsDialog.qml:167
 #, kde-format
 msgid "Enables the running of JavaScript programs."
 msgstr "JavaScript-ის პროგრამებს გაშვების დაშვება."
 
-#: src/views/widgets/SettingsDialog.qml:140
+#: src/views/widgets/SettingsDialog.qml:180
 #, kde-format
 msgid "Javascript Can Access Clipboard"
 msgstr "JavaScript -ს აქვს ბუფერზე წვდომა"
 
-#: src/views/widgets/SettingsDialog.qml:141
+#: src/views/widgets/SettingsDialog.qml:181
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr ""
 "JavaScript-ის პროგრამებისთვის ბუფერიდან კითხვის და მასში ჩაწერის უფლების "
 "დართვა."
 
-#: src/views/widgets/SettingsDialog.qml:154
+#: src/views/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Javascript Can Paste"
 msgstr "Javascript -ს შეუძლია ჩასმა"
 
-#: src/views/widgets/SettingsDialog.qml:155
+#: src/views/widgets/SettingsDialog.qml:195
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
 msgstr "JavaScript execCommand(paste)-ის ჩართვა."
 
-#: src/views/widgets/SettingsDialog.qml:168
+#: src/views/widgets/SettingsDialog.qml:208
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
 msgstr "JavaScript-დან ფანჯრის აქტივაციის დასვება"
 
-#: src/views/widgets/SettingsDialog.qml:169
+#: src/views/widgets/SettingsDialog.qml:209
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
 msgstr "JavaScript-ში window.focus() მეთოდის დაშვება."
 
-#: src/views/widgets/SettingsDialog.qml:184
+#: src/views/widgets/SettingsDialog.qml:226
+#: src/views/widgets/SettingsDialog.qml:244
 #, kde-format
 msgid "Security & Privacy"
 msgstr "უსაფრთხოება & კონფიდენციალობა"
 
-#: src/views/widgets/SettingsDialog.qml:185
+#: src/views/widgets/SettingsDialog.qml:227
+#: src/views/widgets/SettingsDialog.qml:245
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
 msgstr "მოირგეთ რედაქტორის გარეგნობა. პარამეტრები გლობალურია"
 
-#: src/views/widgets/SettingsDialog.qml:189
+#: src/views/widgets/SettingsDialog.qml:249
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
 msgstr "დაუცველ წყაროებზე გეოლოკაციის ჩართვა"
 
-#: src/views/widgets/SettingsDialog.qml:190
+#: src/views/widgets/SettingsDialog.qml:250
 #, kde-format
 msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
@@ -335,12 +430,12 @@ msgid ""
 msgstr ""
 "გეოლოკაციის ფუნქციების მოთხოვნა მხოლოდ დაცულ წყაროებს (HTTPS) შეუძლიათ."
 
-#: src/views/widgets/SettingsDialog.qml:203
+#: src/views/widgets/SettingsDialog.qml:263
 #, kde-format
 msgid "Allow Running Insecure Content"
 msgstr "დაუცველი შემცველობის შესრულების დაშვება"
 
-#: src/views/widgets/SettingsDialog.qml:204
+#: src/views/widgets/SettingsDialog.qml:264
 #, kde-format
 msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
@@ -349,12 +444,12 @@ msgstr ""
 "ნაგულისხმებად HTTPS გვერდებს JavasScript-ის გაშვება, CSS, დამატებების და "
 "სოკეტების გამოძახება HTTP ბმულებიდან არ შეუძლია."
 
-#: src/views/widgets/SettingsDialog.qml:218
+#: src/views/widgets/SettingsDialog.qml:278
 #, kde-format
 msgid "DNS Prefetch Enabled"
 msgstr "DNS -ის წინასწარი მოთხოვნა ჩართულია"
 
-#: src/views/widgets/SettingsDialog.qml:219
+#: src/views/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
@@ -362,45 +457,45 @@ msgid ""
 msgstr ""
 "DNS ჩანაწერების წინასწარი გამოთხოვა HTML ბმულებისთვის მათ აქტივაციამდე."
 
-#: src/views/widgets/SettingsDialog.qml:232
+#: src/views/widgets/SettingsDialog.qml:292
 #, kde-format
 msgid "Local Content Can Access File Urls"
 msgstr "ლოკალურ შემცველობას URL-ის მქონე ფაილებთან წვდომა გააჩნია"
 
-#: src/views/widgets/SettingsDialog.qml:233
+#: src/views/widgets/SettingsDialog.qml:293
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
 "ლოკალურად ჩატვირთული დოკუმენტებისთვის სხვა ლოკალური ბმულებზე წვდომის "
 "ნებართვა."
 
-#: src/views/widgets/SettingsDialog.qml:246
+#: src/views/widgets/SettingsDialog.qml:306
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
 msgstr "ლოკალურ შემცველობას URL-ებთან წვდომა გააჩნია"
 
-#: src/views/widgets/SettingsDialog.qml:247
+#: src/views/widgets/SettingsDialog.qml:307
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
 msgstr ""
 "ლოკალურად ჩატვირთული დოკუმენტებისთვის დაშორებულ ბმულებზე წვდომის ნებართვა."
 
-#: src/views/widgets/SettingsDialog.qml:260
+#: src/views/widgets/SettingsDialog.qml:320
 #, kde-format
 msgid "Local Storage"
 msgstr "ლოკალური საცავი"
 
-#: src/views/widgets/SettingsDialog.qml:261
+#: src/views/widgets/SettingsDialog.qml:321
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
 msgstr "HTML5 ლოკალური საცავის მხარდაჭერის ჩართვა."
 
-#: src/views/widgets/SettingsDialog.qml:274
+#: src/views/widgets/SettingsDialog.qml:334
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
 msgstr "WebRTC -ის მხოლოდ გარე ინტერფეისები"
 
-#: src/views/widgets/SettingsDialog.qml:275
+#: src/views/widgets/SettingsDialog.qml:335
 #, kde-format
 msgid ""
 "Limits WebRTC to public IP addresses only. When disabled WebRTC may also use "
@@ -410,3 +505,24 @@ msgstr ""
 "WebRTC-ის მხოლოდ საჯარო IP მისამართებზე შეზღუდვა. როცა გათიშულია, WebRTC-ს "
 "შიდა ქსელის IP მისამართის გამოყენებაც შეუძლია, მაგრამ დაშორებული ჰოსტების "
 "შიდა მისამართს დანახავენ."
+
+#~ msgid "Browser"
+#~ msgstr "Browser-ი"
+
+#~ msgid "Open in new tab"
+#~ msgstr "ახალ ჩანართში გახსნა"
+
+#~ msgid "Download"
+#~ msgstr "ჩამოტვირთვა"
+
+#~ msgid "Inspect"
+#~ msgstr "შეამოწმეთ"
+
+#~ msgid "Search..."
+#~ msgstr "ძებნა..."
+
+#~ msgid "BookMark"
+#~ msgstr "სანიშნე"
+
+#~ msgid "Find"
+#~ msgstr "მოძებნა"

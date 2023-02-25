@@ -1,23 +1,21 @@
-# Translation of fiery.po to Catalan (Valencian)
-# Copyright (C) 2022 This_file_is_part_of_KDE
-# This file is distributed under the license LGPL version 2.1 or
-# version 3 or later versions approved by the membership of KDE e.V.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-fiery package.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2022.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-25 00:59+0000\n"
-"PO-Revision-Date: 2022-11-16 09:39+0100\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
-"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
-"Language: ca@valencia\n"
+"PO-Revision-Date: 2023-02-11 17:48+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.12.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 22.12.1\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -27,12 +25,12 @@ msgstr "Fiery"
 #: src/main.cpp:35
 #, kde-format
 msgid "Browse and organize the web."
-msgstr "Navega i organitza la web."
+msgstr "瀏覽並整理網際網路。"
 
 #: src/main.cpp:36
 #, kde-format
 msgid "© 2020-%1 Maui Development Team"
-msgstr "© 2020-%1 L'equip de desenvolupament de Maui"
+msgstr "© 2020-%1 Maui 開發團隊"
 
 #: src/main.cpp:37
 #, kde-format
@@ -42,22 +40,22 @@ msgstr "Camilo Higuita"
 #: src/main.cpp:37
 #, kde-format
 msgid "Developer"
-msgstr "Desenvolupador"
+msgstr "開發者"
 
 #: src/main.qml:102
 #, kde-format
 msgid "Home"
-msgstr "Inici"
+msgstr "首頁"
 
 #: src/main.qml:110
 #, kde-format
 msgid "Recent"
-msgstr "Recents"
+msgstr "最近"
 
 #: src/main.qml:117 src/views/widgets/NavigationBar.qml:311
 #, kde-format
 msgid "Downloads"
-msgstr "Baixades"
+msgstr "下載"
 
 #: src/main.qml:173
 #, kde-format
@@ -83,13 +81,13 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgid "Copy"
 msgid "Copy Text"
-msgstr "Copia"
+msgstr "複製"
 
 #: src/views/browser/ActionsMenu.qml:94
 #, fuzzy, kde-format
 #| msgid "Copy link"
 msgid "Copy Link"
-msgstr "Copia l'enllaç"
+msgstr "複製連結"
 
 #: src/views/browser/ActionsMenu.qml:108
 #, kde-format
@@ -189,53 +187,53 @@ msgstr ""
 #: src/views/browser/Browser.qml:95 src/views/browser/BrowserView.qml:65
 #, kde-format
 msgid "Start Browsing"
-msgstr "Inicia la navegació"
+msgstr "開始瀏覽"
 
 #: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:66
 #, kde-format
 msgid "Enter a new URL or open a recent site."
-msgstr "Introduïu un URL nou o obriu un lloc recent."
+msgstr "輸入新網址或開啟最近網站。"
 
 #: src/views/widgets/NavigationBar.qml:89
 #, kde-format
 msgid "Search or enter URL"
-msgstr "Busca o introduïu un URL"
+msgstr "搜尋或輸入網址"
 
 #: src/views/widgets/NavigationBar.qml:158
 #, kde-format
 msgid "Search on default search engine"
-msgstr "Busca amb motor predeterminat de busca"
+msgstr "使用預設搜尋引擎進行搜尋"
 
 #: src/views/widgets/NavigationBar.qml:271
 #, kde-format
 msgid "Next"
-msgstr "Següent"
+msgstr "下一頁"
 
 #: src/views/widgets/NavigationBar.qml:286
 #, kde-format
 msgid "New Tab"
-msgstr "Pestanya nova"
+msgstr "新分頁"
 
 #: src/views/widgets/NavigationBar.qml:293
 #, kde-format
 msgid "Incognito Tab"
-msgstr "Pestanya d'incògnit"
+msgstr "無痕分頁"
 
 #: src/views/widgets/NavigationBar.qml:301
 #, kde-format
 msgid "History"
-msgstr "Historial"
+msgstr "歷史"
 
 #: src/views/widgets/NavigationBar.qml:321
 #, fuzzy, kde-format
 #| msgid "BookMarks"
 msgid "Bookmarks"
-msgstr "Adreces d'interés"
+msgstr "書籤"
 
 #: src/views/widgets/NavigationBar.qml:335
 #, kde-format
 msgid "Share"
-msgstr "Compartix"
+msgstr "分享"
 
 #: src/views/widgets/NavigationBar.qml:344
 #, kde-format
@@ -245,79 +243,79 @@ msgstr ""
 #: src/views/widgets/NavigationBar.qml:355
 #, kde-format
 msgid "Settings"
-msgstr "Configuració"
+msgstr "設定"
 
 #: src/views/widgets/NavigationBar.qml:362
 #, kde-format
 msgid "About"
-msgstr "Quant a"
+msgstr "關於"
 
 #: src/views/widgets/SettingsDialog.qml:13
 #, kde-format
 msgid "Navigation"
-msgstr "Navegació"
+msgstr "導覽"
 
 #: src/views/widgets/SettingsDialog.qml:14
 #, kde-format
 msgid "Configure the app basic navigation features."
-msgstr "Configura les característiques bàsiques de navegació de l'aplicació."
+msgstr "設定應用程式基本導覽功能。"
 
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Home Page"
-msgstr "Pàgina d'inici"
+msgstr "首頁"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Page to load initially and default."
-msgstr "Pàgina que es carregarà inicialment i predeterminada."
+msgstr "開始時預設載入的頁面。"
 
 #: src/views/widgets/SettingsDialog.qml:32
 #, kde-format
 msgid "Search Engine"
-msgstr "Motor de busca"
+msgstr "搜尋引擎"
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Engine to be use for default searching content."
-msgstr "El motor que s'utilitzarà per a la busca predeterminada de contingut."
+msgstr "預設用來搜尋內容的引擎。"
 
 #: src/views/widgets/SettingsDialog.qml:44
 #, kde-format
 msgid "Auto Load Images"
-msgstr "Carrega automàticament les imatges"
+msgstr "自動載入影像"
 
 #: src/views/widgets/SettingsDialog.qml:45
 #, kde-format
 msgid "Automatically loads images on web pages."
-msgstr "Carrega les imatges automàticament de les pàgines web."
+msgstr "自動載入網頁上的影像。"
 
 #: src/views/widgets/SettingsDialog.qml:58
 #, kde-format
 msgid "Hyperlink Auditing"
-msgstr "Auditoria dels enllaços"
+msgstr "超連結審計"
 
 #: src/views/widgets/SettingsDialog.qml:59
 #, kde-format
 msgid "Enables support for the ping attribute for hyperlinks."
-msgstr "Activa la implementació de l'atribut «ping» per als enllaços."
+msgstr "啟用超連結 ping 屬性的支援。"
 
 #: src/views/widgets/SettingsDialog.qml:74
 #: src/views/widgets/SettingsDialog.qml:92
 #, kde-format
 msgid "Features"
-msgstr "Característiques"
+msgstr "功能"
 
 #: src/views/widgets/SettingsDialog.qml:75
 #: src/views/widgets/SettingsDialog.qml:93
 #, kde-format
 msgid "Configure the browser plugins and features."
-msgstr "Configura els connectors i les característiques del navegador."
+msgstr "設定瀏覽器外掛與功能。"
 
 #: src/views/widgets/SettingsDialog.qml:97
 #, kde-format
 msgid "Accelerated 2D Canvas"
-msgstr "Llenç accelerat 2D"
+msgstr "2D Canvas 加速"
 
 #: src/views/widgets/SettingsDialog.qml:98
 #, kde-format
@@ -325,33 +323,30 @@ msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
 "makes many painting operations faster, but slows down pixel access."
 msgstr ""
-"Especifica si el llenç 2D de l'HTML 5 hauria de ser un «framebuffer» OpenGL. "
-"Açò fa més ràpides moltes operacions de pintat, però alentix l'accés als "
-"píxels."
+"指定 HTML 5 2D canvas 是否應該要是一個 OpenGL 的 framebuffer。這讓許多繪製操"
+"作更快，但會讓像素存取變慢。"
 
 #: src/views/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "PDF Viewer"
-msgstr "Visor de PDF"
+msgstr "PDF 檢視器"
 
 #: src/views/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
-msgstr ""
-"Els documents PDF s'obriran en el visor intern de PDF en lloc de baixar-los."
+msgstr "PDF 文件會在內部 PDF 檢視器打開而非被下載。"
 
 #: src/views/widgets/SettingsDialog.qml:125
 #, kde-format
 msgid "Plugins Enabled"
-msgstr "Connectors activats"
+msgstr "啟用外掛程式"
 
 #: src/views/widgets/SettingsDialog.qml:126
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
-msgstr ""
-"Activa la implementació dels connectors Pepper, com el reproductor Flash."
+msgstr "啟用 Pepper 外掛程式的支援，例如 Flash Player。"
 
 #: src/views/widgets/SettingsDialog.qml:142
 #: src/views/widgets/SettingsDialog.qml:161
@@ -364,82 +359,77 @@ msgstr "JavaScript"
 #, fuzzy, kde-format
 #| msgid "Configure JavaScript behaviour"
 msgid "Configure JavaScript behaviour."
-msgstr "Configura el comportament de JavaScript"
+msgstr "設定 JavaScript 行為"
 
 #: src/views/widgets/SettingsDialog.qml:166
 #, kde-format
 msgid "Javascript Enabled"
-msgstr "JavaScript activat"
+msgstr "啟用 Javascript"
 
 #: src/views/widgets/SettingsDialog.qml:167
 #, kde-format
 msgid "Enables the running of JavaScript programs."
-msgstr "Activa l'execució de programes JavaScript."
+msgstr "讓 JavaScript 程式能夠執行。"
 
 #: src/views/widgets/SettingsDialog.qml:180
 #, kde-format
 msgid "Javascript Can Access Clipboard"
-msgstr "JavaScript pot accedir al porta-retalls"
+msgstr "Javascript 可以存取剪貼簿"
 
 #: src/views/widgets/SettingsDialog.qml:181
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
-msgstr ""
-"Permet que els programes JavaScript lligen o escriguen al porta-retalls."
+msgstr "讓 JavaScript 程式可以讀取或寫入剪貼簿。"
 
 #: src/views/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Javascript Can Paste"
-msgstr "JavaScript pot apegar"
+msgstr "Javascript 可以貼上"
 
 #: src/views/widgets/SettingsDialog.qml:195
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
-msgstr "Activa l'ordre JavaScript «execCommand(paste)»."
+msgstr "啟用 JavaScript execCommand(paste)。"
 
 #: src/views/widgets/SettingsDialog.qml:208
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
-msgstr "Permet l'activació de finestres des de JavaScript"
+msgstr "允許 JavaScript 使視窗成為作用中"
 
 #: src/views/widgets/SettingsDialog.qml:209
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
-msgstr "Permet el mètode «window.focus()» en JavaScript."
+msgstr "讓 JavaScript 的 window.focus() 方法能夠執行。"
 
 #: src/views/widgets/SettingsDialog.qml:226
 #: src/views/widgets/SettingsDialog.qml:244
 #, kde-format
 msgid "Security & Privacy"
-msgstr "Seguretat i privadesa"
+msgstr "安全性與隱私"
 
 #: src/views/widgets/SettingsDialog.qml:227
 #: src/views/widgets/SettingsDialog.qml:245
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
-msgstr ""
-"Configura l'aspecte i el comportament de l'editor. La configuració s'aplica "
-"globalment"
+msgstr "設定編輯器外觀與行為。這些設定是全域套用的"
 
 #: src/views/widgets/SettingsDialog.qml:249
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
-msgstr "Permet la geolocalització en orígens insegurs"
+msgstr "允許不完全的來源上的地理位置"
 
 #: src/views/widgets/SettingsDialog.qml:250
 #, kde-format
 msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
 "features."
-msgstr ""
-"Només els orígens segurs com HTTPS poden requerir les característiques de "
-"geolocalització."
+msgstr "通常只有 HTTPS 等等安全來源才能請求使用地理位置功能。"
 
 #: src/views/widgets/SettingsDialog.qml:263
 #, kde-format
 msgid "Allow Running Insecure Content"
-msgstr "Permet l'execució de contingut insegur"
+msgstr "允許執行不安全的內容"
 
 #: src/views/widgets/SettingsDialog.qml:264
 #, kde-format
@@ -447,61 +437,54 @@ msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
 "from HTTP URLs."
 msgstr ""
-"De manera predeterminada, les pàgines HTTPS no poden executar JavaScript, "
-"CSS, connectors o WebSockets des d'URL HTTP."
+"HTTPS 頁面預設無法執行 HTTP 網址來的 JavaScript、CSS、外掛程式或 web socket。"
 
 #: src/views/widgets/SettingsDialog.qml:278
 #, kde-format
 msgid "DNS Prefetch Enabled"
-msgstr "Precàrrega DNS activada"
+msgstr "啟用 DNS 預先取得"
 
 #: src/views/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
 "are activated."
-msgstr ""
-"Activa la precàrrega especulativa dels registres DNS per als enllaços HTML "
-"abans que s'activen."
+msgstr "啟用推測後在觸發它們之前預先取得 HTML link 的 DNS 紀錄的功能。"
 
 #: src/views/widgets/SettingsDialog.qml:292
 #, kde-format
 msgid "Local Content Can Access File Urls"
-msgstr "El contingut local pot accedir a URL de fitxers"
+msgstr "本機內容可以存取 file 網址"
 
 #: src/views/widgets/SettingsDialog.qml:293
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
-msgstr ""
-"Permet que els documents carregats localment puguen accedir a altres URL "
-"locals."
+msgstr "允許從本地載入的文件存取其他本地的網址。"
 
 #: src/views/widgets/SettingsDialog.qml:306
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
-msgstr "El contingut local pot accedir a URL remots"
+msgstr "本機內容可以存取遠端網址"
 
 #: src/views/widgets/SettingsDialog.qml:307
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
-msgstr "Permet que els documents carregats localment accedisquen a URL remots."
+msgstr "允許從本地載入的文件存取遠端的網址。"
 
 #: src/views/widgets/SettingsDialog.qml:320
 #, kde-format
 msgid "Local Storage"
-msgstr "Emmagatzematge local"
+msgstr "LocalStorage"
 
 #: src/views/widgets/SettingsDialog.qml:321
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
-msgstr ""
-"Activa la implementació de la característica d'emmagatzematge local de "
-"l'HTML 5."
+msgstr "啟用 HTML 5 localStorage 功能的支援。"
 
 #: src/views/widgets/SettingsDialog.qml:334
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
-msgstr "Només les interfícies públiques de WebRTC"
+msgstr "WebRTC 僅公開介面"
 
 #: src/views/widgets/SettingsDialog.qml:335
 #, kde-format
@@ -510,27 +493,26 @@ msgid ""
 "local network IP addresses, but remote hosts can also see your local network "
 "IP address."
 msgstr ""
-"Limita WebRTC a només les adreces IP públiques. En desactivar WebRTC també "
-"es poden utilitzar les adreces IP de la xarxa local, però els servidors "
-"remots també poden veure l'adreça IP de la xarxa local."
+"限制 WebRTC 為只能使用公開 IP 位址。停用時 WebRTC 也可以使用本地網路 IP 位"
+"址，但遠端主機也會可以看到您的本地網路 IP 位址。"
 
 #~ msgid "Browser"
-#~ msgstr "Navegador"
+#~ msgstr "瀏覽器"
 
 #~ msgid "Open in new tab"
-#~ msgstr "Obri en una pestanya nova"
+#~ msgstr "在新分頁開啟"
 
 #~ msgid "Download"
-#~ msgstr "Baixada"
+#~ msgstr "下載"
 
 #~ msgid "Inspect"
-#~ msgstr "Inspecciona"
+#~ msgstr "檢查"
 
 #~ msgid "Search..."
-#~ msgstr "Busca..."
+#~ msgstr "搜尋…"
 
 #~ msgid "BookMark"
-#~ msgstr "Adreça d'interés"
+#~ msgstr "書籤"
 
 #~ msgid "Find"
-#~ msgstr "Busca"
+#~ msgstr "尋找"
