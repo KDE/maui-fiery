@@ -62,12 +62,12 @@ msgstr "Transferências"
 #: src/main.qml:173
 #, kde-format
 msgid "Toggle sidebar"
-msgstr ""
+msgstr "Comutar a barra lateral"
 
 #: src/views/browser/ActionsMenu.qml:45
 #, kde-format
 msgid "Paste"
-msgstr ""
+msgstr "Colar"
 
 #: src/views/browser/ActionsMenu.qml:58
 #, kde-format
@@ -77,24 +77,22 @@ msgstr ""
 #: src/views/browser/ActionsMenu.qml:69
 #, kde-format
 msgid "Select All"
-msgstr ""
+msgstr "Seleccionar Tudo"
 
 #: src/views/browser/ActionsMenu.qml:81
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgid "Copy Text"
-msgstr "Copiar"
+msgstr "Copiar o Texto"
 
 #: src/views/browser/ActionsMenu.qml:94
-#, fuzzy, kde-format
-#| msgid "Copy link"
+#, kde-format
 msgid "Copy Link"
-msgstr "Copiar a ligação"
+msgstr "Copiar a Ligação"
 
 #: src/views/browser/ActionsMenu.qml:108
 #, kde-format
 msgid "Open Link"
-msgstr ""
+msgstr "Abrir a Ligação"
 
 #: src/views/browser/ActionsMenu.qml:120
 #, kde-format
@@ -109,7 +107,7 @@ msgstr ""
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Video"
-msgstr ""
+msgstr "Abrir o Vídeo"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
@@ -119,17 +117,17 @@ msgstr ""
 #: src/views/browser/ActionsMenu.qml:172
 #, kde-format
 msgid "Save Image"
-msgstr ""
+msgstr "Gravar a Imagem"
 
 #: src/views/browser/ActionsMenu.qml:180
 #, kde-format
 msgid "Copy Image"
-msgstr ""
+msgstr "Copiar a Imagem"
 
 #: src/views/browser/ActionsMenu.qml:188
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "Abrir a Imagem"
 
 #: src/views/browser/ActionsMenu.qml:203
 #, kde-format
@@ -144,22 +142,22 @@ msgstr ""
 #: src/views/browser/ActionsMenu.qml:213
 #, kde-format
 msgid "Unmute"
-msgstr ""
+msgstr "Activar o Som"
 
 #: src/views/browser/ActionsMenu.qml:214
 #, kde-format
 msgid "Mute"
-msgstr ""
+msgstr "Silenciar"
 
 #: src/views/browser/ActionsMenu.qml:227
 #, kde-format
 msgid "Speed"
-msgstr ""
+msgstr "Velocidade"
 
 #: src/views/browser/ActionsMenu.qml:253
 #, kde-format
 msgid "Loop"
-msgstr ""
+msgstr "Ciclo"
 
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
@@ -169,7 +167,7 @@ msgstr ""
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
 msgid "Fullscreen"
-msgstr ""
+msgstr "Ecrã Completo"
 
 #: src/views/browser/ActionsMenu.qml:277
 #, kde-format
@@ -184,7 +182,7 @@ msgstr ""
 #: src/views/browser/Browser.qml:95
 #, kde-format
 msgid "Error"
-msgstr ""
+msgstr "Erro"
 
 #: src/views/browser/Browser.qml:95 src/views/browser/BrowserView.qml:65
 #, kde-format
@@ -227,8 +225,7 @@ msgid "History"
 msgstr "Histórico"
 
 #: src/views/widgets/NavigationBar.qml:321
-#, fuzzy, kde-format
-#| msgid "BookMarks"
+#, kde-format
 msgid "Bookmarks"
 msgstr "Favoritos"
 
