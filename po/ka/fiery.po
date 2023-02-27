@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-25 00:59+0000\n"
-"PO-Revision-Date: 2023-02-03 16:47+0100\n"
+"PO-Revision-Date: 2023-02-26 03:17+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -61,129 +61,127 @@ msgstr "გადმოწერები"
 #: src/main.qml:173
 #, kde-format
 msgid "Toggle sidebar"
-msgstr ""
+msgstr "გვერდითი ზოლის ჩართ/გამორთ"
 
 #: src/views/browser/ActionsMenu.qml:45
 #, kde-format
 msgid "Paste"
-msgstr ""
+msgstr "ჩასმა"
 
 #: src/views/browser/ActionsMenu.qml:58
 #, kde-format
 msgid "Translate"
-msgstr ""
+msgstr "თარგმნა"
 
 #: src/views/browser/ActionsMenu.qml:69
 #, kde-format
 msgid "Select All"
-msgstr ""
+msgstr "ყველას მონიშვნა"
 
 #: src/views/browser/ActionsMenu.qml:81
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgid "Copy Text"
-msgstr "კოპირება"
+msgstr "ტექსტის კოპირება"
 
 #: src/views/browser/ActionsMenu.qml:94
-#, fuzzy, kde-format
-#| msgid "Copy link"
+#, kde-format
 msgid "Copy Link"
-msgstr "Ბმულის კოპირება"
+msgstr "ბმულის კოპირება"
 
 #: src/views/browser/ActionsMenu.qml:108
 #, kde-format
 msgid "Open Link"
-msgstr ""
+msgstr "ბმულის გახსნა"
 
 #: src/views/browser/ActionsMenu.qml:120
 #, kde-format
 msgid "Open Link in Split View"
-msgstr ""
+msgstr "ბმულის დაყოფილ ხედში გახსნა"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
 msgid "Save Video"
-msgstr ""
+msgstr "ვიდეოს შენახვა"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Video"
-msgstr ""
+msgstr "ვიდეოს გახსნა"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Audio"
-msgstr ""
+msgstr "აუდიოს გახსნა"
 
 #: src/views/browser/ActionsMenu.qml:172
 #, kde-format
 msgid "Save Image"
-msgstr ""
+msgstr "გამოსახულების შენახვა"
 
 #: src/views/browser/ActionsMenu.qml:180
 #, kde-format
 msgid "Copy Image"
-msgstr ""
+msgstr "ნახატის კოპირება"
 
 #: src/views/browser/ActionsMenu.qml:188
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "გამოსახულების გახსნა"
 
 #: src/views/browser/ActionsMenu.qml:203
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "დაკვრა"
 
 #: src/views/browser/ActionsMenu.qml:204
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "გაჩერება"
 
 #: src/views/browser/ActionsMenu.qml:213
 #, kde-format
 msgid "Unmute"
-msgstr ""
+msgstr "დადუმების გამორთვა"
 
 #: src/views/browser/ActionsMenu.qml:214
 #, kde-format
 msgid "Mute"
-msgstr ""
+msgstr "დადუმება"
 
 #: src/views/browser/ActionsMenu.qml:227
 #, kde-format
 msgid "Speed"
-msgstr ""
+msgstr "სიჩქარე"
 
 #: src/views/browser/ActionsMenu.qml:253
 #, kde-format
 msgid "Loop"
-msgstr ""
+msgstr "მარყუჟი"
 
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
 msgid "Exit fullscreen"
-msgstr ""
+msgstr "სრული ეკრანიდან გასვლა"
 
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
 msgid "Fullscreen"
-msgstr ""
+msgstr "მთელ ეკრანზე"
 
 #: src/views/browser/ActionsMenu.qml:277
 #, kde-format
 msgid "Hide controls"
-msgstr ""
+msgstr "კონტროლების დამალვა"
 
 #: src/views/browser/ActionsMenu.qml:278
 #, kde-format
 msgid "Show controls"
-msgstr ""
+msgstr "კონტროლების ჩვენება"
 
 #: src/views/browser/Browser.qml:95
 #, kde-format
 msgid "Error"
-msgstr ""
+msgstr "შეცდომა"
 
 #: src/views/browser/Browser.qml:95 src/views/browser/BrowserView.qml:65
 #, kde-format
@@ -226,8 +224,7 @@ msgid "History"
 msgstr "ისტორია"
 
 #: src/views/widgets/NavigationBar.qml:321
-#, fuzzy, kde-format
-#| msgid "BookMarks"
+#, kde-format
 msgid "Bookmarks"
 msgstr "სანიშნები"
 
@@ -239,7 +236,7 @@ msgstr "გაზიარება"
 #: src/views/widgets/NavigationBar.qml:344
 #, kde-format
 msgid "Find In Page"
-msgstr ""
+msgstr "გვერდში ძებნა"
 
 #: src/views/widgets/NavigationBar.qml:355
 #, kde-format
@@ -357,10 +354,9 @@ msgstr "JavaScript"
 
 #: src/views/widgets/SettingsDialog.qml:143
 #: src/views/widgets/SettingsDialog.qml:162
-#, fuzzy, kde-format
-#| msgid "Configure JavaScript behaviour"
+#, kde-format
 msgid "Configure JavaScript behaviour."
-msgstr "JavaScript -ის ქცევის მორგება"
+msgstr "JavaScript-ის ქცევის მორგება."
 
 #: src/views/widgets/SettingsDialog.qml:166
 #, kde-format

@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-25 00:59+0000\n"
-"PO-Revision-Date: 2023-01-06 10:56+0100\n"
+"PO-Revision-Date: 2023-02-25 21:55+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -58,129 +58,127 @@ msgstr "Téléchargements"
 #: src/main.qml:173
 #, kde-format
 msgid "Toggle sidebar"
-msgstr ""
+msgstr "Afficher / Masquer la barre latérale"
 
 #: src/views/browser/ActionsMenu.qml:45
 #, kde-format
 msgid "Paste"
-msgstr ""
+msgstr "Coller"
 
 #: src/views/browser/ActionsMenu.qml:58
 #, kde-format
 msgid "Translate"
-msgstr ""
+msgstr "Traduire"
 
 #: src/views/browser/ActionsMenu.qml:69
 #, kde-format
 msgid "Select All"
-msgstr ""
+msgstr "Tout sélectionner"
 
 #: src/views/browser/ActionsMenu.qml:81
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgid "Copy Text"
-msgstr "Copier"
+msgstr "Copier du texte"
 
 #: src/views/browser/ActionsMenu.qml:94
-#, fuzzy, kde-format
-#| msgid "Copy link"
+#, kde-format
 msgid "Copy Link"
 msgstr "Copier un lien"
 
 #: src/views/browser/ActionsMenu.qml:108
 #, kde-format
 msgid "Open Link"
-msgstr ""
+msgstr "Ouvrir un lien"
 
 #: src/views/browser/ActionsMenu.qml:120
 #, kde-format
 msgid "Open Link in Split View"
-msgstr ""
+msgstr "Ouvrir un lien dans une vue scindée"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
 msgid "Save Video"
-msgstr ""
+msgstr "Enregistrer une vidéo"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Video"
-msgstr ""
+msgstr "Ouvrir une vidéo"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Audio"
-msgstr ""
+msgstr "Ouvrir un fichier audio"
 
 #: src/views/browser/ActionsMenu.qml:172
 #, kde-format
 msgid "Save Image"
-msgstr ""
+msgstr "Enregistrer une image"
 
 #: src/views/browser/ActionsMenu.qml:180
 #, kde-format
 msgid "Copy Image"
-msgstr ""
+msgstr "Copier une image"
 
 #: src/views/browser/ActionsMenu.qml:188
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "Ouvrir une image"
 
 #: src/views/browser/ActionsMenu.qml:203
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "Lire"
 
 #: src/views/browser/ActionsMenu.qml:204
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: src/views/browser/ActionsMenu.qml:213
 #, kde-format
 msgid "Unmute"
-msgstr ""
+msgstr "Remettre le son"
 
 #: src/views/browser/ActionsMenu.qml:214
 #, kde-format
 msgid "Mute"
-msgstr ""
+msgstr "Couper le son"
 
 #: src/views/browser/ActionsMenu.qml:227
 #, kde-format
 msgid "Speed"
-msgstr ""
+msgstr "Vitesse"
 
 #: src/views/browser/ActionsMenu.qml:253
 #, kde-format
 msgid "Loop"
-msgstr ""
+msgstr "En boucle"
 
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
 msgid "Exit fullscreen"
-msgstr ""
+msgstr "Quitter le mode « Plein écran »"
 
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
 msgid "Fullscreen"
-msgstr ""
+msgstr "Plein écran"
 
 #: src/views/browser/ActionsMenu.qml:277
 #, kde-format
 msgid "Hide controls"
-msgstr ""
+msgstr "Masquer les contrôles"
 
 #: src/views/browser/ActionsMenu.qml:278
 #, kde-format
 msgid "Show controls"
-msgstr ""
+msgstr "Afficher les contrôles"
 
 #: src/views/browser/Browser.qml:95
 #, kde-format
 msgid "Error"
-msgstr ""
+msgstr "Erreur"
 
 #: src/views/browser/Browser.qml:95 src/views/browser/BrowserView.qml:65
 #, kde-format
@@ -223,8 +221,7 @@ msgid "History"
 msgstr "Historique"
 
 #: src/views/widgets/NavigationBar.qml:321
-#, fuzzy, kde-format
-#| msgid "BookMarks"
+#, kde-format
 msgid "Bookmarks"
 msgstr "Signets"
 
@@ -236,7 +233,7 @@ msgstr "Partager"
 #: src/views/widgets/NavigationBar.qml:344
 #, kde-format
 msgid "Find In Page"
-msgstr ""
+msgstr "Chercher dans une page"
 
 #: src/views/widgets/NavigationBar.qml:355
 #, kde-format
@@ -361,10 +358,9 @@ msgstr "JavaScript"
 
 #: src/views/widgets/SettingsDialog.qml:143
 #: src/views/widgets/SettingsDialog.qml:162
-#, fuzzy, kde-format
-#| msgid "Configure JavaScript behaviour"
+#, kde-format
 msgid "Configure JavaScript behaviour."
-msgstr "Configurer le comportement Javascript."
+msgstr "Configurer le comportement de Javascript."
 
 #: src/views/widgets/SettingsDialog.qml:166
 #, kde-format
