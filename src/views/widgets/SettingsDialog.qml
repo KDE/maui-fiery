@@ -85,13 +85,12 @@ Maui.SettingsDialog
     Component
     {
         id: _featuresComponent
-        Maui.ScrollColumn
+        Maui.SettingsPage
         {
+            title: i18n("Features")
+
             Maui.SectionGroup
             {
-                title: i18n("Features")
-                description: i18n("Configure the browser plugins and features.")
-
                 Maui.SectionItem
                 {
                     label1.text: i18n("Accelerated 2D Canvas")
@@ -154,13 +153,12 @@ Maui.SettingsDialog
     Component
     {
         id: _jsComponent
-        Maui.ScrollColumn
+        Maui.SettingsPage
         {
+            title: i18n("JavaScript")
+
             Maui.SectionGroup
             {
-                title: i18n("JavaScript")
-                description: i18n("Configure JavaScript behaviour.")
-
                 Maui.SectionItem
                 {
                     label1.text: i18n("Javascript Enabled")
@@ -237,13 +235,12 @@ Maui.SettingsDialog
     Component
     {
         id: _privacyComponent
-        Maui.ScrollColumn
+        Maui.SettingsPage
         {
+            title: i18n("Security & Privacy")
+
             Maui.SectionGroup
             {
-                title: i18n("Security & Privacy")
-                description: i18n("Configure the look and feel of the editor. The settings are applied globally")
-
                 Maui.SectionItem
                 {
                     label1.text: i18n("Allow Geolocation On Insecure Origins")
