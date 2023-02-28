@@ -1,16 +1,16 @@
 # Translation for fiery.po to Euskara/Basque (eu).
-# Copyright (C) 2022 This file is copyright:
+# Copyright (C) 2022-2023 This file is copyright:
 # This file is distributed under the same license as the maui-sol package.
 # KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
 # Translators:
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2022.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2022, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: maui-sol\n"
+"Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-25 00:59+0000\n"
-"PO-Revision-Date: 2022-11-18 08:34+0100\n"
+"PO-Revision-Date: 2023-02-27 21:10+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -63,129 +63,127 @@ msgstr "Zama-jaitsita"
 #: src/main.qml:173
 #, kde-format
 msgid "Toggle sidebar"
-msgstr ""
+msgstr "Txandakatu alboko-barra"
 
 #: src/views/browser/ActionsMenu.qml:45
 #, kde-format
 msgid "Paste"
-msgstr ""
+msgstr "Itsatsi"
 
 #: src/views/browser/ActionsMenu.qml:58
 #, kde-format
 msgid "Translate"
-msgstr ""
+msgstr "Itzuli"
 
 #: src/views/browser/ActionsMenu.qml:69
 #, kde-format
 msgid "Select All"
-msgstr ""
+msgstr "Hautatu dena"
 
 #: src/views/browser/ActionsMenu.qml:81
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgid "Copy Text"
-msgstr "Kopiatu"
+msgstr "Kopiatu testua"
 
 #: src/views/browser/ActionsMenu.qml:94
-#, fuzzy, kde-format
-#| msgid "Copy link"
+#, kde-format
 msgid "Copy Link"
 msgstr "Kopiatu esteka"
 
 #: src/views/browser/ActionsMenu.qml:108
 #, kde-format
 msgid "Open Link"
-msgstr ""
+msgstr "Ireki esteka"
 
 #: src/views/browser/ActionsMenu.qml:120
 #, kde-format
 msgid "Open Link in Split View"
-msgstr ""
+msgstr "Ireki esteka ikuspegi zatituan"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
 msgid "Save Video"
-msgstr ""
+msgstr "Gorde bideoa"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Video"
-msgstr ""
+msgstr "Ireki bideoa"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Audio"
-msgstr ""
+msgstr "Ireki audioa"
 
 #: src/views/browser/ActionsMenu.qml:172
 #, kde-format
 msgid "Save Image"
-msgstr ""
+msgstr "Gorde irudia"
 
 #: src/views/browser/ActionsMenu.qml:180
 #, kde-format
 msgid "Copy Image"
-msgstr ""
+msgstr "Kopiatu irudia"
 
 #: src/views/browser/ActionsMenu.qml:188
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "Ireki irudia"
 
 #: src/views/browser/ActionsMenu.qml:203
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "Jo"
 
 #: src/views/browser/ActionsMenu.qml:204
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Eten"
 
 #: src/views/browser/ActionsMenu.qml:213
 #, kde-format
 msgid "Unmute"
-msgstr ""
+msgstr "Ozendu"
 
 #: src/views/browser/ActionsMenu.qml:214
 #, kde-format
 msgid "Mute"
-msgstr ""
+msgstr "Isilarazi"
 
 #: src/views/browser/ActionsMenu.qml:227
 #, kde-format
 msgid "Speed"
-msgstr ""
+msgstr "Abiadura"
 
 #: src/views/browser/ActionsMenu.qml:253
 #, kde-format
 msgid "Loop"
-msgstr ""
+msgstr "Begizta"
 
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
 msgid "Exit fullscreen"
-msgstr ""
+msgstr "Irten Pantaila-betetik"
 
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
 msgid "Fullscreen"
-msgstr ""
+msgstr "Pantaila-betea"
 
 #: src/views/browser/ActionsMenu.qml:277
 #, kde-format
 msgid "Hide controls"
-msgstr ""
+msgstr "Ezkutatu aginteak"
 
 #: src/views/browser/ActionsMenu.qml:278
 #, kde-format
 msgid "Show controls"
-msgstr ""
+msgstr "Erakutsi aginteak"
 
 #: src/views/browser/Browser.qml:95
 #, kde-format
 msgid "Error"
-msgstr ""
+msgstr "Errorea"
 
 #: src/views/browser/Browser.qml:95 src/views/browser/BrowserView.qml:65
 #, kde-format
@@ -228,8 +226,7 @@ msgid "History"
 msgstr "Historia"
 
 #: src/views/widgets/NavigationBar.qml:321
-#, fuzzy, kde-format
-#| msgid "BookMarks"
+#, kde-format
 msgid "Bookmarks"
 msgstr "Laster-markak"
 
@@ -241,7 +238,7 @@ msgstr "Partekatu"
 #: src/views/widgets/NavigationBar.qml:344
 #, kde-format
 msgid "Find In Page"
-msgstr ""
+msgstr "Aurkitu orrian"
 
 #: src/views/widgets/NavigationBar.qml:355
 #, kde-format
@@ -360,10 +357,9 @@ msgstr "JavaScript"
 
 #: src/views/widgets/SettingsDialog.qml:143
 #: src/views/widgets/SettingsDialog.qml:162
-#, fuzzy, kde-format
-#| msgid "Configure JavaScript behaviour"
+#, kde-format
 msgid "Configure JavaScript behaviour."
-msgstr "Konfiguratu JavaScript-en jokabidea"
+msgstr "Konfiguratu JavaScript-en jokabidea."
 
 #: src/views/widgets/SettingsDialog.qml:166
 #, kde-format
