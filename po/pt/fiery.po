@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-02 00:53+0000\n"
-"PO-Revision-Date: 2022-11-16 09:34+0000\n"
+"PO-Revision-Date: 2023-03-06 16:09+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -72,7 +72,7 @@ msgstr "Colar"
 #: src/views/browser/ActionsMenu.qml:58
 #, kde-format
 msgid "Translate"
-msgstr ""
+msgstr "Traduzir"
 
 #: src/views/browser/ActionsMenu.qml:69
 #, kde-format
@@ -97,12 +97,12 @@ msgstr "Abrir a Ligação"
 #: src/views/browser/ActionsMenu.qml:120
 #, kde-format
 msgid "Open Link in Split View"
-msgstr ""
+msgstr "Abrir a Ligação numa Área Dividida"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
 msgid "Save Video"
-msgstr ""
+msgstr "Gravar o Vídeo"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
@@ -112,7 +112,7 @@ msgstr "Abrir o Vídeo"
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Audio"
-msgstr ""
+msgstr "Abrir o Áudio"
 
 #: src/views/browser/ActionsMenu.qml:172
 #, kde-format
@@ -132,12 +132,12 @@ msgstr "Abrir a Imagem"
 #: src/views/browser/ActionsMenu.qml:203
 #, kde-format
 msgid "Play"
-msgstr ""
+msgstr "Reproduzir"
 
 #: src/views/browser/ActionsMenu.qml:204
 #, kde-format
 msgid "Pause"
-msgstr ""
+msgstr "Pausa"
 
 #: src/views/browser/ActionsMenu.qml:213
 #, kde-format
@@ -162,7 +162,7 @@ msgstr "Ciclo"
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
 msgid "Exit fullscreen"
-msgstr ""
+msgstr "Sair do ecrã completo"
 
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
@@ -172,12 +172,12 @@ msgstr "Ecrã Completo"
 #: src/views/browser/ActionsMenu.qml:277
 #, kde-format
 msgid "Hide controls"
-msgstr ""
+msgstr "Esconder os controlos"
 
 #: src/views/browser/ActionsMenu.qml:278
 #, kde-format
 msgid "Show controls"
-msgstr ""
+msgstr "Mostrar os controlos"
 
 #: src/views/browser/Browser.qml:95
 #, kde-format
@@ -237,7 +237,7 @@ msgstr "Partilhar"
 #: src/views/widgets/NavigationBar.qml:344
 #, kde-format
 msgid "Find In Page"
-msgstr ""
+msgstr "Procurar na Página"
 
 #: src/views/widgets/NavigationBar.qml:355
 #, kde-format
@@ -356,10 +356,9 @@ msgid "JavaScript"
 msgstr "JavaScript"
 
 #: src/views/widgets/SettingsDialog.qml:142
-#, fuzzy, kde-format
-#| msgid "Configure JavaScript behaviour"
+#, kde-format
 msgid "Configure JavaScript behaviour."
-msgstr "Configurar o comportamento do JavaScript"
+msgstr "Configurar o comportamento do JavaScript."
 
 #: src/views/widgets/SettingsDialog.qml:164
 #, kde-format
@@ -505,24 +504,3 @@ msgstr ""
 "Limita o WebRTC apenas aos endereços IP públicos. Quando estiver "
 "desactivado, o WebRTC também poderá usar endereços IP da rede local, mas as "
 "máquinas remotas também poderão ver o seu endereço IP local."
-
-#~ msgid "Browser"
-#~ msgstr "Navegador"
-
-#~ msgid "Open in new tab"
-#~ msgstr "Abrir numa nova página"
-
-#~ msgid "Download"
-#~ msgstr "Obter"
-
-#~ msgid "Inspect"
-#~ msgstr "Inspeccionar"
-
-#~ msgid "Search..."
-#~ msgstr "Procurar..."
-
-#~ msgid "BookMark"
-#~ msgstr "Favorito"
-
-#~ msgid "Find"
-#~ msgstr "Procurar"
