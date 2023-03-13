@@ -1,22 +1,19 @@
-# Copyright (C) YEAR This file is copyright:
-# This file is distributed under the same license as the maui-sol package.
-# Burkhard Lück <lueck@hube-lueck.de>, 2021.
-# Frederik Schwarzer <schwarzer@kde.org>, 2023.
-#
+# translation of fiery.po to Slovak
+# Roman Paholik <wizzardsk@gmail.com>, 2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: maui-sol\n"
+"Project-Id-Version: fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-02 00:53+0000\n"
-"PO-Revision-Date: 2023-03-12 17:00+0100\n"
-"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
-"Language-Team: German <kde-i18n-de@kde.org>\n"
-"Language: de\n"
+"PO-Revision-Date: 2023-03-12 10:31+0100\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.07.70\n"
+"X-Generator: Lokalize 22.12.3\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: src/main.cpp:35
 #, kde-format
@@ -26,12 +23,12 @@ msgstr "Fiery"
 #: src/main.cpp:35
 #, kde-format
 msgid "Browse and organize the web."
-msgstr "Das Web durchsuchen und organisieren."
+msgstr ""
 
 #: src/main.cpp:36
 #, kde-format
 msgid "© 2020-%1 Maui Development Team"
-msgstr "Copyright © 2020-%1 Maui-Entwicklerteam"
+msgstr "© 2020-%1 Vývojársky tím Maui"
 
 #: src/main.cpp:37
 #, kde-format
@@ -41,57 +38,57 @@ msgstr "Camilo Higuita"
 #: src/main.cpp:37
 #, kde-format
 msgid "Developer"
-msgstr "Entwickler"
+msgstr "Vývojár"
 
 #: src/main.qml:102
 #, kde-format
 msgid "Home"
-msgstr "Startseite"
+msgstr "Domov"
 
 #: src/main.qml:110
 #, kde-format
 msgid "Recent"
-msgstr "Zuletzt verwendet"
+msgstr "Nedávne"
 
 #: src/main.qml:117 src/views/widgets/NavigationBar.qml:311
 #, kde-format
 msgid "Downloads"
-msgstr "Downloads"
+msgstr "Sťahovania"
 
 #: src/main.qml:173
 #, kde-format
 msgid "Toggle sidebar"
-msgstr "Seitenleiste umschalten"
+msgstr "Prepnúť bočný panel"
 
 #: src/views/browser/ActionsMenu.qml:45
 #, kde-format
 msgid "Paste"
-msgstr "Einfügen"
+msgstr "Vložiť"
 
 #: src/views/browser/ActionsMenu.qml:58
 #, kde-format
 msgid "Translate"
-msgstr "Übersetzen"
+msgstr "Preložiť"
 
 #: src/views/browser/ActionsMenu.qml:69
 #, kde-format
 msgid "Select All"
-msgstr "Alles auswählen"
+msgstr "Vybrať všetko"
 
 #: src/views/browser/ActionsMenu.qml:81
 #, kde-format
 msgid "Copy Text"
-msgstr "Text kopieren"
+msgstr "Kopírovať text"
 
 #: src/views/browser/ActionsMenu.qml:94
 #, kde-format
 msgid "Copy Link"
-msgstr "Verknüpfung kopieren"
+msgstr "Kopírovať odkaz"
 
 #: src/views/browser/ActionsMenu.qml:108
 #, kde-format
 msgid "Open Link"
-msgstr "Verknüpfung öffnen"
+msgstr "Otvoriť odkaz"
 
 #: src/views/browser/ActionsMenu.qml:120
 #, kde-format
@@ -101,177 +98,177 @@ msgstr ""
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
 msgid "Save Video"
-msgstr "Video speichern"
+msgstr ""
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Video"
-msgstr "Video öffnen"
+msgstr ""
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Audio"
-msgstr "Audio öffnen"
+msgstr "Otvoriť zvuk"
 
 #: src/views/browser/ActionsMenu.qml:172
 #, kde-format
 msgid "Save Image"
-msgstr "Bild speichern"
+msgstr "Uložiť obrázok"
 
 #: src/views/browser/ActionsMenu.qml:180
 #, kde-format
 msgid "Copy Image"
-msgstr "Bild kopieren"
+msgstr "Kopírovať obrázok"
 
 #: src/views/browser/ActionsMenu.qml:188
 #, kde-format
 msgid "Open Image"
-msgstr "Bild öffnen"
+msgstr "Otvoriť obrázok"
 
 #: src/views/browser/ActionsMenu.qml:203
 #, kde-format
 msgid "Play"
-msgstr "Wiedergabe"
+msgstr "Prehrať"
 
 #: src/views/browser/ActionsMenu.qml:204
 #, kde-format
 msgid "Pause"
-msgstr "Pause"
+msgstr "Pozastaviť"
 
 #: src/views/browser/ActionsMenu.qml:213
 #, kde-format
 msgid "Unmute"
-msgstr "Stummschaltung aufheben"
+msgstr "Zrušiť stlmenie"
 
 #: src/views/browser/ActionsMenu.qml:214
 #, kde-format
 msgid "Mute"
-msgstr "Stummschalten"
+msgstr "Stlmiť"
 
 #: src/views/browser/ActionsMenu.qml:227
 #, kde-format
 msgid "Speed"
-msgstr "Geschwindigkeit"
+msgstr "Rýchlosť"
 
 #: src/views/browser/ActionsMenu.qml:253
 #, kde-format
 msgid "Loop"
-msgstr "Schleife"
+msgstr "Opakovať"
 
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
 msgid "Exit fullscreen"
-msgstr "Vollbildmodus beenden"
+msgstr "Ukončiť režim celej obrazovky"
 
 #: src/views/browser/ActionsMenu.qml:262
 #, kde-format
 msgid "Fullscreen"
-msgstr "Vollbild"
+msgstr "Celá obrazovka"
 
 #: src/views/browser/ActionsMenu.qml:277
 #, kde-format
 msgid "Hide controls"
-msgstr "Bedienelemente ausblenden"
+msgstr ""
 
 #: src/views/browser/ActionsMenu.qml:278
 #, kde-format
 msgid "Show controls"
-msgstr "Bedienelemente anzeigen"
+msgstr "Zobraziť ovládacie prvky"
 
 #: src/views/browser/Browser.qml:95
 #, kde-format
 msgid "Error"
-msgstr "Fehler"
+msgstr "Chyba"
 
 #: src/views/browser/Browser.qml:95 src/views/browser/BrowserView.qml:65
 #, kde-format
 msgid "Start Browsing"
-msgstr "Browsen starten"
+msgstr ""
 
 #: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:66
 #, kde-format
 msgid "Enter a new URL or open a recent site."
-msgstr "Geben Sie eine URL ein oder öffnen Sie eine zuletzt besuchte Seite."
+msgstr ""
 
 #: src/views/widgets/NavigationBar.qml:89
 #, kde-format
 msgid "Search or enter URL"
-msgstr "Suchen oder eine URL eingeben"
+msgstr ""
 
 #: src/views/widgets/NavigationBar.qml:158
 #, kde-format
 msgid "Search on default search engine"
-msgstr "Suche mit Standardsuchmaschine"
+msgstr ""
 
 #: src/views/widgets/NavigationBar.qml:271
 #, kde-format
 msgid "Next"
-msgstr "Weiter"
+msgstr "Nasledujúci"
 
 #: src/views/widgets/NavigationBar.qml:286
 #, kde-format
 msgid "New Tab"
-msgstr "Neues Unterfenster"
+msgstr "Nová karta"
 
 #: src/views/widgets/NavigationBar.qml:293
 #, kde-format
 msgid "Incognito Tab"
-msgstr "Inkognito-Unterfenster"
+msgstr ""
 
 #: src/views/widgets/NavigationBar.qml:301
 #, kde-format
 msgid "History"
-msgstr "Verlauf"
+msgstr "História"
 
 #: src/views/widgets/NavigationBar.qml:321
 #, kde-format
 msgid "Bookmarks"
-msgstr "Lesezeichen"
+msgstr "Záložky"
 
 #: src/views/widgets/NavigationBar.qml:335
 #, kde-format
 msgid "Share"
-msgstr "Teilen"
+msgstr "Zdieľať"
 
 #: src/views/widgets/NavigationBar.qml:344
 #, kde-format
 msgid "Find In Page"
-msgstr "In Seite suchen"
+msgstr "Nájsť na stránke"
 
 #: src/views/widgets/NavigationBar.qml:355
 #, kde-format
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "Nastavenia"
 
 #: src/views/widgets/NavigationBar.qml:362
 #, kde-format
 msgid "About"
-msgstr "Über"
+msgstr "O aplikácii"
 
 #: src/views/widgets/SettingsDialog.qml:13
 #, kde-format
 msgid "Navigation"
-msgstr "Navigation"
+msgstr "Navigácia"
 
 #: src/views/widgets/SettingsDialog.qml:14
 #, kde-format
 msgid "Configure the app basic navigation features."
-msgstr "Einrichtung der grundlegenden Navigationsfunktionen der App."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Home Page"
-msgstr "Startseite"
+msgstr "Domovská stránka"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Page to load initially and default."
-msgstr "Standardseite, die beim Start geladen werden soll."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:32
 #, kde-format
 msgid "Search Engine"
-msgstr "Suchmaschine"
+msgstr "Vyhľadávací stroj"
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
@@ -281,12 +278,12 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:44
 #, kde-format
 msgid "Auto Load Images"
-msgstr "Bilder automatisch laden"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:45
 #, kde-format
 msgid "Automatically loads images on web pages."
-msgstr "Lädt automatisch Bilder von Webseiten."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:58
 #, kde-format
@@ -302,7 +299,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:90
 #, kde-format
 msgid "Features"
-msgstr "Funktionen"
+msgstr "Funkcie"
 
 #: src/views/widgets/SettingsDialog.qml:75
 #, kde-format
@@ -324,7 +321,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:110
 #, kde-format
 msgid "PDF Viewer"
-msgstr "PDF-Betrachter"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:111
 #, kde-format
@@ -336,7 +333,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:124
 #, kde-format
 msgid "Plugins Enabled"
-msgstr "Module aktiviert"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:125
 #, kde-format
@@ -352,22 +349,22 @@ msgstr "JavaScript"
 #: src/views/widgets/SettingsDialog.qml:142
 #, kde-format
 msgid "Configure JavaScript behaviour."
-msgstr "Verhalten von JavaScript einrichten."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:164
 #, kde-format
 msgid "Javascript Enabled"
-msgstr "JavaScript aktiviert"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:165
 #, kde-format
 msgid "Enables the running of JavaScript programs."
-msgstr "Aktiviert die Ausführung von JavaScript-Programmen."
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:178
 #, kde-format
 msgid "Javascript Can Access Clipboard"
-msgstr "JavaScript kann auf die Zwischenablage zugreifen"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:179
 #, kde-format
@@ -377,7 +374,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:192
 #, kde-format
 msgid "Javascript Can Paste"
-msgstr "JavaScript kann einfügen"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:193
 #, kde-format
@@ -387,7 +384,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:206
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
-msgstr "Fensteraktivierung mit JavaScript erlauben"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:207
 #, kde-format
@@ -398,15 +395,13 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:240
 #, kde-format
 msgid "Security & Privacy"
-msgstr "Sicherheit & Privatsphäre"
+msgstr "Zabezpečenie a súkromie"
 
 #: src/views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
 msgstr ""
-"Einstellungen für das Erscheinungsbild des Editors, die Einstellungen werden "
-"global angewendet"
 
 #: src/views/widgets/SettingsDialog.qml:246
 #, kde-format
@@ -467,7 +462,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:317
 #, kde-format
 msgid "Local Storage"
-msgstr "Lokaler Speicher"
+msgstr "Lokálne úložisko"
 
 #: src/views/widgets/SettingsDialog.qml:318
 #, kde-format
@@ -486,24 +481,3 @@ msgid ""
 "local network IP addresses, but remote hosts can also see your local network "
 "IP address."
 msgstr ""
-
-#~ msgid "Browser"
-#~ msgstr "Browser"
-
-#~ msgid "Open in new tab"
-#~ msgstr "In neuem Unterfenster öffnen"
-
-#~ msgid "Download"
-#~ msgstr "Herunterladen"
-
-#~ msgid "Inspect"
-#~ msgstr "Untersuchen"
-
-#~ msgid "Search..."
-#~ msgstr "Suchen ..."
-
-#~ msgid "BookMark"
-#~ msgstr "Lesezeichen"
-
-#~ msgid "Find"
-#~ msgstr "Suchen"
