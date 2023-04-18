@@ -52,6 +52,7 @@ Maui.SplitViewItem
             }
 
             onIconChanged: {
+                console.log("ICON CHANGED", icon)
                 if (icon)
                 {
                     Fiery.History.updateIcon(url, icon)

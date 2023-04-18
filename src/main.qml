@@ -21,7 +21,6 @@ Maui.ApplicationWindow
     readonly property var views : ({browser: 0, tabs: 1, history: 2})
 
     readonly property alias currentBrowser : _browserView.currentBrowser
-    property bool editMode: false
 
     Settings
     {
@@ -156,13 +155,131 @@ Maui.Theme.inherit: false
                 }
 
 
-            headBar.rightContent: ToolButton
+            headBar.rightContent: [ToolButton
             {
                 icon.name: "list-add"
                 onClicked: _browserView.openTab("")
-            }
+            },
+            Maui.ToolButtonMenu
+            {
+                id: _browserMenu
 
-            headBar.leftContent: ToolButton
+                icon.name: "overflow-menu"
+
+
+                Maui.MenuItemActionRow
+                {
+                    Action
+                    {
+                        icon.name: "love"
+                        checked: Fiery.Bookmarks.isBookmark(currentBrowser.url)
+                        checkable: true
+                        onTriggered:  Fiery.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
+                    }
+
+                    Action
+                    {
+                        text: i18n("Next")
+                        enabled: currentBrowser.canGoForward
+                        icon.name: "go-next"
+                        onTriggered: currentBrowser.goForward()
+                    }
+
+                    Action
+                    {
+                        icon.name: "view-refresh"
+                        onTriggered: currentBrowser.reload()
+                    }
+                }
+
+                MenuItem
+                {
+                    text: i18n("New Tab")
+                    icon.name: "list-add"
+                    onTriggered: _browserView.openTab("")
+                }
+
+                MenuItem
+                {
+                    text: i18n("Incognito Tab")
+                    icon.name: "actor"
+                }
+
+                MenuSeparator {}
+
+                MenuItem
+                {
+                    text: i18n("History")
+                    icon.name: "deep-history"
+                    onTriggered:
+                    {
+                        _sidebarSwipeView.currentIndex = 1
+                    }
+                }
+
+                MenuItem
+                {
+                    text: i18n("Downloads")
+                    icon.name: "folder-downloads"
+                    onTriggered:
+                    {
+                        _sidebarSwipeView.currentIndex = 2
+                    }
+                }
+
+                MenuItem
+                {
+                    text: i18n("Bookmarks")
+                    icon.name: "bookmarks"
+                    onTriggered:
+                    {
+                        _sidebarSwipeView.currentIndex = 2
+                    }
+                }
+
+                MenuSeparator {}
+
+                Maui.MenuItemActionRow
+                {
+                    Action
+                    {
+                        text: i18n("Share")
+                        icon.name: "edit-share"
+                    }
+
+
+                }
+
+                MenuItem
+                {
+                    text: i18n("Find In Page")
+                    icon.name: "edit-find"
+                    checked: _browserView.searchFieldVisible
+                    onTriggered: _browserView.searchFieldVisible = !_browserView.searchFieldVisible
+                }
+
+                MenuSeparator {}
+
+
+                MenuItem
+                {
+                    text: i18n("Settings")
+                    icon.name: "settings-configure"
+                    onTriggered: _settingsDialog.open()
+                }
+
+                MenuItem
+                {
+                    text: i18n("About")
+                    icon.name: "documentinfo"
+                    onTriggered: root.about()
+                }
+
+
+            }
+]
+
+            headBar.leftContent: [ToolButton
             {
                 icon.name: _sideBarView.sideBar.visible ? "sidebar-collapse" : "sidebar-expand"
                 onClicked: _sideBarView.sideBar.toggle()
@@ -171,7 +288,18 @@ Maui.Theme.inherit: false
                 ToolTip.timeout: 5000
                 ToolTip.visible: hovered
                 ToolTip.text: i18n("Toggle sidebar")
+            },
+
+            ToolButton
+            {
+
+                enabled: currentBrowser.canGoBack
+                onClicked: currentBrowser.goBack()
+
+                icon.name: "go-previous"
+
             }
+            ]
         }
     }
 }
