@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-02 00:53+0000\n"
+"POT-Creation-Date: 2023-04-19 00:48+0000\n"
 "PO-Revision-Date: 2023-02-25 09:11+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -43,22 +43,67 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Розробник"
 
-#: src/main.qml:102
+#: src/main.qml:101
 #, kde-format
 msgid "Home"
 msgstr "Домівка"
 
-#: src/main.qml:110
+#: src/main.qml:109
 #, kde-format
 msgid "Recent"
 msgstr "Нещодавні"
 
-#: src/main.qml:117 src/views/widgets/NavigationBar.qml:311
+#: src/main.qml:116 src/main.qml:222
 #, kde-format
 msgid "Downloads"
 msgstr "Отримання"
 
-#: src/main.qml:173
+#: src/main.qml:182
+#, kde-format
+msgid "Next"
+msgstr "Далі"
+
+#: src/main.qml:197
+#, kde-format
+msgid "New Tab"
+msgstr "Нова вкладка"
+
+#: src/main.qml:204
+#, kde-format
+msgid "Incognito Tab"
+msgstr "Конфіденційна вкладка"
+
+#: src/main.qml:212
+#, kde-format
+msgid "History"
+msgstr "Журнал"
+
+#: src/main.qml:232
+#, kde-format
+msgid "Bookmarks"
+msgstr "Закладки"
+
+#: src/main.qml:246
+#, kde-format
+msgid "Share"
+msgstr "Оприлюднити"
+
+#: src/main.qml:255
+#, kde-format
+msgid "Find In Page"
+msgstr "Знайти на сторінці"
+
+#: src/main.qml:266
+#, kde-format
+msgid "Settings"
+msgstr "Параметри"
+
+#: src/main.qml:273
+#, kde-format
+msgid "About"
+msgstr "Про програму"
+
+#: src/main.qml:290
 #, kde-format
 msgid "Toggle sidebar"
 msgstr "Увімкнути/Вимкнути бічну панель"
@@ -178,75 +223,30 @@ msgstr "Приховати засоби керування"
 msgid "Show controls"
 msgstr "Показати засоби керування"
 
-#: src/views/browser/Browser.qml:95
+#: src/views/browser/Browser.qml:96
 #, kde-format
 msgid "Error"
 msgstr "Помилка"
 
-#: src/views/browser/Browser.qml:95 src/views/browser/BrowserView.qml:65
+#: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:65
 #, kde-format
 msgid "Start Browsing"
 msgstr "Почніть перегляд"
 
-#: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:66
+#: src/views/browser/Browser.qml:97 src/views/browser/BrowserView.qml:66
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Введіть нову адресу або відкрийте раніше відвіданий сайт."
 
-#: src/views/widgets/NavigationBar.qml:89
+#: src/views/widgets/NavigationBar.qml:66
 #, kde-format
 msgid "Search or enter URL"
 msgstr "Пошук або перехід за адресою"
 
-#: src/views/widgets/NavigationBar.qml:158
+#: src/views/widgets/NavigationBar.qml:110
 #, kde-format
 msgid "Search on default search engine"
 msgstr "Шукати за допомогою типового пошукового рушія"
-
-#: src/views/widgets/NavigationBar.qml:271
-#, kde-format
-msgid "Next"
-msgstr "Далі"
-
-#: src/views/widgets/NavigationBar.qml:286
-#, kde-format
-msgid "New Tab"
-msgstr "Нова вкладка"
-
-#: src/views/widgets/NavigationBar.qml:293
-#, kde-format
-msgid "Incognito Tab"
-msgstr "Конфіденційна вкладка"
-
-#: src/views/widgets/NavigationBar.qml:301
-#, kde-format
-msgid "History"
-msgstr "Журнал"
-
-#: src/views/widgets/NavigationBar.qml:321
-#, kde-format
-msgid "Bookmarks"
-msgstr "Закладки"
-
-#: src/views/widgets/NavigationBar.qml:335
-#, kde-format
-msgid "Share"
-msgstr "Оприлюднити"
-
-#: src/views/widgets/NavigationBar.qml:344
-#, kde-format
-msgid "Find In Page"
-msgstr "Знайти на сторінці"
-
-#: src/views/widgets/NavigationBar.qml:355
-#, kde-format
-msgid "Settings"
-msgstr "Параметри"
-
-#: src/views/widgets/NavigationBar.qml:362
-#, kde-format
-msgid "About"
-msgstr "Про програму"
 
 #: src/views/widgets/SettingsDialog.qml:13
 #, kde-format

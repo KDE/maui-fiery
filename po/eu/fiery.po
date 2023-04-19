@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-02 00:53+0000\n"
+"POT-Creation-Date: 2023-04-19 00:48+0000\n"
 "PO-Revision-Date: 2023-02-27 21:10+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -45,22 +45,67 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Garatzailea"
 
-#: src/main.qml:102
+#: src/main.qml:101
 #, kde-format
 msgid "Home"
 msgstr "Etxea"
 
-#: src/main.qml:110
+#: src/main.qml:109
 #, kde-format
 msgid "Recent"
 msgstr "Azken aldikoa"
 
-#: src/main.qml:117 src/views/widgets/NavigationBar.qml:311
+#: src/main.qml:116 src/main.qml:222
 #, kde-format
 msgid "Downloads"
 msgstr "Zama-jaitsita"
 
-#: src/main.qml:173
+#: src/main.qml:182
+#, kde-format
+msgid "Next"
+msgstr "Hurrengoa"
+
+#: src/main.qml:197
+#, kde-format
+msgid "New Tab"
+msgstr "Fitxa berria"
+
+#: src/main.qml:204
+#, kde-format
+msgid "Incognito Tab"
+msgstr "Isilkako fitxa"
+
+#: src/main.qml:212
+#, kde-format
+msgid "History"
+msgstr "Historia"
+
+#: src/main.qml:232
+#, kde-format
+msgid "Bookmarks"
+msgstr "Laster-markak"
+
+#: src/main.qml:246
+#, kde-format
+msgid "Share"
+msgstr "Partekatu"
+
+#: src/main.qml:255
+#, kde-format
+msgid "Find In Page"
+msgstr "Aurkitu orrian"
+
+#: src/main.qml:266
+#, kde-format
+msgid "Settings"
+msgstr "Ezarpenak"
+
+#: src/main.qml:273
+#, kde-format
+msgid "About"
+msgstr "Honi buruz"
+
+#: src/main.qml:290
 #, kde-format
 msgid "Toggle sidebar"
 msgstr "Txandakatu alboko-barra"
@@ -180,75 +225,30 @@ msgstr "Ezkutatu aginteak"
 msgid "Show controls"
 msgstr "Erakutsi aginteak"
 
-#: src/views/browser/Browser.qml:95
+#: src/views/browser/Browser.qml:96
 #, kde-format
 msgid "Error"
 msgstr "Errorea"
 
-#: src/views/browser/Browser.qml:95 src/views/browser/BrowserView.qml:65
+#: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:65
 #, kde-format
 msgid "Start Browsing"
 msgstr "Hasi arakatzen"
 
-#: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:66
+#: src/views/browser/Browser.qml:97 src/views/browser/BrowserView.qml:66
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Ireki URL berri bat edo ireki azken aldiko gune bat."
 
-#: src/views/widgets/NavigationBar.qml:89
+#: src/views/widgets/NavigationBar.qml:66
 #, kde-format
 msgid "Search or enter URL"
 msgstr "Bilatu edo sartu URL bat"
 
-#: src/views/widgets/NavigationBar.qml:158
+#: src/views/widgets/NavigationBar.qml:110
 #, kde-format
 msgid "Search on default search engine"
 msgstr "Bilatu bilatzaile lehenetsian"
-
-#: src/views/widgets/NavigationBar.qml:271
-#, kde-format
-msgid "Next"
-msgstr "Hurrengoa"
-
-#: src/views/widgets/NavigationBar.qml:286
-#, kde-format
-msgid "New Tab"
-msgstr "Fitxa berria"
-
-#: src/views/widgets/NavigationBar.qml:293
-#, kde-format
-msgid "Incognito Tab"
-msgstr "Isilkako fitxa"
-
-#: src/views/widgets/NavigationBar.qml:301
-#, kde-format
-msgid "History"
-msgstr "Historia"
-
-#: src/views/widgets/NavigationBar.qml:321
-#, kde-format
-msgid "Bookmarks"
-msgstr "Laster-markak"
-
-#: src/views/widgets/NavigationBar.qml:335
-#, kde-format
-msgid "Share"
-msgstr "Partekatu"
-
-#: src/views/widgets/NavigationBar.qml:344
-#, kde-format
-msgid "Find In Page"
-msgstr "Aurkitu orrian"
-
-#: src/views/widgets/NavigationBar.qml:355
-#, kde-format
-msgid "Settings"
-msgstr "Ezarpenak"
-
-#: src/views/widgets/NavigationBar.qml:362
-#, kde-format
-msgid "About"
-msgstr "Honi buruz"
 
 #: src/views/widgets/SettingsDialog.qml:13
 #, kde-format

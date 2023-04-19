@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-02 00:53+0000\n"
+"POT-Creation-Date: 2023-04-19 00:48+0000\n"
 "PO-Revision-Date: 2023-02-25 11:39+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -42,22 +42,67 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Ontwikkelaar"
 
-#: src/main.qml:102
+#: src/main.qml:101
 #, kde-format
 msgid "Home"
 msgstr "Home"
 
-#: src/main.qml:110
+#: src/main.qml:109
 #, kde-format
 msgid "Recent"
 msgstr "Recent"
 
-#: src/main.qml:117 src/views/widgets/NavigationBar.qml:311
+#: src/main.qml:116 src/main.qml:222
 #, kde-format
 msgid "Downloads"
 msgstr "Downloads"
 
-#: src/main.qml:173
+#: src/main.qml:182
+#, kde-format
+msgid "Next"
+msgstr "Volgende"
+
+#: src/main.qml:197
+#, kde-format
+msgid "New Tab"
+msgstr "Nieuw tabblad"
+
+#: src/main.qml:204
+#, kde-format
+msgid "Incognito Tab"
+msgstr "Incognito tabblad"
+
+#: src/main.qml:212
+#, kde-format
+msgid "History"
+msgstr "Geschiedenis"
+
+#: src/main.qml:232
+#, kde-format
+msgid "Bookmarks"
+msgstr "Bladwijzers"
+
+#: src/main.qml:246
+#, kde-format
+msgid "Share"
+msgstr "Delen"
+
+#: src/main.qml:255
+#, kde-format
+msgid "Find In Page"
+msgstr "Zoeken in pagina"
+
+#: src/main.qml:266
+#, kde-format
+msgid "Settings"
+msgstr "Instellingen"
+
+#: src/main.qml:273
+#, kde-format
+msgid "About"
+msgstr "Info over"
+
+#: src/main.qml:290
 #, kde-format
 msgid "Toggle sidebar"
 msgstr "Zijbalk omschakelen"
@@ -177,75 +222,30 @@ msgstr "Besturingen verbergen"
 msgid "Show controls"
 msgstr "Besturingen tonen"
 
-#: src/views/browser/Browser.qml:95
+#: src/views/browser/Browser.qml:96
 #, kde-format
 msgid "Error"
 msgstr "Fout"
 
-#: src/views/browser/Browser.qml:95 src/views/browser/BrowserView.qml:65
+#: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:65
 #, kde-format
 msgid "Start Browsing"
 msgstr "Bladeren starten"
 
-#: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:66
+#: src/views/browser/Browser.qml:97 src/views/browser/BrowserView.qml:66
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Een nieuwe URL invoeren of een recente site openen."
 
-#: src/views/widgets/NavigationBar.qml:89
+#: src/views/widgets/NavigationBar.qml:66
 #, kde-format
 msgid "Search or enter URL"
 msgstr "Zoek of voer een URL in"
 
-#: src/views/widgets/NavigationBar.qml:158
+#: src/views/widgets/NavigationBar.qml:110
 #, kde-format
 msgid "Search on default search engine"
 msgstr "Zoeken op de standaard zoekmachine"
-
-#: src/views/widgets/NavigationBar.qml:271
-#, kde-format
-msgid "Next"
-msgstr "Volgende"
-
-#: src/views/widgets/NavigationBar.qml:286
-#, kde-format
-msgid "New Tab"
-msgstr "Nieuw tabblad"
-
-#: src/views/widgets/NavigationBar.qml:293
-#, kde-format
-msgid "Incognito Tab"
-msgstr "Incognito tabblad"
-
-#: src/views/widgets/NavigationBar.qml:301
-#, kde-format
-msgid "History"
-msgstr "Geschiedenis"
-
-#: src/views/widgets/NavigationBar.qml:321
-#, kde-format
-msgid "Bookmarks"
-msgstr "Bladwijzers"
-
-#: src/views/widgets/NavigationBar.qml:335
-#, kde-format
-msgid "Share"
-msgstr "Delen"
-
-#: src/views/widgets/NavigationBar.qml:344
-#, kde-format
-msgid "Find In Page"
-msgstr "Zoeken in pagina"
-
-#: src/views/widgets/NavigationBar.qml:355
-#, kde-format
-msgid "Settings"
-msgstr "Instellingen"
-
-#: src/views/widgets/NavigationBar.qml:362
-#, kde-format
-msgid "About"
-msgstr "Info over"
 
 #: src/views/widgets/SettingsDialog.qml:13
 #, kde-format

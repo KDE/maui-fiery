@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-02 00:53+0000\n"
+"POT-Creation-Date: 2023-04-19 00:48+0000\n"
 "PO-Revision-Date: 2023-02-25 21:55+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
@@ -40,22 +40,67 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Développeur"
 
-#: src/main.qml:102
+#: src/main.qml:101
 #, kde-format
 msgid "Home"
 msgstr "Accueil"
 
-#: src/main.qml:110
+#: src/main.qml:109
 #, kde-format
 msgid "Recent"
 msgstr "Récent"
 
-#: src/main.qml:117 src/views/widgets/NavigationBar.qml:311
+#: src/main.qml:116 src/main.qml:222
 #, kde-format
 msgid "Downloads"
 msgstr "Téléchargements"
 
-#: src/main.qml:173
+#: src/main.qml:182
+#, kde-format
+msgid "Next"
+msgstr "Suivant"
+
+#: src/main.qml:197
+#, kde-format
+msgid "New Tab"
+msgstr "Nouvel onglet"
+
+#: src/main.qml:204
+#, kde-format
+msgid "Incognito Tab"
+msgstr "Onglet privé"
+
+#: src/main.qml:212
+#, kde-format
+msgid "History"
+msgstr "Historique"
+
+#: src/main.qml:232
+#, kde-format
+msgid "Bookmarks"
+msgstr "Signets"
+
+#: src/main.qml:246
+#, kde-format
+msgid "Share"
+msgstr "Partager"
+
+#: src/main.qml:255
+#, kde-format
+msgid "Find In Page"
+msgstr "Chercher dans une page"
+
+#: src/main.qml:266
+#, kde-format
+msgid "Settings"
+msgstr "Configuration"
+
+#: src/main.qml:273
+#, kde-format
+msgid "About"
+msgstr "À propos"
+
+#: src/main.qml:290
 #, kde-format
 msgid "Toggle sidebar"
 msgstr "Afficher / Masquer la barre latérale"
@@ -175,75 +220,30 @@ msgstr "Masquer les contrôles"
 msgid "Show controls"
 msgstr "Afficher les contrôles"
 
-#: src/views/browser/Browser.qml:95
+#: src/views/browser/Browser.qml:96
 #, kde-format
 msgid "Error"
 msgstr "Erreur"
 
-#: src/views/browser/Browser.qml:95 src/views/browser/BrowserView.qml:65
+#: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:65
 #, kde-format
 msgid "Start Browsing"
 msgstr "Démarrer la navigation"
 
-#: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:66
+#: src/views/browser/Browser.qml:97 src/views/browser/BrowserView.qml:66
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Saisissez un nouvelle URL ou ouvrez un site récent."
 
-#: src/views/widgets/NavigationBar.qml:89
+#: src/views/widgets/NavigationBar.qml:66
 #, kde-format
 msgid "Search or enter URL"
 msgstr "Recherchez ou saisissez une URL"
 
-#: src/views/widgets/NavigationBar.qml:158
+#: src/views/widgets/NavigationBar.qml:110
 #, kde-format
 msgid "Search on default search engine"
 msgstr "Rechercher avec le moteur de recherche par défaut."
-
-#: src/views/widgets/NavigationBar.qml:271
-#, kde-format
-msgid "Next"
-msgstr "Suivant"
-
-#: src/views/widgets/NavigationBar.qml:286
-#, kde-format
-msgid "New Tab"
-msgstr "Nouvel onglet"
-
-#: src/views/widgets/NavigationBar.qml:293
-#, kde-format
-msgid "Incognito Tab"
-msgstr "Onglet privé"
-
-#: src/views/widgets/NavigationBar.qml:301
-#, kde-format
-msgid "History"
-msgstr "Historique"
-
-#: src/views/widgets/NavigationBar.qml:321
-#, kde-format
-msgid "Bookmarks"
-msgstr "Signets"
-
-#: src/views/widgets/NavigationBar.qml:335
-#, kde-format
-msgid "Share"
-msgstr "Partager"
-
-#: src/views/widgets/NavigationBar.qml:344
-#, kde-format
-msgid "Find In Page"
-msgstr "Chercher dans une page"
-
-#: src/views/widgets/NavigationBar.qml:355
-#, kde-format
-msgid "Settings"
-msgstr "Configuration"
-
-#: src/views/widgets/NavigationBar.qml:362
-#, kde-format
-msgid "About"
-msgstr "À propos"
 
 #: src/views/widgets/SettingsDialog.qml:13
 #, kde-format
