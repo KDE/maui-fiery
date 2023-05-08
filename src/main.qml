@@ -92,7 +92,7 @@ Maui.Theme.inherit: false
             {
                 id: _sidebarActions
                 autoExclusive: true
-                currentIndex: _sidebarSwipeView.currentIndex
+
                 display: ToolButton.IconOnly
                 Layout.alignment: Qt.AlignHCenter
 
@@ -100,22 +100,24 @@ Maui.Theme.inherit: false
                 {
                     text: i18n("Home")
                     icon.name: "go-home"
-
+                    checked: _sidebarSwipeView.currentIndex === 0
+                    onTriggered: _sidebarSwipeView.currentIndex = 0
                 }
-
 
                 Action
                 {
                     text: i18n("Recent")
                     icon.name: "shallow-history"
-
-
+                    checked: _sidebarSwipeView.currentIndex === 1
+                    onTriggered: _sidebarSwipeView.currentIndex = 1
                 }
+
                 Action
                 {
                     text: i18n("Downloads")
                     icon.name: "folder-download"
-
+                    checked: _sidebarSwipeView.currentIndex === 2
+                    onTriggered: _sidebarSwipeView.currentIndex = 2
                 }
             }
 
@@ -124,7 +126,7 @@ Maui.Theme.inherit: false
             {
                 anchors.fill: parent
                 id: _sidebarSwipeView
-                currentIndex: _sidebarActions.currentIndex
+
                 HomeView {}
 
                 HistoryView {}
