@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-19 00:48+0000\n"
+"POT-Creation-Date: 2023-05-09 00:46+0000\n"
 "PO-Revision-Date: 2023-03-06 13:41+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -52,57 +52,57 @@ msgstr "Koti"
 msgid "Recent"
 msgstr "Viimeaikaiset"
 
-#: src/main.qml:116 src/main.qml:222
+#: src/main.qml:117 src/main.qml:224
 #, kde-format
 msgid "Downloads"
 msgstr "Lataukset"
 
-#: src/main.qml:182
+#: src/main.qml:184
 #, kde-format
 msgid "Next"
 msgstr "Seuraava"
 
-#: src/main.qml:197
+#: src/main.qml:199
 #, kde-format
 msgid "New Tab"
 msgstr "Uusi välilehti"
 
-#: src/main.qml:204
+#: src/main.qml:206
 #, kde-format
 msgid "Incognito Tab"
 msgstr "Yksityisvälilehti"
 
-#: src/main.qml:212
+#: src/main.qml:214
 #, kde-format
 msgid "History"
 msgstr "Historia"
 
-#: src/main.qml:232
+#: src/main.qml:234
 #, kde-format
 msgid "Bookmarks"
 msgstr "Kirjanmerkit"
 
-#: src/main.qml:246
+#: src/main.qml:248
 #, kde-format
 msgid "Share"
 msgstr "Jaa"
 
-#: src/main.qml:255
+#: src/main.qml:257
 #, kde-format
 msgid "Find In Page"
 msgstr "Etsi sivulta"
 
-#: src/main.qml:266
+#: src/main.qml:268
 #, kde-format
 msgid "Settings"
 msgstr "Asetukset"
 
-#: src/main.qml:273
+#: src/main.qml:275
 #, kde-format
 msgid "About"
 msgstr "Tietoa"
 
-#: src/main.qml:290
+#: src/main.qml:292
 #, kde-format
 msgid "Toggle sidebar"
 msgstr "Näytä tai piilota sivupaneeli"
