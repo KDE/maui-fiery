@@ -30,7 +30,22 @@ Maui.Page
         //            urlInterceptor: typeof AdblockUrlInterceptor !== "undefined" && AdblockUrlInterceptor
     }
 
-    headBar.visible: false
+    headBar.visible: !root.isWide
+
+    headBar.rightContent: Loader
+    {
+        active: !root.isWide
+        visible: active
+        sourceComponent: _browserMenuComponent
+    }
+
+    headBar.leftContent: Loader
+    {
+        active: !root.isWide
+        visible: active
+        sourceComponent: _navigationControlsComponent
+    }
+
     footBar.middleContent: Maui.SearchField
     {
         id: _searchField
@@ -66,7 +81,8 @@ Maui.Page
         ]
     }
 
-    Shortcut {
+    Shortcut
+    {
         sequence: "Ctrl+K"
         onActivated: _navigationPopup.open()
     }
@@ -78,6 +94,7 @@ Maui.Page
         maxWidth: 400
         persistent: false
         headBar.visible: true
+        page.altHeader: _browserListView.altTabBar
 
         onOpened:
         {
@@ -145,7 +162,7 @@ Maui.Page
 
             Keys.onEnterPressed:
             {
-                   _browserView.openUrl(_historyListView.currentItem.url)
+                _browserView.openUrl(_historyListView.currentItem.url)
             }
 
             model: Maui.BaseModel
@@ -185,7 +202,6 @@ Maui.Page
         holder.title: i18n("Start Browsing")
         holder.body: i18n("Enter a new URL or open a recent site.")
 
-        onNewTabClicked: control.openTab("")
         onCloseTabClicked: _browserListView.closeTab(index)
         menuActions: Action
         {
@@ -203,23 +219,123 @@ Maui.Page
             }
         }
 
+
         tabViewButton : NavigationBar
         {
             tabView: _browserListView
         }
-
-
-
-        //        showCSDControls: true
-
+        tabBar.showNewTabButton: false
         tabBar.visible: true
         altTabBar: Maui.Handy.isMobile
         tabBar.rightContent: [
 
+            Loader
+            {
+                active: root.isWide
+                visible: active
+                sourceComponent: _browserMenuComponent
+            },
+
+            Maui.WindowControls {}
+        ]
+
+        tabBar.leftContent: Loader
+        {
+            active: root.isWide
+            visible: active
+            sourceComponent: _navigationControlsComponent
+        }
+    }
+
+    Component.onCompleted: openTab(appSettings.homePage)
+
+    Component
+    {
+        id: _browserComponent
+
+        BrowserLayout {}
+    }
+
+    Component
+    {
+        id: _navigationControlsComponent
+
+        Row
+        {
+            spacing: control.headBar.spacing
+
+            ToolButton
+            {
+                icon.name: _sideBarView.sideBar.visible ? "sidebar-collapse" : "sidebar-expand"
+                onClicked: _sideBarView.sideBar.toggle()
+                checked: _sideBarView.sideBar.visible
+                visible: _sideBarView.sideBar.visible && !_sideBarView.sideBar.collapsed
+                ToolTip.delay: 1000
+                ToolTip.timeout: 5000
+                ToolTip.visible: hovered
+                ToolTip.text: i18n("Toggle sidebar")
+            }
+
+            Maui.ToolActions
+            {
+                display: ToolButton.IconOnly
+                Action
+                {
+                    enabled: currentBrowser.canGoBack
+                    onTriggered: currentBrowser.goBack()
+                    text: i18n("Previous")
+
+                    icon.name: "go-previous"
+                }
+
+                Action
+                {
+                    text: i18n("Next")
+                    enabled: currentBrowser.canGoForward
+                    icon.name: "go-next"
+                    onTriggered: currentBrowser.goForward()
+                }
+            }
+
+
+            ToolButton
+            {
+                text: _browserListView.count
+                visible: _browserListView.count > 1
+                font.bold: true
+                font.pointSize: Maui.Style.fontSizes.small
+                onClicked: _browserListView.openOverview()
+                background: Rectangle
+                {
+                    color: Maui.Theme.alternateBackgroundColor
+                    radius: Maui.Style.radiusV
+                }
+            }
+        }
+    }
+
+    Component
+    {
+        id: _browserMenuComponent
+
+        Row
+        {
+            spacing: control.headBar.spacing
+
+            ToolButton
+            {
+                icon.name: "view-refresh"
+                onClicked: currentBrowser.reload()
+            }
+
+            ToolButton
+            {
+                icon.name: "list-add"
+                onClicked: control.openTab("")
+            }
+
             Maui.ToolButtonMenu
             {
-                id: _browserMenu
-
                 icon.name: "overflow-menu"
 
                 Maui.MenuItemActionRow
@@ -230,20 +346,6 @@ Maui.Page
                         checked: Fiery.Bookmarks.isBookmark(currentBrowser.url)
                         checkable: true
                         onTriggered:  Fiery.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
-                    }
-
-                    Action
-                    {
-                        text: i18n("Next")
-                        enabled: currentBrowser.canGoForward
-                        icon.name: "go-next"
-                        onTriggered: currentBrowser.goForward()
-                    }
-
-                    Action
-                    {
-                        icon.name: "view-refresh"
-                        onTriggered: currentBrowser.reload()
                     }
                 }
 
@@ -320,42 +422,8 @@ Maui.Page
                     icon.name: "documentinfo"
                     onTriggered: root.about()
                 }
-            },
-
-            Maui.WindowControls {}
-        ]
-
-        tabBar.leftContent: [ToolButton
-            {
-                icon.name: _sideBarView.sideBar.visible ? "sidebar-collapse" : "sidebar-expand"
-                onClicked: _sideBarView.sideBar.toggle()
-                checked: _sideBarView.sideBar.visible
-                visible: _sideBarView.sideBar.visible && !_sideBarView.sideBar.collapsed
-                ToolTip.delay: 1000
-                ToolTip.timeout: 5000
-                ToolTip.visible: hovered
-                ToolTip.text: i18n("Toggle sidebar")
-            },
-
-            ToolButton
-            {
-
-                enabled: currentBrowser.canGoBack
-                onClicked: currentBrowser.goBack()
-
-                icon.name: "go-previous"
-
             }
-        ]
-    }
-
-    Component.onCompleted: openTab(appSettings.homePage)
-
-    Component
-    {
-        id: _browserComponent
-
-        BrowserLayout {}
+        }
     }
 
     function openEditMode()
