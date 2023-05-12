@@ -18,7 +18,7 @@ Maui.Page
     property alias listView: _browserListView
     property alias count: _browserListView.count
     readonly property alias model : _browserListView.contentModel
-    property alias searchFieldVisible: footBar.visible
+    property alias searchFieldVisible: control.footBar.visible
 
     property WebEngineProfile profile: Fiery.FieryWebProfile
     {
@@ -56,8 +56,8 @@ Maui.Page
         Layout.maximumWidth: 500
         Layout.fillWidth: true
         Layout.alignment: Qt.AlignHCenter
-        onAccepted:  control.currentBrowser.findText(text)
-        onCleared:  control.currentBrowser.findText("")
+        onAccepted: control.currentBrowser.findText(text)
+        onCleared: control.currentBrowser.findText("")
         actions: [
 
             Action
@@ -93,8 +93,10 @@ Maui.Page
     Maui.Dialog
     {
         id: _navigationPopup
-        maxHeight: 600
-        maxWidth: 400
+
+        maxHeight: 900
+        maxWidth: 500
+        hint: 1
         persistent: false
         headBar.visible: true
         page.altHeader: _browserListView.altTabBar
