@@ -1,7 +1,7 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
-
+import QtWebEngine 1.7
 import Qt.labs.settings 1.0
 
 import org.mauikit.controls 1.3 as Maui
@@ -21,6 +21,7 @@ Maui.ApplicationWindow
     readonly property var views : ({browser: 0, tabs: 1, history: 2})
 
     readonly property alias currentBrowser : _browserView.currentBrowser
+    readonly property alias browserView : _browserView
 
     Settings
     {
@@ -85,8 +86,8 @@ Maui.ApplicationWindow
         sideBar.content: Maui.Page
         {
             anchors.fill: parent
-Maui.Theme.colorSet: Maui.Theme.Window
-Maui.Theme.inherit: false
+            Maui.Theme.colorSet: Maui.Theme.Window
+            Maui.Theme.inherit: false
 
             headBar.middleContent: Maui.ToolActions
             {
@@ -131,7 +132,53 @@ Maui.Theme.inherit: false
 
                 HistoryView {}
 
-                Item{}
+                Maui.Page
+                {
+
+                    Maui.ListBrowser
+                    {
+                        anchors.fill: parent
+                        model: Fiery.DownloadsManager.model
+
+                        delegate: Maui.ListBrowserDelegate
+                        {
+                            id: _downloadDelegate
+
+                            width: ListView.view.width
+
+                            label1.text: model.name
+                            label2.text: model.url
+                            iconSource: download.state === WebEngineDownloadItem.DownloadCompleted ? model.filePath : model.icon
+
+                            property WebEngineDownloadItem download : model.download
+
+                            onClicked: Qt.openUrlExternally(model.filePath)
+
+                            ToolButton
+                            {
+
+                                visible: !_downloadDelegate.download.isPaused && _downloadDelegate.download.state === WebEngineDownloadItem.DownloadInProgress
+                                text: i18n("Pause")
+                                icon.name: "media-playback-pause"
+                                onClicked: _downloadDelegate.download.pause()
+                            }
+
+                            ToolButton
+                            {
+                                visible: _downloadDelegate.download.isPaused && _downloadDelegate.download.state === WebEngineDownloadItem.DownloadInProgress
+                                text: i18n("Continue")
+                                icon.name: "media-playback-start"
+                                onClicked: _downloadDelegate.download.resume();
+                            }
+
+                            ToolButton
+                            {
+                                icon.name: _downloadDelegate.download.state === WebEngineDownloadItem.DownloadInProgress ? "dialog-cancel" : "list-remove"
+                            }
+
+                        }
+                    }
+                }
             }
         }
 
@@ -148,159 +195,159 @@ Maui.Theme.inherit: false
             altHeader: Maui.Handy.isMobile
             headBar.forceCenterMiddleContent: width > 1000
             headBar.middleContent: NavigationBar
-                {
-                    id: _navBar
-                    position: _browserView.headBar.position
-                    Layout.fillWidth: true
-                    Layout.maximumWidth: 500
-                    Layout.alignment:Qt.AlignCenter
-                }
+            {
+                id: _navBar
+                position: _browserView.headBar.position
+                Layout.fillWidth: true
+                Layout.maximumWidth: 500
+                Layout.alignment:Qt.AlignCenter
+            }
 
 
             headBar.rightContent: [ToolButton
-            {
-                icon.name: "list-add"
-                onClicked: _browserView.openTab("")
-            },
-            Maui.ToolButtonMenu
-            {
-                id: _browserMenu
-
-                icon.name: "overflow-menu"
-
-
-                Maui.MenuItemActionRow
                 {
-                    Action
-                    {
-                        icon.name: "love"
-                        checked: Fiery.Bookmarks.isBookmark(currentBrowser.url)
-                        checkable: true
-                        onTriggered:  Fiery.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
-                    }
-
-                    Action
-                    {
-                        text: i18n("Next")
-                        enabled: currentBrowser.canGoForward
-                        icon.name: "go-next"
-                        onTriggered: currentBrowser.goForward()
-                    }
-
-                    Action
-                    {
-                        icon.name: "view-refresh"
-                        onTriggered: currentBrowser.reload()
-                    }
-                }
-
-                MenuItem
-                {
-                    text: i18n("New Tab")
                     icon.name: "list-add"
-                    onTriggered: _browserView.openTab("")
-                }
-
-                MenuItem
+                    onClicked: _browserView.openTab("")
+                },
+                Maui.ToolButtonMenu
                 {
-                    text: i18n("Incognito Tab")
-                    icon.name: "actor"
-                }
+                    id: _browserMenu
 
-                MenuSeparator {}
+                    icon.name: "overflow-menu"
 
-                MenuItem
-                {
-                    text: i18n("History")
-                    icon.name: "deep-history"
-                    onTriggered:
+
+                    Maui.MenuItemActionRow
                     {
-                        _sidebarSwipeView.currentIndex = 1
-                    }
-                }
+                        Action
+                        {
+                            icon.name: "love"
+                            checked: Fiery.Bookmarks.isBookmark(currentBrowser.url)
+                            checkable: true
+                            onTriggered:  Fiery.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
+                        }
 
-                MenuItem
-                {
-                    text: i18n("Downloads")
-                    icon.name: "folder-downloads"
-                    onTriggered:
-                    {
-                        _sidebarSwipeView.currentIndex = 2
-                    }
-                }
+                        Action
+                        {
+                            text: i18n("Next")
+                            enabled: currentBrowser.canGoForward
+                            icon.name: "go-next"
+                            onTriggered: currentBrowser.goForward()
+                        }
 
-                MenuItem
-                {
-                    text: i18n("Bookmarks")
-                    icon.name: "bookmarks"
-                    onTriggered:
-                    {
-                        _sidebarSwipeView.currentIndex = 2
-                    }
-                }
-
-                MenuSeparator {}
-
-                Maui.MenuItemActionRow
-                {
-                    Action
-                    {
-                        text: i18n("Share")
-                        icon.name: "edit-share"
+                        Action
+                        {
+                            icon.name: "view-refresh"
+                            onTriggered: currentBrowser.reload()
+                        }
                     }
 
+                    MenuItem
+                    {
+                        text: i18n("New Tab")
+                        icon.name: "list-add"
+                        onTriggered: _browserView.openTab("")
+                    }
+
+                    MenuItem
+                    {
+                        text: i18n("Incognito Tab")
+                        icon.name: "actor"
+                    }
+
+                    MenuSeparator {}
+
+                    MenuItem
+                    {
+                        text: i18n("History")
+                        icon.name: "deep-history"
+                        onTriggered:
+                        {
+                            _sidebarSwipeView.currentIndex = 1
+                        }
+                    }
+
+                    MenuItem
+                    {
+                        text: i18n("Downloads")
+                        icon.name: "folder-downloads"
+                        onTriggered:
+                        {
+                            _sidebarSwipeView.currentIndex = 2
+                        }
+                    }
+
+                    MenuItem
+                    {
+                        text: i18n("Bookmarks")
+                        icon.name: "bookmarks"
+                        onTriggered:
+                        {
+                            _sidebarSwipeView.currentIndex = 2
+                        }
+                    }
+
+                    MenuSeparator {}
+
+                    Maui.MenuItemActionRow
+                    {
+                        Action
+                        {
+                            text: i18n("Share")
+                            icon.name: "edit-share"
+                        }
+
+
+                    }
+
+                    MenuItem
+                    {
+                        text: i18n("Find In Page")
+                        icon.name: "edit-find"
+                        checked: _browserView.searchFieldVisible
+                        onTriggered: _browserView.searchFieldVisible = !_browserView.searchFieldVisible
+                    }
+
+                    MenuSeparator {}
+
+
+                    MenuItem
+                    {
+                        text: i18n("Settings")
+                        icon.name: "settings-configure"
+                        onTriggered: _settingsDialog.open()
+                    }
+
+                    MenuItem
+                    {
+                        text: i18n("About")
+                        icon.name: "documentinfo"
+                        onTriggered: root.about()
+                    }
+
 
                 }
-
-                MenuItem
-                {
-                    text: i18n("Find In Page")
-                    icon.name: "edit-find"
-                    checked: _browserView.searchFieldVisible
-                    onTriggered: _browserView.searchFieldVisible = !_browserView.searchFieldVisible
-                }
-
-                MenuSeparator {}
-
-
-                MenuItem
-                {
-                    text: i18n("Settings")
-                    icon.name: "settings-configure"
-                    onTriggered: _settingsDialog.open()
-                }
-
-                MenuItem
-                {
-                    text: i18n("About")
-                    icon.name: "documentinfo"
-                    onTriggered: root.about()
-                }
-
-
-            }
-]
+            ]
 
             headBar.leftContent: [ToolButton
-            {
-                icon.name: _sideBarView.sideBar.visible ? "sidebar-collapse" : "sidebar-expand"
-                onClicked: _sideBarView.sideBar.toggle()
-                checked: _sideBarView.sideBar.visible
-                ToolTip.delay: 1000
-                ToolTip.timeout: 5000
-                ToolTip.visible: hovered
-                ToolTip.text: i18n("Toggle sidebar")
-            },
+                {
+                    icon.name: _sideBarView.sideBar.visible ? "sidebar-collapse" : "sidebar-expand"
+                    onClicked: _sideBarView.sideBar.toggle()
+                    checked: _sideBarView.sideBar.visible
+                    ToolTip.delay: 1000
+                    ToolTip.timeout: 5000
+                    ToolTip.visible: hovered
+                    ToolTip.text: i18n("Toggle sidebar")
+                },
 
-            ToolButton
-            {
+                ToolButton
+                {
 
-                enabled: currentBrowser.canGoBack
-                onClicked: currentBrowser.goBack()
+                    enabled: currentBrowser.canGoBack
+                    onClicked: currentBrowser.goBack()
 
-                icon.name: "go-previous"
+                    icon.name: "go-previous"
 
-            }
+                }
             ]
         }
     }

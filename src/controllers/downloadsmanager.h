@@ -1,16 +1,45 @@
-#ifndef DOWNLOADSMANAGER_H
-#define DOWNLOADSMANAGER_H
-
+#pragma once
 #include <QObject>
 
+#include "models/downloadsmodel.h"
+#include "qquickwebenginedownloaditem.h"
+
+using DownloadItem = QQuickWebEngineDownloadItem;
 class DownloadsManager : public QObject
 {
+//    Q_DISABLE_COPY_MOVE(DownloadsManager)
     Q_OBJECT
-public:
-    explicit DownloadsManager(QObject *parent = nullptr);
 
-signals:
+    Q_PROPERTY(DownloadsModel* model READ model CONSTANT FINAL)
+
+public:
+    enum State {
+        DownloadRequested,
+        DownloadInProgress,
+        DownloadCompleted,
+        DownloadCancelled,
+        DownloadInterrupted,
+    }; Q_ENUM(State)
+
+
+
+    DownloadsModel *model() const;
+    static DownloadsManager &instance();
+
+    void add(DownloadItem *download);
+    void remove(int index);
+
+    DownloadItem *item(int index);
+    int count() const;
+
+private:
+    DownloadsModel *m_model;
+    QVector<DownloadItem*> m_downloads;
+
+    explicit DownloadsManager(QObject *parent = nullptr);
+    ~DownloadsManager();
+
+Q_SIGNALS:
+    void newDownload(DownloadItem *download);
 
 };
-
-#endif // DOWNLOADSMANAGER_H

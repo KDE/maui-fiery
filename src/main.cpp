@@ -13,6 +13,8 @@
 #include "models/bookmarksmodel.h"
 
 #include "controllers/surf.h"
+#include "controllers/fierywebprofile.h"
+#include "controllers/downloadsmanager.h"
 
 #include "../fiery_version.h"
 
@@ -69,6 +71,9 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<surf>(FIERY_URI, 1, 0, "Surf");
 
+    qmlRegisterSingletonInstance<DownloadsManager>(FIERY_URI, 1, 0, "DownloadsManager", &DownloadsManager::instance());
+
+    qmlRegisterType<FieryWebProfile>(FIERY_URI, 1, 0, "FieryWebProfile");
     qmlRegisterSingletonType<HistoryModel>(FIERY_URI, 1, 0, "History", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
         Q_UNUSED(scriptEngine)
         Q_UNUSED(engine)

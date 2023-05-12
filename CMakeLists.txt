@@ -39,6 +39,10 @@ find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Widgets Qm
 find_package(KF5 ${KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
 find_package(MauiKit REQUIRED COMPONENTS FileBrowsing)
 
+find_package(Qt5 REQUIRED COMPONENTS WebEngineCore)
+#   find_package(Qt5WebEngineQuick REQUIRED)
+
+
 if(QUICK_COMPILER)
     find_package(Qt5QuickCompiler)
     set_package_properties(Qt5QuickCompiler PROPERTIES

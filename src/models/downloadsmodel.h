@@ -1,14 +1,34 @@
-#ifndef DOWNLOADSMODEL_H
-#define DOWNLOADSMODEL_H
+#pragma once
 
-#include <MauiKit/Core/mauilist.h>
 #include <QObject>
+#include <QAbstractListModel>
 
-class DownloadsModel : public MauiList
+class DownloadsManager;
+class DownloadsModel : public QAbstractListModel
 {
     Q_OBJECT
+
 public:
-    DownloadsModel();
+    enum Roles
+    {
+        Name,
+        Url,
+        Directory,
+        State,
+        Icon,
+        Download,
+        FilePath
+    };
+
+    explicit DownloadsModel(DownloadsManager *parent);
+
+           // QAbstractItemModel interface
+public:
+    int rowCount(const QModelIndex &parent) const override final;
+    QVariant data(const QModelIndex &index, int role) const override final;
+    QHash<int, QByteArray> roleNames() const override final;
+
+private:
+    DownloadsManager *m_manager;
 };
 
-#endif // DOWNLOADSMODEL_H

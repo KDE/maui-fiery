@@ -17,6 +17,18 @@ Maui.Page
     readonly property alias model : _browserListView.contentModel
     property alias searchFieldVisible: _searchField.visible
 
+    property WebEngineProfile profile: Fiery.FieryWebProfile
+    {
+        //            httpUserAgent: tabs.currentItem.userAgent.userAgent
+        //            offTheRecord: tabs.privateTabsMode
+        //            storageName: tabs.privateTabsMode ? "Private" : Settings.profile
+
+        //            questionLoader: rootPage.questionLoader
+        //            urlInterceptor: typeof AdblockUrlInterceptor !== "undefined" && AdblockUrlInterceptor
+    }
+
+
+
     footBar.middleContent: Maui.SearchField
     {
         id: _searchField
@@ -48,13 +60,9 @@ Maui.Page
 
                     control.currentBrowser.findText(_searchField.text)
                 }
-
             }
-
         ]
     }
-
-
 
     Maui.TabView
     {
@@ -132,43 +140,43 @@ Maui.Page
                                     {
                                         _navBar.openEditMode();
                                     }
-                                }
-
-                                function openSplit(path)
-                                {
-                                    console.log(currentTab.count)
-                                    if(currentTab.count === 1)
-                                    {
-                                        currentTab.split(path)
-                                        return
                                     }
 
-                                    openTab(path)
-                                }
+                                        function openSplit(path)
+                                        {
+                                            console.log(currentTab.count)
+                                            if(currentTab.count === 1)
+                                            {
+                                                currentTab.split(path)
+                                                return
+                                            }
 
-                                function openUrl(path)
-                                {
+                                                openTab(path)
+                                            }
 
-                                    if(validURL(path))
-                                    {
-                                        control.currentBrowser.url = path
-                                    }else
-                                    {
-                                        control.currentBrowser.url = appSettings.searchEnginePage+path
-                                    }
+                                                function openUrl(path)
+                                                {
 
-                                    control.currentTab.forceActiveFocus()
-                                }
+                                                    if(validURL(path))
+                                                    {
+                                                        control.currentBrowser.url = path
+                                                    }else
+                                                        {
+                                                            control.currentBrowser.url = appSettings.searchEnginePage+path
+                                                        }
 
-                                function validURL(str)
-                                {
-                                    var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
-                                                             '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
-                                                             '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
-                                                             '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
-                                                             '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
-                                                             '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
-                                    return !!pattern.test(str);
-                                }
+                                                            control.currentTab.forceActiveFocus()
+                                                        }
 
-                            }
+                                                            function validURL(str)
+                                                            {
+                                                                var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+                                                                '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+                                                                '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+                                                                '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+                                                                '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+                                                                '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+                                                                return !!pattern.test(str);
+                                                            }
+
+                                                            }
