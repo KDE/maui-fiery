@@ -207,7 +207,9 @@ Maui.Page
         holder.title: i18n("Start Browsing")
         holder.body: i18n("Enter a new URL or open a recent site.")
 
+        onNewTabClicked: openTab("")
         onCloseTabClicked: _browserListView.closeTab(index)
+
         menuActions: Action
         {
             text: i18n("Detach")
@@ -223,7 +225,6 @@ Maui.Page
                 _browserListView.closeTab(index)
             }
         }
-
 
         tabViewButton : NavigationBar
         {
@@ -308,14 +309,8 @@ Maui.Page
             {
                 text: _browserListView.count
                 visible: _browserListView.count > 1
-                font.bold: true
-                font.pointSize: Maui.Style.fontSizes.small
                 onClicked: _browserListView.openOverview()
-                background: Rectangle
-                {
-                    color: Maui.Theme.alternateBackgroundColor
-                    radius: Maui.Style.radiusV
-                }
+                icon.name: "view-group"
             }
         }
     }
@@ -330,14 +325,14 @@ Maui.Page
 
             ToolButton
             {
-                icon.name: "view-refresh"
-                onClicked: currentBrowser.reload()
+                icon.name: "list-add"
+                onClicked: control.openTab("")
             }
 
             ToolButton
             {
-                icon.name: "list-add"
-                onClicked: control.openTab("")
+                icon.name: "view-refresh"
+                onClicked: currentBrowser.reload()
             }
 
             Maui.ToolButtonMenu
@@ -352,6 +347,12 @@ Maui.Page
                         checked: Fiery.Bookmarks.isBookmark(currentBrowser.url)
                         checkable: true
                         onTriggered:  Fiery.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
+                    }
+
+                    Action
+                    {
+                        text: i18n("Share")
+                        icon.name: "edit-share"
                     }
                 }
 
@@ -395,15 +396,6 @@ Maui.Page
                 }
 
                 MenuSeparator {}
-
-                Maui.MenuItemActionRow
-                {
-                    Action
-                    {
-                        text: i18n("Share")
-                        icon.name: "edit-share"
-                    }
-                }
 
                 MenuItem
                 {
