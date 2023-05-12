@@ -31,9 +31,10 @@ Maui.Page
     }
 
     headBar.visible: !root.isWide
-
+    altHeader: _browserListView.altTabBar
     headBar.rightContent: Loader
     {
+        asynchronous: true
         active: !root.isWide
         visible: active
         sourceComponent: _browserMenuComponent
@@ -41,6 +42,7 @@ Maui.Page
 
     headBar.leftContent: Loader
     {
+        asynchronous: true
         active: !root.isWide
         visible: active
         sourceComponent: _navigationControlsComponent
@@ -224,13 +226,14 @@ Maui.Page
         {
             tabView: _browserListView
         }
+
         tabBar.showNewTabButton: false
         tabBar.visible: true
         altTabBar: Maui.Handy.isMobile
         tabBar.rightContent: [
-
             Loader
             {
+                asynchronous: true
                 active: root.isWide
                 visible: active
                 sourceComponent: _browserMenuComponent
@@ -241,6 +244,7 @@ Maui.Page
 
         tabBar.leftContent: Loader
         {
+            asynchronous: true
             active: root.isWide
             visible: active
             sourceComponent: _navigationControlsComponent
@@ -296,7 +300,6 @@ Maui.Page
                     onTriggered: currentBrowser.goForward()
                 }
             }
-
 
             ToolButton
             {
