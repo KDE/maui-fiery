@@ -18,7 +18,7 @@ Maui.Page
     property alias listView: _browserListView
     property alias count: _browserListView.count
     readonly property alias model : _browserListView.contentModel
-    property alias searchFieldVisible: _searchField.visible
+    property alias searchFieldVisible: footBar.visible
 
     property WebEngineProfile profile: Fiery.FieryWebProfile
     {
@@ -48,10 +48,11 @@ Maui.Page
         sourceComponent: _navigationControlsComponent
     }
 
+    footBar.visible: false
     footBar.middleContent: Maui.SearchField
     {
         id: _searchField
-        visible: false
+
         Layout.maximumWidth: 500
         Layout.fillWidth: true
         Layout.alignment: Qt.AlignHCenter

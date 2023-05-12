@@ -68,59 +68,76 @@ Maui.SideBarView
             anchors.fill: parent
             id: _sidebarSwipeView
 
-            HomeView {}
-
-            HistoryView {}
-
-            Maui.Page
+            Loader
             {
+                active: visible
+                asynchronous: true
+                sourceComponent:  HomeView {}
+            }
 
-                Maui.ListBrowser
+
+            Loader
+            {
+                active: visible
+                asynchronous: true
+                sourceComponent: HistoryView {}
+            }
+
+
+            Loader
+            {
+                active: visible
+                asynchronous: true
+                sourceComponent:  Maui.Page
                 {
-                    anchors.fill: parent
-                    model: Fiery.DownloadsManager.model
 
-                    holder.title: i18n("Downloads")
-                    holder.body: i18n("Your downloads will be listed in here.")
-                    holder.emoji: "download"
-                    holder.visible: count === 0
-
-                    delegate: Maui.ListBrowserDelegate
+                    Maui.ListBrowser
                     {
-                        id: _downloadDelegate
+                        anchors.fill: parent
+                        model: Fiery.DownloadsManager.model
 
-                        width: ListView.view.width
+                        holder.title: i18n("Downloads")
+                        holder.body: i18n("Your downloads will be listed in here.")
+                        holder.emoji: "download"
+                        holder.visible: count === 0
 
-                        label1.text: model.name
-                        label2.text: model.url
-                        iconSource: download.state === WebEngineDownloadItem.DownloadCompleted ? model.filePath : model.icon
-
-                        property WebEngineDownloadItem download : model.download
-
-                        onClicked: Qt.openUrlExternally(model.filePath)
-
-                        ToolButton
+                        delegate: Maui.ListBrowserDelegate
                         {
+                            id: _downloadDelegate
 
-                            visible: !_downloadDelegate.download.isPaused && _downloadDelegate.download.state === WebEngineDownloadItem.DownloadInProgress
-                            text: i18n("Pause")
-                            icon.name: "media-playback-pause"
-                            onClicked: _downloadDelegate.download.pause()
+                            width: ListView.view.width
+
+                            label1.text: model.name
+                            label2.text: model.url
+                            iconSource: download.state === WebEngineDownloadItem.DownloadCompleted ? model.filePath : model.icon
+
+                            property WebEngineDownloadItem download : model.download
+
+                            onClicked: Qt.openUrlExternally(model.filePath)
+
+                            ToolButton
+                            {
+
+                                visible: !_downloadDelegate.download.isPaused && _downloadDelegate.download.state === WebEngineDownloadItem.DownloadInProgress
+                                text: i18n("Pause")
+                                icon.name: "media-playback-pause"
+                                onClicked: _downloadDelegate.download.pause()
+                            }
+
+                            ToolButton
+                            {
+                                visible: _downloadDelegate.download.isPaused && _downloadDelegate.download.state === WebEngineDownloadItem.DownloadInProgress
+                                text: i18n("Continue")
+                                icon.name: "media-playback-start"
+                                onClicked: _downloadDelegate.download.resume();
+                            }
+
+                            ToolButton
+                            {
+                                icon.name: _downloadDelegate.download.state === WebEngineDownloadItem.DownloadInProgress ? "dialog-cancel" : "list-remove"
+                            }
+
                         }
-
-                        ToolButton
-                        {
-                            visible: _downloadDelegate.download.isPaused && _downloadDelegate.download.state === WebEngineDownloadItem.DownloadInProgress
-                            text: i18n("Continue")
-                            icon.name: "media-playback-start"
-                            onClicked: _downloadDelegate.download.resume();
-                        }
-
-                        ToolButton
-                        {
-                            icon.name: _downloadDelegate.download.state === WebEngineDownloadItem.DownloadInProgress ? "dialog-cancel" : "list-remove"
-                        }
-
                     }
                 }
             }
@@ -130,7 +147,6 @@ Maui.SideBarView
     BrowserView
     {
         id: _browserView
-
         anchors.fill: parent
 
     }
