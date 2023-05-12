@@ -13,29 +13,33 @@ Maui.SettingsDialog
         title: i18n("Navigation")
         description: i18n("Configure the app basic navigation features.")
 
+
         Maui.SectionItem
         {
-            id: _homePageEntry
-            label1.text: i18n("Home Page")
-            label2.text: i18n("Page to load initially and default.")
+            label1.text: i18n("Restore Session")
+            label2.text: i18n("Open previous tabs.")
 
-            TextField
+            Switch
             {
-                width: _homePageEntry.width - _homePageEntry.leftPadding - _homePageEntry.rightPadding
-                text: appSettings.homePage
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.restoreSession
+                onToggled: appSettings.restoreSession = ! appSettings.restoreSession
             }
         }
 
+
         Maui.SectionItem
         {
-            id: _searchEngineEntry
-            label1.text: i18n("Search Engine")
-            label2.text: i18n("Engine to be use for default searching content.")
+            label1.text: i18n("Switch to Tab")
+            label2.text: i18n("When opening a new link jump to the new tab.")
 
-            TextField
+            Switch
             {
-                width: _searchEngineEntry.width - _searchEngineEntry.leftPadding - _searchEngineEntry.rightPadding
-                text: appSettings.searchEnginePage
+                Layout.fillHeight: true
+                checkable: true
+                checked:  appSettings.switchToTab
+                onToggled: appSettings.switchToTab = ! appSettings.switchToTab
             }
         }
 
@@ -68,6 +72,18 @@ Maui.SettingsDialog
         }
     }
 
+    Maui.SectionItem
+    {
+        label1.text: i18n("General")
+        label2.text: i18n("Configure global preferences.")
+
+        ToolButton
+        {
+            icon.name: "go-next"
+            checkable: true
+            onToggled: control.addPage(_generalComponent)
+        }
+    }
 
     Maui.SectionItem
     {
@@ -84,7 +100,59 @@ Maui.SettingsDialog
 
     Component
     {
+        id: _generalComponent
+
+        Maui.SettingsPage
+        {
+            title: i18n("General")
+
+
+            Maui.SectionItem
+            {
+                label1.text: i18n("Home Page")
+                label2.text: i18n("Page to load initially and default.")
+                columns: 1
+
+                TextField
+                {
+                    Layout.fillWidth: true
+                    text: appSettings.homePage
+                }
+            }
+
+            Maui.SectionItem
+            {
+                label1.text: i18n("Search Engine")
+                label2.text: i18n("Engine to be use for default searching content.")
+                columns: 1
+
+                TextField
+                {
+                    Layout.fillWidth: true
+                    text: appSettings.searchEnginePage
+                }
+            }
+
+            Maui.SectionItem
+            {
+                label1.text: i18n("Downloads Path")
+                label2.text: i18n("Pick a path where files will be saved.")
+                columns: 1
+
+                TextField
+                {
+                    Layout.fillWidth: true
+                    text: appSettings.downloadsPath
+                }
+            }
+
+        }
+    }
+
+    Component
+    {
         id: _featuresComponent
+
         Maui.SettingsPage
         {
             title: i18n("Features")

@@ -29,13 +29,14 @@ Maui.SplitViewItem
         webView: _webView
     }
 
-
     WebEngineView
     {
         id: _webView
         anchors.fill: parent
 
         profile: browserView.profile
+
+        backgroundColor: Maui.Theme.backgroundColor
 
         onContextMenuRequested: {
             request.accepted = true // Make sure QtWebEngine doesn't show its own context menu.
@@ -61,6 +62,11 @@ Maui.SplitViewItem
             }
         }
 
+        onLinkHovered:
+        {
+            console.log("LINK HOVERED", url)
+        }
+
         onFindTextFinished: {
             //                   findInPageResultIndex = result.activeMatch;
             //                   findInPageResultCount = result.numberOfMatches;
@@ -72,6 +78,19 @@ Maui.SplitViewItem
 
         }
 
+        onNewViewRequested:
+        {
+            if(!request.userInitiated)
+                return;
+
+            var newWindow = windowComponent.createObject(root)
+            request.openIn(newWindow.webView);
+        }
+
+        onNavigationRequested:
+        {
+            console.log("Navigation requested",  request.navigationType)
+        }
 
         settings.accelerated2dCanvasEnabled : appSettings.accelerated2dCanvasEnabled
         settings.allowGeolocationOnInsecureOrigins : appSettings.allowGeolocationOnInsecureOrigins

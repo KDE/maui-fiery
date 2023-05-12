@@ -9,7 +9,7 @@ Item
     id: control
 
     Maui.TabViewInfo.tabTitle: title
-    Maui.TabViewInfo.tabToolTipText:  currentItem.url
+    Maui.TabViewInfo.tabToolTipText: currentItem.url
 
     property url url
 
@@ -20,6 +20,7 @@ Item
     readonly property alias currentItem : _splitView.currentItem
     readonly property alias model : _splitView.contentModel
     readonly property string title : count === 2 ?  model.get(0).title + "  -  " + model.get(1).title : currentItem.title
+    readonly property var urls : count === 2 ?  [model.get(0).url,  model.get(1).url] : [currentItem.url]
 
     readonly property alias browser : _splitView.currentItem
 

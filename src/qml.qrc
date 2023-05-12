@@ -10,5 +10,6 @@
         <file>views/browser/ActionsMenu.qml</file>
         <file>db/script.sql</file>
         <file>views/home/HomeView.qml</file>
+        <file>views/AppView.qml</file>
     </qresource>
 </RCC>

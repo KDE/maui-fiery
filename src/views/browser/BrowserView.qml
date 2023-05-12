@@ -1,11 +1,14 @@
-import QtQuick 2.14
-import QtQuick.Controls 2.14
+import QtQuick 2.15
+import QtQuick.Window 2.15
+import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.3
 import QtWebEngine 1.10
 
 import org.mauikit.controls 1.3 as Maui
 
 import org.maui.fiery 1.0 as Fiery
+
+import "../widgets"
 
 Maui.Page
 {
@@ -27,8 +30,7 @@ Maui.Page
         //            urlInterceptor: typeof AdblockUrlInterceptor !== "undefined" && AdblockUrlInterceptor
     }
 
-
-
+    headBar.visible: false
     footBar.middleContent: Maui.SearchField
     {
         id: _searchField
@@ -64,6 +66,116 @@ Maui.Page
         ]
     }
 
+    Shortcut {
+        sequence: "Ctrl+K"
+        onActivated: _navigationPopup.open()
+    }
+
+    Maui.Dialog
+    {
+        id: _navigationPopup
+        maxHeight: 600
+        maxWidth: 400
+        persistent: false
+        headBar.visible: true
+
+        onOpened:
+        {
+            _entryField.forceActiveFocus()
+            _entryField.selectAll()
+        }
+
+        defaultButtons: false
+
+        headBar.middleContent: Maui.SearchField
+        {
+            id: _entryField
+            Layout.fillWidth: true
+            placeholderText: i18n("Search or enter URL")
+            text: currentBrowser.url
+
+            activeFocusOnPress : true
+            inputMethodHints: Qt.ImhUrlCharactersOnly  | Qt.ImhNoAutoUppercase
+
+            onAccepted:
+            {
+                if(text.length > 0)
+                    _browserView.openUrl(text)
+                else
+                {
+                    _browserView.openUrl(_historyListView.currentItem.url)
+                }
+
+                _navigationPopup.close()
+            }
+
+            Keys.forwardTo: _historyListView
+
+        }
+
+
+        stack: Maui.ListBrowser
+        {
+            id: _historyListView
+            clip: true
+
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            currentIndex: -1
+
+            orientation: ListView.Vertical
+            spacing: Maui.Style.space.medium
+
+            flickable.header: Maui.ListBrowserDelegate
+            {
+                width: ListView.view.width
+
+                label1.text: _entryField.text
+                label2.text: i18n("Search on default search engine")
+
+                iconSource: "edit-find"
+                iconSizeHint: Maui.Style.iconSizes.medium
+
+                onClicked:
+                {
+                    _browserView.openUrl(model.url)
+                    root.editMode = false
+                }
+            }
+
+            Keys.onEnterPressed:
+            {
+                   _browserView.openUrl(_historyListView.currentItem.url)
+            }
+
+            model: Maui.BaseModel
+            {
+                list: Fiery.History
+                filter: _entryField.text
+                sort: "adddate"
+                sortOrder: Qt.AscendingOrder
+                recursiveFilteringEnabled: true
+                sortCaseSensitivity: Qt.CaseInsensitive
+                filterCaseSensitivity: Qt.CaseInsensitive
+            }
+
+            delegate: Maui.ListBrowserDelegate
+            {
+                width: ListView.view.width
+                property string url : model.url
+                label1.text: model.title
+                label2.text: model.url
+                imageSource: model.icon.replace("image://favicon/", "")
+                template.imageSizeHint: Maui.Style.iconSizes.medium
+                onClicked:
+                {
+                    _browserView.openUrl(model.url)
+                    _navigationPopup.close()
+                }
+            }
+        }
+    }
+
     Maui.TabView
     {
         id: _browserListView
@@ -75,6 +187,166 @@ Maui.Page
 
         onNewTabClicked: control.openTab("")
         onCloseTabClicked: _browserListView.closeTab(index)
+        menuActions: Action
+        {
+            text: i18n("Detach")
+            onTriggered:
+            {
+                let index = _browserListView.menu.index
+                console.log("TAB INDEX CLICKED", index)
+                var urls = _browserListView.tabAt(index).urls
+                console.log("TAB URLS CLICKED", urls)
+
+                //                console.log("DEATCH TAB", urls)
+                newWindow(urls)
+                _browserListView.closeTab(index)
+            }
+        }
+
+        tabViewButton : NavigationBar
+        {
+            tabView: _browserListView
+        }
+
+
+
+        //        showCSDControls: true
+
+        tabBar.visible: true
+        altTabBar: Maui.Handy.isMobile
+        tabBar.rightContent: [
+
+            Maui.ToolButtonMenu
+            {
+                id: _browserMenu
+
+                icon.name: "overflow-menu"
+
+                Maui.MenuItemActionRow
+                {
+                    Action
+                    {
+                        icon.name: "love"
+                        checked: Fiery.Bookmarks.isBookmark(currentBrowser.url)
+                        checkable: true
+                        onTriggered:  Fiery.Bookmarks.insertBookmark(currentBrowser.url, currentBrowser.title)
+                    }
+
+                    Action
+                    {
+                        text: i18n("Next")
+                        enabled: currentBrowser.canGoForward
+                        icon.name: "go-next"
+                        onTriggered: currentBrowser.goForward()
+                    }
+
+                    Action
+                    {
+                        icon.name: "view-refresh"
+                        onTriggered: currentBrowser.reload()
+                    }
+                }
+
+                MenuItem
+                {
+                    text: i18n("New Tab")
+                    icon.name: "list-add"
+                    onTriggered: _browserView.openTab("")
+                }
+
+                MenuItem
+                {
+                    text: i18n("Incognito Tab")
+                    icon.name: "actor"
+                }
+
+                MenuSeparator {}
+
+
+                MenuItem
+                {
+                    text: i18n("Bookmarks")
+                    icon.name: "bookmarks"
+                    onTriggered: openBookmarks()
+                }
+
+                MenuItem
+                {
+                    text: i18n("History")
+                    icon.name: "deep-history"
+                    onTriggered: openHistory()
+
+                }
+
+                MenuItem
+                {
+                    text: i18n("Downloads")
+                    icon.name: "folder-downloads"
+                    onTriggered: openDownloads()
+
+                }
+
+                MenuSeparator {}
+
+                Maui.MenuItemActionRow
+                {
+                    Action
+                    {
+                        text: i18n("Share")
+                        icon.name: "edit-share"
+                    }
+                }
+
+                MenuItem
+                {
+                    text: i18n("Find In Page")
+                    icon.name: "edit-find"
+                    checked: _browserView.searchFieldVisible
+                    onTriggered: _browserView.searchFieldVisible = !_browserView.searchFieldVisible
+                }
+
+                MenuSeparator {}
+
+                MenuItem
+                {
+                    text: i18n("Settings")
+                    icon.name: "settings-configure"
+                    onTriggered: _settingsDialog.open()
+                }
+
+                MenuItem
+                {
+                    text: i18n("About")
+                    icon.name: "documentinfo"
+                    onTriggered: root.about()
+                }
+            },
+
+            Maui.WindowControls {}
+        ]
+
+        tabBar.leftContent: [ToolButton
+            {
+                icon.name: _sideBarView.sideBar.visible ? "sidebar-collapse" : "sidebar-expand"
+                onClicked: _sideBarView.sideBar.toggle()
+                checked: _sideBarView.sideBar.visible
+                visible: _sideBarView.sideBar.visible && !_sideBarView.sideBar.collapsed
+                ToolTip.delay: 1000
+                ToolTip.timeout: 5000
+                ToolTip.visible: hovered
+                ToolTip.text: i18n("Toggle sidebar")
+            },
+
+            ToolButton
+            {
+
+                enabled: currentBrowser.canGoBack
+                onClicked: currentBrowser.goBack()
+
+                icon.name: "go-previous"
+
+            }
+        ]
     }
 
     Component.onCompleted: openTab(appSettings.homePage)
@@ -86,7 +358,12 @@ Maui.Page
         BrowserLayout {}
     }
 
-    function findTab(path) : Boolean
+    function openEditMode()
+    {
+        _navigationPopup.open()
+    }
+
+    function findTab(path)
     {
         var index = browserIndex(path)
 
@@ -100,83 +377,82 @@ Maui.Page
             return true;
         }
 
-            return false;
+        return false;
+    }
+
+    function browserIndex(path) //find the [tab, split] index for a path
+    {
+        if(path.length === 0)
+        {
+            return [-1, -1]
         }
 
-            function browserIndex(path) //find the [tab, split] index for a path
+        for(var i = 0; i < control.count; i++)
+        {
+            const tab =  control.model.get(i)
+            for(var j = 0; j < tab.count; j++)
             {
-                if(path.length === 0)
+                const browser = tab.model.get(j)
+                if(browser.url.toString() === path)
                 {
-                    return [-1, -1]
+                    return [i, j]
                 }
+            }
+        }
+        return [-1,-1]
+    }
 
-                for(var i = 0; i < control.count; i++)
-                {
-                    const tab =  control.model.get(i)
-                    for(var j = 0; j < tab.count; j++)
-                    {
-                        const browser = tab.model.get(j)
-                        if(browser.url.toString() === path)
-                        {
-                            return [i, j]
-                        }
-                        }
-                        }
-                            return [-1,-1]
-                        }
+    function openTab(path)
+    {
+        if(findTab(path))
+        {
+            return;
+        }
 
-                            function openTab(path)
-                            {
+        _browserListView.addTab(_browserComponent, {"url": _surf.formatUrl(path)}, !appSettings.switchToTab && path.length > 0);
 
+        if(path.length === 0)
+        {
+            openEditMode()
+        }
 
-                                if(findTab(path))
-                                {
-                                    return;
-                                }
+    }
 
-                                _browserListView.addTab(_browserComponent, {"url": _surf.formatUrl(path)});
+    function openSplit(path)
+    {
+        console.log(currentTab.count)
+        if(currentTab.count === 1)
+        {
+            currentTab.split(path)
+            return
+        }
 
-                                    if(path.length === 0)
-                                    {
-                                        _navBar.openEditMode();
-                                    }
-                                    }
+        openTab(path)
+    }
 
-                                        function openSplit(path)
-                                        {
-                                            console.log(currentTab.count)
-                                            if(currentTab.count === 1)
-                                            {
-                                                currentTab.split(path)
-                                                return
-                                            }
+    function openUrl(path)
+    {
 
-                                                openTab(path)
-                                            }
+        if(validURL(path))
+        {
+            control.currentBrowser.url = path
+        }else
+        {
+            control.currentBrowser.url = appSettings.searchEnginePage+path
+        }
 
-                                                function openUrl(path)
-                                                {
+        control.currentTab.forceActiveFocus()
+    }
 
-                                                    if(validURL(path))
-                                                    {
-                                                        control.currentBrowser.url = path
-                                                    }else
-                                                        {
-                                                            control.currentBrowser.url = appSettings.searchEnginePage+path
-                                                        }
+    function validURL(str)
+    {
+        var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+                                 '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+                                 '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+                                 '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+                                 '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+                                 '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+        return !!pattern.test(str);
+    }
 
-                                                            control.currentTab.forceActiveFocus()
-                                                        }
-
-                                                            function validURL(str)
-                                                            {
-                                                                var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
-                                                                '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
-                                                                '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
-                                                                '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
-                                                                '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
-                                                                '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
-                                                                return !!pattern.test(str);
-                                                            }
-
-                                                            }
+}

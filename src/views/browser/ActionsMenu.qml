@@ -17,8 +17,6 @@ Maui.ContextualMenu
     property bool isImage: request && request.mediaType === ContextMenuRequest.MediaTypeImage
     property bool isVideo: request && request.mediaType === ContextMenuRequest.MediaTypeVideo
 
-
-
     Maui.MenuItemActionRow
     {
         Action
@@ -87,8 +85,6 @@ Maui.ContextualMenu
         }
     }
 
-
-
     MenuItem
     {
         text: i18n("Copy Link")
@@ -99,9 +95,6 @@ Maui.ContextualMenu
             Maui.Handy.copyTextToClipboard(control.request.linkUrl)
         }
     }
-
-    MenuSeparator {}
-
 
     MenuItem
     {
@@ -114,7 +107,6 @@ Maui.ContextualMenu
         }
     }
 
-
     MenuItem
     {
         text: i18n("Open Link in Split View")
@@ -125,6 +117,18 @@ Maui.ContextualMenu
             openSplit( control.request.linkUrl);
         }
     }
+
+    MenuItem
+    {
+        text: i18n("Open Link in New Window")
+        height: visible? implicitHeight : 00 - control.spacing
+        visible: control.isValidUrl
+        onTriggered:
+        {
+            newWindow([control.request.linkUrl]);
+        }
+    }
+
 
     MenuItem
     {
@@ -141,13 +145,9 @@ Maui.ContextualMenu
         }
     }
 
-    MenuSeparator{}
-
-
-
     MenuItem
     {
-        height: visible? implicitHeight : 00 - control.spacing
+        height: visible? implicitHeight : 0 - control.spacing
         visible: control.isVideo
         text: i18n("Save Video")
         onTriggered: webView.triggerWebAction(WebEngineView.DownloadMediaToDisk)
@@ -163,7 +163,6 @@ Maui.ContextualMenu
             openTab(control.request.mediaUrl)
         }
     }
-
 
     MenuItem
     {
@@ -191,9 +190,6 @@ Maui.ContextualMenu
             openTab(control.request.mediaUrl)
         }
     }
-
-    MenuSeparator{}
-
 
     MenuItem
     {
