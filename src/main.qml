@@ -66,6 +66,9 @@ Maui.ApplicationWindow
 
         property bool restoreSession: true
         property bool switchToTab: false
+        property double zoomFactor
+
+        property bool autoSave: false
     }
 
     Fiery.Surf

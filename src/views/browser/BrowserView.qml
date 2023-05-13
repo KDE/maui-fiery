@@ -31,7 +31,7 @@ Maui.Page
     }
 
     headBar.visible: !root.isWide
-    altHeader: _browserListView.altTabBar
+    altHeader: true
     headBar.rightContent: Loader
     {
         asynchronous: true
@@ -97,7 +97,7 @@ Maui.Page
         maxHeight: 900
         maxWidth: 500
         hint: 1
-        persistent: false
+        persistent: true
         headBar.visible: true
         page.altHeader: _browserListView.altTabBar
 
@@ -109,6 +109,7 @@ Maui.Page
 
         defaultButtons: false
 
+        headBar.forceCenterMiddleContent: false
         headBar.middleContent: Maui.SearchField
         {
             id: _entryField
@@ -132,7 +133,6 @@ Maui.Page
             }
 
             Keys.forwardTo: _historyListView
-
         }
 
 
@@ -148,20 +148,41 @@ Maui.Page
             orientation: ListView.Vertical
             spacing: Maui.Style.space.medium
 
-            flickable.header: Maui.ListBrowserDelegate
+            flickable.header: ColumnLayout
             {
-                width: ListView.view.width
+                width: parent.width
+                spacing: _historyListView.spacing
 
-                label1.text: _entryField.text
-                label2.text: i18n("Search on default search engine")
-
-                iconSource: "edit-find"
-                iconSizeHint: Maui.Style.iconSizes.medium
-
-                onClicked:
+                Maui.ListBrowserDelegate
                 {
-                    _browserView.openUrl(model.url)
-                    root.editMode = false
+                    Layout.fillWidth: true
+                    label1.text: _entryField.text
+                    label2.text: i18n("Search on default search engine")
+
+                    iconSource: "edit-find"
+                    iconSizeHint: Maui.Style.iconSizes.medium
+
+                    onClicked:
+                    {
+                        _browserView.openUrl(model.url)
+                        _historyListView.close()
+                    }
+                }
+
+                Maui.ListBrowserDelegate
+                {
+                    Layout.fillWidth: true
+                    label1.text: _entryField.text
+                    label2.text: i18n("Search on page.")
+
+                    iconSource: "edit-find"
+                    iconSizeHint: Maui.Style.iconSizes.medium
+
+                    onClicked:
+                    {
+                         control.currentBrowser.findText(_entryField.text)
+                        _historyListView.close()
+                    }
                 }
             }
 
@@ -353,6 +374,39 @@ Maui.Page
                     {
                         text: i18n("Share")
                         icon.name: "edit-share"
+                    }
+                }
+
+                Maui.ToolActions
+                {
+                    autoExclusive: false
+                    checkable: false
+
+                    Action
+                    {
+                        icon.name: "zoom-out"
+                        onTriggered:
+                        {
+                            appSettings.zoomFactor = Math.max(appSettings.zoomFactor-0.25, 0.25)
+                        }
+                    }
+
+                    Action
+                    {
+                        icon.name: "zoom-fit-page"
+                        onTriggered:
+                        {
+                            appSettings.zoomFactor = 1.0
+                        }
+                    }
+
+                    Action
+                    {
+                        icon.name: "zoom-in"
+                        onTriggered:
+                        {
+                            appSettings.zoomFactor = Math.min(appSettings.zoomFactor+0.25, 5.0)
+                        }
                     }
                 }
 

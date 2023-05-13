@@ -32,9 +32,11 @@ Maui.SplitViewItem
     WebEngineView
     {
         id: _webView
+
         anchors.fill: parent
 
         profile: browserView.profile
+        zoomFactor: appSettings.zoomFactor
 
         backgroundColor: Maui.Theme.backgroundColor
 

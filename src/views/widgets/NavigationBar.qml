@@ -41,8 +41,9 @@ Maui.TabViewButton
     {
         id: _progress
         width: parent.width
-        anchors.centerIn: parent
+        anchors.bottom: parent.bottom
         visible: webView.loading
+
     }
 
 }

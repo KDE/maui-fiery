@@ -28,7 +28,6 @@ Maui.SettingsDialog
             }
         }
 
-
         Maui.SectionItem
         {
             label1.text: i18n("Switch to Tab")
@@ -106,7 +105,6 @@ Maui.SettingsDialog
         {
             title: i18n("General")
 
-
             Maui.SectionItem
             {
                 label1.text: i18n("Home Page")
@@ -133,17 +131,37 @@ Maui.SettingsDialog
                 }
             }
 
-            Maui.SectionItem
+            Maui.SectionGroup
             {
-                label1.text: i18n("Downloads Path")
-                label2.text: i18n("Pick a path where files will be saved.")
-                columns: 1
+                title: i18n("Downloads")
 
-                TextField
+                Maui.SectionItem
                 {
-                    Layout.fillWidth: true
-                    text: appSettings.downloadsPath
+                    label1.text: i18n("Downloads Path")
+                    label2.text: i18n("Pick a path where files will be saved.")
+                    columns: 1
+
+                    TextField
+                    {
+                        Layout.fillWidth: true
+                        text: appSettings.downloadsPath
+                    }
                 }
+
+                Maui.SectionItem
+                {
+                    label1.text: i18n("Auto Save")
+                    label2.text: i18n("Download files without asking.")
+
+                    Switch
+                    {
+                        Layout.fillHeight: true
+                        checkable: true
+                        checked:  appSettings.autoSave
+                        onToggled: appSettings.autoSave = ! appSettings.autoSave
+                    }
+                }
+
             }
 
         }
