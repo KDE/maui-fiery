@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-09 00:46+0000\n"
+"POT-Creation-Date: 2023-05-13 00:45+0000\n"
 "PO-Revision-Date: 2023-02-11 17:48+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -17,133 +17,104 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 22.12.1\n"
 
-#: src/main.cpp:35
+#: src/main.cpp:37
 #, kde-format
 msgid "Fiery"
 msgstr "Fiery"
 
-#: src/main.cpp:35
+#: src/main.cpp:37
 #, kde-format
 msgid "Browse and organize the web."
 msgstr "瀏覽並整理網際網路。"
 
-#: src/main.cpp:36
+#: src/main.cpp:38
 #, kde-format
 msgid "© 2020-%1 Maui Development Team"
 msgstr "© 2020-%1 Maui 開發團隊"
 
-#: src/main.cpp:37
+#: src/main.cpp:39
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "Camilo Higuita"
 
-#: src/main.cpp:37
+#: src/main.cpp:39
 #, kde-format
 msgid "Developer"
 msgstr "開發者"
 
-#: src/main.qml:101
+#: src/views/AppView.qml:43
 #, kde-format
 msgid "Home"
 msgstr "首頁"
 
-#: src/main.qml:109
+#: src/views/AppView.qml:51
 #, kde-format
 msgid "Recent"
 msgstr "最近"
 
-#: src/main.qml:117 src/main.qml:224
+#: src/views/AppView.qml:59 src/views/AppView.qml:99
+#: src/views/browser/BrowserView.qml:392
 #, kde-format
 msgid "Downloads"
 msgstr "下載"
 
-#: src/main.qml:184
+#: src/views/AppView.qml:100
 #, kde-format
-msgid "Next"
-msgstr "下一頁"
-
-#: src/main.qml:199
-#, kde-format
-msgid "New Tab"
-msgstr "新分頁"
-
-#: src/main.qml:206
-#, kde-format
-msgid "Incognito Tab"
-msgstr "無痕分頁"
-
-#: src/main.qml:214
-#, kde-format
-msgid "History"
-msgstr "歷史"
-
-#: src/main.qml:234
-#, fuzzy, kde-format
-#| msgid "BookMarks"
-msgid "Bookmarks"
-msgstr "書籤"
-
-#: src/main.qml:248
-#, kde-format
-msgid "Share"
-msgstr "分享"
-
-#: src/main.qml:257
-#, kde-format
-msgid "Find In Page"
+msgid "Your downloads will be listed in here."
 msgstr ""
 
-#: src/main.qml:268
+#: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
 #, kde-format
-msgid "Settings"
-msgstr "設定"
-
-#: src/main.qml:275
-#, kde-format
-msgid "About"
-msgstr "關於"
-
-#: src/main.qml:292
-#, kde-format
-msgid "Toggle sidebar"
+msgid "Pause"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:45
+#: src/views/AppView.qml:130
+#, kde-format
+msgid "Continue"
+msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:43
 #, kde-format
 msgid "Paste"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:58
+#: src/views/browser/ActionsMenu.qml:56
 #, kde-format
 msgid "Translate"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:69
+#: src/views/browser/ActionsMenu.qml:67
 #, kde-format
 msgid "Select All"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:81
+#: src/views/browser/ActionsMenu.qml:79
 #, fuzzy, kde-format
 #| msgid "Copy"
 msgid "Copy Text"
 msgstr "複製"
 
-#: src/views/browser/ActionsMenu.qml:94
+#: src/views/browser/ActionsMenu.qml:90
 #, fuzzy, kde-format
 #| msgid "Copy link"
 msgid "Copy Link"
 msgstr "複製連結"
 
-#: src/views/browser/ActionsMenu.qml:108
+#: src/views/browser/ActionsMenu.qml:101
 #, kde-format
 msgid "Open Link"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:120
+#: src/views/browser/ActionsMenu.qml:112
 #, kde-format
 msgid "Open Link in Split View"
 msgstr ""
+
+#: src/views/browser/ActionsMenu.qml:123
+#, fuzzy, kde-format
+#| msgid "Open in new tab"
+msgid "Open Link in New Window"
+msgstr "在新分頁開啟"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
@@ -160,95 +131,151 @@ msgstr ""
 msgid "Open Audio"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:172
+#: src/views/browser/ActionsMenu.qml:171
 #, kde-format
 msgid "Save Image"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:180
+#: src/views/browser/ActionsMenu.qml:179
 #, kde-format
 msgid "Copy Image"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:188
+#: src/views/browser/ActionsMenu.qml:187
 #, kde-format
 msgid "Open Image"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:203
+#: src/views/browser/ActionsMenu.qml:199
 #, kde-format
 msgid "Play"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:204
-#, kde-format
-msgid "Pause"
-msgstr ""
-
-#: src/views/browser/ActionsMenu.qml:213
+#: src/views/browser/ActionsMenu.qml:209
 #, kde-format
 msgid "Unmute"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:214
+#: src/views/browser/ActionsMenu.qml:210
 #, kde-format
 msgid "Mute"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:227
+#: src/views/browser/ActionsMenu.qml:223
 #, kde-format
 msgid "Speed"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:253
+#: src/views/browser/ActionsMenu.qml:249
 #, kde-format
 msgid "Loop"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:262
+#: src/views/browser/ActionsMenu.qml:258
 #, kde-format
 msgid "Exit fullscreen"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:262
+#: src/views/browser/ActionsMenu.qml:258
 #, kde-format
 msgid "Fullscreen"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:277
+#: src/views/browser/ActionsMenu.qml:273
 #, kde-format
 msgid "Hide controls"
 msgstr ""
 
-#: src/views/browser/ActionsMenu.qml:278
+#: src/views/browser/ActionsMenu.qml:274
 #, kde-format
 msgid "Show controls"
 msgstr ""
 
-#: src/views/browser/Browser.qml:96
+#: src/views/browser/Browser.qml:123
 #, kde-format
 msgid "Error"
 msgstr ""
 
-#: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:65
+#: src/views/browser/Browser.qml:123 src/views/browser/BrowserView.qml:207
 #, kde-format
 msgid "Start Browsing"
 msgstr "開始瀏覽"
 
-#: src/views/browser/Browser.qml:97 src/views/browser/BrowserView.qml:66
+#: src/views/browser/Browser.qml:124 src/views/browser/BrowserView.qml:208
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "輸入新網址或開啟最近網站。"
 
-#: src/views/widgets/NavigationBar.qml:66
+#: src/views/browser/BrowserView.qml:116
 #, kde-format
 msgid "Search or enter URL"
 msgstr "搜尋或輸入網址"
 
-#: src/views/widgets/NavigationBar.qml:110
+#: src/views/browser/BrowserView.qml:156
 #, kde-format
 msgid "Search on default search engine"
 msgstr "使用預設搜尋引擎進行搜尋"
+
+#: src/views/browser/BrowserView.qml:215
+#, kde-format
+msgid "Detach"
+msgstr ""
+
+#: src/views/browser/BrowserView.qml:284
+#, kde-format
+msgid "Toggle sidebar"
+msgstr ""
+
+#: src/views/browser/BrowserView.qml:294
+#, kde-format
+msgid "Previous"
+msgstr ""
+
+#: src/views/browser/BrowserView.qml:301
+#, kde-format
+msgid "Next"
+msgstr "下一頁"
+
+#: src/views/browser/BrowserView.qml:354
+#, kde-format
+msgid "Share"
+msgstr "分享"
+
+#: src/views/browser/BrowserView.qml:361
+#, kde-format
+msgid "New Tab"
+msgstr "新分頁"
+
+#: src/views/browser/BrowserView.qml:368
+#, kde-format
+msgid "Incognito Tab"
+msgstr "無痕分頁"
+
+#: src/views/browser/BrowserView.qml:377
+#, fuzzy, kde-format
+#| msgid "BookMarks"
+msgid "Bookmarks"
+msgstr "書籤"
+
+#: src/views/browser/BrowserView.qml:384
+#, kde-format
+msgid "History"
+msgstr "歷史"
+
+#: src/views/browser/BrowserView.qml:402
+#, kde-format
+msgid "Find In Page"
+msgstr ""
+
+#: src/views/browser/BrowserView.qml:412
+#, kde-format
+msgid "Settings"
+msgstr "設定"
+
+#: src/views/browser/BrowserView.qml:419
+#, kde-format
+msgid "About"
+msgstr "關於"
 
 #: src/views/widgets/SettingsDialog.qml:13
 #, kde-format
@@ -262,61 +289,103 @@ msgstr "設定應用程式基本導覽功能。"
 
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
-msgid "Home Page"
-msgstr "首頁"
+msgid "Restore Session"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
-msgid "Page to load initially and default."
-msgstr "開始時預設載入的頁面。"
+msgid "Open previous tabs."
+msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:32
+#: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
-msgid "Search Engine"
-msgstr "搜尋引擎"
+msgid "Switch to Tab"
+msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:33
+#: src/views/widgets/SettingsDialog.qml:35
 #, kde-format
-msgid "Engine to be use for default searching content."
-msgstr "預設用來搜尋內容的引擎。"
+msgid "When opening a new link jump to the new tab."
+msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:44
+#: src/views/widgets/SettingsDialog.qml:48
 #, kde-format
 msgid "Auto Load Images"
 msgstr "自動載入影像"
 
-#: src/views/widgets/SettingsDialog.qml:45
+#: src/views/widgets/SettingsDialog.qml:49
 #, kde-format
 msgid "Automatically loads images on web pages."
 msgstr "自動載入網頁上的影像。"
 
-#: src/views/widgets/SettingsDialog.qml:58
+#: src/views/widgets/SettingsDialog.qml:62
 #, kde-format
 msgid "Hyperlink Auditing"
 msgstr "超連結審計"
 
-#: src/views/widgets/SettingsDialog.qml:59
+#: src/views/widgets/SettingsDialog.qml:63
 #, kde-format
 msgid "Enables support for the ping attribute for hyperlinks."
 msgstr "啟用超連結 ping 屬性的支援。"
 
-#: src/views/widgets/SettingsDialog.qml:74
+#: src/views/widgets/SettingsDialog.qml:77
+#: src/views/widgets/SettingsDialog.qml:107
+#, kde-format
+msgid "General"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:78
+#, kde-format
+msgid "Configure global preferences."
+msgstr ""
+
 #: src/views/widgets/SettingsDialog.qml:90
+#: src/views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Features"
 msgstr "功能"
 
-#: src/views/widgets/SettingsDialog.qml:75
+#: src/views/widgets/SettingsDialog.qml:91
 #, kde-format
 msgid "Configure the browser plugins and features."
 msgstr "設定瀏覽器外掛與功能。"
 
-#: src/views/widgets/SettingsDialog.qml:96
+#: src/views/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid "Home Page"
+msgstr "首頁"
+
+#: src/views/widgets/SettingsDialog.qml:113
+#, kde-format
+msgid "Page to load initially and default."
+msgstr "開始時預設載入的頁面。"
+
+#: src/views/widgets/SettingsDialog.qml:125
+#, kde-format
+msgid "Search Engine"
+msgstr "搜尋引擎"
+
+#: src/views/widgets/SettingsDialog.qml:126
+#, kde-format
+msgid "Engine to be use for default searching content."
+msgstr "預設用來搜尋內容的引擎。"
+
+#: src/views/widgets/SettingsDialog.qml:138
+#, fuzzy, kde-format
+#| msgid "Downloads"
+msgid "Downloads Path"
+msgstr "下載"
+
+#: src/views/widgets/SettingsDialog.qml:139
+#, kde-format
+msgid "Pick a path where files will be saved."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:164
 #, kde-format
 msgid "Accelerated 2D Canvas"
 msgstr "2D Canvas 加速"
 
-#: src/views/widgets/SettingsDialog.qml:97
+#: src/views/widgets/SettingsDialog.qml:165
 #, kde-format
 msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
@@ -325,110 +394,110 @@ msgstr ""
 "指定 HTML 5 2D canvas 是否應該要是一個 OpenGL 的 framebuffer。這讓許多繪製操"
 "作更快，但會讓像素存取變慢。"
 
-#: src/views/widgets/SettingsDialog.qml:110
+#: src/views/widgets/SettingsDialog.qml:178
 #, kde-format
 msgid "PDF Viewer"
 msgstr "PDF 檢視器"
 
-#: src/views/widgets/SettingsDialog.qml:111
+#: src/views/widgets/SettingsDialog.qml:179
 #, kde-format
 msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
 msgstr "PDF 文件會在內部 PDF 檢視器打開而非被下載。"
 
-#: src/views/widgets/SettingsDialog.qml:124
+#: src/views/widgets/SettingsDialog.qml:192
 #, kde-format
 msgid "Plugins Enabled"
 msgstr "啟用外掛程式"
 
-#: src/views/widgets/SettingsDialog.qml:125
+#: src/views/widgets/SettingsDialog.qml:193
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
 msgstr "啟用 Pepper 外掛程式的支援，例如 Flash Player。"
 
-#: src/views/widgets/SettingsDialog.qml:141
-#: src/views/widgets/SettingsDialog.qml:158
+#: src/views/widgets/SettingsDialog.qml:209
+#: src/views/widgets/SettingsDialog.qml:226
 #, kde-format
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: src/views/widgets/SettingsDialog.qml:142
+#: src/views/widgets/SettingsDialog.qml:210
 #, fuzzy, kde-format
 #| msgid "Configure JavaScript behaviour"
 msgid "Configure JavaScript behaviour."
 msgstr "設定 JavaScript 行為"
 
-#: src/views/widgets/SettingsDialog.qml:164
+#: src/views/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Javascript Enabled"
 msgstr "啟用 Javascript"
 
-#: src/views/widgets/SettingsDialog.qml:165
+#: src/views/widgets/SettingsDialog.qml:233
 #, kde-format
 msgid "Enables the running of JavaScript programs."
 msgstr "讓 JavaScript 程式能夠執行。"
 
-#: src/views/widgets/SettingsDialog.qml:178
+#: src/views/widgets/SettingsDialog.qml:246
 #, kde-format
 msgid "Javascript Can Access Clipboard"
 msgstr "Javascript 可以存取剪貼簿"
 
-#: src/views/widgets/SettingsDialog.qml:179
+#: src/views/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr "讓 JavaScript 程式可以讀取或寫入剪貼簿。"
 
-#: src/views/widgets/SettingsDialog.qml:192
+#: src/views/widgets/SettingsDialog.qml:260
 #, kde-format
 msgid "Javascript Can Paste"
 msgstr "Javascript 可以貼上"
 
-#: src/views/widgets/SettingsDialog.qml:193
+#: src/views/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
 msgstr "啟用 JavaScript execCommand(paste)。"
 
-#: src/views/widgets/SettingsDialog.qml:206
+#: src/views/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
 msgstr "允許 JavaScript 使視窗成為作用中"
 
-#: src/views/widgets/SettingsDialog.qml:207
+#: src/views/widgets/SettingsDialog.qml:275
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
 msgstr "讓 JavaScript 的 window.focus() 方法能夠執行。"
 
-#: src/views/widgets/SettingsDialog.qml:224
-#: src/views/widgets/SettingsDialog.qml:240
+#: src/views/widgets/SettingsDialog.qml:292
+#: src/views/widgets/SettingsDialog.qml:308
 #, kde-format
 msgid "Security & Privacy"
 msgstr "安全性與隱私"
 
-#: src/views/widgets/SettingsDialog.qml:225
+#: src/views/widgets/SettingsDialog.qml:293
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
 msgstr "設定編輯器外觀與行為。這些設定是全域套用的"
 
-#: src/views/widgets/SettingsDialog.qml:246
+#: src/views/widgets/SettingsDialog.qml:314
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
 msgstr "允許不完全的來源上的地理位置"
 
-#: src/views/widgets/SettingsDialog.qml:247
+#: src/views/widgets/SettingsDialog.qml:315
 #, kde-format
 msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
 "features."
 msgstr "通常只有 HTTPS 等等安全來源才能請求使用地理位置功能。"
 
-#: src/views/widgets/SettingsDialog.qml:260
+#: src/views/widgets/SettingsDialog.qml:328
 #, kde-format
 msgid "Allow Running Insecure Content"
 msgstr "允許執行不安全的內容"
 
-#: src/views/widgets/SettingsDialog.qml:261
+#: src/views/widgets/SettingsDialog.qml:329
 #, kde-format
 msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
@@ -436,54 +505,54 @@ msgid ""
 msgstr ""
 "HTTPS 頁面預設無法執行 HTTP 網址來的 JavaScript、CSS、外掛程式或 web socket。"
 
-#: src/views/widgets/SettingsDialog.qml:275
+#: src/views/widgets/SettingsDialog.qml:343
 #, kde-format
 msgid "DNS Prefetch Enabled"
 msgstr "啟用 DNS 預先取得"
 
-#: src/views/widgets/SettingsDialog.qml:276
+#: src/views/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
 "are activated."
 msgstr "啟用推測後在觸發它們之前預先取得 HTML link 的 DNS 紀錄的功能。"
 
-#: src/views/widgets/SettingsDialog.qml:289
+#: src/views/widgets/SettingsDialog.qml:357
 #, kde-format
 msgid "Local Content Can Access File Urls"
 msgstr "本機內容可以存取 file 網址"
 
-#: src/views/widgets/SettingsDialog.qml:290
+#: src/views/widgets/SettingsDialog.qml:358
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr "允許從本地載入的文件存取其他本地的網址。"
 
-#: src/views/widgets/SettingsDialog.qml:303
+#: src/views/widgets/SettingsDialog.qml:371
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
 msgstr "本機內容可以存取遠端網址"
 
-#: src/views/widgets/SettingsDialog.qml:304
+#: src/views/widgets/SettingsDialog.qml:372
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
 msgstr "允許從本地載入的文件存取遠端的網址。"
 
-#: src/views/widgets/SettingsDialog.qml:317
+#: src/views/widgets/SettingsDialog.qml:385
 #, kde-format
 msgid "Local Storage"
 msgstr "LocalStorage"
 
-#: src/views/widgets/SettingsDialog.qml:318
+#: src/views/widgets/SettingsDialog.qml:386
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
 msgstr "啟用 HTML 5 localStorage 功能的支援。"
 
-#: src/views/widgets/SettingsDialog.qml:331
+#: src/views/widgets/SettingsDialog.qml:399
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
 msgstr "WebRTC 僅公開介面"
 
-#: src/views/widgets/SettingsDialog.qml:332
+#: src/views/widgets/SettingsDialog.qml:400
 #, kde-format
 msgid ""
 "Limits WebRTC to public IP addresses only. When disabled WebRTC may also use "
@@ -495,9 +564,6 @@ msgstr ""
 
 #~ msgid "Browser"
 #~ msgstr "瀏覽器"
-
-#~ msgid "Open in new tab"
-#~ msgstr "在新分頁開啟"
 
 #~ msgid "Download"
 #~ msgstr "下載"

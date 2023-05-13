@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-09 00:46+0000\n"
+"POT-Creation-Date: 2023-05-13 00:45+0000\n"
 "PO-Revision-Date: 2023-02-25 11:54+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -17,129 +17,101 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 22.12.2\n"
 
-#: src/main.cpp:35
+#: src/main.cpp:37
 #, kde-format
 msgid "Fiery"
 msgstr "Fiery"
 
-#: src/main.cpp:35
+#: src/main.cpp:37
 #, kde-format
 msgid "Browse and organize the web."
 msgstr "Web'de gezinin ve bilgi toplayın."
 
-#: src/main.cpp:36
+#: src/main.cpp:38
 #, kde-format
 msgid "© 2020-%1 Maui Development Team"
 msgstr "© 2020-%1 Maui Geliştirme Takımı"
 
-#: src/main.cpp:37
+#: src/main.cpp:39
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "Camilo Higuita"
 
-#: src/main.cpp:37
+#: src/main.cpp:39
 #, kde-format
 msgid "Developer"
 msgstr "Geliştirici"
 
-#: src/main.qml:101
+#: src/views/AppView.qml:43
 #, kde-format
 msgid "Home"
 msgstr "Ana Sayfa"
 
-#: src/main.qml:109
+#: src/views/AppView.qml:51
 #, kde-format
 msgid "Recent"
 msgstr "Son Kullanılan"
 
-#: src/main.qml:117 src/main.qml:224
+#: src/views/AppView.qml:59 src/views/AppView.qml:99
+#: src/views/browser/BrowserView.qml:392
 #, kde-format
 msgid "Downloads"
 msgstr "İndirmeler"
 
-#: src/main.qml:184
+#: src/views/AppView.qml:100
 #, kde-format
-msgid "Next"
-msgstr "Sonraki"
+msgid "Your downloads will be listed in here."
+msgstr ""
 
-#: src/main.qml:199
+#: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
 #, kde-format
-msgid "New Tab"
-msgstr "Yeni Sekme"
+msgid "Pause"
+msgstr "Duraklat"
 
-#: src/main.qml:206
+#: src/views/AppView.qml:130
 #, kde-format
-msgid "Incognito Tab"
-msgstr "Gizli Sekme"
+msgid "Continue"
+msgstr ""
 
-#: src/main.qml:214
-#, kde-format
-msgid "History"
-msgstr "Geçmiş"
-
-#: src/main.qml:234
-#, kde-format
-msgid "Bookmarks"
-msgstr "Yer İmleri"
-
-#: src/main.qml:248
-#, kde-format
-msgid "Share"
-msgstr "Paylaş"
-
-#: src/main.qml:257
-#, kde-format
-msgid "Find In Page"
-msgstr "Sayfada Bul"
-
-#: src/main.qml:268
-#, kde-format
-msgid "Settings"
-msgstr "Ayarlar"
-
-#: src/main.qml:275
-#, kde-format
-msgid "About"
-msgstr "Hakkında"
-
-#: src/main.qml:292
-#, kde-format
-msgid "Toggle sidebar"
-msgstr "Kenar çubuğunu aç/kapat"
-
-#: src/views/browser/ActionsMenu.qml:45
+#: src/views/browser/ActionsMenu.qml:43
 #, kde-format
 msgid "Paste"
 msgstr "Yapıştır"
 
-#: src/views/browser/ActionsMenu.qml:58
+#: src/views/browser/ActionsMenu.qml:56
 #, kde-format
 msgid "Translate"
 msgstr "Çevir"
 
-#: src/views/browser/ActionsMenu.qml:69
+#: src/views/browser/ActionsMenu.qml:67
 #, kde-format
 msgid "Select All"
 msgstr "Tümünü Seç"
 
-#: src/views/browser/ActionsMenu.qml:81
+#: src/views/browser/ActionsMenu.qml:79
 #, kde-format
 msgid "Copy Text"
 msgstr "Metni Kopyala"
 
-#: src/views/browser/ActionsMenu.qml:94
+#: src/views/browser/ActionsMenu.qml:90
 #, kde-format
 msgid "Copy Link"
 msgstr "Bağlantıyı Kopyala"
 
-#: src/views/browser/ActionsMenu.qml:108
+#: src/views/browser/ActionsMenu.qml:101
 #, kde-format
 msgid "Open Link"
 msgstr "Bağlantıyı Aç"
 
-#: src/views/browser/ActionsMenu.qml:120
+#: src/views/browser/ActionsMenu.qml:112
 #, kde-format
 msgid "Open Link in Split View"
+msgstr "Bağlantıyı Bölünmüş Görünümde Aç"
+
+#: src/views/browser/ActionsMenu.qml:123
+#, fuzzy, kde-format
+#| msgid "Open Link in Split View"
+msgid "Open Link in New Window"
 msgstr "Bağlantıyı Bölünmüş Görünümde Aç"
 
 #: src/views/browser/ActionsMenu.qml:152
@@ -157,95 +129,150 @@ msgstr "Videoyu Aç"
 msgid "Open Audio"
 msgstr "Ses Aç"
 
-#: src/views/browser/ActionsMenu.qml:172
+#: src/views/browser/ActionsMenu.qml:171
 #, kde-format
 msgid "Save Image"
 msgstr "Görseli Kaydet"
 
-#: src/views/browser/ActionsMenu.qml:180
+#: src/views/browser/ActionsMenu.qml:179
 #, kde-format
 msgid "Copy Image"
 msgstr "Görseli Kopyala"
 
-#: src/views/browser/ActionsMenu.qml:188
+#: src/views/browser/ActionsMenu.qml:187
 #, kde-format
 msgid "Open Image"
 msgstr "Görseli Aç"
 
-#: src/views/browser/ActionsMenu.qml:203
+#: src/views/browser/ActionsMenu.qml:199
 #, kde-format
 msgid "Play"
 msgstr "Oynat"
 
-#: src/views/browser/ActionsMenu.qml:204
-#, kde-format
-msgid "Pause"
-msgstr "Duraklat"
-
-#: src/views/browser/ActionsMenu.qml:213
+#: src/views/browser/ActionsMenu.qml:209
 #, kde-format
 msgid "Unmute"
 msgstr "Sesini Aç"
 
-#: src/views/browser/ActionsMenu.qml:214
+#: src/views/browser/ActionsMenu.qml:210
 #, kde-format
 msgid "Mute"
 msgstr "Sessize Al"
 
-#: src/views/browser/ActionsMenu.qml:227
+#: src/views/browser/ActionsMenu.qml:223
 #, kde-format
 msgid "Speed"
 msgstr "Hız"
 
-#: src/views/browser/ActionsMenu.qml:253
+#: src/views/browser/ActionsMenu.qml:249
 #, kde-format
 msgid "Loop"
 msgstr "Döngü"
 
-#: src/views/browser/ActionsMenu.qml:262
+#: src/views/browser/ActionsMenu.qml:258
 #, kde-format
 msgid "Exit fullscreen"
 msgstr "Tam Ekrandan Çık"
 
-#: src/views/browser/ActionsMenu.qml:262
+#: src/views/browser/ActionsMenu.qml:258
 #, kde-format
 msgid "Fullscreen"
 msgstr "Tam Ekran"
 
-#: src/views/browser/ActionsMenu.qml:277
+#: src/views/browser/ActionsMenu.qml:273
 #, kde-format
 msgid "Hide controls"
 msgstr "Denetimleri Gizle"
 
-#: src/views/browser/ActionsMenu.qml:278
+#: src/views/browser/ActionsMenu.qml:274
 #, kde-format
 msgid "Show controls"
 msgstr "Denetimleri Göster"
 
-#: src/views/browser/Browser.qml:96
+#: src/views/browser/Browser.qml:123
 #, kde-format
 msgid "Error"
 msgstr "Hata"
 
-#: src/views/browser/Browser.qml:96 src/views/browser/BrowserView.qml:65
+#: src/views/browser/Browser.qml:123 src/views/browser/BrowserView.qml:207
 #, kde-format
 msgid "Start Browsing"
 msgstr "Dolanmaya Başla"
 
-#: src/views/browser/Browser.qml:97 src/views/browser/BrowserView.qml:66
+#: src/views/browser/Browser.qml:124 src/views/browser/BrowserView.qml:208
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Yeni bir URL girin veya son kullanılan bir siteyi ziyaret edin."
 
-#: src/views/widgets/NavigationBar.qml:66
+#: src/views/browser/BrowserView.qml:116
 #, kde-format
 msgid "Search or enter URL"
 msgstr "Ara veya URL gir"
 
-#: src/views/widgets/NavigationBar.qml:110
+#: src/views/browser/BrowserView.qml:156
 #, kde-format
 msgid "Search on default search engine"
 msgstr "Öntanımlı arama motoruyla ara"
+
+#: src/views/browser/BrowserView.qml:215
+#, kde-format
+msgid "Detach"
+msgstr ""
+
+#: src/views/browser/BrowserView.qml:284
+#, kde-format
+msgid "Toggle sidebar"
+msgstr "Kenar çubuğunu aç/kapat"
+
+#: src/views/browser/BrowserView.qml:294
+#, kde-format
+msgid "Previous"
+msgstr ""
+
+#: src/views/browser/BrowserView.qml:301
+#, kde-format
+msgid "Next"
+msgstr "Sonraki"
+
+#: src/views/browser/BrowserView.qml:354
+#, kde-format
+msgid "Share"
+msgstr "Paylaş"
+
+#: src/views/browser/BrowserView.qml:361
+#, kde-format
+msgid "New Tab"
+msgstr "Yeni Sekme"
+
+#: src/views/browser/BrowserView.qml:368
+#, kde-format
+msgid "Incognito Tab"
+msgstr "Gizli Sekme"
+
+#: src/views/browser/BrowserView.qml:377
+#, kde-format
+msgid "Bookmarks"
+msgstr "Yer İmleri"
+
+#: src/views/browser/BrowserView.qml:384
+#, kde-format
+msgid "History"
+msgstr "Geçmiş"
+
+#: src/views/browser/BrowserView.qml:402
+#, kde-format
+msgid "Find In Page"
+msgstr "Sayfada Bul"
+
+#: src/views/browser/BrowserView.qml:412
+#, kde-format
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: src/views/browser/BrowserView.qml:419
+#, kde-format
+msgid "About"
+msgstr "Hakkında"
 
 #: src/views/widgets/SettingsDialog.qml:13
 #, kde-format
@@ -259,61 +286,103 @@ msgstr "Temel uygulama dolaşım özelliklerini yapılandırın."
 
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
-msgid "Home Page"
-msgstr "Ana Sayfa"
+msgid "Restore Session"
+msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
-msgid "Page to load initially and default."
-msgstr "İlk olarak yüklenecek sayfa."
+msgid "Open previous tabs."
+msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:32
+#: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
-msgid "Search Engine"
-msgstr "Arama Motoru"
+msgid "Switch to Tab"
+msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:33
+#: src/views/widgets/SettingsDialog.qml:35
 #, kde-format
-msgid "Engine to be use for default searching content."
-msgstr "Öntanımlı arama bağlamı için kullanılacak motor."
+msgid "When opening a new link jump to the new tab."
+msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:44
+#: src/views/widgets/SettingsDialog.qml:48
 #, kde-format
 msgid "Auto Load Images"
 msgstr "Görselleri Otomatik Yükle"
 
-#: src/views/widgets/SettingsDialog.qml:45
+#: src/views/widgets/SettingsDialog.qml:49
 #, kde-format
 msgid "Automatically loads images on web pages."
 msgstr "Web sayfalarındaki görselleri otomatik yükler."
 
-#: src/views/widgets/SettingsDialog.qml:58
+#: src/views/widgets/SettingsDialog.qml:62
 #, kde-format
 msgid "Hyperlink Auditing"
 msgstr "Köprü Denetleme"
 
-#: src/views/widgets/SettingsDialog.qml:59
+#: src/views/widgets/SettingsDialog.qml:63
 #, kde-format
 msgid "Enables support for the ping attribute for hyperlinks."
 msgstr "Köprüler için ping özniteliği desteğini etkinleştirir."
 
-#: src/views/widgets/SettingsDialog.qml:74
+#: src/views/widgets/SettingsDialog.qml:77
+#: src/views/widgets/SettingsDialog.qml:107
+#, kde-format
+msgid "General"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:78
+#, kde-format
+msgid "Configure global preferences."
+msgstr ""
+
 #: src/views/widgets/SettingsDialog.qml:90
+#: src/views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Features"
 msgstr "Özellikler"
 
-#: src/views/widgets/SettingsDialog.qml:75
+#: src/views/widgets/SettingsDialog.qml:91
 #, kde-format
 msgid "Configure the browser plugins and features."
 msgstr "Tarayıcı eklentilerini ve özelliklerini yapılandırın."
 
-#: src/views/widgets/SettingsDialog.qml:96
+#: src/views/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid "Home Page"
+msgstr "Ana Sayfa"
+
+#: src/views/widgets/SettingsDialog.qml:113
+#, kde-format
+msgid "Page to load initially and default."
+msgstr "İlk olarak yüklenecek sayfa."
+
+#: src/views/widgets/SettingsDialog.qml:125
+#, kde-format
+msgid "Search Engine"
+msgstr "Arama Motoru"
+
+#: src/views/widgets/SettingsDialog.qml:126
+#, kde-format
+msgid "Engine to be use for default searching content."
+msgstr "Öntanımlı arama bağlamı için kullanılacak motor."
+
+#: src/views/widgets/SettingsDialog.qml:138
+#, fuzzy, kde-format
+#| msgid "Downloads"
+msgid "Downloads Path"
+msgstr "İndirmeler"
+
+#: src/views/widgets/SettingsDialog.qml:139
+#, kde-format
+msgid "Pick a path where files will be saved."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:164
 #, kde-format
 msgid "Accelerated 2D Canvas"
 msgstr "İvmelendirilmiş 2B Tuval"
 
-#: src/views/widgets/SettingsDialog.qml:97
+#: src/views/widgets/SettingsDialog.qml:165
 #, kde-format
 msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
@@ -323,88 +392,88 @@ msgstr ""
 "görüntülenmeyceğini belirtir. Bu, birçok boyama işlemini hızlandırır; ancak "
 "piksel erişimini yavaşlatır."
 
-#: src/views/widgets/SettingsDialog.qml:110
+#: src/views/widgets/SettingsDialog.qml:178
 #, kde-format
 msgid "PDF Viewer"
 msgstr "PDF Görüntüleyici"
 
-#: src/views/widgets/SettingsDialog.qml:111
+#: src/views/widgets/SettingsDialog.qml:179
 #, kde-format
 msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
 msgstr "PDF belgeleri, indirilmek yerine iç PDF görüntüleyicide açılır."
 
-#: src/views/widgets/SettingsDialog.qml:124
+#: src/views/widgets/SettingsDialog.qml:192
 #, kde-format
 msgid "Plugins Enabled"
 msgstr "Eklenti Desteği"
 
-#: src/views/widgets/SettingsDialog.qml:125
+#: src/views/widgets/SettingsDialog.qml:193
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
 msgstr "Flash Player gibi Pepper eklentileri desteğini etkinleştirir."
 
-#: src/views/widgets/SettingsDialog.qml:141
-#: src/views/widgets/SettingsDialog.qml:158
+#: src/views/widgets/SettingsDialog.qml:209
+#: src/views/widgets/SettingsDialog.qml:226
 #, kde-format
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: src/views/widgets/SettingsDialog.qml:142
+#: src/views/widgets/SettingsDialog.qml:210
 #, kde-format
 msgid "Configure JavaScript behaviour."
 msgstr "JavaScript davranışını yapılandırın."
 
-#: src/views/widgets/SettingsDialog.qml:164
+#: src/views/widgets/SettingsDialog.qml:232
 #, kde-format
 msgid "Javascript Enabled"
 msgstr "JavaScript Etkin"
 
-#: src/views/widgets/SettingsDialog.qml:165
+#: src/views/widgets/SettingsDialog.qml:233
 #, kde-format
 msgid "Enables the running of JavaScript programs."
 msgstr "JavaScript programlarının çalıştırılmasını etkinleştirir."
 
-#: src/views/widgets/SettingsDialog.qml:178
+#: src/views/widgets/SettingsDialog.qml:246
 #, kde-format
 msgid "Javascript Can Access Clipboard"
 msgstr "JavaScript, Panoya Erişebilir"
 
-#: src/views/widgets/SettingsDialog.qml:179
+#: src/views/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr ""
 "JavaScript programlarının, panoya yazmasına veya panodan okumasına izin "
 "verir."
 
-#: src/views/widgets/SettingsDialog.qml:192
+#: src/views/widgets/SettingsDialog.qml:260
 #, kde-format
 msgid "Javascript Can Paste"
 msgstr "JavaScript Yapıştırabilir"
 
-#: src/views/widgets/SettingsDialog.qml:193
+#: src/views/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
 msgstr "JavaScript execCommand(paste) etkinleştirir."
 
-#: src/views/widgets/SettingsDialog.qml:206
+#: src/views/widgets/SettingsDialog.qml:274
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
 msgstr "JavaScript'ten Pencere Etkinleştirmeye İzin Ver"
 
-#: src/views/widgets/SettingsDialog.qml:207
+#: src/views/widgets/SettingsDialog.qml:275
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
 msgstr "JavaScript'teki window,focus() yöntemine izin verir."
 
-#: src/views/widgets/SettingsDialog.qml:224
-#: src/views/widgets/SettingsDialog.qml:240
+#: src/views/widgets/SettingsDialog.qml:292
+#: src/views/widgets/SettingsDialog.qml:308
 #, kde-format
 msgid "Security & Privacy"
 msgstr "Güvenlik ve Gizlilik"
 
-#: src/views/widgets/SettingsDialog.qml:225
+#: src/views/widgets/SettingsDialog.qml:293
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
@@ -412,12 +481,12 @@ msgstr ""
 "Düzenleyicinin görünüm ve hissini yapılandırın. Ayarlar, global olarak "
 "uygulanır"
 
-#: src/views/widgets/SettingsDialog.qml:246
+#: src/views/widgets/SettingsDialog.qml:314
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
 msgstr "Güvenli Olmayan Kökenlerde Coğrafi Konumlandırmaya İzin Ver"
 
-#: src/views/widgets/SettingsDialog.qml:247
+#: src/views/widgets/SettingsDialog.qml:315
 #, kde-format
 msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
@@ -426,12 +495,12 @@ msgstr ""
 "Yalnızca HTTPS gibi güvenli kökenler coğrafi konumlandırma gibi özelliklere "
 "erişebilirler."
 
-#: src/views/widgets/SettingsDialog.qml:260
+#: src/views/widgets/SettingsDialog.qml:328
 #, kde-format
 msgid "Allow Running Insecure Content"
 msgstr "Güvensiz İçeriği Çalıştırmaya İzin Ver"
 
-#: src/views/widgets/SettingsDialog.qml:261
+#: src/views/widgets/SettingsDialog.qml:329
 #, kde-format
 msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
@@ -440,12 +509,12 @@ msgstr ""
 "Öntanımlı olarak HTTPS sayfaları, HTTP URL'lerinden JavaScript, CSS, "
 "eklentiler veya web yuvalarını çalıştıramazlar."
 
-#: src/views/widgets/SettingsDialog.qml:275
+#: src/views/widgets/SettingsDialog.qml:343
 #, kde-format
 msgid "DNS Prefetch Enabled"
 msgstr "DNS Önden Getirme Etkin"
 
-#: src/views/widgets/SettingsDialog.qml:276
+#: src/views/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
@@ -454,43 +523,43 @@ msgstr ""
 "HTML bağlantıları için DNS kayıtlarının spekülatif önden getirimini "
 "etkinleştirir."
 
-#: src/views/widgets/SettingsDialog.qml:289
+#: src/views/widgets/SettingsDialog.qml:357
 #, kde-format
 msgid "Local Content Can Access File Urls"
 msgstr "Yerel İçerik Dosya URL'lerine Erişebilir"
 
-#: src/views/widgets/SettingsDialog.qml:290
+#: src/views/widgets/SettingsDialog.qml:358
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
 "Yerel olarak yüklü belgelerin diğer yerel URL'lere erişmesine izin verir."
 
-#: src/views/widgets/SettingsDialog.qml:303
+#: src/views/widgets/SettingsDialog.qml:371
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
 msgstr "Yerel İçerik Uzak URL'lere Erişebilir"
 
-#: src/views/widgets/SettingsDialog.qml:304
+#: src/views/widgets/SettingsDialog.qml:372
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
 msgstr "Yerel olarak yüklü belgelerin uzak URL'lere erişmesine izin verir."
 
-#: src/views/widgets/SettingsDialog.qml:317
+#: src/views/widgets/SettingsDialog.qml:385
 #, kde-format
 msgid "Local Storage"
 msgstr "Yerel Depolama"
 
-#: src/views/widgets/SettingsDialog.qml:318
+#: src/views/widgets/SettingsDialog.qml:386
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
 msgstr "HTML 5 yerel depolama özelliği için desteği etkinleştirir."
 
-#: src/views/widgets/SettingsDialog.qml:331
+#: src/views/widgets/SettingsDialog.qml:399
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
 msgstr "Yalnızca WebRTC Genel Arayüzleri"
 
-#: src/views/widgets/SettingsDialog.qml:332
+#: src/views/widgets/SettingsDialog.qml:400
 #, kde-format
 msgid ""
 "Limits WebRTC to public IP addresses only. When disabled WebRTC may also use "
