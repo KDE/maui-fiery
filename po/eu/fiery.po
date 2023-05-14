@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-13 00:45+0000\n"
+"POT-Creation-Date: 2023-05-14 00:46+0000\n"
 "PO-Revision-Date: 2023-02-27 21:10+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -56,7 +56,8 @@ msgid "Recent"
 msgstr "Azken aldikoa"
 
 #: src/views/AppView.qml:59 src/views/AppView.qml:99
-#: src/views/browser/BrowserView.qml:392
+#: src/views/browser/BrowserView.qml:446
+#: src/views/widgets/SettingsDialog.qml:136
 #, kde-format
 msgid "Downloads"
 msgstr "Zama-jaitsita"
@@ -192,87 +193,93 @@ msgstr "Ezkutatu aginteak"
 msgid "Show controls"
 msgstr "Erakutsi aginteak"
 
-#: src/views/browser/Browser.qml:123
+#: src/views/browser/Browser.qml:125
 #, kde-format
 msgid "Error"
 msgstr "Errorea"
 
-#: src/views/browser/Browser.qml:123 src/views/browser/BrowserView.qml:207
+#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:228
 #, kde-format
 msgid "Start Browsing"
 msgstr "Hasi arakatzen"
 
-#: src/views/browser/Browser.qml:124 src/views/browser/BrowserView.qml:208
+#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:229
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Ireki URL berri bat edo ireki azken aldiko gune bat."
 
-#: src/views/browser/BrowserView.qml:116
+#: src/views/browser/BrowserView.qml:117
 #, kde-format
 msgid "Search or enter URL"
 msgstr "Bilatu edo sartu URL bat"
 
-#: src/views/browser/BrowserView.qml:156
+#: src/views/browser/BrowserView.qml:160
 #, kde-format
 msgid "Search on default search engine"
 msgstr "Bilatu bilatzaile lehenetsian"
 
-#: src/views/browser/BrowserView.qml:215
+#: src/views/browser/BrowserView.qml:176
+#, fuzzy, kde-format
+#| msgid "Search Engine"
+msgid "Search on page."
+msgstr "Bilatzailea"
+
+#: src/views/browser/BrowserView.qml:236
 #, kde-format
 msgid "Detach"
 msgstr ""
 
-#: src/views/browser/BrowserView.qml:284
+#: src/views/browser/BrowserView.qml:305
 #, kde-format
 msgid "Toggle sidebar"
 msgstr "Txandakatu alboko-barra"
 
-#: src/views/browser/BrowserView.qml:294
+#: src/views/browser/BrowserView.qml:315
 #, kde-format
 msgid "Previous"
 msgstr ""
 
-#: src/views/browser/BrowserView.qml:301
+#: src/views/browser/BrowserView.qml:322
 #, kde-format
 msgid "Next"
 msgstr "Hurrengoa"
 
-#: src/views/browser/BrowserView.qml:354
+#: src/views/browser/BrowserView.qml:375
 #, kde-format
 msgid "Share"
 msgstr "Partekatu"
 
-#: src/views/browser/BrowserView.qml:361
+#: src/views/browser/BrowserView.qml:415
 #, kde-format
 msgid "New Tab"
 msgstr "Fitxa berria"
 
-#: src/views/browser/BrowserView.qml:368
+#: src/views/browser/BrowserView.qml:422
 #, kde-format
 msgid "Incognito Tab"
 msgstr "Isilkako fitxa"
 
-#: src/views/browser/BrowserView.qml:377
+#: src/views/browser/BrowserView.qml:431
 #, kde-format
 msgid "Bookmarks"
 msgstr "Laster-markak"
 
-#: src/views/browser/BrowserView.qml:384
+#: src/views/browser/BrowserView.qml:438
 #, kde-format
 msgid "History"
 msgstr "Historia"
 
-#: src/views/browser/BrowserView.qml:402
+#: src/views/browser/BrowserView.qml:456
 #, kde-format
 msgid "Find In Page"
 msgstr "Aurkitu orrian"
 
-#: src/views/browser/BrowserView.qml:412
+#: src/views/browser/BrowserView.qml:466
 #, kde-format
 msgid "Settings"
 msgstr "Ezarpenak"
 
-#: src/views/browser/BrowserView.qml:419
+#: src/views/browser/BrowserView.qml:473
 #, kde-format
 msgid "About"
 msgstr "Honi buruz"
@@ -297,95 +304,105 @@ msgstr ""
 msgid "Open previous tabs."
 msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:34
+#: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
 msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:35
+#: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "When opening a new link jump to the new tab."
 msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:48
+#: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
 msgid "Auto Load Images"
 msgstr "Irudi zamatze automatikoa"
 
-#: src/views/widgets/SettingsDialog.qml:49
+#: src/views/widgets/SettingsDialog.qml:48
 #, kde-format
 msgid "Automatically loads images on web pages."
 msgstr "Web-orrietako irudiak automatikoki zamatzen ditu."
 
-#: src/views/widgets/SettingsDialog.qml:62
+#: src/views/widgets/SettingsDialog.qml:61
 #, kde-format
 msgid "Hyperlink Auditing"
 msgstr "Hiperesteken ikuskapena"
 
-#: src/views/widgets/SettingsDialog.qml:63
+#: src/views/widgets/SettingsDialog.qml:62
 #, kde-format
 msgid "Enables support for the ping attribute for hyperlinks."
 msgstr "Hiperesteken «ping» atributuarentzako euskarria gaitzen du."
 
-#: src/views/widgets/SettingsDialog.qml:77
-#: src/views/widgets/SettingsDialog.qml:107
+#: src/views/widgets/SettingsDialog.qml:76
+#: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "General"
 msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:78
+#: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Configure global preferences."
 msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:90
-#: src/views/widgets/SettingsDialog.qml:158
+#: src/views/widgets/SettingsDialog.qml:89
+#: src/views/widgets/SettingsDialog.qml:176
 #, kde-format
 msgid "Features"
 msgstr "Ezaugarriak"
 
-#: src/views/widgets/SettingsDialog.qml:91
+#: src/views/widgets/SettingsDialog.qml:90
 #, kde-format
 msgid "Configure the browser plugins and features."
 msgstr "Konfiguratu arakatzailearen pluginak eta ezaugarriak."
 
-#: src/views/widgets/SettingsDialog.qml:112
+#: src/views/widgets/SettingsDialog.qml:110
 #, kde-format
 msgid "Home Page"
 msgstr "Orri nagusia"
 
-#: src/views/widgets/SettingsDialog.qml:113
+#: src/views/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Page to load initially and default."
 msgstr "Hasieran eta lehenespenez zamatzeko orria."
 
-#: src/views/widgets/SettingsDialog.qml:125
+#: src/views/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Search Engine"
 msgstr "Bilatzailea"
 
-#: src/views/widgets/SettingsDialog.qml:126
+#: src/views/widgets/SettingsDialog.qml:124
 #, kde-format
 msgid "Engine to be use for default searching content."
 msgstr "Edukia bilatzeko bilatzaile lehenetsia."
 
-#: src/views/widgets/SettingsDialog.qml:138
+#: src/views/widgets/SettingsDialog.qml:140
 #, fuzzy, kde-format
 #| msgid "Downloads"
 msgid "Downloads Path"
 msgstr "Zama-jaitsita"
 
-#: src/views/widgets/SettingsDialog.qml:139
+#: src/views/widgets/SettingsDialog.qml:141
 #, kde-format
 msgid "Pick a path where files will be saved."
 msgstr ""
 
-#: src/views/widgets/SettingsDialog.qml:164
+#: src/views/widgets/SettingsDialog.qml:153
+#, kde-format
+msgid "Auto Save"
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:154
+#, kde-format
+msgid "Download files without asking."
+msgstr ""
+
+#: src/views/widgets/SettingsDialog.qml:182
 #, kde-format
 msgid "Accelerated 2D Canvas"
 msgstr "2D oihal azeleratua"
 
-#: src/views/widgets/SettingsDialog.qml:165
+#: src/views/widgets/SettingsDialog.qml:183
 #, kde-format
 msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
@@ -395,100 +412,100 @@ msgstr ""
 "Horrek margotzeko eragiketak asko azkartzen ditu, baina pixelak atzitzea "
 "moteltzen du."
 
-#: src/views/widgets/SettingsDialog.qml:178
+#: src/views/widgets/SettingsDialog.qml:196
 #, kde-format
 msgid "PDF Viewer"
 msgstr "PDF erakuslea"
 
-#: src/views/widgets/SettingsDialog.qml:179
+#: src/views/widgets/SettingsDialog.qml:197
 #, kde-format
 msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
 msgstr "PDF dokumentuak zama-jaitsi ordez barneko PDF erakuslean irekiko dira."
 
-#: src/views/widgets/SettingsDialog.qml:192
+#: src/views/widgets/SettingsDialog.qml:210
 #, kde-format
 msgid "Plugins Enabled"
 msgstr "Pluginak gaituta"
 
-#: src/views/widgets/SettingsDialog.qml:193
+#: src/views/widgets/SettingsDialog.qml:211
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
 msgstr "«Pepper» pluginetarako euskarria gaitzen du, Flash player adibidez."
 
-#: src/views/widgets/SettingsDialog.qml:209
-#: src/views/widgets/SettingsDialog.qml:226
+#: src/views/widgets/SettingsDialog.qml:227
+#: src/views/widgets/SettingsDialog.qml:244
 #, kde-format
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: src/views/widgets/SettingsDialog.qml:210
+#: src/views/widgets/SettingsDialog.qml:228
 #, kde-format
 msgid "Configure JavaScript behaviour."
 msgstr "Konfiguratu JavaScript-en jokabidea."
 
-#: src/views/widgets/SettingsDialog.qml:232
+#: src/views/widgets/SettingsDialog.qml:250
 #, kde-format
 msgid "Javascript Enabled"
 msgstr "Javascript gaituta"
 
-#: src/views/widgets/SettingsDialog.qml:233
+#: src/views/widgets/SettingsDialog.qml:251
 #, kde-format
 msgid "Enables the running of JavaScript programs."
 msgstr "JavaScript programak ibiltzea gaitzen du."
 
-#: src/views/widgets/SettingsDialog.qml:246
+#: src/views/widgets/SettingsDialog.qml:264
 #, kde-format
 msgid "Javascript Can Access Clipboard"
 msgstr "Javascript-ek arbela atzi dezake"
 
-#: src/views/widgets/SettingsDialog.qml:247
+#: src/views/widgets/SettingsDialog.qml:265
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr ""
 "JavaScript programei arbeletik irakurtzeko eta arbelean idazteko baimena "
 "ematen die."
 
-#: src/views/widgets/SettingsDialog.qml:260
+#: src/views/widgets/SettingsDialog.qml:278
 #, kde-format
 msgid "Javascript Can Paste"
 msgstr "Javascript-ek itsas dezake"
 
-#: src/views/widgets/SettingsDialog.qml:261
+#: src/views/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
 msgstr "JavaScript-en «execCommand(paste)» gaitzen du."
 
-#: src/views/widgets/SettingsDialog.qml:274
+#: src/views/widgets/SettingsDialog.qml:292
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
 msgstr "JavaScript-etik leihoak aktibatzeko baimena ematen du"
 
-#: src/views/widgets/SettingsDialog.qml:275
+#: src/views/widgets/SettingsDialog.qml:293
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
 msgstr "JavaScript-eko «window.focus()» metodoa erabiltzeko baimena ematen du."
 
-#: src/views/widgets/SettingsDialog.qml:292
-#: src/views/widgets/SettingsDialog.qml:308
+#: src/views/widgets/SettingsDialog.qml:310
+#: src/views/widgets/SettingsDialog.qml:326
 #, kde-format
 msgid "Security & Privacy"
 msgstr "Segurtasuna eta pribatutasuna"
 
-#: src/views/widgets/SettingsDialog.qml:293
+#: src/views/widgets/SettingsDialog.qml:311
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
 msgstr ""
 "Konfiguratu editorearen itxura eta izaera. Ezarpenak globalki ezartzen dira"
 
-#: src/views/widgets/SettingsDialog.qml:314
+#: src/views/widgets/SettingsDialog.qml:332
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
 msgstr "Baimendu geo-kokapena jatorri ez-seguruetan"
 
-#: src/views/widgets/SettingsDialog.qml:315
+#: src/views/widgets/SettingsDialog.qml:333
 #, kde-format
 msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
@@ -497,12 +514,12 @@ msgstr ""
 "Bakarrik HTTPS gisako sorburu seguruak dira geo-kokapen ezaugarriak "
 "eskatzeko gai."
 
-#: src/views/widgets/SettingsDialog.qml:328
+#: src/views/widgets/SettingsDialog.qml:346
 #, kde-format
 msgid "Allow Running Insecure Content"
 msgstr "Baimendu Eduki ez-segurua exekutatzea"
 
-#: src/views/widgets/SettingsDialog.qml:329
+#: src/views/widgets/SettingsDialog.qml:347
 #, kde-format
 msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
@@ -511,12 +528,12 @@ msgstr ""
 "Era lehenetsian, HTTPS orriek ezin dute HTTPS URLetatik, JavaScript, CSS, "
 "pluginik edo web-hargunerik exekutatu."
 
-#: src/views/widgets/SettingsDialog.qml:343
+#: src/views/widgets/SettingsDialog.qml:361
 #, kde-format
 msgid "DNS Prefetch Enabled"
 msgstr "DNS aurrez eskuratzea gaituta"
 
-#: src/views/widgets/SettingsDialog.qml:344
+#: src/views/widgets/SettingsDialog.qml:362
 #, kde-format
 msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
@@ -525,43 +542,43 @@ msgstr ""
 "HTML estekak aktibatu aurretik, haien DNS erregistroen aurre eskuratze "
 "espekulatiboa gaitzen du."
 
-#: src/views/widgets/SettingsDialog.qml:357
+#: src/views/widgets/SettingsDialog.qml:375
 #, kde-format
 msgid "Local Content Can Access File Urls"
 msgstr "Eduki lokalak fitxategien URLak atzi ditzake"
 
-#: src/views/widgets/SettingsDialog.qml:358
+#: src/views/widgets/SettingsDialog.qml:376
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
 "Lokalean zamatutako dokumentuei beste URL lokal batzuk atzitzen uzten die."
 
-#: src/views/widgets/SettingsDialog.qml:371
+#: src/views/widgets/SettingsDialog.qml:389
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
 msgstr "Eduki lokalak urreneko URLak atzi ditzake"
 
-#: src/views/widgets/SettingsDialog.qml:372
+#: src/views/widgets/SettingsDialog.qml:390
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
 msgstr "Lokalean zamatutako dokumentuei urruneko URLak atzitzen uzten die."
 
-#: src/views/widgets/SettingsDialog.qml:385
+#: src/views/widgets/SettingsDialog.qml:403
 #, kde-format
 msgid "Local Storage"
 msgstr "Biltegiratze lokala"
 
-#: src/views/widgets/SettingsDialog.qml:386
+#: src/views/widgets/SettingsDialog.qml:404
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
 msgstr "HTML 5eko biltegiratze lokala ezaugarriaren euskarria gaitzen du."
 
-#: src/views/widgets/SettingsDialog.qml:399
+#: src/views/widgets/SettingsDialog.qml:417
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
 msgstr "«WebRTC»ren interfaze publikoak bakarrik"
 
-#: src/views/widgets/SettingsDialog.qml:400
+#: src/views/widgets/SettingsDialog.qml:418
 #, kde-format
 msgid ""
 "Limits WebRTC to public IP addresses only. When disabled WebRTC may also use "
