@@ -232,7 +232,7 @@ msgstr "Afficher / Masquer la barre latérale"
 #: src/views/browser/BrowserView.qml:315
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "Précédent"
 
 #: src/views/browser/BrowserView.qml:322
 #, kde-format
@@ -335,7 +335,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Général"
 
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format

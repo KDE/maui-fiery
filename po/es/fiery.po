@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-14 00:46+0000\n"
-"PO-Revision-Date: 2023-02-25 15:43+0100\n"
+"PO-Revision-Date: 2023-05-14 11:54+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #: src/main.cpp:37
 #, kde-format
@@ -64,7 +64,7 @@ msgstr "Descargas"
 #: src/views/AppView.qml:100
 #, kde-format
 msgid "Your downloads will be listed in here."
-msgstr ""
+msgstr "Sus descargas se mostrarán aquí."
 
 #: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
 #, kde-format
@@ -74,7 +74,7 @@ msgstr "Pausar"
 #: src/views/AppView.qml:130
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Continuar"
 
 #: src/views/browser/ActionsMenu.qml:43
 #, kde-format
@@ -112,10 +112,9 @@ msgid "Open Link in Split View"
 msgstr "Abrir enlace en vista dividida"
 
 #: src/views/browser/ActionsMenu.qml:123
-#, fuzzy, kde-format
-#| msgid "Open Link in Split View"
+#, kde-format
 msgid "Open Link in New Window"
-msgstr "Abrir enlace en vista dividida"
+msgstr "Abrir enlace en nueva ventana"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
@@ -218,15 +217,14 @@ msgid "Search on default search engine"
 msgstr "Buscar en el motor de búsqueda predeterminado"
 
 #: src/views/browser/BrowserView.qml:176
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search on page."
-msgstr "Motor de búsqueda"
+msgstr "Buscar en la página."
 
 #: src/views/browser/BrowserView.qml:236
 #, kde-format
 msgid "Detach"
-msgstr ""
+msgstr "Desprender"
 
 #: src/views/browser/BrowserView.qml:305
 #, kde-format
@@ -236,7 +234,7 @@ msgstr "Conmutar la barra lateral"
 #: src/views/browser/BrowserView.qml:315
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: src/views/browser/BrowserView.qml:322
 #, kde-format
@@ -296,22 +294,22 @@ msgstr "Configurar las funciones de navegación básicas de la aplicación."
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Restore Session"
-msgstr ""
+msgstr "Restaurar sesión"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Open previous tabs."
-msgstr ""
+msgstr "Abrir pestañas anteriores."
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
-msgstr ""
+msgstr "Cambiar a pestaña"
 
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "When opening a new link jump to the new tab."
-msgstr ""
+msgstr "Al abrir un nuevo enlace, ir a la nueva pestaña."
 
 #: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
@@ -337,12 +335,12 @@ msgstr "Activa la compatibilidad con el atributo ping para hiperenlaces."
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "General"
 
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Configure global preferences."
-msgstr ""
+msgstr "Configurar las preferencias globales."
 
 #: src/views/widgets/SettingsDialog.qml:89
 #: src/views/widgets/SettingsDialog.qml:176
@@ -376,25 +374,24 @@ msgid "Engine to be use for default searching content."
 msgstr "Motor a usar de forma predeterminada para buscar contenido."
 
 #: src/views/widgets/SettingsDialog.qml:140
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Downloads Path"
-msgstr "Descargas"
+msgstr "Ruta de las descargas"
 
 #: src/views/widgets/SettingsDialog.qml:141
 #, kde-format
 msgid "Pick a path where files will be saved."
-msgstr ""
+msgstr "Escoja una ruta para guardar los archivos."
 
 #: src/views/widgets/SettingsDialog.qml:153
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "Guardar automáticamente"
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
 msgid "Download files without asking."
-msgstr ""
+msgstr "Descargar archivos sin preguntar."
 
 #: src/views/widgets/SettingsDialog.qml:182
 #, kde-format

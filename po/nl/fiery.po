@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-14 00:46+0000\n"
-"PO-Revision-Date: 2023-05-13 10:14+0200\n"
+"PO-Revision-Date: 2023-05-14 12:07+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #: src/main.cpp:37
 #, kde-format
@@ -215,10 +215,9 @@ msgid "Search on default search engine"
 msgstr "Zoeken op de standaard zoekmachine"
 
 #: src/views/browser/BrowserView.qml:176
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search on page."
-msgstr "Zoekmachine"
+msgstr "Op pagina zoeken"
 
 #: src/views/browser/BrowserView.qml:236
 #, kde-format
@@ -385,12 +384,12 @@ msgstr "Kies een pad waar bestanden opgeslagen zullen worden."
 #: src/views/widgets/SettingsDialog.qml:153
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "Automatisch opslaan"
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
 msgid "Download files without asking."
-msgstr ""
+msgstr "Bestanden downloaden zonder vragen."
 
 #: src/views/widgets/SettingsDialog.qml:182
 #, kde-format

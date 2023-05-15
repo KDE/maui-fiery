@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-14 00:46+0000\n"
-"PO-Revision-Date: 2023-03-06 16:09+0000\n"
+"PO-Revision-Date: 2023-05-14 13:00+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -64,7 +64,7 @@ msgstr "Transferências"
 #: src/views/AppView.qml:100
 #, kde-format
 msgid "Your downloads will be listed in here."
-msgstr ""
+msgstr "As suas transferências irão aparecer aqui."
 
 #: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
 #, kde-format
@@ -74,7 +74,7 @@ msgstr "Pausa"
 #: src/views/AppView.qml:130
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Continuar"
 
 #: src/views/browser/ActionsMenu.qml:43
 #, kde-format
@@ -112,10 +112,9 @@ msgid "Open Link in Split View"
 msgstr "Abrir a Ligação numa Área Dividida"
 
 #: src/views/browser/ActionsMenu.qml:123
-#, fuzzy, kde-format
-#| msgid "Open Link in Split View"
+#, kde-format
 msgid "Open Link in New Window"
-msgstr "Abrir a Ligação numa Área Dividida"
+msgstr "Abrir a Ligação numa Janela Nova"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
@@ -218,15 +217,14 @@ msgid "Search on default search engine"
 msgstr "Procurar no motor de busca predefinido"
 
 #: src/views/browser/BrowserView.qml:176
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search on page."
-msgstr "Motor de Busca"
+msgstr "Procurar na página."
 
 #: src/views/browser/BrowserView.qml:236
 #, kde-format
 msgid "Detach"
-msgstr ""
+msgstr "Dissociar"
 
 #: src/views/browser/BrowserView.qml:305
 #, kde-format
@@ -236,7 +234,7 @@ msgstr "Comutar a barra lateral"
 #: src/views/browser/BrowserView.qml:315
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: src/views/browser/BrowserView.qml:322
 #, kde-format
@@ -296,22 +294,22 @@ msgstr "Configurar as funcionalidades básicas de navegação da aplicação."
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Restore Session"
-msgstr ""
+msgstr "Repor a Sessão"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Open previous tabs."
-msgstr ""
+msgstr "Abrir as páginas anteriores."
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
-msgstr ""
+msgstr "Mudar para a Página"
 
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "When opening a new link jump to the new tab."
-msgstr ""
+msgstr "Ao abrir uma nova ligação, ir para a página nova."
 
 #: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
@@ -337,12 +335,12 @@ msgstr "Activa o suporte para o atributo de contacto das hiperligações."
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Configure global preferences."
-msgstr ""
+msgstr "Configurar as preferências globais."
 
 #: src/views/widgets/SettingsDialog.qml:89
 #: src/views/widgets/SettingsDialog.qml:176
@@ -376,25 +374,24 @@ msgid "Engine to be use for default searching content."
 msgstr "Motor a usar na pesquisa de conteúdos."
 
 #: src/views/widgets/SettingsDialog.qml:140
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Downloads Path"
-msgstr "Transferências"
+msgstr "Localização das Transferências"
 
 #: src/views/widgets/SettingsDialog.qml:141
 #, kde-format
 msgid "Pick a path where files will be saved."
-msgstr ""
+msgstr "Escolha uma localização onde serão gravados os ficheiros."
 
 #: src/views/widgets/SettingsDialog.qml:153
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "Gravação Automática"
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
 msgid "Download files without asking."
-msgstr ""
+msgstr "Transferir os ficheiros sem perguntar."
 
 #: src/views/widgets/SettingsDialog.qml:182
 #, kde-format

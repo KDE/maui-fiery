@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-14 00:46+0000\n"
-"PO-Revision-Date: 2023-02-26 03:17+0100\n"
+"PO-Revision-Date: 2023-05-14 06:17+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3\n"
 
 #: src/main.cpp:37
 #, kde-format
@@ -63,7 +63,7 @@ msgstr "გადმოწერები"
 #: src/views/AppView.qml:100
 #, kde-format
 msgid "Your downloads will be listed in here."
-msgstr ""
+msgstr "თქვენი გადმოწერილი ფაილები აქ გამოჩნდება."
 
 #: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
 #, kde-format
@@ -73,7 +73,7 @@ msgstr "გაჩერება"
 #: src/views/AppView.qml:130
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "გაგრძელება"
 
 #: src/views/browser/ActionsMenu.qml:43
 #, kde-format
@@ -111,10 +111,9 @@ msgid "Open Link in Split View"
 msgstr "ბმულის დაყოფილ ხედში გახსნა"
 
 #: src/views/browser/ActionsMenu.qml:123
-#, fuzzy, kde-format
-#| msgid "Open Link in Split View"
+#, kde-format
 msgid "Open Link in New Window"
-msgstr "ბმულის დაყოფილ ხედში გახსნა"
+msgstr "ბმულის ახალ ფანჯარაში გახსნა"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
@@ -217,15 +216,14 @@ msgid "Search on default search engine"
 msgstr "ნაგულისხმებ საძიებო სისტემაში მოძებნა"
 
 #: src/views/browser/BrowserView.qml:176
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search on page."
-msgstr "ძებნის ძრავი"
+msgstr "გვერდზე ძებნა."
 
 #: src/views/browser/BrowserView.qml:236
 #, kde-format
 msgid "Detach"
-msgstr ""
+msgstr "მოხსნა"
 
 #: src/views/browser/BrowserView.qml:305
 #, kde-format
@@ -235,7 +233,7 @@ msgstr "გვერდითი ზოლის ჩართ/გამორთ
 #: src/views/browser/BrowserView.qml:315
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "წინა"
 
 #: src/views/browser/BrowserView.qml:322
 #, kde-format
@@ -295,22 +293,22 @@ msgstr "აპის ძირითადი ნავიგაციის თ
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Restore Session"
-msgstr ""
+msgstr "სესიის აღდგენა"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Open previous tabs."
-msgstr ""
+msgstr "წინა ჩანართების გახსნა."
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
-msgstr ""
+msgstr "ჩანართზე გადართვა"
 
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "When opening a new link jump to the new tab."
-msgstr ""
+msgstr "ახალი ბმულის გახსნისას ახალ ჩანართზე გადასვლა."
 
 #: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
@@ -336,12 +334,12 @@ msgstr "ჰიპერბმულებისთვის ping ატრიბ
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "ზოგადი"
 
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Configure global preferences."
-msgstr ""
+msgstr "გლობალური პარამეტრების მორგება."
 
 #: src/views/widgets/SettingsDialog.qml:89
 #: src/views/widgets/SettingsDialog.qml:176
@@ -375,25 +373,24 @@ msgid "Engine to be use for default searching content."
 msgstr "ნაგულისხმები ძებნის შემცველობისთვის გამოყენებული ძრავა."
 
 #: src/views/widgets/SettingsDialog.qml:140
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Downloads Path"
-msgstr "გადმოწერები"
+msgstr "გადმოწერების ბილიკი"
 
 #: src/views/widgets/SettingsDialog.qml:141
 #, kde-format
 msgid "Pick a path where files will be saved."
-msgstr ""
+msgstr "აირჩიეთ ბილიკი, სადაც ფაილებს შეინახავთ."
 
 #: src/views/widgets/SettingsDialog.qml:153
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "ავტომატური შენახვა"
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
 msgid "Download files without asking."
-msgstr ""
+msgstr "ფაილების გადმოწერა შეკითხვის გარეშე"
 
 #: src/views/widgets/SettingsDialog.qml:182
 #, kde-format

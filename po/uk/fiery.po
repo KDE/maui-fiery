@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-14 00:46+0000\n"
-"PO-Revision-Date: 2023-05-13 08:42+0300\n"
+"PO-Revision-Date: 2023-05-14 08:45+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -216,10 +216,9 @@ msgid "Search on default search engine"
 msgstr "Шукати за допомогою типового пошукового рушія"
 
 #: src/views/browser/BrowserView.qml:176
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search on page."
-msgstr "Рушій пошуку"
+msgstr "Шукати на сторінці."
 
 #: src/views/browser/BrowserView.qml:236
 #, kde-format
@@ -386,12 +385,12 @@ msgstr "Вибрати шлях, куди буде збережено файли
 #: src/views/widgets/SettingsDialog.qml:153
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "Автозбереження"
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
 msgid "Download files without asking."
-msgstr ""
+msgstr "Отримувати файли без підтвердження."
 
 #: src/views/widgets/SettingsDialog.qml:182
 #, kde-format
