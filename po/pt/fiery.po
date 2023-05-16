@@ -224,7 +224,7 @@ msgstr "Procurar na página."
 #: src/views/browser/BrowserView.qml:236
 #, kde-format
 msgid "Detach"
-msgstr "Dissociar"
+msgstr "Destacar"
 
 #: src/views/browser/BrowserView.qml:305
 #, kde-format
