@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-14 00:46+0000\n"
-"PO-Revision-Date: 2023-02-25 21:55+0100\n"
+"PO-Revision-Date: 2023-05-15 13:03+0200\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/main.cpp:37
 #, kde-format
@@ -60,7 +60,7 @@ msgstr "Téléchargements"
 #: src/views/AppView.qml:100
 #, kde-format
 msgid "Your downloads will be listed in here."
-msgstr ""
+msgstr "Vos téléchargements seront listés ici."
 
 #: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
 #, kde-format
@@ -70,7 +70,7 @@ msgstr "Pause"
 #: src/views/AppView.qml:130
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Continuer"
 
 #: src/views/browser/ActionsMenu.qml:43
 #, kde-format
@@ -108,10 +108,9 @@ msgid "Open Link in Split View"
 msgstr "Ouvrir un lien dans une vue scindée"
 
 #: src/views/browser/ActionsMenu.qml:123
-#, fuzzy, kde-format
-#| msgid "Open Link in Split View"
+#, kde-format
 msgid "Open Link in New Window"
-msgstr "Ouvrir un lien dans une vue scindée"
+msgstr "Ouvrir un lien dans une nouvelle fenêtre"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
@@ -214,15 +213,14 @@ msgid "Search on default search engine"
 msgstr "Rechercher avec le moteur de recherche par défaut."
 
 #: src/views/browser/BrowserView.qml:176
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search on page."
-msgstr "Moteur de recherche"
+msgstr "Rechercher sur la page"
 
 #: src/views/browser/BrowserView.qml:236
 #, kde-format
 msgid "Detach"
-msgstr ""
+msgstr "Détacher"
 
 #: src/views/browser/BrowserView.qml:305
 #, kde-format
@@ -293,22 +291,22 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Restore Session"
-msgstr ""
+msgstr "Restaurer la session"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Open previous tabs."
-msgstr ""
+msgstr "Ouvrir les onglets précédents."
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
-msgstr ""
+msgstr "Passer à l'onglet "
 
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "When opening a new link jump to the new tab."
-msgstr ""
+msgstr "Lors de l'ouverture d'un nouveau lien, passer au prochain onglet."
 
 #: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
@@ -340,7 +338,7 @@ msgstr "Général"
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Configure global preferences."
-msgstr ""
+msgstr "Configurer les préférences globales."
 
 #: src/views/widgets/SettingsDialog.qml:89
 #: src/views/widgets/SettingsDialog.qml:176
@@ -374,25 +372,24 @@ msgid "Engine to be use for default searching content."
 msgstr "Moteur à utiliser pour la recherche par défaut de contenu."
 
 #: src/views/widgets/SettingsDialog.qml:140
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Downloads Path"
-msgstr "Téléchargements"
+msgstr "Emplacement des téléchargements"
 
 #: src/views/widgets/SettingsDialog.qml:141
 #, kde-format
 msgid "Pick a path where files will be saved."
-msgstr ""
+msgstr "Sélectionner un emplacement où seront enregistrés les fichiers."
 
 #: src/views/widgets/SettingsDialog.qml:153
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "Enregistrer automatiquement"
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
 msgid "Download files without asking."
-msgstr ""
+msgstr "Télécharger des fichiers automatiquement."
 
 #: src/views/widgets/SettingsDialog.qml:182
 #, kde-format
@@ -444,7 +441,7 @@ msgstr "JavaScript"
 #: src/views/widgets/SettingsDialog.qml:228
 #, kde-format
 msgid "Configure JavaScript behaviour."
-msgstr "Configurer le comportement de Javascript."
+msgstr "Configurer le comportement de JavaScript."
 
 #: src/views/widgets/SettingsDialog.qml:250
 #, kde-format
@@ -465,7 +462,7 @@ msgstr "Javascript peut avoir accès au presse-papier."
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr ""
-"Autorise les programmes Javascript à lire ou à écrire dans le presse-papier."
+"Autorise les programmes JavaScript à lire ou à écrire dans le presse-papier."
 
 #: src/views/widgets/SettingsDialog.qml:278
 #, kde-format
@@ -475,7 +472,7 @@ msgstr "Javascript peut faire des coller"
 #: src/views/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
-msgstr "Autorise execCommand(paste) de Javascript."
+msgstr "Autorise execCommand(paste) de JavaScript."
 
 #: src/views/widgets/SettingsDialog.qml:292
 #, kde-format
@@ -485,7 +482,7 @@ msgstr "Autoriser l'activation de fenêtres à partir de JavaScript."
 #: src/views/widgets/SettingsDialog.qml:293
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
-msgstr "Autorise la méthode « window.focus() » dans Javascript."
+msgstr "Autorise la méthode « window.focus() » dans JavaScript."
 
 #: src/views/widgets/SettingsDialog.qml:310
 #: src/views/widgets/SettingsDialog.qml:326
@@ -526,7 +523,7 @@ msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
 "from HTTP URLs."
 msgstr ""
-"Par défaut, les pages HTTPS ne peuvent exécuter du Javascript, du CSS, des "
+"Par défaut, les pages HTTPS ne peuvent exécuter du JavaScript, du CSS, des "
 "modules externes ou des sockets Internet à partir d'URL HTTPS."
 
 #: src/views/widgets/SettingsDialog.qml:361
