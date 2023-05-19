@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-14 00:46+0000\n"
-"PO-Revision-Date: 2023-03-12 17:00+0100\n"
+"PO-Revision-Date: 2023-05-18 20:03+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -73,7 +73,7 @@ msgstr "Pause"
 #: src/views/AppView.qml:130
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Fortsetzen"
 
 #: src/views/browser/ActionsMenu.qml:43
 #, kde-format
@@ -111,10 +111,9 @@ msgid "Open Link in Split View"
 msgstr ""
 
 #: src/views/browser/ActionsMenu.qml:123
-#, fuzzy, kde-format
-#| msgid "Open in new tab"
+#, kde-format
 msgid "Open Link in New Window"
-msgstr "In neuem Unterfenster öffnen"
+msgstr "Verknüpfung in neuem Fenster öffnen"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
@@ -217,15 +216,14 @@ msgid "Search on default search engine"
 msgstr "Suche mit Standardsuchmaschine"
 
 #: src/views/browser/BrowserView.qml:176
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search on page."
-msgstr "Suchmaschine"
+msgstr "Auf Seite suchen."
 
 #: src/views/browser/BrowserView.qml:236
 #, kde-format
 msgid "Detach"
-msgstr ""
+msgstr "Ablösen"
 
 #: src/views/browser/BrowserView.qml:305
 #, kde-format
@@ -235,7 +233,7 @@ msgstr "Seitenleiste umschalten"
 #: src/views/browser/BrowserView.qml:315
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "Zurück"
 
 #: src/views/browser/BrowserView.qml:322
 #, kde-format
@@ -295,7 +293,7 @@ msgstr "Einrichtung der grundlegenden Navigationsfunktionen der App."
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Restore Session"
-msgstr ""
+msgstr "Sitzung wiederherstellen"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
@@ -305,7 +303,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
-msgstr ""
+msgstr "Zum Unterfenster wechseln"
 
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
@@ -336,7 +334,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
@@ -388,7 +386,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:153
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "Automatisch speichern"
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
