@@ -21,11 +21,10 @@ public:
         DownloadInterrupted,
     }; Q_ENUM(State)
 
-
-
     DownloadsModel *model() const;
     static DownloadsManager &instance();
 
+public Q_SLOTS:
     void add(DownloadItem *download);
     void remove(int index);
 
@@ -40,6 +39,6 @@ private:
     ~DownloadsManager();
 
 Q_SIGNALS:
-    void newDownload(DownloadItem *download);
+    void newDownload(QVariant download);
 
 };

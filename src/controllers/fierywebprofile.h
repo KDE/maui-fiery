@@ -23,11 +23,11 @@ public:
 
     QWebEngineUrlRequestInterceptor *urlInterceptor() const;
 
-
     void setUrlInterceptor(QWebEngineUrlRequestInterceptor *newUrlInterceptor);
 
 Q_SIGNALS:
     void urlInterceptorChanged();
+    void downloadFinished(QQuickWebEngineDownloadItem *download);
 
 private:
 
@@ -39,8 +39,6 @@ private:
          // A valid property needs a read function, and there is no getter in QQuickWebEngineProfile
          // so store a pointer ourselves
     QWebEngineUrlRequestInterceptor *m_urlInterceptor;
-
-
 
 };
 

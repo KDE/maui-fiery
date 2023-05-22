@@ -1,7 +1,7 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
-import QtWebEngine 1.7
+import QtWebEngine 1.9
 import Qt.labs.settings 1.0
 
 import org.mauikit.controls 1.3 as Maui
@@ -87,6 +87,40 @@ Maui.ApplicationWindow
         anchors.fill: parent
     }
 
+
+    property WebEngineProfile profile: Fiery.FieryWebProfile
+    {
+        //            httpUserAgent: tabs.currentItem.userAgent.userAgent
+        //            offTheRecord: tabs.privateTabsMode
+        //            storageName: tabs.privateTabsMode ? "Private" : Settings.profile
+
+        //            questionLoader: rootPage.questionLoader
+        //            urlInterceptor: typeof AdblockUrlInterceptor !== "undefined" && AdblockUrlInterceptor
+
+        onDownloadFinished:
+        {
+            switch(download.state)
+            {
+            case WebEngineDownloadItem.DownloadCompleted: notify("dialog-warning", i18n("Download Finished"), i18n("File has been saved."), ()=> {console.log(download.downloadFileName)}, i18n("Open"))
+            }
+        }
+
+//        onPresentNotification:
+//        {
+//            root.notify("dialog-question", notification.title, notification.message,  () =>{ notification.click() }, i18n("Accept"))
+//            notification.show()
+//        }
+    }
+
+    Connections
+    {
+        target: Fiery.DownloadsManager
+        function onNewDownload(download)
+        {
+     root.notify("dialog-question", download.downloadFileName, i18n("Do you want to download and save this file?"),  () =>{ download.resume() }, i18n("Accept"))
+        }
+    }
+
     property Component windowComponent: Maui.ApplicationWindow
     {
         // Destroy on close to release the Window's QML resources.
@@ -101,6 +135,7 @@ Maui.ApplicationWindow
 
         property WebEngineView webView: _delegate.currentBrowser
         property alias appView : _delegate
+
         AppView
         {
             id: _delegate
@@ -113,7 +148,7 @@ Maui.ApplicationWindow
     {
         console.log("GOT", urls, urls[0])
         var newWindow = windowComponent.createObject(root)
-       newWindow.webView.url = urls[0]
+        newWindow.webView.url = urls[0]
 
         if(urls[1])
         {

@@ -27,8 +27,8 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
-    QtWebEngine::initialize();
     QApplication app(argc, argv);
+    QtWebEngine::initialize();
 
     app.setOrganizationName("Maui");
     app.setWindowIcon(QIcon(":/fiery.svg"));

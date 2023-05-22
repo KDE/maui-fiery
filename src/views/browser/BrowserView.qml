@@ -20,15 +20,6 @@ Maui.Page
     readonly property alias model : _browserListView.contentModel
     property alias searchFieldVisible: control.footBar.visible
 
-    property WebEngineProfile profile: Fiery.FieryWebProfile
-    {
-        //            httpUserAgent: tabs.currentItem.userAgent.userAgent
-        //            offTheRecord: tabs.privateTabsMode
-        //            storageName: tabs.privateTabsMode ? "Private" : Settings.profile
-
-        //            questionLoader: rootPage.questionLoader
-        //            urlInterceptor: typeof AdblockUrlInterceptor !== "undefined" && AdblockUrlInterceptor
-    }
 
     headBar.visible: !root.isWide
     altHeader: true

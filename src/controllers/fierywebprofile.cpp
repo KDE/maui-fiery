@@ -26,13 +26,16 @@ QWebEngineUrlRequestInterceptor *FieryWebProfile::urlInterceptor() const
 void FieryWebProfile::handleDownload(DownloadItem *downloadItem)
 {
     qDebug() << "GOT TO DOWNLOAD HANDLE" << downloadItem->url();
+
     downloadItem->accept();
+    downloadItem->pause();
 
     DownloadsManager::instance().add(downloadItem);
 }
 
 void FieryWebProfile::handleDownloadFinished(DownloadItem *downloadItem)
 {
+    Q_EMIT downloadFinished(downloadItem);
 
 }
 

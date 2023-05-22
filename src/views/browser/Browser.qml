@@ -35,7 +35,7 @@ Maui.SplitViewItem
 
         anchors.fill: parent
 
-        profile: browserView.profile
+        profile: root.profile
         zoomFactor: appSettings.zoomFactor
 
         backgroundColor: Maui.Theme.backgroundColor
