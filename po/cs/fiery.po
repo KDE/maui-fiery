@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-14 00:46+0000\n"
+"POT-Creation-Date: 2023-05-23 00:45+0000\n"
 "PO-Revision-Date: 2023-02-27 14:46+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -42,6 +42,33 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Vývojář"
 
+#: src/main.qml:104
+#, fuzzy, kde-format
+#| msgid "Downloads"
+msgid "Download Finished"
+msgstr "Stahování"
+
+#: src/main.qml:104
+#, kde-format
+msgid "File has been saved."
+msgstr ""
+
+#: src/main.qml:104
+#, fuzzy, kde-format
+#| msgid "Open Link"
+msgid "Open"
+msgstr "Otevřít odkaz"
+
+#: src/main.qml:120
+#, kde-format
+msgid "Do you want to download and save this file?"
+msgstr ""
+
+#: src/main.qml:120
+#, kde-format
+msgid "Accept"
+msgstr ""
+
 #: src/views/AppView.qml:43
 #, kde-format
 msgid "Home"
@@ -53,7 +80,7 @@ msgid "Recent"
 msgstr "Nedávné"
 
 #: src/views/AppView.qml:59 src/views/AppView.qml:99
-#: src/views/browser/BrowserView.qml:446
+#: src/views/browser/BrowserView.qml:437
 #: src/views/widgets/SettingsDialog.qml:136
 #, kde-format
 msgid "Downloads"
@@ -195,88 +222,88 @@ msgstr "Ukázat ovládací prvky"
 msgid "Error"
 msgstr "Chyba"
 
-#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:228
+#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:219
 #, kde-format
 msgid "Start Browsing"
 msgstr "Začněte s prohlížením webu"
 
-#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:229
+#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:220
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Zadejte novou adresu nebo otevřete nedávnou stránku."
 
-#: src/views/browser/BrowserView.qml:117
+#: src/views/browser/BrowserView.qml:108
 #, kde-format
 msgid "Search or enter URL"
 msgstr "Hledat nebo zadat URL"
 
-#: src/views/browser/BrowserView.qml:160
+#: src/views/browser/BrowserView.qml:151
 #, kde-format
 msgid "Search on default search engine"
 msgstr ""
 
-#: src/views/browser/BrowserView.qml:176
+#: src/views/browser/BrowserView.qml:167
 #, fuzzy, kde-format
 #| msgid "Search Engine"
 msgid "Search on page."
 msgstr "Vyhledávací stroj"
 
-#: src/views/browser/BrowserView.qml:236
+#: src/views/browser/BrowserView.qml:227
 #, kde-format
 msgid "Detach"
 msgstr ""
 
-#: src/views/browser/BrowserView.qml:305
+#: src/views/browser/BrowserView.qml:296
 #, kde-format
 msgid "Toggle sidebar"
 msgstr "Přepnout postranní panel"
 
-#: src/views/browser/BrowserView.qml:315
+#: src/views/browser/BrowserView.qml:306
 #, kde-format
 msgid "Previous"
 msgstr ""
 
-#: src/views/browser/BrowserView.qml:322
+#: src/views/browser/BrowserView.qml:313
 #, kde-format
 msgid "Next"
 msgstr "Následující"
 
-#: src/views/browser/BrowserView.qml:375
+#: src/views/browser/BrowserView.qml:366
 #, kde-format
 msgid "Share"
 msgstr "Sdílet"
 
-#: src/views/browser/BrowserView.qml:415
+#: src/views/browser/BrowserView.qml:406
 #, kde-format
 msgid "New Tab"
 msgstr "Nová karta"
 
-#: src/views/browser/BrowserView.qml:422
+#: src/views/browser/BrowserView.qml:413
 #, kde-format
 msgid "Incognito Tab"
 msgstr ""
 
-#: src/views/browser/BrowserView.qml:431
+#: src/views/browser/BrowserView.qml:422
 #, kde-format
 msgid "Bookmarks"
 msgstr "Záložky"
 
-#: src/views/browser/BrowserView.qml:438
+#: src/views/browser/BrowserView.qml:429
 #, kde-format
 msgid "History"
 msgstr "Historie"
 
-#: src/views/browser/BrowserView.qml:456
+#: src/views/browser/BrowserView.qml:447
 #, kde-format
 msgid "Find In Page"
 msgstr "Najít na stránce"
 
-#: src/views/browser/BrowserView.qml:466
+#: src/views/browser/BrowserView.qml:457
 #, kde-format
 msgid "Settings"
 msgstr "Nastavení"
 
-#: src/views/browser/BrowserView.qml:473
+#: src/views/browser/BrowserView.qml:464
 #, kde-format
 msgid "About"
 msgstr "O aplikaci"
