@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-23 00:45+0000\n"
-"PO-Revision-Date: 2023-05-14 09:48+0200\n"
+"PO-Revision-Date: 2023-05-23 08:42+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -44,31 +44,29 @@ msgid "Developer"
 msgstr "Razvojnik"
 
 #: src/main.qml:104
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Download Finished"
-msgstr "Prenosi"
+msgstr "Prenos končan"
 
 #: src/main.qml:104
 #, kde-format
 msgid "File has been saved."
-msgstr ""
+msgstr "Datoteka je bila shranjena."
 
 #: src/main.qml:104
-#, fuzzy, kde-format
-#| msgid "Open Link"
+#, kde-format
 msgid "Open"
-msgstr "Odpri povezavo"
+msgstr "Odpri"
 
 #: src/main.qml:120
 #, kde-format
 msgid "Do you want to download and save this file?"
-msgstr ""
+msgstr "Ali želite prenesti in shraniti to datoteko?"
 
 #: src/main.qml:120
 #, kde-format
 msgid "Accept"
-msgstr ""
+msgstr "Sprejmi"
 
 #: src/views/AppView.qml:43
 #, kde-format
