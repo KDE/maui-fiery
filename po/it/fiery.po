@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-23 00:45+0000\n"
-"PO-Revision-Date: 2023-02-25 14:15+0100\n"
-"Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
+"PO-Revision-Date: 2023-05-20 08:43+0200\n"
+"Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #: src/main.cpp:37
 #, kde-format
@@ -89,7 +89,7 @@ msgstr "Scaricamenti"
 #: src/views/AppView.qml:100
 #, kde-format
 msgid "Your downloads will be listed in here."
-msgstr ""
+msgstr "Gli scaricamenti verranno elencati qui."
 
 #: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
 #, kde-format
@@ -99,7 +99,7 @@ msgstr "Pausa"
 #: src/views/AppView.qml:130
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Continua"
 
 #: src/views/browser/ActionsMenu.qml:43
 #, kde-format
@@ -137,10 +137,9 @@ msgid "Open Link in Split View"
 msgstr "Apri collegamento nella vista divisa"
 
 #: src/views/browser/ActionsMenu.qml:123
-#, fuzzy, kde-format
-#| msgid "Open Link in Split View"
+#, kde-format
 msgid "Open Link in New Window"
-msgstr "Apri collegamento nella vista divisa"
+msgstr "Apri il collegamento in una nuova finestra"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
@@ -243,15 +242,14 @@ msgid "Search on default search engine"
 msgstr "Cerca nel motore di ricerca predefinito"
 
 #: src/views/browser/BrowserView.qml:167
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search on page."
-msgstr "Motore di ricerca"
+msgstr "Cerca nella pagina."
 
 #: src/views/browser/BrowserView.qml:227
 #, kde-format
 msgid "Detach"
-msgstr ""
+msgstr "Stacca"
 
 #: src/views/browser/BrowserView.qml:296
 #, kde-format
@@ -261,7 +259,7 @@ msgstr "Attiva/disattiva la barra laterale"
 #: src/views/browser/BrowserView.qml:306
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "Precedente"
 
 #: src/views/browser/BrowserView.qml:313
 #, kde-format
@@ -321,22 +319,22 @@ msgstr "Configura le funzionalità di navigazione di base del programma."
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Restore Session"
-msgstr ""
+msgstr "Ripristina la sessione"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Open previous tabs."
-msgstr ""
+msgstr "Apri le schede precedenti."
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
-msgstr ""
+msgstr "Passa alla scheda"
 
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "When opening a new link jump to the new tab."
-msgstr ""
+msgstr "All'apertura di un nuovo collegamento, vai alla nuova scheda."
 
 #: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
@@ -363,12 +361,12 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Generale"
 
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Configure global preferences."
-msgstr ""
+msgstr "Configure le preferenze globali."
 
 #: src/views/widgets/SettingsDialog.qml:89
 #: src/views/widgets/SettingsDialog.qml:176
@@ -402,25 +400,24 @@ msgid "Engine to be use for default searching content."
 msgstr "Motore da utilizzare per la ricerca di contenuti predefiniti."
 
 #: src/views/widgets/SettingsDialog.qml:140
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Downloads Path"
-msgstr "Scaricamenti"
+msgstr "Percorso degli scaricamenti"
 
 #: src/views/widgets/SettingsDialog.qml:141
 #, kde-format
 msgid "Pick a path where files will be saved."
-msgstr ""
+msgstr "Scegli un percorso dove verranno salvati i file."
 
 #: src/views/widgets/SettingsDialog.qml:153
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "Salvataggio automatico"
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
 msgid "Download files without asking."
-msgstr ""
+msgstr "Scarica i file senza chiedere."
 
 #: src/views/widgets/SettingsDialog.qml:182
 #, kde-format
