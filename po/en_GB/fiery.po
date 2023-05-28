@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-23 00:45+0000\n"
-"PO-Revision-Date: 2023-05-21 15:03+0100\n"
+"PO-Revision-Date: 2023-05-27 13:07+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
 "Language: en_GB\n"
@@ -43,31 +43,29 @@ msgid "Developer"
 msgstr "Developer"
 
 #: src/main.qml:104
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Download Finished"
-msgstr "Downloads"
+msgstr "Download Finished"
 
 #: src/main.qml:104
 #, kde-format
 msgid "File has been saved."
-msgstr ""
+msgstr "File has been saved."
 
 #: src/main.qml:104
-#, fuzzy, kde-format
-#| msgid "Open Link"
+#, kde-format
 msgid "Open"
-msgstr "Open Link"
+msgstr "Open"
 
 #: src/main.qml:120
 #, kde-format
 msgid "Do you want to download and save this file?"
-msgstr ""
+msgstr "Do you want to download and save this file?"
 
 #: src/main.qml:120
 #, kde-format
 msgid "Accept"
-msgstr ""
+msgstr "Accept"
 
 #: src/views/AppView.qml:43
 #, kde-format

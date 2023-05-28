@@ -261,7 +261,7 @@ msgstr "Näytä tai piilota sivupaneeli"
 #: src/views/browser/BrowserView.qml:306
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "Edellinen"
 
 #: src/views/browser/BrowserView.qml:313
 #, kde-format
@@ -362,7 +362,7 @@ msgstr "Ota käyttöön hyperlinkkien ping-määritteen tuki."
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Yleistä"
 
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
