@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-23 00:45+0000\n"
-"PO-Revision-Date: 2023-05-18 20:03+0200\n"
+"PO-Revision-Date: 2023-05-28 10:41+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.07.70\n"
+"X-Generator: Lokalize 23.07.70\n"
 
 #: src/main.cpp:37
 #, kde-format
@@ -44,31 +44,29 @@ msgid "Developer"
 msgstr "Entwickler"
 
 #: src/main.qml:104
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Download Finished"
-msgstr "Downloads"
+msgstr "Download abgeschlossen"
 
 #: src/main.qml:104
 #, kde-format
 msgid "File has been saved."
-msgstr ""
+msgstr "Die Datei wurde gespeichert."
 
 #: src/main.qml:104
-#, fuzzy, kde-format
-#| msgid "Open Link"
+#, kde-format
 msgid "Open"
-msgstr "Verknüpfung öffnen"
+msgstr "Öffnen"
 
 #: src/main.qml:120
 #, kde-format
 msgid "Do you want to download and save this file?"
-msgstr ""
+msgstr "Möchten Sie diese Datei herunterladen und speichern?"
 
 #: src/main.qml:120
 #, kde-format
 msgid "Accept"
-msgstr ""
+msgstr "Annehmen"
 
 #: src/views/AppView.qml:43
 #, kde-format
@@ -90,7 +88,7 @@ msgstr "Downloads"
 #: src/views/AppView.qml:100
 #, kde-format
 msgid "Your downloads will be listed in here."
-msgstr ""
+msgstr "Hier werden Ihre Downloads angezeigt."
 
 #: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
 #, kde-format
