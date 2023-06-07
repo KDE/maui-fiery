@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-23 00:45+0000\n"
-"PO-Revision-Date: 2023-02-27 14:46+0100\n"
+"PO-Revision-Date: 2023-06-05 11:48+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #: src/main.cpp:37
 #, kde-format
@@ -43,31 +43,29 @@ msgid "Developer"
 msgstr "Vývojář"
 
 #: src/main.qml:104
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Download Finished"
-msgstr "Stahování"
+msgstr "Stahování ukončeno"
 
 #: src/main.qml:104
 #, kde-format
 msgid "File has been saved."
-msgstr ""
+msgstr "Soubor byl uložen."
 
 #: src/main.qml:104
-#, fuzzy, kde-format
-#| msgid "Open Link"
+#, kde-format
 msgid "Open"
-msgstr "Otevřít odkaz"
+msgstr "Otevřít"
 
 #: src/main.qml:120
 #, kde-format
 msgid "Do you want to download and save this file?"
-msgstr ""
+msgstr "Přejete si stáhnout a uložit tento soubor?"
 
 #: src/main.qml:120
 #, kde-format
 msgid "Accept"
-msgstr ""
+msgstr "Přijmout"
 
 #: src/views/AppView.qml:43
 #, kde-format
@@ -99,7 +97,7 @@ msgstr "Pozastavit"
 #: src/views/AppView.qml:130
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Pokračovat"
 
 #: src/views/browser/ActionsMenu.qml:43
 #, kde-format
@@ -137,10 +135,9 @@ msgid "Open Link in Split View"
 msgstr "Otevřít odkaz v rozděleném pohledu"
 
 #: src/views/browser/ActionsMenu.qml:123
-#, fuzzy, kde-format
-#| msgid "Open Link in Split View"
+#, kde-format
 msgid "Open Link in New Window"
-msgstr "Otevřít odkaz v rozděleném pohledu"
+msgstr "Otevřít odkaz v novém okně"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
@@ -243,15 +240,14 @@ msgid "Search on default search engine"
 msgstr ""
 
 #: src/views/browser/BrowserView.qml:167
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search on page."
-msgstr "Vyhledávací stroj"
+msgstr "Hledat na stránce."
 
 #: src/views/browser/BrowserView.qml:227
 #, kde-format
 msgid "Detach"
-msgstr ""
+msgstr "Odpojit"
 
 #: src/views/browser/BrowserView.qml:296
 #, kde-format
@@ -261,7 +257,7 @@ msgstr "Přepnout postranní panel"
 #: src/views/browser/BrowserView.qml:306
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "Předchozí"
 
 #: src/views/browser/BrowserView.qml:313
 #, kde-format
@@ -321,17 +317,17 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Restore Session"
-msgstr ""
+msgstr "Obnovit sezení"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Open previous tabs."
-msgstr ""
+msgstr "Otevřít předchozí karty."
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
-msgstr ""
+msgstr "Přepnout na kartu"
 
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
@@ -362,12 +358,12 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Configure global preferences."
-msgstr ""
+msgstr "Nastavit globální předvolby."
 
 #: src/views/widgets/SettingsDialog.qml:89
 #: src/views/widgets/SettingsDialog.qml:176
@@ -401,10 +397,9 @@ msgid "Engine to be use for default searching content."
 msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:140
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Downloads Path"
-msgstr "Stahování"
+msgstr "Cesta k adresáři se staženými soubory"
 
 #: src/views/widgets/SettingsDialog.qml:141
 #, kde-format
@@ -414,7 +409,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:153
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "Automatické ukládání"
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
