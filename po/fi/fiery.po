@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-23 00:45+0000\n"
-"PO-Revision-Date: 2023-03-06 13:41+0200\n"
+"PO-Revision-Date: 2023-05-28 16:47+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #: src/main.cpp:37
 #, kde-format
@@ -43,31 +43,29 @@ msgid "Developer"
 msgstr "Kehittäjä"
 
 #: src/main.qml:104
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Download Finished"
-msgstr "Lataukset"
+msgstr "Haku valmistui"
 
 #: src/main.qml:104
 #, kde-format
 msgid "File has been saved."
-msgstr ""
+msgstr "Tiedosto on tallennettu."
 
 #: src/main.qml:104
-#, fuzzy, kde-format
-#| msgid "Open Link"
+#, kde-format
 msgid "Open"
-msgstr "Avaa linkki"
+msgstr "Avaa"
 
 #: src/main.qml:120
 #, kde-format
 msgid "Do you want to download and save this file?"
-msgstr ""
+msgstr "Haluatko ladata ja tallentaa tämän tiedoston?"
 
 #: src/main.qml:120
 #, kde-format
 msgid "Accept"
-msgstr ""
+msgstr "Hyväksy"
 
 #: src/views/AppView.qml:43
 #, kde-format
@@ -89,7 +87,7 @@ msgstr "Lataukset"
 #: src/views/AppView.qml:100
 #, kde-format
 msgid "Your downloads will be listed in here."
-msgstr ""
+msgstr "Latauksesi luetellaan tässä."
 
 #: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
 #, kde-format
@@ -99,7 +97,7 @@ msgstr "Tauko"
 #: src/views/AppView.qml:130
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Jatka"
 
 #: src/views/browser/ActionsMenu.qml:43
 #, kde-format
@@ -137,10 +135,9 @@ msgid "Open Link in Split View"
 msgstr "Avaa linkki jaettuun näkymään"
 
 #: src/views/browser/ActionsMenu.qml:123
-#, fuzzy, kde-format
-#| msgid "Open Link in Split View"
+#, kde-format
 msgid "Open Link in New Window"
-msgstr "Avaa linkki jaettuun näkymään"
+msgstr "Avaa linkki uuteen ikkunaan"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
@@ -243,15 +240,14 @@ msgid "Search on default search engine"
 msgstr "Etsi oletushakukoneella"
 
 #: src/views/browser/BrowserView.qml:167
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search on page."
-msgstr "Hakukone"
+msgstr "Etsi sivulta."
 
 #: src/views/browser/BrowserView.qml:227
 #, kde-format
 msgid "Detach"
-msgstr ""
+msgstr "Irrota"
 
 #: src/views/browser/BrowserView.qml:296
 #, kde-format
@@ -321,22 +317,22 @@ msgstr "Aseta sovelluksen perusnavigointiominaisuudet."
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Restore Session"
-msgstr ""
+msgstr "Palauta istunto"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Open previous tabs."
-msgstr ""
+msgstr "Avaa edellinen välilehti"
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
-msgstr ""
+msgstr "Siirry välilehdelle"
 
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "When opening a new link jump to the new tab."
-msgstr ""
+msgstr "Avattaessa uutta linkkiä siirry uuteen välilehteen."
 
 #: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
@@ -367,7 +363,7 @@ msgstr "Yleistä"
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Configure global preferences."
-msgstr ""
+msgstr "Aseta yleiset asetukset."
 
 #: src/views/widgets/SettingsDialog.qml:89
 #: src/views/widgets/SettingsDialog.qml:176
@@ -401,25 +397,24 @@ msgid "Engine to be use for default searching content."
 msgstr "Hauissa käytettävä oletushakukone."
 
 #: src/views/widgets/SettingsDialog.qml:140
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Downloads Path"
-msgstr "Lataukset"
+msgstr "Latausten sijainti"
 
 #: src/views/widgets/SettingsDialog.qml:141
 #, kde-format
 msgid "Pick a path where files will be saved."
-msgstr ""
+msgstr "Valitse paikka, mihin tiedostot tallennetaan."
 
 #: src/views/widgets/SettingsDialog.qml:153
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "Automaattitallennus"
 
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
 msgid "Download files without asking."
-msgstr ""
+msgstr "Lataa tiedostot kysymättä."
 
 #: src/views/widgets/SettingsDialog.qml:182
 #, kde-format
