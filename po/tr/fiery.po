@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-23 00:45+0000\n"
-"PO-Revision-Date: 2023-05-23 05:33+0300\n"
+"PO-Revision-Date: 2023-07-14 00:32+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -434,7 +434,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:196
 #, kde-format
 msgid "PDF Viewer"
-msgstr "PDF Görüntüleyici"
+msgstr "PDF Görüntüleyicisi"
 
 #: src/views/widgets/SettingsDialog.qml:197
 #, kde-format
