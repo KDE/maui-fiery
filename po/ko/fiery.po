@@ -259,7 +259,7 @@ msgstr ""
 #: src/views/browser/BrowserView.qml:306
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "이전"
 
 #: src/views/browser/BrowserView.qml:313
 #, kde-format
@@ -360,7 +360,7 @@ msgstr "하이퍼링크의 ping 속성 지원을 활성화합니다."
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "일반"
 
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
