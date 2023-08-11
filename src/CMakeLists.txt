@@ -14,12 +14,10 @@ set(fiery_SRCS
     models/bookmarksmodel.cpp
     controllers/surf.cpp
     controllers/fierywebprofile.cpp
-    controllers/qquickwebenginedownloaditem.cpp
-)
+    controllers/qquickwebenginedownloaditem.cpp)
 
 set(fiery_ASSETS
-    assets/img_assets.qrc
-)
+    assets/img_assets.qrc)
 
 if(QUICK_COMPILER)
     qtquick_compiler_add_resources(fiery_QML_QRC qml.qrc)
@@ -34,8 +32,8 @@ add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
-    MauiKit
-    MauiKit::FileBrowsing
+    MauiKit3
+    MauiKit3::FileBrowsing
     Qt5::Widgets
     Qt5::WebEngine
     Qt5::Sql
