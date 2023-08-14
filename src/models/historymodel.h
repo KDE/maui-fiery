@@ -1,7 +1,7 @@
 #ifndef HISTORYMODEL_H
 #define HISTORYMODEL_H
 
-#include <MauiKit/Core/mauilist.h>
+#include <MauiKit3/Core/mauilist.h>
 
 class HistoryModel : public MauiList
 {

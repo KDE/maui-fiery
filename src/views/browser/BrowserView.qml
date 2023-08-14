@@ -81,7 +81,7 @@ Maui.Page
         onActivated: _navigationPopup.open()
     }
 
-    Maui.Dialog
+    Maui.PopupPage
     {
         id: _navigationPopup
 
@@ -97,8 +97,6 @@ Maui.Page
             _entryField.forceActiveFocus()
             _entryField.selectAll()
         }
-
-        defaultButtons: false
 
         headBar.forceCenterMiddleContent: false
         headBar.middleContent: Maui.SearchField
