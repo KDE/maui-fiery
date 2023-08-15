@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-23 00:45+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-05-23 13:01+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -80,7 +80,7 @@ msgid "Recent"
 msgstr "Recente"
 
 #: src/views/AppView.qml:59 src/views/AppView.qml:99
-#: src/views/browser/BrowserView.qml:437
+#: src/views/browser/BrowserView.qml:435
 #: src/views/widgets/SettingsDialog.qml:136
 #, kde-format
 msgid "Downloads"
@@ -221,87 +221,87 @@ msgstr "Mostrar os controlos"
 msgid "Error"
 msgstr "Erro"
 
-#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:219
+#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:217
 #, kde-format
 msgid "Start Browsing"
 msgstr "Iniciar a Navegação"
 
-#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:220
+#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:218
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Indique um novo URL ou abra uma página recente."
 
-#: src/views/browser/BrowserView.qml:108
+#: src/views/browser/BrowserView.qml:106
 #, kde-format
 msgid "Search or enter URL"
 msgstr "Procure ou introduza o URL"
 
-#: src/views/browser/BrowserView.qml:151
+#: src/views/browser/BrowserView.qml:149
 #, kde-format
 msgid "Search on default search engine"
 msgstr "Procurar no motor de busca predefinido"
 
-#: src/views/browser/BrowserView.qml:167
+#: src/views/browser/BrowserView.qml:165
 #, kde-format
 msgid "Search on page."
 msgstr "Procurar na página."
 
-#: src/views/browser/BrowserView.qml:227
+#: src/views/browser/BrowserView.qml:225
 #, kde-format
 msgid "Detach"
 msgstr "Destacar"
 
-#: src/views/browser/BrowserView.qml:296
+#: src/views/browser/BrowserView.qml:294
 #, kde-format
 msgid "Toggle sidebar"
 msgstr "Comutar a barra lateral"
 
-#: src/views/browser/BrowserView.qml:306
+#: src/views/browser/BrowserView.qml:304
 #, kde-format
 msgid "Previous"
 msgstr "Anterior"
 
-#: src/views/browser/BrowserView.qml:313
+#: src/views/browser/BrowserView.qml:311
 #, kde-format
 msgid "Next"
 msgstr "Seguinte"
 
-#: src/views/browser/BrowserView.qml:366
+#: src/views/browser/BrowserView.qml:364
 #, kde-format
 msgid "Share"
 msgstr "Partilhar"
 
-#: src/views/browser/BrowserView.qml:406
+#: src/views/browser/BrowserView.qml:404
 #, kde-format
 msgid "New Tab"
 msgstr "Nova Página"
 
-#: src/views/browser/BrowserView.qml:413
+#: src/views/browser/BrowserView.qml:411
 #, kde-format
 msgid "Incognito Tab"
 msgstr "Página Incógnita"
 
-#: src/views/browser/BrowserView.qml:422
+#: src/views/browser/BrowserView.qml:420
 #, kde-format
 msgid "Bookmarks"
 msgstr "Favoritos"
 
-#: src/views/browser/BrowserView.qml:429
+#: src/views/browser/BrowserView.qml:427
 #, kde-format
 msgid "History"
 msgstr "Histórico"
 
-#: src/views/browser/BrowserView.qml:447
+#: src/views/browser/BrowserView.qml:445
 #, kde-format
 msgid "Find In Page"
 msgstr "Procurar na Página"
 
-#: src/views/browser/BrowserView.qml:457
+#: src/views/browser/BrowserView.qml:455
 #, kde-format
 msgid "Settings"
 msgstr "Configuração"
 
-#: src/views/browser/BrowserView.qml:464
+#: src/views/browser/BrowserView.qml:462
 #, kde-format
 msgid "About"
 msgstr "Acerca"

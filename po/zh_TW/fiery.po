@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-23 00:45+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-02-11 17:48+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -79,7 +79,7 @@ msgid "Recent"
 msgstr "最近"
 
 #: src/views/AppView.qml:59 src/views/AppView.qml:99
-#: src/views/browser/BrowserView.qml:437
+#: src/views/browser/BrowserView.qml:435
 #: src/views/widgets/SettingsDialog.qml:136
 #, kde-format
 msgid "Downloads"
@@ -223,89 +223,89 @@ msgstr ""
 msgid "Error"
 msgstr ""
 
-#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:219
+#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:217
 #, kde-format
 msgid "Start Browsing"
 msgstr "開始瀏覽"
 
-#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:220
+#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:218
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "輸入新網址或開啟最近網站。"
 
-#: src/views/browser/BrowserView.qml:108
+#: src/views/browser/BrowserView.qml:106
 #, kde-format
 msgid "Search or enter URL"
 msgstr "搜尋或輸入網址"
 
-#: src/views/browser/BrowserView.qml:151
+#: src/views/browser/BrowserView.qml:149
 #, kde-format
 msgid "Search on default search engine"
 msgstr "使用預設搜尋引擎進行搜尋"
 
-#: src/views/browser/BrowserView.qml:167
+#: src/views/browser/BrowserView.qml:165
 #, fuzzy, kde-format
 #| msgid "Search Engine"
 msgid "Search on page."
 msgstr "搜尋引擎"
 
-#: src/views/browser/BrowserView.qml:227
+#: src/views/browser/BrowserView.qml:225
 #, kde-format
 msgid "Detach"
 msgstr ""
 
-#: src/views/browser/BrowserView.qml:296
+#: src/views/browser/BrowserView.qml:294
 #, kde-format
 msgid "Toggle sidebar"
 msgstr ""
 
-#: src/views/browser/BrowserView.qml:306
+#: src/views/browser/BrowserView.qml:304
 #, kde-format
 msgid "Previous"
 msgstr ""
 
-#: src/views/browser/BrowserView.qml:313
+#: src/views/browser/BrowserView.qml:311
 #, kde-format
 msgid "Next"
 msgstr "下一頁"
 
-#: src/views/browser/BrowserView.qml:366
+#: src/views/browser/BrowserView.qml:364
 #, kde-format
 msgid "Share"
 msgstr "分享"
 
-#: src/views/browser/BrowserView.qml:406
+#: src/views/browser/BrowserView.qml:404
 #, kde-format
 msgid "New Tab"
 msgstr "新分頁"
 
-#: src/views/browser/BrowserView.qml:413
+#: src/views/browser/BrowserView.qml:411
 #, kde-format
 msgid "Incognito Tab"
 msgstr "無痕分頁"
 
-#: src/views/browser/BrowserView.qml:422
+#: src/views/browser/BrowserView.qml:420
 #, fuzzy, kde-format
 #| msgid "BookMarks"
 msgid "Bookmarks"
 msgstr "書籤"
 
-#: src/views/browser/BrowserView.qml:429
+#: src/views/browser/BrowserView.qml:427
 #, kde-format
 msgid "History"
 msgstr "歷史"
 
-#: src/views/browser/BrowserView.qml:447
+#: src/views/browser/BrowserView.qml:445
 #, kde-format
 msgid "Find In Page"
 msgstr ""
 
-#: src/views/browser/BrowserView.qml:457
+#: src/views/browser/BrowserView.qml:455
 #, kde-format
 msgid "Settings"
 msgstr "設定"
 
-#: src/views/browser/BrowserView.qml:464
+#: src/views/browser/BrowserView.qml:462
 #, kde-format
 msgid "About"
 msgstr "關於"

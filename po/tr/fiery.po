@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-23 00:45+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-07-14 00:32+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -78,7 +78,7 @@ msgid "Recent"
 msgstr "Son Kullanılan"
 
 #: src/views/AppView.qml:59 src/views/AppView.qml:99
-#: src/views/browser/BrowserView.qml:437
+#: src/views/browser/BrowserView.qml:435
 #: src/views/widgets/SettingsDialog.qml:136
 #, kde-format
 msgid "Downloads"
@@ -219,87 +219,87 @@ msgstr "Denetimleri Göster"
 msgid "Error"
 msgstr "Hata"
 
-#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:219
+#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:217
 #, kde-format
 msgid "Start Browsing"
 msgstr "Dolanmaya Başla"
 
-#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:220
+#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:218
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Yeni bir URL girin veya son kullanılan bir siteyi ziyaret edin."
 
-#: src/views/browser/BrowserView.qml:108
+#: src/views/browser/BrowserView.qml:106
 #, kde-format
 msgid "Search or enter URL"
 msgstr "Ara veya URL gir"
 
-#: src/views/browser/BrowserView.qml:151
+#: src/views/browser/BrowserView.qml:149
 #, kde-format
 msgid "Search on default search engine"
 msgstr "Öntanımlı arama motoruyla ara"
 
-#: src/views/browser/BrowserView.qml:167
+#: src/views/browser/BrowserView.qml:165
 #, kde-format
 msgid "Search on page."
 msgstr "Sayfada arayın."
 
-#: src/views/browser/BrowserView.qml:227
+#: src/views/browser/BrowserView.qml:225
 #, kde-format
 msgid "Detach"
 msgstr "Ayır"
 
-#: src/views/browser/BrowserView.qml:296
+#: src/views/browser/BrowserView.qml:294
 #, kde-format
 msgid "Toggle sidebar"
 msgstr "Kenar çubuğunu aç/kapat"
 
-#: src/views/browser/BrowserView.qml:306
+#: src/views/browser/BrowserView.qml:304
 #, kde-format
 msgid "Previous"
 msgstr "Önceki"
 
-#: src/views/browser/BrowserView.qml:313
+#: src/views/browser/BrowserView.qml:311
 #, kde-format
 msgid "Next"
 msgstr "Sonraki"
 
-#: src/views/browser/BrowserView.qml:366
+#: src/views/browser/BrowserView.qml:364
 #, kde-format
 msgid "Share"
 msgstr "Paylaş"
 
-#: src/views/browser/BrowserView.qml:406
+#: src/views/browser/BrowserView.qml:404
 #, kde-format
 msgid "New Tab"
 msgstr "Yeni Sekme"
 
-#: src/views/browser/BrowserView.qml:413
+#: src/views/browser/BrowserView.qml:411
 #, kde-format
 msgid "Incognito Tab"
 msgstr "Gizli Sekme"
 
-#: src/views/browser/BrowserView.qml:422
+#: src/views/browser/BrowserView.qml:420
 #, kde-format
 msgid "Bookmarks"
 msgstr "Yer İmleri"
 
-#: src/views/browser/BrowserView.qml:429
+#: src/views/browser/BrowserView.qml:427
 #, kde-format
 msgid "History"
 msgstr "Geçmiş"
 
-#: src/views/browser/BrowserView.qml:447
+#: src/views/browser/BrowserView.qml:445
 #, kde-format
 msgid "Find In Page"
 msgstr "Sayfada Bul"
 
-#: src/views/browser/BrowserView.qml:457
+#: src/views/browser/BrowserView.qml:455
 #, kde-format
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: src/views/browser/BrowserView.qml:464
+#: src/views/browser/BrowserView.qml:462
 #, kde-format
 msgid "About"
 msgstr "Hakkında"
