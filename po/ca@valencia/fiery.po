@@ -144,7 +144,7 @@ msgstr "Obri l'enllaç en una finestra nova"
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
 msgid "Save Video"
-msgstr "Guarda el vídeo"
+msgstr "Guardeu el vídeo"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
