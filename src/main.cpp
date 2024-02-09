@@ -3,7 +3,6 @@
 #include <QCommandLineParser>
 #include <QQmlContext>
 #include <QIcon>
-#include <QDate>
 
 #include <MauiKit3/Core/mauiapp.h>
 
@@ -34,9 +33,15 @@ int main(int argc, char *argv[])
     app.setWindowIcon(QIcon(":/fiery.svg"));
     
     KLocalizedString::setApplicationDomain("fiery");
-    KAboutData about(QStringLiteral("fiery"), i18n("Fiery"), FIERY_VERSION_STRING, i18n("Browse and organize the web."),
-                     KAboutLicense::LGPL_V3,  i18n("© 2020-%1 Maui Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
-    about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
+    KAboutData about(QStringLiteral("fiery"),
+                     QStringLiteral("Fiery"), 
+                     FIERY_VERSION_STRING, 
+                     i18n("Browse and organize the web."),
+                     KAboutLicense::LGPL_V3, 
+                     APP_COPYRIGHT_NOTICE, 
+                     QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
+    
+    about.addAuthor(QStringLiteral("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
     about.setHomepage("https://mauikit.org");
     about.setProductName("maui/fiery");
     about.setBugAddress("https://invent.kde.org/maui/fiery/-/issues");
