@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:29+0000\n"
+"POT-Creation-Date: 2024-02-10 01:51+0000\n"
 "PO-Revision-Date: 2023-05-24 12:37+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -17,27 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 23.04.1\n"
 
-#: src/main.cpp:37
-#, kde-format
-msgid "Fiery"
-msgstr "Fiery"
-
-#: src/main.cpp:37
+#: src/main.cpp:39
 #, kde-format
 msgid "Browse and organize the web."
 msgstr "Bladeren in het web en het organiseren."
 
-#: src/main.cpp:38
-#, kde-format
-msgid "© 2020-%1 Maui Development Team"
-msgstr "© 2020-%1 Ontwikkelteam van Maui"
-
-#: src/main.cpp:39
-#, kde-format
-msgid "Camilo Higuita"
-msgstr "Camilo Higuita"
-
-#: src/main.cpp:39
+#: src/main.cpp:44
 #, kde-format
 msgid "Developer"
 msgstr "Ontwikkelaar"
@@ -613,6 +598,15 @@ msgstr ""
 "Beperkt WebRTC tot publieke alleen IP-adressen. Indien uitgeschakeld kan "
 "WebRTC ook lokale netwerk IP-adressen gebruiken, maar hosts op afstand "
 "kunnen ook uw lokale netwerk IP-adres zien."
+
+#~ msgid "Fiery"
+#~ msgstr "Fiery"
+
+#~ msgid "© 2020-%1 Maui Development Team"
+#~ msgstr "© 2020-%1 Ontwikkelteam van Maui"
+
+#~ msgid "Camilo Higuita"
+#~ msgstr "Camilo Higuita"
 
 #~ msgid "Browser"
 #~ msgstr "Browser"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:29+0000\n"
+"POT-Creation-Date: 2024-02-10 01:51+0000\n"
 "PO-Revision-Date: 2023-05-23 18:59+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -19,27 +19,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 23.04.1\n"
 
-#: src/main.cpp:37
-#, kde-format
-msgid "Fiery"
-msgstr "Fiery"
-
-#: src/main.cpp:37
+#: src/main.cpp:39
 #, kde-format
 msgid "Browse and organize the web."
 msgstr "Explorar y organizar la web."
 
-#: src/main.cpp:38
-#, kde-format
-msgid "© 2020-%1 Maui Development Team"
-msgstr "© 2020-%1 El equipo de desarrollo de Maui"
-
-#: src/main.cpp:39
-#, kde-format
-msgid "Camilo Higuita"
-msgstr "Camilo Higuita"
-
-#: src/main.cpp:39
+#: src/main.cpp:44
 #, kde-format
 msgid "Developer"
 msgstr "Desarrollador"
@@ -612,6 +597,15 @@ msgstr ""
 "Limita WebRTC solo a direcciones IP públicas. Si está desactivado, WebRTC "
 "también puede usar direcciones IP de la red local, pero las máquinas remotas "
 "también pueden ver su dirección IP de la red local."
+
+#~ msgid "Fiery"
+#~ msgstr "Fiery"
+
+#~ msgid "© 2020-%1 Maui Development Team"
+#~ msgstr "© 2020-%1 El equipo de desarrollo de Maui"
+
+#~ msgid "Camilo Higuita"
+#~ msgstr "Camilo Higuita"
 
 #~ msgid "Browser"
 #~ msgstr "Navegador"
