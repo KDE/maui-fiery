@@ -576,12 +576,3 @@ msgid ""
 "local network IP addresses, but remote hosts can also see your local network "
 "IP address."
 msgstr ""
-
-#~ msgid "Fiery"
-#~ msgstr "Fiery"
-
-#~ msgid "© 2020-%1 Maui Development Team"
-#~ msgstr "© 2020-%1 Vývojový tým Maui"
-
-#~ msgid "Camilo Higuita"
-#~ msgstr "Camilo Higuita"
