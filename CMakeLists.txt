@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(FIERY_VERSION 1.1.2)
+set(FIERY_VERSION 1.1.3)
 add_compile_definitions(APP_COPYRIGHT_NOTICE="© 2022-2024 Maui Development Team")
 
 set(CMAKE_CXX_STANDARD 17)
