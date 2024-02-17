@@ -593,33 +593,3 @@ msgstr ""
 "WebRTC'yi yalnızca genel IP adresleriyle sınırlar. WebRTC devre dışı "
 "bırakıldığında yerel ağ IP adreslerini de kullanabilir, ancak uzak ana "
 "bilgisayarlar yerel ağ IP adresinizi de görebilir."
-
-#~ msgid "Fiery"
-#~ msgstr "Fiery"
-
-#~ msgid "© 2020-%1 Maui Development Team"
-#~ msgstr "© 2020-%1 Maui Geliştirme Takımı"
-
-#~ msgid "Camilo Higuita"
-#~ msgstr "Camilo Higuita"
-
-#~ msgid "Browser"
-#~ msgstr "Tarayıcı"
-
-#~ msgid "Open in new tab"
-#~ msgstr "Yeni sekmede aç"
-
-#~ msgid "Download"
-#~ msgstr "İndir"
-
-#~ msgid "Inspect"
-#~ msgstr "Denetle"
-
-#~ msgid "Search..."
-#~ msgstr "Ara..."
-
-#~ msgid "BookMark"
-#~ msgstr "Yer İmlerine Ekle"
-
-#~ msgid "Find"
-#~ msgstr "Bul"
