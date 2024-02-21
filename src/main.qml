@@ -87,7 +87,6 @@ Maui.ApplicationWindow
         anchors.fill: parent
     }
 
-
     property WebEngineProfile profile: Fiery.FieryWebProfile
     {
         //            httpUserAgent: tabs.currentItem.userAgent.userAgent
@@ -105,11 +104,11 @@ Maui.ApplicationWindow
             }
         }
 
-//        onPresentNotification:
-//        {
-//            root.notify("dialog-question", notification.title, notification.message,  () =>{ notification.click() }, i18n("Accept"))
-//            notification.show()
-//        }
+        //        onPresentNotification:
+        //        {
+        //            root.notify("dialog-question", notification.title, notification.message,  () =>{ notification.click() }, i18n("Accept"))
+        //            notification.show()
+        //        }
     }
 
     Connections
@@ -117,7 +116,7 @@ Maui.ApplicationWindow
         target: Fiery.DownloadsManager
         function onNewDownload(download)
         {
-     root.notify("dialog-question", download.downloadFileName, i18n("Do you want to download and save this file?"),  () =>{ download.resume() }, i18n("Accept"))
+            root.notify("dialog-question", download.downloadFileName, i18n("Do you want to download and save this file?"),  () =>{ download.resume() }, i18n("Accept"))
         }
     }
 
@@ -134,7 +133,7 @@ Maui.ApplicationWindow
         visible: true
 
         property WebEngineView webView: _delegate.currentBrowser
-        property alias appView : _delegate
+        readonly property alias appView : _delegate
 
         AppView
         {
@@ -155,5 +154,4 @@ Maui.ApplicationWindow
             newWindow.appView.browserView.openSplit(urls[1])
         }
     }
-
 }

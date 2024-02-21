@@ -136,7 +136,6 @@ Maui.SideBarView
                             {
                                 icon.name: _downloadDelegate.download.state === WebEngineDownloadItem.DownloadInProgress ? "dialog-cancel" : "list-remove"
                             }
-
                         }
                     }
                 }
@@ -148,7 +147,6 @@ Maui.SideBarView
     {
         id: _browserView
         anchors.fill: parent
-
     }
 
     function openHistory()
