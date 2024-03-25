@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-22 01:37+0000\n"
-"PO-Revision-Date: 2024-02-26 21:30+0100\n"
+"PO-Revision-Date: 2024-03-24 10:34+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo.org>\n"
 "Language: eo\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: src/main.cpp:39
 #, kde-format
 msgid "Browse and organize the web."
-msgstr ""
+msgstr "Foliumi kaj organizi la retejon."
 
 #: src/main.cpp:44
 #, kde-format
@@ -36,7 +36,7 @@ msgstr "Elŝuto finis"
 #: src/main.qml:103
 #, kde-format
 msgid "File has been saved."
-msgstr ""
+msgstr "Dosiero estas konservita."
 
 #: src/main.qml:103
 #, kde-format
@@ -46,7 +46,7 @@ msgstr "Malfermi"
 #: src/main.qml:119
 #, kde-format
 msgid "Do you want to download and save this file?"
-msgstr ""
+msgstr "Ĉu vi volas elŝuti kaj konservi ĉi tiun dosieron?"
 
 #: src/main.qml:119
 #, kde-format
@@ -73,7 +73,7 @@ msgstr "Elŝutoj"
 #: src/views/AppView.qml:100
 #, kde-format
 msgid "Your downloads will be listed in here."
-msgstr ""
+msgstr "Viaj elŝutoj estos listigitaj ĉi tie."
 
 #: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
 #, kde-format
@@ -118,12 +118,12 @@ msgstr "Malfermi Ligon"
 #: src/views/browser/ActionsMenu.qml:112
 #, kde-format
 msgid "Open Link in Split View"
-msgstr ""
+msgstr "Malfermi Ligon en Split View"
 
 #: src/views/browser/ActionsMenu.qml:123
 #, kde-format
 msgid "Open Link in New Window"
-msgstr ""
+msgstr "Malfermi Ligon en Nova Fenestro"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
@@ -133,7 +133,7 @@ msgstr "Konservi Filmeton"
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Video"
-msgstr ""
+msgstr "Malfermi Videon"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
@@ -208,27 +208,27 @@ msgstr "Eraro"
 #: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:217
 #, kde-format
 msgid "Start Browsing"
-msgstr ""
+msgstr "Komenci Retumadon"
 
 #: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:218
 #, kde-format
 msgid "Enter a new URL or open a recent site."
-msgstr ""
+msgstr "Enigu novan URL aŭ malfermu lastatempan retejon."
 
 #: src/views/browser/BrowserView.qml:106
 #, kde-format
 msgid "Search or enter URL"
-msgstr ""
+msgstr "Serĉi aŭ enigi URL"
 
 #: src/views/browser/BrowserView.qml:149
 #, kde-format
 msgid "Search on default search engine"
-msgstr ""
+msgstr "Serĉu sur defaŭlta serĉilo"
 
 #: src/views/browser/BrowserView.qml:165
 #, kde-format
 msgid "Search on page."
-msgstr ""
+msgstr "Serĉi sur paĝo."
 
 #: src/views/browser/BrowserView.qml:225
 #, kde-format
@@ -238,7 +238,7 @@ msgstr "Malkroĉi"
 #: src/views/browser/BrowserView.qml:294
 #, kde-format
 msgid "Toggle sidebar"
-msgstr ""
+msgstr "Baskuligi flankbreton"
 
 #: src/views/browser/BrowserView.qml:304
 #, kde-format
@@ -263,7 +263,7 @@ msgstr "Nova Langeto"
 #: src/views/browser/BrowserView.qml:411
 #, kde-format
 msgid "Incognito Tab"
-msgstr ""
+msgstr "Inkognita Tab"
 
 #: src/views/browser/BrowserView.qml:420
 #, kde-format
@@ -278,7 +278,7 @@ msgstr "Historio"
 #: src/views/browser/BrowserView.qml:445
 #, kde-format
 msgid "Find In Page"
-msgstr ""
+msgstr "Trovi En Paĝo"
 
 #: src/views/browser/BrowserView.qml:455
 #, kde-format
@@ -298,7 +298,7 @@ msgstr "Navigado"
 #: src/views/widgets/SettingsDialog.qml:14
 #, kde-format
 msgid "Configure the app basic navigation features."
-msgstr ""
+msgstr "Agordi la bazajn navigadajn funkciojn de la aplikaĵo."
 
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
@@ -308,37 +308,37 @@ msgstr "Restaŭri Seancon"
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Open previous tabs."
-msgstr ""
+msgstr "Malfermi antaŭajn langetojn."
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
-msgstr ""
+msgstr "Ŝanĝi al Tab"
 
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "When opening a new link jump to the new tab."
-msgstr ""
+msgstr "Kiam vi malfermas novan ligilon, saltu al la nova langeto."
 
 #: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
 msgid "Auto Load Images"
-msgstr ""
+msgstr "Aŭtomata Ŝargo Bildoj"
 
 #: src/views/widgets/SettingsDialog.qml:48
 #, kde-format
 msgid "Automatically loads images on web pages."
-msgstr ""
+msgstr "Aŭtomate ŝargas bildojn sur retpaĝoj."
 
 #: src/views/widgets/SettingsDialog.qml:61
 #, kde-format
 msgid "Hyperlink Auditing"
-msgstr ""
+msgstr "Hiperlink Auditing"
 
 #: src/views/widgets/SettingsDialog.qml:62
 #, kde-format
 msgid "Enables support for the ping attribute for hyperlinks."
-msgstr ""
+msgstr "Ebligas subtenon por la atributo ping por hiperligiloj."
 
 #: src/views/widgets/SettingsDialog.qml:76
 #: src/views/widgets/SettingsDialog.qml:106
@@ -349,7 +349,7 @@ msgstr "Ĝenerala"
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Configure global preferences."
-msgstr ""
+msgstr "Agordi ĉieajn preferojn."
 
 #: src/views/widgets/SettingsDialog.qml:89
 #: src/views/widgets/SettingsDialog.qml:176
@@ -360,7 +360,7 @@ msgstr "Trajtoj"
 #: src/views/widgets/SettingsDialog.qml:90
 #, kde-format
 msgid "Configure the browser plugins and features."
-msgstr ""
+msgstr "Agordi la retumilon kromaĵojn kaj funkciojn."
 
 #: src/views/widgets/SettingsDialog.qml:110
 #, kde-format
@@ -370,7 +370,7 @@ msgstr "Hejmpaĝo"
 #: src/views/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Page to load initially and default."
-msgstr ""
+msgstr "Paĝo por ŝargi komence kaj defaŭlte."
 
 #: src/views/widgets/SettingsDialog.qml:123
 #, kde-format
@@ -380,17 +380,17 @@ msgstr "Serĉilo"
 #: src/views/widgets/SettingsDialog.qml:124
 #, kde-format
 msgid "Engine to be use for default searching content."
-msgstr ""
+msgstr "Motoro uzota por defaŭlta serĉado de enhavo."
 
 #: src/views/widgets/SettingsDialog.qml:140
 #, kde-format
 msgid "Downloads Path"
-msgstr ""
+msgstr "Elŝuta Vojo"
 
 #: src/views/widgets/SettingsDialog.qml:141
 #, kde-format
 msgid "Pick a path where files will be saved."
-msgstr ""
+msgstr "Elektu vojon, kie dosieroj estos konservitaj."
 
 #: src/views/widgets/SettingsDialog.qml:153
 #, kde-format
@@ -400,12 +400,12 @@ msgstr "Aŭtokonservado"
 #: src/views/widgets/SettingsDialog.qml:154
 #, kde-format
 msgid "Download files without asking."
-msgstr ""
+msgstr "Elŝuti dosierojn sen demandi."
 
 #: src/views/widgets/SettingsDialog.qml:182
 #, kde-format
 msgid "Accelerated 2D Canvas"
-msgstr ""
+msgstr "Akcelita 2D Kanvaso"
 
 #: src/views/widgets/SettingsDialog.qml:183
 #, kde-format
@@ -417,7 +417,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:196
 #, kde-format
 msgid "PDF Viewer"
-msgstr ""
+msgstr "PDF-Vidilo"
 
 #: src/views/widgets/SettingsDialog.qml:197
 #, kde-format
@@ -429,12 +429,12 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:210
 #, kde-format
 msgid "Plugins Enabled"
-msgstr ""
+msgstr "Kromaĵoj Ebligitaj"
 
 #: src/views/widgets/SettingsDialog.qml:211
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
-msgstr ""
+msgstr "Ebligas subtenon por Pepper-kromaĵoj, kiel la Flash-ludilo."
 
 #: src/views/widgets/SettingsDialog.qml:227
 #: src/views/widgets/SettingsDialog.qml:244
@@ -445,47 +445,47 @@ msgstr "Ĝavoskripto"
 #: src/views/widgets/SettingsDialog.qml:228
 #, kde-format
 msgid "Configure JavaScript behaviour."
-msgstr ""
+msgstr "Agordi JavaScript-konduton."
 
 #: src/views/widgets/SettingsDialog.qml:250
 #, kde-format
 msgid "Javascript Enabled"
-msgstr ""
+msgstr "Javaskripto Ebligita"
 
 #: src/views/widgets/SettingsDialog.qml:251
 #, kde-format
 msgid "Enables the running of JavaScript programs."
-msgstr ""
+msgstr "Ebligas la funkciadon de JavaScript-programoj."
 
 #: src/views/widgets/SettingsDialog.qml:264
 #, kde-format
 msgid "Javascript Can Access Clipboard"
-msgstr ""
+msgstr "Javascript Povas Aliri Tondujo"
 
 #: src/views/widgets/SettingsDialog.qml:265
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
-msgstr ""
+msgstr "Permesas al JavaScript programoj legi aŭ skribi al la tondujo."
 
 #: src/views/widgets/SettingsDialog.qml:278
 #, kde-format
 msgid "Javascript Can Paste"
-msgstr ""
+msgstr "Javaskripto Povas Alglui"
 
 #: src/views/widgets/SettingsDialog.qml:279
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
-msgstr ""
+msgstr "Ebligas JavaScript execCommand (glui)."
 
 #: src/views/widgets/SettingsDialog.qml:292
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
-msgstr ""
+msgstr "Permesi Fenestro-Aktivigon El JavaScript"
 
 #: src/views/widgets/SettingsDialog.qml:293
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
-msgstr ""
+msgstr "Permesas la metodon window.focus() en JavaScript."
 
 #: src/views/widgets/SettingsDialog.qml:310
 #: src/views/widgets/SettingsDialog.qml:326
@@ -502,7 +502,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:332
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
-msgstr ""
+msgstr "Permesi Geolokigon Sur Nesekuraj Originoj"
 
 #: src/views/widgets/SettingsDialog.qml:333
 #, kde-format
@@ -514,7 +514,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:346
 #, kde-format
 msgid "Allow Running Insecure Content"
-msgstr ""
+msgstr "Permesi Kuradon de Nesekura Enhavo"
 
 #: src/views/widgets/SettingsDialog.qml:347
 #, kde-format
@@ -526,7 +526,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:361
 #, kde-format
 msgid "DNS Prefetch Enabled"
-msgstr ""
+msgstr "DNS Prefetch Ebligita"
 
 #: src/views/widgets/SettingsDialog.qml:362
 #, kde-format
@@ -538,22 +538,22 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:375
 #, kde-format
 msgid "Local Content Can Access File Urls"
-msgstr ""
+msgstr "Loka Enhavo Povas Aliri Dosierajn Urlojn"
 
 #: src/views/widgets/SettingsDialog.qml:376
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
-msgstr ""
+msgstr "Permesas loke ŝargitajn dokumentojn aliri aliajn lokajn URL-ojn."
 
 #: src/views/widgets/SettingsDialog.qml:389
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
-msgstr ""
+msgstr "Loka Enhavo Povas Aliri Forajn Urlojn"
 
 #: src/views/widgets/SettingsDialog.qml:390
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
-msgstr ""
+msgstr "Permesas loke ŝargitajn dokumentojn aliri forajn URL-ojn."
 
 #: src/views/widgets/SettingsDialog.qml:403
 #, kde-format
@@ -563,12 +563,12 @@ msgstr "Loka Konservado"
 #: src/views/widgets/SettingsDialog.qml:404
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
-msgstr ""
+msgstr "Ebligas subtenon por la loka konservado de HTML 5."
 
 #: src/views/widgets/SettingsDialog.qml:417
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
-msgstr ""
+msgstr "WebRTC Publikaj Interfacoj Nur"
 
 #: src/views/widgets/SettingsDialog.qml:418
 #, kde-format
