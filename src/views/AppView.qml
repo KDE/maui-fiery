@@ -111,7 +111,7 @@ Maui.SideBarView
                             label2.text: model.url
                             iconSource: download.state === WebEngineDownloadItem.DownloadCompleted ? model.filePath : model.icon
 
-                            property WebEngineDownloadItem download : model.download
+                            property var download : model.download
 
                             onClicked: Qt.openUrlExternally(model.filePath)
 

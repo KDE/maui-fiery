@@ -171,7 +171,7 @@ bool DB::insert(const QString &tableName, const QVariantMap &insertData)
     query.prepare(sqlQueryString);
 
     int k = 0;
-    foreach (const QVariant &value, values)
+    for (const QVariant &value : values)
         query.bindValue(k++, value);
 
     return query.exec();

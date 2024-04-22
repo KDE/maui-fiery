@@ -8,9 +8,9 @@ BookMarksModel::BookMarksModel()
 
     connect(DBActions::getInstance(), &DBActions::bookmarkInserted, [this](UrlData data)
     {
-        emit this->preItemAppended();
+        Q_EMIT this->preItemAppended();
         this->m_list << data.toModel();
-        emit this->postItemAppended();
+        Q_EMIT this->postItemAppended();
     });
 
     connect(DBActions::getInstance(), &DBActions::iconInserted, [this](QUrl, QString)
@@ -23,7 +23,7 @@ BookMarksModel::BookMarksModel()
 //        {
 //            auto item = this->m_list[index];
 //            item.insert(FMH::MODEL_KEY::ICON, icon);
-//            emit this->updateModel(mappedIndex(index), {FMH::MODEL_KEY::ICON});
+//            Q_EMIT this->updateModel(mappedIndex(index), {FMH::MODEL_KEY::ICON});
 //        }
 //        qDebug() << m_list;
 
@@ -39,10 +39,10 @@ const FMH::MODEL_LIST &BookMarksModel::items() const
 void BookMarksModel::setList()
 {
     this->m_list.clear();
-    emit this->preListChanged();
+    Q_EMIT this->preListChanged();
     this->m_list << DBActions::getInstance()->getBookmarks();
     qDebug() << "GOT BOOKMARKS" << this->m_list;
-    emit this->postListChanged();
+    Q_EMIT this->postListChanged();
 }
 
 void BookMarksModel::insertBookmark(const QUrl &url, const QString &title) const

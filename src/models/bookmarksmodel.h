@@ -16,7 +16,7 @@ private:
     void setList();
     FMH::MODEL_LIST m_list;
 
-public slots:
+public Q_SLOTS:
     void insertBookmark(const QUrl &url, const QString &title) const;
     bool isBookmark(const QUrl &url);
 

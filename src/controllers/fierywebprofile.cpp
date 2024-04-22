@@ -1,6 +1,5 @@
 #include "fierywebprofile.h"
 
-#include "qquickwebenginedownloaditem.h"
 
 #include <QQuickWindow>
 #include <QWebEngineNotification>
@@ -8,6 +7,8 @@
 #include <QWebEngineUrlRequestInterceptor>
 
 #include "downloadsmanager.h"
+
+#include <private/qquickwebenginedownloadrequest_p.h>
 
 FieryWebProfile::FieryWebProfile(QObject *parent)
     : QQuickWebEngineProfile{parent}
@@ -36,7 +37,6 @@ void FieryWebProfile::handleDownload(DownloadItem *downloadItem)
 void FieryWebProfile::handleDownloadFinished(DownloadItem *downloadItem)
 {
     Q_EMIT downloadFinished(downloadItem);
-
 }
 
 void FieryWebProfile::showNotification(QWebEngineNotification *webNotification)
@@ -49,5 +49,5 @@ void FieryWebProfile::setUrlInterceptor(QWebEngineUrlRequestInterceptor *newUrlI
     if (m_urlInterceptor == newUrlInterceptor)
         return;
     m_urlInterceptor = newUrlInterceptor;
-    emit urlInterceptorChanged();
+    Q_EMIT urlInterceptorChanged();
 }

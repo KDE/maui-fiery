@@ -2,6 +2,7 @@
 # Copyright 2018-2020 Nitrux Latinoamericana S.C.
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
+remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_URL_CAST_FROM_STRING)
 
 set(fiery_SRCS
     main.cpp
@@ -19,11 +20,7 @@ set(fiery_SRCS
 set(fiery_ASSETS
     assets/img_assets.qrc)
 
-if(QUICK_COMPILER)
-    qtquick_compiler_add_resources(fiery_QML_QRC qml.qrc)
-else()
-    qt5_add_resources(fiery_QML_QRC qml.qrc)
-endif()
+qt_add_resources(fiery_QML_QRC qml.qrc)
 
 add_executable(${PROJECT_NAME}
     ${fiery_SRCS}
@@ -32,12 +29,15 @@ add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
-    MauiKit3
-    MauiKit3::FileBrowsing
-    Qt5::Widgets
-    Qt5::WebEngine
-    Qt5::Sql
-    Qt5::Qml
-    KF5::I18n
-    KF5::CoreAddons
-    Qt5::WebEnginePrivate)
+    MauiKit4
+    MauiKit4::FileBrowsing
+    Qt6::Widgets
+    Qt6::Sql
+    Qt6::Qml
+    KF6::I18n
+    KF6::CoreAddons
+
+    Qt::CorePrivate
+    Qt::WebEngineCore
+    Qt::WebEngineQuick
+    Qt::WebEngineQuickPrivate)

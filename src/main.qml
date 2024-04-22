@@ -120,7 +120,7 @@ Maui.ApplicationWindow
         }
     }
 
-    property Component windowComponent: Maui.ApplicationWindow
+    property Component windowComponent: Maui.BaseWindow
     {
         // Destroy on close to release the Window's QML resources.
         // Because it was created with a parent, it won't be garbage-collected.

@@ -10,10 +10,8 @@ class surf : public QObject
 public:
     explicit surf(QObject *parent = nullptr);
 
-public slots:
+public Q_SLOTS:
     static QUrl formatUrl(const QUrl &url);
-
-signals:
 
 };
 
