@@ -1,9 +1,12 @@
 #include "downloadsmodel.h"
+
 #include <QUrl>
 #include <QDebug>
 #include "controllers/downloadsmanager.h"
 #include <QMimeDatabase>
 #include <QDir>
+
+#include <private/qquickwebenginedownloadrequest_p.h>
 
 DownloadsModel::DownloadsModel(DownloadsManager *parent) : QAbstractListModel(parent)
     ,m_manager(parent)

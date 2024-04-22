@@ -1,11 +1,11 @@
-import QtQuick 2.14
-import QtQml 2.12
-import QtQuick.Controls 2.13
-import QtQuick.Layouts 1.3
+import QtQuick
+import QtQml
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import QtWebEngine 1.10
-import org.mauikit.controls 1.3 as Maui
-import org.maui.fiery 1.0 as Fiery
+import QtWebEngine
+import org.mauikit.controls as Maui
+import org.maui.fiery as Fiery
 
 import "../home"
 
@@ -40,7 +40,8 @@ Maui.SplitViewItem
 
         backgroundColor: Maui.Theme.backgroundColor
 
-        onContextMenuRequested: {
+        onContextMenuRequested: (request) =>
+                                {
             request.accepted = true // Make sure QtWebEngine doesn't show its own context menu.
             _menu.request = request
             _menu.show()
@@ -56,7 +57,8 @@ Maui.SplitViewItem
             }
         }
 
-        onIconChanged: {
+        onIconChanged:
+        {
             console.log("ICON CHANGED", icon)
             if (icon)
             {
@@ -64,7 +66,7 @@ Maui.SplitViewItem
             }
         }
 
-        onLinkHovered:
+        onLinkHovered: (url) =>
         {
             console.log("LINK HOVERED", url)
         }
@@ -74,13 +76,13 @@ Maui.SplitViewItem
             //                   findInPageResultCount = result.numberOfMatches;
         }
 
-        onFileDialogRequested:
+        onFileDialogRequested: (request) =>
         {
             console.log("FILE DIALOG REQUESTED", request.mode, FileDialogRequest.FileModeSave)
 
         }
 
-        onNewViewRequested:
+        onNewWindowRequested: (request) =>
         {
             if(!request.userInitiated)
                 return;
@@ -89,7 +91,7 @@ Maui.SplitViewItem
             request.openIn(newWindow.webView);
         }
 
-        onNavigationRequested:
+        onNavigationRequested: (request) =>
         {
             console.log("Navigation requested",  request.navigationType)
         }

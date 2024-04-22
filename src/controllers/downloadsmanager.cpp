@@ -1,5 +1,8 @@
 #include "downloadsmanager.h"
 #include <QDebug>
+#include <QUrl>
+
+#include <private/qquickwebenginedownloadrequest_p.h>
 
 DownloadsManager::DownloadsManager(QObject *parent) : QObject(parent)
     ,m_model(new DownloadsModel(this))

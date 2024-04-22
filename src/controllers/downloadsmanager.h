@@ -1,10 +1,12 @@
 #pragma once
+
 #include <QObject>
 
 #include "models/downloadsmodel.h"
-#include "qquickwebenginedownloaditem.h"
 
-using DownloadItem = QQuickWebEngineDownloadItem;
+class QQuickWebEngineDownloadRequest;
+using DownloadItem = QQuickWebEngineDownloadRequest;
+
 class DownloadsManager : public QObject
 {
 //    Q_DISABLE_COPY_MOVE(DownloadsManager)

@@ -65,7 +65,7 @@ private:
 
     const QVariantList get(const QString &query, std::function<bool(QVariantMap &item)> modifier = nullptr) const;
 
-signals:
+Q_SIGNALS:
     void historyUrlInserted(UrlData data);
     void bookmarkInserted(UrlData data);
     void iconInserted(QUrl url, QString icon);

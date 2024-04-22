@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(FIERY_VERSION 1.1.3)
+set(FIERY_VERSION 2.0.0)
 add_compile_definitions(APP_COPYRIGHT_NOTICE="© 2022-2024 Maui Development Team")
 
 set(CMAKE_CXX_STANDARD 17)
@@ -14,12 +14,13 @@ set(CMAKE_AUTORCC ON)
 
 project(fiery VERSION ${FIERY_VERSION})
 
-set(REQUIRED_QT_VERSION 5.14.0)
-set(REQUIRED_KF5_VERSION 5.40.0)
+set(QT_MAJOR_VERSION 6)
 
-option(QUICK_COMPILER "Use QtQuick compiler to improve performance" TRUE)
+set(REQUIRED_QT_VERSION 6.5.2)
+set(REQUIRED_KF_VERSION 5.240.0)
 
-find_package(ECM ${REQUIRED_KF5_VERSION} REQUIRED NO_MODULE)
+
+find_package(ECM ${REQUIRED_KF_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${ECM_MODULE_PATH})
 
 if(UNIX AND NOT APPLE AND NOT ANDROID)
@@ -36,21 +37,14 @@ include(ECMSourceVersionControl)
 include(FeatureSummary)
 include(ECMQMLModules)
 
-find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Widgets Qml Sql WebEngine)
-find_package(KF5 ${KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
+find_package(Qt6 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Widgets Qml Sql)
+find_package(KF6 ${KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
 
-find_package(MauiKit3 REQUIRED)
-find_package(MauiKit3 REQUIRED COMPONENTS FileBrowsing)
+find_package(Qt6WebEngineCore REQUIRED)
+find_package(Qt6WebEngineQuick REQUIRED)
 
-find_package(Qt5 REQUIRED COMPONENTS WebEngineCore)
-#   find_package(Qt5WebEngineQuick REQUIRED)
 
-if(QUICK_COMPILER)
-    find_package(Qt5QuickCompiler)
-    set_package_properties(Qt5QuickCompiler PROPERTIES
-        DESCRIPTION "Compile QML at build time"
-        TYPE OPTIONAL)
-endif()
+find_package(MauiKit4 REQUIRED COMPONENTS FileBrowsing)
 
 if(${ECM_SOURCE_UNDER_VERSION_CONTROL})
     execute_process(
@@ -83,7 +77,7 @@ add_subdirectory(src)
 ki18n_install(po)
 
 install(TARGETS ${PROJECT_NAME} ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
-install(FILES org.kde.fiery.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
+install(FILES org.kde.fiery.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.fiery.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 install(FILES src/assets/fiery.svg DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps)
 

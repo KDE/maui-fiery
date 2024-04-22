@@ -8,9 +8,9 @@ HistoryModel::HistoryModel()
 
     connect(DBActions::getInstance(), &DBActions::historyUrlInserted, [this](UrlData data)
     {
-        emit this->preItemAppended();
+        Q_EMIT this->preItemAppended();
         this->m_list << data.toModel();
-        emit this->postItemAppended();
+        Q_EMIT this->postItemAppended();
     });
 
     connect(DBActions::getInstance(), &DBActions::iconInserted, [this](QUrl, QString)
@@ -23,7 +23,7 @@ HistoryModel::HistoryModel()
 //        {
 //            auto item = this->m_list[index];
 //            item.insert(FMH::MODEL_KEY::ICON, icon);
-//            emit this->updateModel(mappedIndex(index), {FMH::MODEL_KEY::ICON});
+//            Q_EMIT this->updateModel(mappedIndex(index), {FMH::MODEL_KEY::ICON});
 //        }
 //        qDebug() << m_list;
 
@@ -51,8 +51,8 @@ void HistoryModel::updateIcon(const QUrl &url, const QString &icon)
 void HistoryModel::setList()
 {
     this->m_list.clear();
-    emit this->preListChanged();
+    Q_EMIT this->preListChanged();
     this->m_list << DBActions::getInstance()->getHistory();
     qDebug() << "GOT HISTORY" << this->m_list;
-    emit this->postListChanged();
+    Q_EMIT this->postListChanged();
 }

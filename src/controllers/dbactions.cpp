@@ -13,7 +13,7 @@ void DBActions::addToHistory(const UrlData &data)
     mData.insert("adddate",  QDateTime::currentDateTime().toString(Qt::TextDate));
     if(this->insert("HISTORY", mData))
     {
-        emit this->historyUrlInserted(data);
+        Q_EMIT this->historyUrlInserted(data);
     }
 }
 
@@ -23,7 +23,7 @@ void DBActions::addBookmark(const UrlData &data)
     mData.insert("adddate",  QDateTime::currentDateTime().toString(Qt::TextDate));
     if(this->insert("BOOKMARKS", mData))
     {
-        emit this->bookmarkInserted(data);
+        Q_EMIT this->bookmarkInserted(data);
     }
 }
 
@@ -34,7 +34,7 @@ void DBActions::urlIcon(const QUrl &url, const QString &icon)
         this->update("ICONS", {{FMH::MODEL_KEY::ICON, icon}}, {{"url", url}});
     }
 
-    emit this->iconInserted(url, icon);
+    Q_EMIT this->iconInserted(url, icon);
 }
 
 FMH::MODEL_LIST DBActions::getHistory() const

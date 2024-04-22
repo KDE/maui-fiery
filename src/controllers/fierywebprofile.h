@@ -1,17 +1,16 @@
 #pragma once
 
-#include <QQuickWebEngineProfile>
 #include <QObject>
-
 #include <QQuickItem>
+#include <QQuickWebEngineProfile>
 #include <QWebEngineUrlRequestInterceptor>
+
+class QQuickWebEngineDownloadRequest;
+using DownloadItem = QQuickWebEngineDownloadRequest;
 
 class QWebEngineNotification;
 class QQuickItem;
 class QWebEngineUrlRequestInterceptor;
-
-class QQuickWebEngineDownloadItem;
-using DownloadItem = QQuickWebEngineDownloadItem;
 
 class FieryWebProfile : public QQuickWebEngineProfile
 {
@@ -27,7 +26,7 @@ public:
 
 Q_SIGNALS:
     void urlInterceptorChanged();
-    void downloadFinished(QQuickWebEngineDownloadItem *download);
+    void downloadFinished(DownloadItem *download);
 
 private:
 

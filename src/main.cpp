@@ -4,9 +4,9 @@
 #include <QQmlContext>
 #include <QIcon>
 
-#include <MauiKit3/Core/mauiapp.h>
+#include <MauiKit4/Core/mauiapp.h>
 
-#include <KI18n/KLocalizedString>
+#include <KLocalizedString>
 
 #include "models/historymodel.h"
 #include "models/bookmarksmodel.h"
@@ -17,17 +17,15 @@
 
 #include "../fiery_version.h"
 
-#include <QtWebEngine/QtWebEngine>
+#include <QtWebEngineQuick>
 
 #define FIERY_URI "org.maui.fiery"
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
     QApplication app(argc, argv);
-    QtWebEngine::initialize();
+    QtWebEngineQuick::initialize();
 
     app.setOrganizationName("Maui");
     app.setWindowIcon(QIcon(":/fiery.svg"));
