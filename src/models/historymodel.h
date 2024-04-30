@@ -1,7 +1,6 @@
-#ifndef HISTORYMODEL_H
-#define HISTORYMODEL_H
+#pragma once
 
-#include <MauiKit3/Core/mauilist.h>
+#include <MauiKit4/Core/mauilist.h>
 
 class HistoryModel : public MauiList
 {
@@ -22,5 +21,3 @@ public Q_SLOTS:
     void updateIcon(const QUrl &url, const QString &icon);
 
 };
-
-#endif // HISTORYMODEL_H

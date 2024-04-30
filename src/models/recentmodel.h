@@ -1,7 +1,6 @@
-#ifndef RECENTMODEL_H
-#define RECENTMODEL_H
+#pragma once
 
-#include <MauiKit3/Core/mauilist.h>
+#include <MauiKit4/Core/mauilist.h>
 #include <QObject>
 
 class RecentModel : public MauiList
@@ -10,5 +9,3 @@ class RecentModel : public MauiList
 public:
     RecentModel();
 };
-
-#endif // RECENTMODEL_H

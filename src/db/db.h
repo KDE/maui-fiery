@@ -17,8 +17,7 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#ifndef DB_H
-#define DB_H
+#pragma once
 
 #include <QObject>
 #include <QSqlDatabase>
@@ -27,7 +26,7 @@
 #include <QStringList>
 #include <QVariantMap>
 
-#include <MauiKit3/Core/fmh.h>
+#include <MauiKit4/Core/fmh.h>
 
 /**
  * @brief The TAGDB class
@@ -115,5 +114,3 @@ protected:
      */
     bool remove(const QString &tableName, const FMH::MODEL &removeData);
 };
-
-#endif // DB_H

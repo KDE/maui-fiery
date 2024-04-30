@@ -14,8 +14,7 @@ set(fiery_SRCS
     models/recentmodel.cpp
     models/bookmarksmodel.cpp
     controllers/surf.cpp
-    controllers/fierywebprofile.cpp
-    controllers/qquickwebenginedownloaditem.cpp)
+    controllers/fierywebprofile.cpp)
 
 set(fiery_ASSETS
     assets/img_assets.qrc)

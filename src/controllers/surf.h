@@ -1,6 +1,4 @@
-#ifndef SURF_H
-#define SURF_H
-
+#pragma once
 #include <QObject>
 #include <QUrl>
 
@@ -14,5 +12,3 @@ public Q_SLOTS:
     static QUrl formatUrl(const QUrl &url);
 
 };
-
-#endif // SURF_H
