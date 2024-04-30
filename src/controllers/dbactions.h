@@ -1,5 +1,4 @@
-#ifndef DBACTIONS_H
-#define DBACTIONS_H
+#pragma once
 
 #include <QObject>
 #include <QThread>
@@ -71,5 +70,3 @@ Q_SIGNALS:
     void iconInserted(QUrl url, QString icon);
 
 };
-
-#endif // DBACTIONS_H

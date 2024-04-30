@@ -3,9 +3,6 @@
 #include <QObject>
 #include <QAbstractListModel>
 
-class QQuickWebEngineDownloadRequest;
-using DownloadItem = QQuickWebEngineDownloadRequest;
-
 class DownloadsManager;
 class DownloadsModel : public QAbstractListModel
 {

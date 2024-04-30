@@ -18,7 +18,6 @@ DownloadsManager &DownloadsManager::instance()
 
 void DownloadsManager::add(DownloadItem *download)
 {
-
     qDebug() << "ADD NEW DOWNLOAD";
     m_downloads << download;
     Q_EMIT newDownload(QVariant::fromValue(download));
