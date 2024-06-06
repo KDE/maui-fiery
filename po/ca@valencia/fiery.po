@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-22 01:37+0000\n"
+"POT-Creation-Date: 2024-06-06 01:47+0000\n"
 "PO-Revision-Date: 2023-05-23 09:52+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -19,12 +19,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 20.12.0\n"
 
-#: src/main.cpp:39
+#: src/main.cpp:36
 #, kde-format
 msgid "Browse and organize the web."
 msgstr "Navega i organitza la web."
 
-#: src/main.cpp:44
+#: src/main.cpp:41
 #, kde-format
 msgid "Developer"
 msgstr "Desenvolupador"
@@ -66,7 +66,7 @@ msgstr "Recents"
 
 #: src/views/AppView.qml:59 src/views/AppView.qml:99
 #: src/views/browser/BrowserView.qml:435
-#: src/views/widgets/SettingsDialog.qml:136
+#: src/views/widgets/SettingsDialog.qml:134
 #, kde-format
 msgid "Downloads"
 msgstr "Baixades"
@@ -201,17 +201,17 @@ msgstr "Oculta els controls"
 msgid "Show controls"
 msgstr "Mostra els controls"
 
-#: src/views/browser/Browser.qml:125
+#: src/views/browser/Browser.qml:127
 #, kde-format
 msgid "Error"
 msgstr "S'ha produït un error"
 
-#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:217
+#: src/views/browser/Browser.qml:127 src/views/browser/BrowserView.qml:217
 #, kde-format
 msgid "Start Browsing"
 msgstr "Inicia la navegació"
 
-#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:218
+#: src/views/browser/Browser.qml:128 src/views/browser/BrowserView.qml:218
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Introduïu un URL nou o obriu un lloc recent."
@@ -353,7 +353,7 @@ msgid "Configure global preferences."
 msgstr "Configura les preferències globals."
 
 #: src/views/widgets/SettingsDialog.qml:89
-#: src/views/widgets/SettingsDialog.qml:176
+#: src/views/widgets/SettingsDialog.qml:173
 #, kde-format
 msgid "Features"
 msgstr "Característiques"
@@ -373,42 +373,42 @@ msgstr "Pàgina d'inici"
 msgid "Page to load initially and default."
 msgstr "Pàgina que es carregarà inicialment i predeterminada."
 
-#: src/views/widgets/SettingsDialog.qml:123
+#: src/views/widgets/SettingsDialog.qml:122
 #, kde-format
 msgid "Search Engine"
 msgstr "Motor de busca"
 
-#: src/views/widgets/SettingsDialog.qml:124
+#: src/views/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Engine to be use for default searching content."
 msgstr "El motor que s'utilitzarà per a la busca predeterminada de contingut."
 
-#: src/views/widgets/SettingsDialog.qml:140
+#: src/views/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Downloads Path"
 msgstr "Camí de les baixades"
 
-#: src/views/widgets/SettingsDialog.qml:141
+#: src/views/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Pick a path where files will be saved."
 msgstr "Seleccioneu un camí a on es guardaran els fitxers."
 
-#: src/views/widgets/SettingsDialog.qml:153
+#: src/views/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Auto Save"
 msgstr "Guardada automàtica"
 
-#: src/views/widgets/SettingsDialog.qml:154
+#: src/views/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Download files without asking."
 msgstr "Baixa els fitxers sense preguntar."
 
-#: src/views/widgets/SettingsDialog.qml:182
+#: src/views/widgets/SettingsDialog.qml:179
 #, kde-format
 msgid "Accelerated 2D Canvas"
 msgstr "Llenç accelerat 2D"
 
-#: src/views/widgets/SettingsDialog.qml:183
+#: src/views/widgets/SettingsDialog.qml:180
 #, kde-format
 msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
@@ -418,12 +418,12 @@ msgstr ""
 "Açò fa més ràpides moltes operacions de pintat, però alentix l'accés als "
 "píxels."
 
-#: src/views/widgets/SettingsDialog.qml:196
+#: src/views/widgets/SettingsDialog.qml:193
 #, kde-format
 msgid "PDF Viewer"
 msgstr "Visor de PDF"
 
-#: src/views/widgets/SettingsDialog.qml:197
+#: src/views/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
@@ -431,77 +431,77 @@ msgid ""
 msgstr ""
 "Els documents PDF s'obriran en el visor intern de PDF en lloc de baixar-los."
 
-#: src/views/widgets/SettingsDialog.qml:210
+#: src/views/widgets/SettingsDialog.qml:207
 #, kde-format
 msgid "Plugins Enabled"
 msgstr "Connectors activats"
 
-#: src/views/widgets/SettingsDialog.qml:211
+#: src/views/widgets/SettingsDialog.qml:208
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
 msgstr ""
 "Activa la implementació dels connectors Pepper, com el reproductor Flash."
 
-#: src/views/widgets/SettingsDialog.qml:227
-#: src/views/widgets/SettingsDialog.qml:244
+#: src/views/widgets/SettingsDialog.qml:224
+#: src/views/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: src/views/widgets/SettingsDialog.qml:228
+#: src/views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid "Configure JavaScript behaviour."
 msgstr "Configura el comportament de JavaScript."
 
-#: src/views/widgets/SettingsDialog.qml:250
+#: src/views/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Javascript Enabled"
 msgstr "JavaScript activat"
 
-#: src/views/widgets/SettingsDialog.qml:251
+#: src/views/widgets/SettingsDialog.qml:248
 #, kde-format
 msgid "Enables the running of JavaScript programs."
 msgstr "Activa l'execució de programes JavaScript."
 
-#: src/views/widgets/SettingsDialog.qml:264
+#: src/views/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Javascript Can Access Clipboard"
 msgstr "JavaScript pot accedir al porta-retalls"
 
-#: src/views/widgets/SettingsDialog.qml:265
+#: src/views/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr ""
 "Permet que els programes JavaScript lligen o escriguen a dins del porta-"
 "retalls."
 
-#: src/views/widgets/SettingsDialog.qml:278
+#: src/views/widgets/SettingsDialog.qml:275
 #, kde-format
 msgid "Javascript Can Paste"
 msgstr "JavaScript pot apegar"
 
-#: src/views/widgets/SettingsDialog.qml:279
+#: src/views/widgets/SettingsDialog.qml:276
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
 msgstr "Activa l'ordre JavaScript «execCommand(paste)»."
 
-#: src/views/widgets/SettingsDialog.qml:292
+#: src/views/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
 msgstr "Permet l'activació de finestres des de JavaScript"
 
-#: src/views/widgets/SettingsDialog.qml:293
+#: src/views/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
 msgstr "Permet el mètode «window.focus()» en JavaScript."
 
-#: src/views/widgets/SettingsDialog.qml:310
-#: src/views/widgets/SettingsDialog.qml:326
+#: src/views/widgets/SettingsDialog.qml:307
+#: src/views/widgets/SettingsDialog.qml:323
 #, kde-format
 msgid "Security & Privacy"
 msgstr "Seguretat i privadesa"
 
-#: src/views/widgets/SettingsDialog.qml:311
+#: src/views/widgets/SettingsDialog.qml:308
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
@@ -509,12 +509,12 @@ msgstr ""
 "Configura l'aspecte i el comportament de l'editor. La configuració s'aplica "
 "globalment"
 
-#: src/views/widgets/SettingsDialog.qml:332
+#: src/views/widgets/SettingsDialog.qml:329
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
 msgstr "Permet la geolocalització en orígens insegurs"
 
-#: src/views/widgets/SettingsDialog.qml:333
+#: src/views/widgets/SettingsDialog.qml:330
 #, kde-format
 msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
@@ -523,12 +523,12 @@ msgstr ""
 "Només els orígens segurs com HTTPS poden requerir les característiques de "
 "geolocalització."
 
-#: src/views/widgets/SettingsDialog.qml:346
+#: src/views/widgets/SettingsDialog.qml:343
 #, kde-format
 msgid "Allow Running Insecure Content"
 msgstr "Permet l'execució de contingut insegur"
 
-#: src/views/widgets/SettingsDialog.qml:347
+#: src/views/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
@@ -537,12 +537,12 @@ msgstr ""
 "De manera predeterminada, les pàgines HTTPS no poden executar JavaScript, "
 "CSS, connectors o WebSockets des d'URL HTTP."
 
-#: src/views/widgets/SettingsDialog.qml:361
+#: src/views/widgets/SettingsDialog.qml:358
 #, kde-format
 msgid "DNS Prefetch Enabled"
 msgstr "Precàrrega DNS activada"
 
-#: src/views/widgets/SettingsDialog.qml:362
+#: src/views/widgets/SettingsDialog.qml:359
 #, kde-format
 msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
@@ -551,46 +551,46 @@ msgstr ""
 "Activa la precàrrega especulativa dels registres DNS per als enllaços HTML "
 "abans que s'activen."
 
-#: src/views/widgets/SettingsDialog.qml:375
+#: src/views/widgets/SettingsDialog.qml:372
 #, kde-format
 msgid "Local Content Can Access File Urls"
 msgstr "El contingut local pot accedir a URL de fitxers"
 
-#: src/views/widgets/SettingsDialog.qml:376
+#: src/views/widgets/SettingsDialog.qml:373
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
 "Permet que els documents carregats localment puguen accedir a altres URL "
 "locals."
 
-#: src/views/widgets/SettingsDialog.qml:389
+#: src/views/widgets/SettingsDialog.qml:386
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
 msgstr "El contingut local pot accedir a URL remots"
 
-#: src/views/widgets/SettingsDialog.qml:390
+#: src/views/widgets/SettingsDialog.qml:387
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
 msgstr "Permet que els documents carregats localment accedisquen a URL remots."
 
-#: src/views/widgets/SettingsDialog.qml:403
+#: src/views/widgets/SettingsDialog.qml:400
 #, kde-format
 msgid "Local Storage"
 msgstr "Emmagatzematge local"
 
-#: src/views/widgets/SettingsDialog.qml:404
+#: src/views/widgets/SettingsDialog.qml:401
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
 msgstr ""
 "Activa la implementació de la característica d'emmagatzematge local de "
 "l'HTML 5."
 
-#: src/views/widgets/SettingsDialog.qml:417
+#: src/views/widgets/SettingsDialog.qml:414
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
 msgstr "Només les interfícies públiques de WebRTC"
 
-#: src/views/widgets/SettingsDialog.qml:418
+#: src/views/widgets/SettingsDialog.qml:415
 #, kde-format
 msgid ""
 "Limits WebRTC to public IP addresses only. When disabled WebRTC may also use "

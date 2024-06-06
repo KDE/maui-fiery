@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-22 01:37+0000\n"
+"POT-Creation-Date: 2024-06-06 01:47+0000\n"
 "PO-Revision-Date: 2023-05-23 09:03+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 20.12.0\n"
 
-#: src/main.cpp:39
+#: src/main.cpp:36
 #, kde-format
 msgid "Browse and organize the web."
 msgstr "Навігація і упорядковування подорожей мережею."
 
-#: src/main.cpp:44
+#: src/main.cpp:41
 #, kde-format
 msgid "Developer"
 msgstr "Розробник"
@@ -65,7 +65,7 @@ msgstr "Нещодавні"
 
 #: src/views/AppView.qml:59 src/views/AppView.qml:99
 #: src/views/browser/BrowserView.qml:435
-#: src/views/widgets/SettingsDialog.qml:136
+#: src/views/widgets/SettingsDialog.qml:134
 #, kde-format
 msgid "Downloads"
 msgstr "Отримання"
@@ -200,17 +200,17 @@ msgstr "Приховати засоби керування"
 msgid "Show controls"
 msgstr "Показати засоби керування"
 
-#: src/views/browser/Browser.qml:125
+#: src/views/browser/Browser.qml:127
 #, kde-format
 msgid "Error"
 msgstr "Помилка"
 
-#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:217
+#: src/views/browser/Browser.qml:127 src/views/browser/BrowserView.qml:217
 #, kde-format
 msgid "Start Browsing"
 msgstr "Почніть перегляд"
 
-#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:218
+#: src/views/browser/Browser.qml:128 src/views/browser/BrowserView.qml:218
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Введіть нову адресу або відкрийте раніше відвіданий сайт."
@@ -352,7 +352,7 @@ msgid "Configure global preferences."
 msgstr "Виконати загальне налаштовування."
 
 #: src/views/widgets/SettingsDialog.qml:89
-#: src/views/widgets/SettingsDialog.qml:176
+#: src/views/widgets/SettingsDialog.qml:173
 #, kde-format
 msgid "Features"
 msgstr "Можливості"
@@ -372,42 +372,42 @@ msgstr "Домашня сторінка"
 msgid "Page to load initially and default."
 msgstr "Сторінка, яку буде завантажено типово і після запуску."
 
-#: src/views/widgets/SettingsDialog.qml:123
+#: src/views/widgets/SettingsDialog.qml:122
 #, kde-format
 msgid "Search Engine"
 msgstr "Рушій пошуку"
 
-#: src/views/widgets/SettingsDialog.qml:124
+#: src/views/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Engine to be use for default searching content."
 msgstr "Рушій, яким слід скористатися для типового пошуку даних."
 
-#: src/views/widgets/SettingsDialog.qml:140
+#: src/views/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Downloads Path"
 msgstr "Шлях до отримань"
 
-#: src/views/widgets/SettingsDialog.qml:141
+#: src/views/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Pick a path where files will be saved."
 msgstr "Вибрати шлях, куди буде збережено файли."
 
-#: src/views/widgets/SettingsDialog.qml:153
+#: src/views/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Auto Save"
 msgstr "Автозбереження"
 
-#: src/views/widgets/SettingsDialog.qml:154
+#: src/views/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Download files without asking."
 msgstr "Отримувати файли без підтвердження."
 
-#: src/views/widgets/SettingsDialog.qml:182
+#: src/views/widgets/SettingsDialog.qml:179
 #, kde-format
 msgid "Accelerated 2D Canvas"
 msgstr "Пришвидшення двовимірних полотен"
 
-#: src/views/widgets/SettingsDialog.qml:183
+#: src/views/widgets/SettingsDialog.qml:180
 #, kde-format
 msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
@@ -417,12 +417,12 @@ msgstr ""
 "зробить багато дій з малювання швидшими, але уповільнить доступ до окремих "
 "пікселів."
 
-#: src/views/widgets/SettingsDialog.qml:196
+#: src/views/widgets/SettingsDialog.qml:193
 #, kde-format
 msgid "PDF Viewer"
 msgstr "Переглядач PDF"
 
-#: src/views/widgets/SettingsDialog.qml:197
+#: src/views/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
@@ -431,76 +431,76 @@ msgstr ""
 "Документи PDF буде відкрито у вбудованому засобі перегляду PDF, а не просто "
 "отримано і збережено."
 
-#: src/views/widgets/SettingsDialog.qml:210
+#: src/views/widgets/SettingsDialog.qml:207
 #, kde-format
 msgid "Plugins Enabled"
 msgstr "Додатки увімкнено"
 
-#: src/views/widgets/SettingsDialog.qml:211
+#: src/views/widgets/SettingsDialog.qml:208
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
 msgstr "Вмикає підтримку додатків Pepper, зокрема програвача Flash."
 
-#: src/views/widgets/SettingsDialog.qml:227
-#: src/views/widgets/SettingsDialog.qml:244
+#: src/views/widgets/SettingsDialog.qml:224
+#: src/views/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: src/views/widgets/SettingsDialog.qml:228
+#: src/views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid "Configure JavaScript behaviour."
 msgstr "Налаштувати поведінку JavaScript."
 
-#: src/views/widgets/SettingsDialog.qml:250
+#: src/views/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Javascript Enabled"
 msgstr "Увімкнено Javascript"
 
-#: src/views/widgets/SettingsDialog.qml:251
+#: src/views/widgets/SettingsDialog.qml:248
 #, kde-format
 msgid "Enables the running of JavaScript programs."
 msgstr "Вмикає запуск програм JavaScript."
 
-#: src/views/widgets/SettingsDialog.qml:264
+#: src/views/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Javascript Can Access Clipboard"
 msgstr "JavaScript може отримувати доступ до буфера обміну даними"
 
-#: src/views/widgets/SettingsDialog.qml:265
+#: src/views/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr ""
 "Дозволяє програмам мовою JavaScript читання буфера обміну даними та запис до "
 "нього."
 
-#: src/views/widgets/SettingsDialog.qml:278
+#: src/views/widgets/SettingsDialog.qml:275
 #, kde-format
 msgid "Javascript Can Paste"
 msgstr "Javascript може вставляти"
 
-#: src/views/widgets/SettingsDialog.qml:279
+#: src/views/widgets/SettingsDialog.qml:276
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
 msgstr "Вмикає execCommand(paste) у JavaScript."
 
-#: src/views/widgets/SettingsDialog.qml:292
+#: src/views/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
 msgstr "Дозволити активацію вікон з JavaScript"
 
-#: src/views/widgets/SettingsDialog.qml:293
+#: src/views/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
 msgstr "Дозволяє використання методу window.focus() у JavaScript."
 
-#: src/views/widgets/SettingsDialog.qml:310
-#: src/views/widgets/SettingsDialog.qml:326
+#: src/views/widgets/SettingsDialog.qml:307
+#: src/views/widgets/SettingsDialog.qml:323
 #, kde-format
 msgid "Security & Privacy"
 msgstr "Безпека і конфіденційність"
 
-#: src/views/widgets/SettingsDialog.qml:311
+#: src/views/widgets/SettingsDialog.qml:308
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
@@ -508,12 +508,12 @@ msgstr ""
 "Налаштувати вигляд і поведінку редактора. Параметри буде застосовано на "
 "загальному рівні."
 
-#: src/views/widgets/SettingsDialog.qml:332
+#: src/views/widgets/SettingsDialog.qml:329
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
 msgstr "Дозволити геопозиціювання для сторінок, які не є безпечними"
 
-#: src/views/widgets/SettingsDialog.qml:333
+#: src/views/widgets/SettingsDialog.qml:330
 #, kde-format
 msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
@@ -522,12 +522,12 @@ msgstr ""
 "Запити щодо можливостей геопозиціювання зможуть надсилати лише безпечні "
 "сторінки, зокрема сторінки з адресами HTTPS."
 
-#: src/views/widgets/SettingsDialog.qml:346
+#: src/views/widgets/SettingsDialog.qml:343
 #, kde-format
 msgid "Allow Running Insecure Content"
 msgstr "Дозволити запуск коду, який не є безпечним"
 
-#: src/views/widgets/SettingsDialog.qml:347
+#: src/views/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
@@ -536,12 +536,12 @@ msgstr ""
 "Типово, сторінки HTTPS не можуть запускати JavaScript, CSS, додати або "
 "вебсокети з адрес HTTP."
 
-#: src/views/widgets/SettingsDialog.qml:361
+#: src/views/widgets/SettingsDialog.qml:358
 #, kde-format
 msgid "DNS Prefetch Enabled"
 msgstr "Увімкнено попереднє отримання DNS"
 
-#: src/views/widgets/SettingsDialog.qml:362
+#: src/views/widgets/SettingsDialog.qml:359
 #, kde-format
 msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
@@ -550,44 +550,44 @@ msgstr ""
 "Вмикає інтелектуальне попереднє отримання записів DNS для посилань HTML, "
 "перш ніж ці записи буде активовано."
 
-#: src/views/widgets/SettingsDialog.qml:375
+#: src/views/widgets/SettingsDialog.qml:372
 #, kde-format
 msgid "Local Content Can Access File Urls"
 msgstr "Локальний код може отримувати адреси файлів"
 
-#: src/views/widgets/SettingsDialog.qml:376
+#: src/views/widgets/SettingsDialog.qml:373
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
 "Дозволяє локально завантаженим документам отримувати доступ до інших "
 "локальних адрес."
 
-#: src/views/widgets/SettingsDialog.qml:389
+#: src/views/widgets/SettingsDialog.qml:386
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
 msgstr "Локальний код може отримувати адреси віддалених даних"
 
-#: src/views/widgets/SettingsDialog.qml:390
+#: src/views/widgets/SettingsDialog.qml:387
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
 msgstr "Локальний код може отримувати доступ до віддалених адрес"
 
-#: src/views/widgets/SettingsDialog.qml:403
+#: src/views/widgets/SettingsDialog.qml:400
 #, kde-format
 msgid "Local Storage"
 msgstr "Локальне сховище"
 
-#: src/views/widgets/SettingsDialog.qml:404
+#: src/views/widgets/SettingsDialog.qml:401
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
 msgstr "Вмикає підтримку можливість локального сховища даних HTML 5."
 
-#: src/views/widgets/SettingsDialog.qml:417
+#: src/views/widgets/SettingsDialog.qml:414
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
 msgstr "Лише загальнодоступні інтерфейси WebRTC"
 
-#: src/views/widgets/SettingsDialog.qml:418
+#: src/views/widgets/SettingsDialog.qml:415
 #, kde-format
 msgid ""
 "Limits WebRTC to public IP addresses only. When disabled WebRTC may also use "

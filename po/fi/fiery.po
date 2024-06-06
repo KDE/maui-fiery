@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-22 01:37+0000\n"
+"POT-Creation-Date: 2024-06-06 01:47+0000\n"
 "PO-Revision-Date: 2023-05-28 16:47+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 23.04.1\n"
 
-#: src/main.cpp:39
+#: src/main.cpp:36
 #, kde-format
 msgid "Browse and organize the web."
 msgstr "Selaa ja järjestä verkkoa."
 
-#: src/main.cpp:44
+#: src/main.cpp:41
 #, kde-format
 msgid "Developer"
 msgstr "Kehittäjä"
@@ -64,7 +64,7 @@ msgstr "Viimeaikaiset"
 
 #: src/views/AppView.qml:59 src/views/AppView.qml:99
 #: src/views/browser/BrowserView.qml:435
-#: src/views/widgets/SettingsDialog.qml:136
+#: src/views/widgets/SettingsDialog.qml:134
 #, kde-format
 msgid "Downloads"
 msgstr "Lataukset"
@@ -199,17 +199,17 @@ msgstr "Piilota säätimet"
 msgid "Show controls"
 msgstr "Näytä säätimet"
 
-#: src/views/browser/Browser.qml:125
+#: src/views/browser/Browser.qml:127
 #, kde-format
 msgid "Error"
 msgstr "Virhe"
 
-#: src/views/browser/Browser.qml:125 src/views/browser/BrowserView.qml:217
+#: src/views/browser/Browser.qml:127 src/views/browser/BrowserView.qml:217
 #, kde-format
 msgid "Start Browsing"
 msgstr "Aloita selaus"
 
-#: src/views/browser/Browser.qml:126 src/views/browser/BrowserView.qml:218
+#: src/views/browser/Browser.qml:128 src/views/browser/BrowserView.qml:218
 #, kde-format
 msgid "Enter a new URL or open a recent site."
 msgstr "Kirjoita uusi verkko-osoite tai avaa viimeaikainen sivusto."
@@ -351,7 +351,7 @@ msgid "Configure global preferences."
 msgstr "Aseta yleiset asetukset."
 
 #: src/views/widgets/SettingsDialog.qml:89
-#: src/views/widgets/SettingsDialog.qml:176
+#: src/views/widgets/SettingsDialog.qml:173
 #, kde-format
 msgid "Features"
 msgstr "Ominaisuudet"
@@ -371,140 +371,140 @@ msgstr "Kotisivu"
 msgid "Page to load initially and default."
 msgstr "Alustavasti ja oletuksena ladattava sivu."
 
-#: src/views/widgets/SettingsDialog.qml:123
+#: src/views/widgets/SettingsDialog.qml:122
 #, kde-format
 msgid "Search Engine"
 msgstr "Hakukone"
 
-#: src/views/widgets/SettingsDialog.qml:124
+#: src/views/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Engine to be use for default searching content."
 msgstr "Hauissa käytettävä oletushakukone."
 
-#: src/views/widgets/SettingsDialog.qml:140
+#: src/views/widgets/SettingsDialog.qml:138
 #, kde-format
 msgid "Downloads Path"
 msgstr "Latausten sijainti"
 
-#: src/views/widgets/SettingsDialog.qml:141
+#: src/views/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Pick a path where files will be saved."
 msgstr "Valitse paikka, mihin tiedostot tallennetaan."
 
-#: src/views/widgets/SettingsDialog.qml:153
+#: src/views/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Auto Save"
 msgstr "Automaattitallennus"
 
-#: src/views/widgets/SettingsDialog.qml:154
+#: src/views/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Download files without asking."
 msgstr "Lataa tiedostot kysymättä."
 
-#: src/views/widgets/SettingsDialog.qml:182
+#: src/views/widgets/SettingsDialog.qml:179
 #, kde-format
 msgid "Accelerated 2D Canvas"
 msgstr "Kiihdytetty 2D-kangas"
 
-#: src/views/widgets/SettingsDialog.qml:183
+#: src/views/widgets/SettingsDialog.qml:180
 #, kde-format
 msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
 "makes many painting operations faster, but slows down pixel access."
 msgstr "Määrittää, "
 
-#: src/views/widgets/SettingsDialog.qml:196
+#: src/views/widgets/SettingsDialog.qml:193
 #, kde-format
 msgid "PDF Viewer"
 msgstr "PDF-katselin"
 
-#: src/views/widgets/SettingsDialog.qml:197
+#: src/views/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
 msgstr "PDF-tiedostot avataan sisäiseen PDF-katselimeen lataamisen sijaan."
 
-#: src/views/widgets/SettingsDialog.qml:210
+#: src/views/widgets/SettingsDialog.qml:207
 #, kde-format
 msgid "Plugins Enabled"
 msgstr "Liitännäiset käytössä"
 
-#: src/views/widgets/SettingsDialog.qml:211
+#: src/views/widgets/SettingsDialog.qml:208
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
 msgstr "Ottaa käyttöön Pepper-liitännäisten (kuten Flash-soittimen) tuen."
 
-#: src/views/widgets/SettingsDialog.qml:227
-#: src/views/widgets/SettingsDialog.qml:244
+#: src/views/widgets/SettingsDialog.qml:224
+#: src/views/widgets/SettingsDialog.qml:241
 #, kde-format
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: src/views/widgets/SettingsDialog.qml:228
+#: src/views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid "Configure JavaScript behaviour."
 msgstr "Aseta JavaScriptin toiminta."
 
-#: src/views/widgets/SettingsDialog.qml:250
+#: src/views/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Javascript Enabled"
 msgstr "JavaScript käytössä"
 
-#: src/views/widgets/SettingsDialog.qml:251
+#: src/views/widgets/SettingsDialog.qml:248
 #, kde-format
 msgid "Enables the running of JavaScript programs."
 msgstr "Sallii JavaScript-ohjelmien suorittamisen."
 
-#: src/views/widgets/SettingsDialog.qml:264
+#: src/views/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Javascript Can Access Clipboard"
 msgstr "JavaScript saa käyttää leikepöytää"
 
-#: src/views/widgets/SettingsDialog.qml:265
+#: src/views/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr "Sallii JavaScript-ohjelmien lukea ja kirjoittaa leikepöytää."
 
-#: src/views/widgets/SettingsDialog.qml:278
+#: src/views/widgets/SettingsDialog.qml:275
 #, kde-format
 msgid "Javascript Can Paste"
 msgstr "JavaScript voi liittää leikepöydältä"
 
-#: src/views/widgets/SettingsDialog.qml:279
+#: src/views/widgets/SettingsDialog.qml:276
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
 msgstr "Sallii JavaScriptin execCommand(leikepöytä)-metodin"
 
-#: src/views/widgets/SettingsDialog.qml:292
+#: src/views/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
 msgstr "Salli JavaScriptin aktivoida ikkunoita"
 
-#: src/views/widgets/SettingsDialog.qml:293
+#: src/views/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
 msgstr "Salli JavaScriptin window.focus()-metodi."
 
-#: src/views/widgets/SettingsDialog.qml:310
-#: src/views/widgets/SettingsDialog.qml:326
+#: src/views/widgets/SettingsDialog.qml:307
+#: src/views/widgets/SettingsDialog.qml:323
 #, kde-format
 msgid "Security & Privacy"
 msgstr "Tietoturva ja yksityisyys"
 
-#: src/views/widgets/SettingsDialog.qml:311
+#: src/views/widgets/SettingsDialog.qml:308
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
 msgstr ""
 "Aseta muokkaimen ulkoasu ja tuntuma. Asetuksia käytetään koko sovelluksessa"
 
-#: src/views/widgets/SettingsDialog.qml:332
+#: src/views/widgets/SettingsDialog.qml:329
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
 msgstr "Salli paikannus turvattomille lähteille"
 
-#: src/views/widgets/SettingsDialog.qml:333
+#: src/views/widgets/SettingsDialog.qml:330
 #, kde-format
 msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
@@ -513,12 +513,12 @@ msgstr ""
 "Vain turvalliset lähteet kuten https ovat voineet pyytää "
 "paikannusominaisuutta."
 
-#: src/views/widgets/SettingsDialog.qml:346
+#: src/views/widgets/SettingsDialog.qml:343
 #, kde-format
 msgid "Allow Running Insecure Content"
 msgstr "Salli turvattoman sisällön suorittaminen"
 
-#: src/views/widgets/SettingsDialog.qml:347
+#: src/views/widgets/SettingsDialog.qml:344
 #, kde-format
 msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
@@ -527,12 +527,12 @@ msgstr ""
 "https-sivut eivät oletusarvoisesti saa käyttää JavaScriptiä, CSS:ää, "
 "liitännäisiä tai verkkopistokkeita http-osoitteista."
 
-#: src/views/widgets/SettingsDialog.qml:361
+#: src/views/widgets/SettingsDialog.qml:358
 #, kde-format
 msgid "DNS Prefetch Enabled"
 msgstr "DNS-esinouto käytössä"
 
-#: src/views/widgets/SettingsDialog.qml:362
+#: src/views/widgets/SettingsDialog.qml:359
 #, kde-format
 msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
@@ -541,45 +541,45 @@ msgstr ""
 "Ottaa käyttöön HTML-linkkien DNS-tietueiden spekulatiivisen esinoudon ennen "
 "niiden aktivoimista."
 
-#: src/views/widgets/SettingsDialog.qml:375
+#: src/views/widgets/SettingsDialog.qml:372
 #, kde-format
 msgid "Local Content Can Access File Urls"
 msgstr "Paikallinen sisältö saa käyttää tiedostoverkko-osoitteita"
 
-#: src/views/widgets/SettingsDialog.qml:376
+#: src/views/widgets/SettingsDialog.qml:373
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
 "Sallii paikallisesti ladattujen tiedostojen käyttää muita paikallisia verkko-"
 "osoitteita."
 
-#: src/views/widgets/SettingsDialog.qml:389
+#: src/views/widgets/SettingsDialog.qml:386
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
 msgstr "Paikallinen sisältö saa käyttää etäverkko-osoitteita"
 
-#: src/views/widgets/SettingsDialog.qml:390
+#: src/views/widgets/SettingsDialog.qml:387
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
 msgstr ""
 "Sallii paikallisesti ladattujen tiedostojen käyttää etäverkko-osoitteita."
 
-#: src/views/widgets/SettingsDialog.qml:403
+#: src/views/widgets/SettingsDialog.qml:400
 #, kde-format
 msgid "Local Storage"
 msgstr "Paikallinen tallennustila"
 
-#: src/views/widgets/SettingsDialog.qml:404
+#: src/views/widgets/SettingsDialog.qml:401
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
 msgstr "Ottaa käyttöön HTML 5:n paikallisen tallennustilan tuen."
 
-#: src/views/widgets/SettingsDialog.qml:417
+#: src/views/widgets/SettingsDialog.qml:414
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
 msgstr "Vain julkisten liitäntöjen WebRTC"
 
-#: src/views/widgets/SettingsDialog.qml:418
+#: src/views/widgets/SettingsDialog.qml:415
 #, kde-format
 msgid ""
 "Limits WebRTC to public IP addresses only. When disabled WebRTC may also use "
