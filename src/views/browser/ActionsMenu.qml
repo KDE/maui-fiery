@@ -1,10 +1,10 @@
-import QtQuick 2.14
-import QtQml 2.12
-import QtQuick.Controls 2.13
-import QtQuick.Layouts 1.3
+import QtQuick
+import QtQml
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import QtWebEngine 1.10
-import org.mauikit.controls 1.3 as Maui
+import QtWebEngine
+import org.mauikit.controls as Maui
 
 Maui.ContextualMenu
 {

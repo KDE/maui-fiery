@@ -20,8 +20,8 @@ Maui.SplitViewItem
     height: ListView.view.height
     width:  ListView.view.width
 
-    Maui.TabViewInfo.tabTitle: title
-    Maui.TabViewInfo.tabToolTipText:  _webView.url
+    Maui.Controls.title: title
+    Maui.Controls.toolTipText:  _webView.url
 
     ActionsMenu
     {
