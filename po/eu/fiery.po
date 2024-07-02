@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2024-07-02 01:44+0000\n"
 "PO-Revision-Date: 2023-07-21 12:54+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -55,34 +55,34 @@ msgstr "Fitxategi hau zama-jaitsi eta gorde nahi duzu?"
 msgid "Accept"
 msgstr "Onartu"
 
-#: src/views/AppView.qml:43
+#: src/views/AppView.qml:42
 #, kde-format
 msgid "Home"
 msgstr "Etxea"
 
-#: src/views/AppView.qml:51
+#: src/views/AppView.qml:50
 #, kde-format
 msgid "Recent"
 msgstr "Azken aldikoa"
 
-#: src/views/AppView.qml:59 src/views/AppView.qml:99
+#: src/views/AppView.qml:58 src/views/AppView.qml:98
 #: src/views/browser/BrowserView.qml:435
 #: src/views/widgets/SettingsDialog.qml:134
 #, kde-format
 msgid "Downloads"
 msgstr "Zama-jaitsita"
 
-#: src/views/AppView.qml:100
+#: src/views/AppView.qml:99
 #, kde-format
 msgid "Your downloads will be listed in here."
 msgstr "Zuk zama-jaitsitakoak hemen zerrendatuko dira."
 
-#: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
+#: src/views/AppView.qml:121 src/views/browser/ActionsMenu.qml:200
 #, kde-format
 msgid "Pause"
 msgstr "Eten"
 
-#: src/views/AppView.qml:130
+#: src/views/AppView.qml:129
 #, kde-format
 msgid "Continue"
 msgstr "Jarraitu"

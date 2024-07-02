@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2024-07-02 01:44+0000\n"
 "PO-Revision-Date: 2024-06-23 10:03+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -52,34 +52,34 @@ msgstr "Quere descargar e gardar o ficheiro?"
 msgid "Accept"
 msgstr "Aceptar"
 
-#: src/views/AppView.qml:43
+#: src/views/AppView.qml:42
 #, kde-format
 msgid "Home"
 msgstr "Inicio"
 
-#: src/views/AppView.qml:51
+#: src/views/AppView.qml:50
 #, kde-format
 msgid "Recent"
 msgstr "Recente"
 
-#: src/views/AppView.qml:59 src/views/AppView.qml:99
+#: src/views/AppView.qml:58 src/views/AppView.qml:98
 #: src/views/browser/BrowserView.qml:435
 #: src/views/widgets/SettingsDialog.qml:134
 #, kde-format
 msgid "Downloads"
 msgstr "Descargas"
 
-#: src/views/AppView.qml:100
+#: src/views/AppView.qml:99
 #, kde-format
 msgid "Your downloads will be listed in here."
 msgstr "Aquí listaranse as súas descargas."
 
-#: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
+#: src/views/AppView.qml:121 src/views/browser/ActionsMenu.qml:200
 #, kde-format
 msgid "Pause"
 msgstr "Pausar"
 
-#: src/views/AppView.qml:130
+#: src/views/AppView.qml:129
 #, kde-format
 msgid "Continue"
 msgstr "Continuar"

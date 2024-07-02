@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2024-07-02 01:44+0000\n"
 "PO-Revision-Date: 2023-06-05 11:48+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -52,34 +52,34 @@ msgstr "Přejete si stáhnout a uložit tento soubor?"
 msgid "Accept"
 msgstr "Přijmout"
 
-#: src/views/AppView.qml:43
+#: src/views/AppView.qml:42
 #, kde-format
 msgid "Home"
 msgstr "Domů"
 
-#: src/views/AppView.qml:51
+#: src/views/AppView.qml:50
 #, kde-format
 msgid "Recent"
 msgstr "Nedávné"
 
-#: src/views/AppView.qml:59 src/views/AppView.qml:99
+#: src/views/AppView.qml:58 src/views/AppView.qml:98
 #: src/views/browser/BrowserView.qml:435
 #: src/views/widgets/SettingsDialog.qml:134
 #, kde-format
 msgid "Downloads"
 msgstr "Stahování"
 
-#: src/views/AppView.qml:100
+#: src/views/AppView.qml:99
 #, kde-format
 msgid "Your downloads will be listed in here."
 msgstr ""
 
-#: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
+#: src/views/AppView.qml:121 src/views/browser/ActionsMenu.qml:200
 #, kde-format
 msgid "Pause"
 msgstr "Pozastavit"
 
-#: src/views/AppView.qml:130
+#: src/views/AppView.qml:129
 #, kde-format
 msgid "Continue"
 msgstr "Pokračovat"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-06 01:47+0000\n"
+"POT-Creation-Date: 2024-07-02 01:44+0000\n"
 "PO-Revision-Date: 2023-03-12 10:31+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -52,34 +52,34 @@ msgstr ""
 msgid "Accept"
 msgstr ""
 
-#: src/views/AppView.qml:43
+#: src/views/AppView.qml:42
 #, kde-format
 msgid "Home"
 msgstr "Domov"
 
-#: src/views/AppView.qml:51
+#: src/views/AppView.qml:50
 #, kde-format
 msgid "Recent"
 msgstr "Nedávne"
 
-#: src/views/AppView.qml:59 src/views/AppView.qml:99
+#: src/views/AppView.qml:58 src/views/AppView.qml:98
 #: src/views/browser/BrowserView.qml:435
 #: src/views/widgets/SettingsDialog.qml:134
 #, kde-format
 msgid "Downloads"
 msgstr "Sťahovania"
 
-#: src/views/AppView.qml:100
+#: src/views/AppView.qml:99
 #, kde-format
 msgid "Your downloads will be listed in here."
 msgstr ""
 
-#: src/views/AppView.qml:122 src/views/browser/ActionsMenu.qml:200
+#: src/views/AppView.qml:121 src/views/browser/ActionsMenu.qml:200
 #, kde-format
 msgid "Pause"
 msgstr "Pozastaviť"
 
-#: src/views/AppView.qml:130
+#: src/views/AppView.qml:129
 #, kde-format
 msgid "Continue"
 msgstr ""
