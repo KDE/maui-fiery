@@ -25,7 +25,7 @@ Item
     readonly property alias browser : _splitView.currentItem
 
     Keys.enabled: true
-    Keys.onPressed:
+    Keys.onPressed: (event) =>
     {
         if(event.key === Qt.Key_F3)
         {

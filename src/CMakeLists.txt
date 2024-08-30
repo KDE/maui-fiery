@@ -16,15 +16,27 @@ set(fiery_SRCS
     controllers/surf.cpp
     controllers/fierywebprofile.cpp)
 
-set(fiery_ASSETS
-    assets/img_assets.qrc)
+qt_add_resources(fiery_ASSETS
+    assets/img_assets.qrc
+    assets.qrc)
 
-qt_add_resources(fiery_QML_QRC qml.qrc)
-
-add_executable(${PROJECT_NAME}
+qt_add_executable(${PROJECT_NAME}
     ${fiery_SRCS}
-    ${fiery_QML_QRC}
     ${fiery_ASSETS})
+
+qt_add_qml_module(${PROJECT_NAME} URI app.maui.fiery
+    NO_PLUGIN
+    QML_FILES
+    main.qml
+    views/widgets/SettingsDialog.qml
+    views/browser/BrowserView.qml
+    views/history/HistoryView.qml
+    views/browser/BrowserLayout.qml
+    views/browser/Browser.qml
+    views/widgets/NavigationBar.qml
+    views/browser/ActionsMenu.qml
+    views/home/HomeView.qml
+    views/AppView.qml)
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
