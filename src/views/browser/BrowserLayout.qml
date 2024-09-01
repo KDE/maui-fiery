@@ -26,42 +26,42 @@ Item
 
     Keys.enabled: true
     Keys.onPressed: (event) =>
+                    {
+                        if(event.key === Qt.Key_F3)
+                        {
+                            if(control.count === 2)
+                            {
+                                pop()
+                                return
+                            }//close the inactive split
+
+                            split("")
+                            event.accepted = true
+                        }
+
+                        if((event.key === Qt.Key_Space) && (event.modifiers & Qt.ControlModifier))
+                        {
+                            tabView.findTab()
+                            event.accepted = true
+                        }
+
+
+                        if(event.key === Qt.Key_F4)
+                        {
+                            control.terminalVisible = !control.terminalVisible
+                            event.accepted = true
+                        }
+                    }
+
+    Maui.SplitView
     {
-        if(event.key === Qt.Key_F3)
-        {
-            if(control.count === 2)
-            {
-                pop()
-                return
-            }//close the inactive split
+        id: _splitView
 
-            split("")
-            event.accepted = true
-        }
+        anchors.fill: parent
+        orientation: Qt.Horizontal
 
-        if((event.key === Qt.Key_Space) && (event.modifiers & Qt.ControlModifier))
-        {
-            tabView.findTab()
-            event.accepted = true
-        }
-
-
-        if(event.key === Qt.Key_F4)
-        {
-            control.terminalVisible = !control.terminalVisible
-            event.accepted = true
-        }
+        Component.onCompleted: split(control.url)
     }
-
-        Maui.SplitView
-        {
-            id: _splitView
-
-            anchors.fill: parent
-            orientation: Qt.Horizontal
-
-            Component.onCompleted: split(control.url)
-        }
 
     Component
     {
@@ -74,7 +74,7 @@ Item
 
     function split(path)
     {
-               if(_splitView.count === 2)
+        if(_splitView.count === 2)
         {
             return
         }
