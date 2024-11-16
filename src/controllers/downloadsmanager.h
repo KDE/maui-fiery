@@ -3,9 +3,9 @@
 #include <QObject>
 
 #include "models/downloadsmodel.h"
+#include <QWebEngineDownloadRequest>
 
-class QQuickWebEngineDownloadRequest;
-using DownloadItem = QQuickWebEngineDownloadRequest;
+using DownloadItem = QWebEngineDownloadRequest;
 
 class DownloadsManager : public QObject
 {
@@ -41,6 +41,6 @@ private:
     ~DownloadsManager();
 
 Q_SIGNALS:
-    void newDownload(QVariant download);
+    void newDownload(DownloadItem *download);
 
 };

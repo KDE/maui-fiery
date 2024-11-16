@@ -4,9 +4,9 @@
 #include <QQuickItem>
 #include <QQuickWebEngineProfile>
 #include <QWebEngineUrlRequestInterceptor>
+#include <QWebEngineDownloadRequest>
 
-class QQuickWebEngineDownloadRequest;
-using DownloadItem = QQuickWebEngineDownloadRequest;
+using DownloadItem = QWebEngineDownloadRequest;
 
 class QWebEngineNotification;
 class QQuickItem;
@@ -30,7 +30,7 @@ Q_SIGNALS:
 
 private:
 
-    void handleDownload(DownloadItem *downloadItem);
+    void handleDownload(QQuickWebEngineDownloadRequest *downloadItem);
     void handleDownloadFinished(DownloadItem *downloadItem);
     void showNotification(QWebEngineNotification *webNotification);
 

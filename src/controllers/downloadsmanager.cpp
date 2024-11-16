@@ -2,8 +2,6 @@
 #include <QDebug>
 #include <QUrl>
 
-#include <private/qquickwebenginedownloadrequest_p.h>
-
 DownloadsManager::DownloadsManager(QObject *parent) : QObject(parent)
     ,m_model(new DownloadsModel(this))
 {
@@ -20,7 +18,7 @@ void DownloadsManager::add(DownloadItem *download)
 {
     qDebug() << "ADD NEW DOWNLOAD";
     m_downloads << download;
-    Q_EMIT newDownload(QVariant::fromValue(download));
+    Q_EMIT newDownload(download);
 }
 
 void DownloadsManager::remove(int index)

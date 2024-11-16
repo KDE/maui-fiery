@@ -87,6 +87,23 @@ Maui.ApplicationWindow
         anchors.fill: parent
     }
 
+    Action
+    {
+        id: _openDownloadAction
+        property url url
+        text: i18n("Open")
+        onTriggered: ()=> { Qt.openUrlExternally(url)}
+    }
+
+    Action
+    {
+        id: _acceptDownloadAction
+        property var download
+        text: i18n("Accept")
+        onTriggered: () =>{ _acceptDownloadAction.download.resume() }
+
+    }
+
     property WebEngineProfile profile: Fiery.FieryWebProfile
     {
         //            httpUserAgent: tabs.currentItem.userAgent.userAgent
@@ -96,11 +113,15 @@ Maui.ApplicationWindow
         //            questionLoader: rootPage.questionLoader
         //            urlInterceptor: typeof AdblockUrlInterceptor !== "undefined" && AdblockUrlInterceptor
 
-        onDownloadFinished:
+        onDownloadFinished: (download) =>
         {
             switch(download.state)
             {
-            case WebEngineDownloadItem.DownloadCompleted: notify("dialog-warning", i18n("Download Finished"), i18n("File has been saved."), ()=> {console.log(download.downloadFileName)}, i18n("Open"))
+                case WebEngineDownloadRequest.DownloadCompleted:
+            {
+                _openDownloadAction.url = "file://"+download.downloadDirectory+"/"+download.downloadFileName
+                notify("dialog-warning", i18n("Download Finished"), i18n("File has been saved."), [_openDownloadAction])
+            }
             }
         }
 
@@ -116,7 +137,8 @@ Maui.ApplicationWindow
         target: Fiery.DownloadsManager
         function onNewDownload(download)
         {
-            root.notify("dialog-question", download.downloadFileName, i18n("Do you want to download and save this file?"),  () =>{ download.resume() }, i18n("Accept"))
+            _acceptDownloadAction.download = download
+            root.notify("dialog-question", download.downloadFileName, i18n("Do you want to download and save this file?"), [_acceptDownloadAction])
         }
     }
 

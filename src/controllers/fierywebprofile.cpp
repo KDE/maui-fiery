@@ -5,10 +5,15 @@
 #include <QWebEngineNotification>
 
 #include <QWebEngineUrlRequestInterceptor>
+#include <QWebEngineDownloadRequest>
 
 #include "downloadsmanager.h"
 
-#include <private/qquickwebenginedownloadrequest_p.h>
+class QQuickWebEngineDownloadRequest : public DownloadItem
+{
+};
+
+
 
 FieryWebProfile::FieryWebProfile(QObject *parent)
     : QQuickWebEngineProfile{parent}
@@ -24,12 +29,14 @@ QWebEngineUrlRequestInterceptor *FieryWebProfile::urlInterceptor() const
     return m_urlInterceptor;
 }
 
-void FieryWebProfile::handleDownload(DownloadItem *downloadItem)
+void FieryWebProfile::handleDownload(QQuickWebEngineDownloadRequest *downloadItem)
 {
+        DownloadItem *download = qobject_cast<DownloadItem *>(downloadItem);
+
     qDebug() << "GOT TO DOWNLOAD HANDLE" << downloadItem->url();
 
-    downloadItem->accept();
-    downloadItem->pause();
+    download->accept();
+    download->pause();
 
     DownloadsManager::instance().add(downloadItem);
 }

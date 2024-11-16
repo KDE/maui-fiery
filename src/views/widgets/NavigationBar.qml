@@ -45,5 +45,4 @@ Maui.TabViewButton
         visible: webView.loading
 
     }
-
 }

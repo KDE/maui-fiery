@@ -6,13 +6,13 @@
 #include <QMimeDatabase>
 #include <QDir>
 
-#include <private/qquickwebenginedownloadrequest_p.h>
+#include <QWebEngineDownloadRequest>
 
 DownloadsModel::DownloadsModel(DownloadsManager *parent) : QAbstractListModel(parent)
     ,m_manager(parent)
 {
 
-    connect(m_manager, &DownloadsManager::newDownload, [this](QVariant item)
+    connect(m_manager, &DownloadsManager::newDownload, [this](DownloadItem *item)
             {
                 beginResetModel();
                 //                qDebug() << "RESET DOWNLOAD MODEL FOR" << item->url();
