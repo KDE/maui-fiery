@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-02 01:44+0000\n"
+"POT-Creation-Date: 2024-11-18 01:56+0000\n"
 "PO-Revision-Date: 2023-05-23 09:03+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -28,30 +28,30 @@ msgstr "Навігація і упорядковування подорожей 
 msgid "Developer"
 msgstr "Розробник"
 
-#: src/main.qml:103
-#, kde-format
-msgid "Download Finished"
-msgstr "Отримання завершено"
-
-#: src/main.qml:103
-#, kde-format
-msgid "File has been saved."
-msgstr "Файл збережено."
-
-#: src/main.qml:103
+#: src/main.qml:94
 #, kde-format
 msgid "Open"
 msgstr "Відкрити"
 
-#: src/main.qml:119
-#, kde-format
-msgid "Do you want to download and save this file?"
-msgstr "Хочете отримати і зберегти цей файл?"
-
-#: src/main.qml:119
+#: src/main.qml:102
 #, kde-format
 msgid "Accept"
 msgstr "Прийняти"
+
+#: src/main.qml:123
+#, kde-format
+msgid "Download Finished"
+msgstr "Отримання завершено"
+
+#: src/main.qml:123
+#, kde-format
+msgid "File has been saved."
+msgstr "Файл збережено."
+
+#: src/main.qml:141
+#, kde-format
+msgid "Do you want to download and save this file?"
+msgstr "Хочете отримати і зберегти цей файл?"
 
 #: src/views/AppView.qml:42
 #, kde-format

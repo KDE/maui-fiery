@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-02 01:44+0000\n"
+"POT-Creation-Date: 2024-11-18 01:56+0000\n"
 "PO-Revision-Date: 2023-03-12 10:31+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -25,31 +25,31 @@ msgstr ""
 msgid "Developer"
 msgstr "Vývojár"
 
-#: src/main.qml:103
-#, fuzzy, kde-format
-#| msgid "Downloads"
-msgid "Download Finished"
-msgstr "Sťahovania"
-
-#: src/main.qml:103
-#, kde-format
-msgid "File has been saved."
-msgstr ""
-
-#: src/main.qml:103
+#: src/main.qml:94
 #, fuzzy, kde-format
 #| msgid "Open Link"
 msgid "Open"
 msgstr "Otvoriť odkaz"
 
-#: src/main.qml:119
-#, kde-format
-msgid "Do you want to download and save this file?"
-msgstr ""
-
-#: src/main.qml:119
+#: src/main.qml:102
 #, kde-format
 msgid "Accept"
+msgstr ""
+
+#: src/main.qml:123
+#, fuzzy, kde-format
+#| msgid "Downloads"
+msgid "Download Finished"
+msgstr "Sťahovania"
+
+#: src/main.qml:123
+#, kde-format
+msgid "File has been saved."
+msgstr ""
+
+#: src/main.qml:141
+#, kde-format
+msgid "Do you want to download and save this file?"
 msgstr ""
 
 #: src/views/AppView.qml:42

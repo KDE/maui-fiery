@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-02 01:44+0000\n"
+"POT-Creation-Date: 2024-11-18 01:56+0000\n"
 "PO-Revision-Date: 2023-07-21 12:54+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -30,30 +30,30 @@ msgstr "Amarauna arakatu eta antolatu."
 msgid "Developer"
 msgstr "Garatzailea"
 
-#: src/main.qml:103
-#, kde-format
-msgid "Download Finished"
-msgstr "Zama-jaistea amaitu da"
-
-#: src/main.qml:103
-#, kde-format
-msgid "File has been saved."
-msgstr "Fitxategia gorde da."
-
-#: src/main.qml:103
+#: src/main.qml:94
 #, kde-format
 msgid "Open"
 msgstr "Ireki"
 
-#: src/main.qml:119
-#, kde-format
-msgid "Do you want to download and save this file?"
-msgstr "Fitxategi hau zama-jaitsi eta gorde nahi duzu?"
-
-#: src/main.qml:119
+#: src/main.qml:102
 #, kde-format
 msgid "Accept"
 msgstr "Onartu"
+
+#: src/main.qml:123
+#, kde-format
+msgid "Download Finished"
+msgstr "Zama-jaistea amaitu da"
+
+#: src/main.qml:123
+#, kde-format
+msgid "File has been saved."
+msgstr "Fitxategia gorde da."
+
+#: src/main.qml:141
+#, kde-format
+msgid "Do you want to download and save this file?"
+msgstr "Fitxategi hau zama-jaitsi eta gorde nahi duzu?"
 
 #: src/views/AppView.qml:42
 #, kde-format

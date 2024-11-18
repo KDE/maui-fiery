@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-02 01:44+0000\n"
+"POT-Creation-Date: 2024-11-18 01:56+0000\n"
 "PO-Revision-Date: 2023-05-24 12:37+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -27,30 +27,30 @@ msgstr "Bladeren in het web en het organiseren."
 msgid "Developer"
 msgstr "Ontwikkelaar"
 
-#: src/main.qml:103
-#, kde-format
-msgid "Download Finished"
-msgstr "Download voltooid"
-
-#: src/main.qml:103
-#, kde-format
-msgid "File has been saved."
-msgstr "Bestand is opgeslagen."
-
-#: src/main.qml:103
+#: src/main.qml:94
 #, kde-format
 msgid "Open"
 msgstr "Openen"
 
-#: src/main.qml:119
-#, kde-format
-msgid "Do you want to download and save this file?"
-msgstr "Wil u dit bestand downloaden en opslaan?"
-
-#: src/main.qml:119
+#: src/main.qml:102
 #, kde-format
 msgid "Accept"
 msgstr "Accepteren"
+
+#: src/main.qml:123
+#, kde-format
+msgid "Download Finished"
+msgstr "Download voltooid"
+
+#: src/main.qml:123
+#, kde-format
+msgid "File has been saved."
+msgstr "Bestand is opgeslagen."
+
+#: src/main.qml:141
+#, kde-format
+msgid "Do you want to download and save this file?"
+msgstr "Wil u dit bestand downloaden en opslaan?"
 
 #: src/views/AppView.qml:42
 #, kde-format

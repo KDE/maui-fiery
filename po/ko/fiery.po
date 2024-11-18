@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-02 01:44+0000\n"
+"POT-Creation-Date: 2024-11-18 01:56+0000\n"
 "PO-Revision-Date: 2023-07-26 00:30+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -27,30 +27,30 @@ msgstr "웹을 탐색하고 정리합니다."
 msgid "Developer"
 msgstr "개발자"
 
-#: src/main.qml:103
-#, kde-format
-msgid "Download Finished"
-msgstr "다운로드 완료됨"
-
-#: src/main.qml:103
-#, kde-format
-msgid "File has been saved."
-msgstr "파일을 저장했습니다."
-
-#: src/main.qml:103
+#: src/main.qml:94
 #, kde-format
 msgid "Open"
 msgstr "열기"
 
-#: src/main.qml:119
-#, kde-format
-msgid "Do you want to download and save this file?"
-msgstr "이 파일을 다운로드하여 저장하시겠습니까?"
-
-#: src/main.qml:119
+#: src/main.qml:102
 #, kde-format
 msgid "Accept"
 msgstr "수락"
+
+#: src/main.qml:123
+#, kde-format
+msgid "Download Finished"
+msgstr "다운로드 완료됨"
+
+#: src/main.qml:123
+#, kde-format
+msgid "File has been saved."
+msgstr "파일을 저장했습니다."
+
+#: src/main.qml:141
+#, kde-format
+msgid "Do you want to download and save this file?"
+msgstr "이 파일을 다운로드하여 저장하시겠습니까?"
 
 #: src/views/AppView.qml:42
 #, kde-format
