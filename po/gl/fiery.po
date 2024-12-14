@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-18 01:56+0000\n"
-"PO-Revision-Date: 2024-06-23 10:03+0200\n"
+"PO-Revision-Date: 2024-12-13 21:22+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.1\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: src/main.cpp:36
 #, kde-format
@@ -312,7 +312,7 @@ msgstr "Abrir as lapelas anteriores."
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
-msgstr "Ir ao separador de xanela"
+msgstr "Ir á lapela"
 
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
