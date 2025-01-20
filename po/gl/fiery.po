@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the maui-fiery package.
 #
-# SPDX-FileCopyrightText: 2024 Adrián Chaves (Gallaecio)
+# SPDX-FileCopyrightText: 2024, 2025 Adrián Chaves (Gallaecio)
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-18 01:56+0000\n"
-"PO-Revision-Date: 2024-12-13 21:22+0100\n"
+"PO-Revision-Date: 2025-01-19 11:51+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: src/main.cpp:36
 #, kde-format
@@ -337,7 +337,7 @@ msgstr "Auditoría de hiperligazón"
 #: src/views/widgets/SettingsDialog.qml:62
 #, kde-format
 msgid "Enables support for the ping attribute for hyperlinks."
-msgstr "Activa o atributo de sonar de hiperligazóns."
+msgstr "Activa a compatibilidade co atributo de sonar de hiperligazóns."
 
 #: src/views/widgets/SettingsDialog.qml:76
 #: src/views/widgets/SettingsDialog.qml:106
