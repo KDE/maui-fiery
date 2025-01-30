@@ -544,7 +544,10 @@ Maui.Page
 
         if(validURL(path))
         {
+          if(protocolURL(path))
             control.currentBrowser.url = path
+          else
+            control.currentBrowser.url = 'http://'+path
         }else
         {
             control.currentBrowser.url = appSettings.searchEnginePage+path
@@ -561,6 +564,12 @@ Maui.Page
                                  '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
                                  '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
                                  '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+        return !!pattern.test(str);
+    }
+
+    function protocolURL(str)
+    {
+        var pattern = new RegExp('^https?:\\/\\/');
         return !!pattern.test(str);
     }
 
