@@ -51,9 +51,9 @@ Maui.SplitViewItem
 
         onLoadingChanged:
         {
-            if(loadRequest.status === WebEngineView.LoadSucceededStatus)
+            if(loadingInfo.status === WebEngineView.LoadSucceededStatus)
             {
-                Fiery.History.appendUrl(control.url, control.title, control.iconName)
+                Fiery.History.appendUrl(control.url, control.title)
             }
         }
 
