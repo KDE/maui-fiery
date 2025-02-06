@@ -22,6 +22,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="it">Fiery</name>
   <name xml:lang="ka">Fiery</name>
   <name xml:lang="ko">Fiery</name>
+  <name xml:lang="lv">Fiery</name>
   <name xml:lang="nl">Fiery</name>
   <name xml:lang="pl">Fiery</name>
   <name xml:lang="pt">Fiery</name>
@@ -49,6 +50,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="it">Browser web</summary>
   <summary xml:lang="ka">ვებ-ბრაუზერი</summary>
   <summary xml:lang="ko">웹 브라우저</summary>
+  <summary xml:lang="lv">Interneta pārlūks</summary>
   <summary xml:lang="nl">Webbrowser</summary>
   <summary xml:lang="pl">Przeglądarka sieciowa</summary>
   <summary xml:lang="pt">Navegador Web</summary>
@@ -76,6 +78,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="it">Fiery è un browser web convergente.</p>
     <p xml:lang="ka">Fiery კონვერგენტული ბრაუზერია.</p>
     <p xml:lang="ko">Fiery는 올인원 웹 브라우저입니다.</p>
+    <p xml:lang="lv">„Fiery“ ir konverģents tīmekļa pārlūks.</p>
     <p xml:lang="nl">Fiery is een convergente webbrowser.</p>
     <p xml:lang="pl">Fiery to zbieżna przeglądarka sieciowa.</p>
     <p xml:lang="pt">O Fiery é um navegador Web convergente.</p>
@@ -109,6 +112,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="it">Fiery</caption>
       <caption xml:lang="ka">Fiery</caption>
       <caption xml:lang="ko">Fiery</caption>
+      <caption xml:lang="lv">Fiery</caption>
       <caption xml:lang="nl">Fiery</caption>
       <caption xml:lang="pl">Fiery</caption>
       <caption xml:lang="pt">Fiery</caption>
