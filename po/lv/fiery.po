@@ -1,0 +1,592 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the maui-fiery package.
+#
+# SPDX-FileCopyrightText: 2025 Toms Trasuns <toms.trasuns@posteo.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-fiery\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-11-18 01:56+0000\n"
+"PO-Revision-Date: 2025-02-04 20:29+0200\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 24.12.1\n"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Browse and organize the web."
+msgstr "Pārlūkojiet un kārtojiet tīmekli."
+
+#: src/main.cpp:41
+#, kde-format
+msgid "Developer"
+msgstr "Izstrādātājs"
+
+#: src/main.qml:94
+#, kde-format
+msgid "Open"
+msgstr "Atvērt"
+
+#: src/main.qml:102
+#, kde-format
+msgid "Accept"
+msgstr "Pieņemt"
+
+#: src/main.qml:123
+#, kde-format
+msgid "Download Finished"
+msgstr "Lejupielāde ir pabeigta"
+
+#: src/main.qml:123
+#, kde-format
+msgid "File has been saved."
+msgstr "Datne ir saglabāta"
+
+#: src/main.qml:141
+#, kde-format
+msgid "Do you want to download and save this file?"
+msgstr "Vai vēlaties lejupielādēt un saglabāt šo datni?"
+
+#: src/views/AppView.qml:42
+#, kde-format
+msgid "Home"
+msgstr "Mājas"
+
+#: src/views/AppView.qml:50
+#, kde-format
+msgid "Recent"
+msgstr "Nesenās"
+
+#: src/views/AppView.qml:58 src/views/AppView.qml:98
+#: src/views/browser/BrowserView.qml:435
+#: src/views/widgets/SettingsDialog.qml:134
+#, kde-format
+msgid "Downloads"
+msgstr "Lejupielādēts"
+
+#: src/views/AppView.qml:99
+#, kde-format
+msgid "Your downloads will be listed in here."
+msgstr "Te būs redzamas jūsu lejupielādes"
+
+#: src/views/AppView.qml:121 src/views/browser/ActionsMenu.qml:200
+#, kde-format
+msgid "Pause"
+msgstr "Pauzēt"
+
+#: src/views/AppView.qml:129
+#, kde-format
+msgid "Continue"
+msgstr "Turpināt"
+
+#: src/views/browser/ActionsMenu.qml:43
+#, kde-format
+msgid "Paste"
+msgstr "Ielīmēt"
+
+#: src/views/browser/ActionsMenu.qml:56
+#, kde-format
+msgid "Translate"
+msgstr "Tulkot"
+
+#: src/views/browser/ActionsMenu.qml:67
+#, kde-format
+msgid "Select All"
+msgstr "Atlasīt visu"
+
+#: src/views/browser/ActionsMenu.qml:79
+#, kde-format
+msgid "Copy Text"
+msgstr "Kopēt tekstu"
+
+#: src/views/browser/ActionsMenu.qml:90
+#, kde-format
+msgid "Copy Link"
+msgstr "Kopēt saiti"
+
+#: src/views/browser/ActionsMenu.qml:101
+#, kde-format
+msgid "Open Link"
+msgstr "Atvērt saiti"
+
+#: src/views/browser/ActionsMenu.qml:112
+#, kde-format
+msgid "Open Link in Split View"
+msgstr "Atvērt saiti dalītā skatā"
+
+#: src/views/browser/ActionsMenu.qml:123
+#, kde-format
+msgid "Open Link in New Window"
+msgstr "Atvērt saiti jaunā logā"
+
+#: src/views/browser/ActionsMenu.qml:152
+#, kde-format
+msgid "Save Video"
+msgstr "Saglabāt video"
+
+#: src/views/browser/ActionsMenu.qml:160
+#, kde-format
+msgid "Open Video"
+msgstr "Atvērt video"
+
+#: src/views/browser/ActionsMenu.qml:160
+#, kde-format
+msgid "Open Audio"
+msgstr "Atvērt audio"
+
+#: src/views/browser/ActionsMenu.qml:171
+#, kde-format
+msgid "Save Image"
+msgstr "Saglabāt attēlu"
+
+#: src/views/browser/ActionsMenu.qml:179
+#, kde-format
+msgid "Copy Image"
+msgstr "Kopēt attēlu"
+
+#: src/views/browser/ActionsMenu.qml:187
+#, kde-format
+msgid "Open Image"
+msgstr "Atvērt attēlu"
+
+#: src/views/browser/ActionsMenu.qml:199
+#, kde-format
+msgid "Play"
+msgstr "Atskaņot"
+
+#: src/views/browser/ActionsMenu.qml:209
+#, kde-format
+msgid "Unmute"
+msgstr "Noņemt klusumu"
+
+#: src/views/browser/ActionsMenu.qml:210
+#, kde-format
+msgid "Mute"
+msgstr "Apklusināt"
+
+#: src/views/browser/ActionsMenu.qml:223
+#, kde-format
+msgid "Speed"
+msgstr "Ātrums"
+
+#: src/views/browser/ActionsMenu.qml:249
+#, kde-format
+msgid "Loop"
+msgstr "Atkārtot"
+
+#: src/views/browser/ActionsMenu.qml:258
+#, kde-format
+msgid "Exit fullscreen"
+msgstr "Iziet no pilnekrāna režīma"
+
+#: src/views/browser/ActionsMenu.qml:258
+#, kde-format
+msgid "Fullscreen"
+msgstr "Pilnekrāna režīms"
+
+#: src/views/browser/ActionsMenu.qml:273
+#, kde-format
+msgid "Hide controls"
+msgstr "Slēpt vadīklas"
+
+#: src/views/browser/ActionsMenu.qml:274
+#, kde-format
+msgid "Show controls"
+msgstr "Rādīt vadīklas"
+
+#: src/views/browser/Browser.qml:127
+#, kde-format
+msgid "Error"
+msgstr "Kļūda"
+
+#: src/views/browser/Browser.qml:127 src/views/browser/BrowserView.qml:217
+#, kde-format
+msgid "Start Browsing"
+msgstr "Sākt pārlūkošanu"
+
+#: src/views/browser/Browser.qml:128 src/views/browser/BrowserView.qml:218
+#, kde-format
+msgid "Enter a new URL or open a recent site."
+msgstr "Ierakstiet jaunu URL vai atveriet nesen atvērtu vietni."
+
+#: src/views/browser/BrowserView.qml:106
+#, kde-format
+msgid "Search or enter URL"
+msgstr "Meklējiet vai rakstiet URL adresi"
+
+#: src/views/browser/BrowserView.qml:149
+#, kde-format
+msgid "Search on default search engine"
+msgstr "Meklēt ar noklusējuma meklētāju"
+
+#: src/views/browser/BrowserView.qml:165
+#, kde-format
+msgid "Search on page."
+msgstr "Meklēt lapā."
+
+#: src/views/browser/BrowserView.qml:225
+#, kde-format
+msgid "Detach"
+msgstr "Atdalīt"
+
+#: src/views/browser/BrowserView.qml:294
+#, kde-format
+msgid "Toggle sidebar"
+msgstr "Pārslēgt sānu joslu"
+
+#: src/views/browser/BrowserView.qml:304
+#, kde-format
+msgid "Previous"
+msgstr "Iepriekšējais"
+
+#: src/views/browser/BrowserView.qml:311
+#, kde-format
+msgid "Next"
+msgstr "Nākamais"
+
+#: src/views/browser/BrowserView.qml:364
+#, kde-format
+msgid "Share"
+msgstr "Kopīgot"
+
+#: src/views/browser/BrowserView.qml:404
+#, kde-format
+msgid "New Tab"
+msgstr "Jauna cilne"
+
+#: src/views/browser/BrowserView.qml:411
+#, kde-format
+msgid "Incognito Tab"
+msgstr "Inkognito cilne"
+
+#: src/views/browser/BrowserView.qml:420
+#, kde-format
+msgid "Bookmarks"
+msgstr "Grāmatzīmes"
+
+#: src/views/browser/BrowserView.qml:427
+#, kde-format
+msgid "History"
+msgstr "Vēsture"
+
+#: src/views/browser/BrowserView.qml:445
+#, kde-format
+msgid "Find In Page"
+msgstr "Atrast lapā"
+
+#: src/views/browser/BrowserView.qml:455
+#, kde-format
+msgid "Settings"
+msgstr "Iestatījumi"
+
+#: src/views/browser/BrowserView.qml:462
+#, kde-format
+msgid "About"
+msgstr "Par"
+
+#: src/views/widgets/SettingsDialog.qml:13
+#, kde-format
+msgid "Navigation"
+msgstr "Navigācija"
+
+#: src/views/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Configure the app basic navigation features."
+msgstr "Konfigurēt programmas pamata navigācijas iespējas."
+
+#: src/views/widgets/SettingsDialog.qml:19
+#, kde-format
+msgid "Restore Session"
+msgstr "Atjaunot sesiju"
+
+#: src/views/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Open previous tabs."
+msgstr "Atvērt iepriekšējās cilnes."
+
+#: src/views/widgets/SettingsDialog.qml:33
+#, kde-format
+msgid "Switch to Tab"
+msgstr "Pārslēgties uz cilni"
+
+#: src/views/widgets/SettingsDialog.qml:34
+#, kde-format
+msgid "When opening a new link jump to the new tab."
+msgstr "Atverot jaunu saiti, pāriet uz cilni."
+
+#: src/views/widgets/SettingsDialog.qml:47
+#, kde-format
+msgid "Auto Load Images"
+msgstr "Automātiski ielādēt attēlus"
+
+#: src/views/widgets/SettingsDialog.qml:48
+#, kde-format
+msgid "Automatically loads images on web pages."
+msgstr "Automātiski ielādē tīmekļa vietņu attēlus."
+
+#: src/views/widgets/SettingsDialog.qml:61
+#, kde-format
+msgid "Hyperlink Auditing"
+msgstr "Hipersaišu auditēšana"
+
+#: src/views/widgets/SettingsDialog.qml:62
+#, kde-format
+msgid "Enables support for the ping attribute for hyperlinks."
+msgstr "Ieslēdz atbalstu hipersaišu pinga atribūtam"
+
+#: src/views/widgets/SettingsDialog.qml:76
+#: src/views/widgets/SettingsDialog.qml:106
+#, kde-format
+msgid "General"
+msgstr "Pamata"
+
+#: src/views/widgets/SettingsDialog.qml:77
+#, kde-format
+msgid "Configure global preferences."
+msgstr "Konfigurēt globālos iestatījumus."
+
+#: src/views/widgets/SettingsDialog.qml:89
+#: src/views/widgets/SettingsDialog.qml:173
+#, kde-format
+msgid "Features"
+msgstr "Iespējas"
+
+#: src/views/widgets/SettingsDialog.qml:90
+#, kde-format
+msgid "Configure the browser plugins and features."
+msgstr "Konfigurēt pārlūka spraudņus un iespējas."
+
+#: src/views/widgets/SettingsDialog.qml:110
+#, kde-format
+msgid "Home Page"
+msgstr "Mājaslapa"
+
+#: src/views/widgets/SettingsDialog.qml:111
+#, kde-format
+msgid "Page to load initially and default."
+msgstr "Sākumā ielādējamā un noklusējuma lapa."
+
+#: src/views/widgets/SettingsDialog.qml:122
+#, kde-format
+msgid "Search Engine"
+msgstr "Meklētājs"
+
+#: src/views/widgets/SettingsDialog.qml:123
+#, kde-format
+msgid "Engine to be use for default searching content."
+msgstr "Noklusējuma interneta meklētājs."
+
+#: src/views/widgets/SettingsDialog.qml:138
+#, kde-format
+msgid "Downloads Path"
+msgstr "Lejupielāžu ceļš"
+
+#: src/views/widgets/SettingsDialog.qml:139
+#, kde-format
+msgid "Pick a path where files will be saved."
+msgstr "Izvēlieties ceļu, kurā saglabāt datnes."
+
+#: src/views/widgets/SettingsDialog.qml:150
+#, kde-format
+msgid "Auto Save"
+msgstr "Saglabāt automātiski"
+
+#: src/views/widgets/SettingsDialog.qml:151
+#, kde-format
+msgid "Download files without asking."
+msgstr "Lejupielādēt datnes bez vaicāšanas."
+
+#: src/views/widgets/SettingsDialog.qml:179
+#, kde-format
+msgid "Accelerated 2D Canvas"
+msgstr "Paātrinātas 2D kanvas"
+
+#: src/views/widgets/SettingsDialog.qml:180
+#, kde-format
+msgid ""
+"Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
+"makes many painting operations faster, but slows down pixel access."
+msgstr ""
+"Norāda, vai HTML 5 2D kanvām ir jābūt „OpenGL“ kadru buferim. Tas paātrina "
+"daudzas zīmēšanas darbības, bet palēnina pikseļu piekļuvi."
+
+#: src/views/widgets/SettingsDialog.qml:193
+#, kde-format
+msgid "PDF Viewer"
+msgstr "PDF skatītājs"
+
+#: src/views/widgets/SettingsDialog.qml:194
+#, kde-format
+msgid ""
+"PDF documents will be opened in the internal PDF viewer instead of being "
+"downloaded."
+msgstr ""
+"PDF dokumentus programma atvērs iebūvētajā PDF skatītājā, bet ne "
+"lejupielādēs."
+
+#: src/views/widgets/SettingsDialog.qml:207
+#, kde-format
+msgid "Plugins Enabled"
+msgstr "Spraudņi ir ieslēgti"
+
+#: src/views/widgets/SettingsDialog.qml:208
+#, kde-format
+msgid "Enables support for Pepper plugins, such as the Flash player."
+msgstr "Ieslēdz atbalstu „Pepper“ spraudņiem, piemēram, „Flash“ spraudnim."
+
+#: src/views/widgets/SettingsDialog.qml:224
+#: src/views/widgets/SettingsDialog.qml:241
+#, kde-format
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: src/views/widgets/SettingsDialog.qml:225
+#, kde-format
+msgid "Configure JavaScript behaviour."
+msgstr "Konfigurēt „JavaScript“ uzvedību."
+
+#: src/views/widgets/SettingsDialog.qml:247
+#, kde-format
+msgid "Javascript Enabled"
+msgstr "„Javascript“ ir ieslēgts"
+
+#: src/views/widgets/SettingsDialog.qml:248
+#, kde-format
+msgid "Enables the running of JavaScript programs."
+msgstr "Ieslēdz „JavaScript“ programmu palaišanu."
+
+#: src/views/widgets/SettingsDialog.qml:261
+#, kde-format
+msgid "Javascript Can Access Clipboard"
+msgstr "„Javascript“ var piekļūt starpliktuvei"
+
+#: src/views/widgets/SettingsDialog.qml:262
+#, kde-format
+msgid "Allows JavaScript programs to read from or write to the clipboard."
+msgstr ""
+"Ļauj „JavaScript“ programmām nolasīt starpiktuves saturu un tajā rakstīt."
+
+#: src/views/widgets/SettingsDialog.qml:275
+#, kde-format
+msgid "Javascript Can Paste"
+msgstr "„Javascript“ var ielīmēt"
+
+#: src/views/widgets/SettingsDialog.qml:276
+#, kde-format
+msgid "Enables JavaScript execCommand(paste)."
+msgstr "Ieslēdz „JavaScript execCommand(paste)“."
+
+#: src/views/widgets/SettingsDialog.qml:289
+#, kde-format
+msgid "Allow Window Activation From JavaScript"
+msgstr "Atļaut logu aktivāciju no „JavaScript“"
+
+#: src/views/widgets/SettingsDialog.qml:290
+#, kde-format
+msgid "Allows the window.focus() method in JavaScript."
+msgstr "Ļauj „JavaScript“ „window.focus()“ metodi."
+
+#: src/views/widgets/SettingsDialog.qml:307
+#: src/views/widgets/SettingsDialog.qml:323
+#, kde-format
+msgid "Security & Privacy"
+msgstr "Drošība un privātums"
+
+#: src/views/widgets/SettingsDialog.qml:308
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+"Konfigurēt redaktora izskatu un darbību. Šie iestatījumi darbosies globāli"
+
+#: src/views/widgets/SettingsDialog.qml:329
+#, kde-format
+msgid "Allow Geolocation On Insecure Origins"
+msgstr "Ļoti ģeolokāciju nedrošiem avotiem"
+
+#: src/views/widgets/SettingsDialog.qml:330
+#, kde-format
+msgid ""
+"Only secure origins such as HTTPS have been able to request Geolocation "
+"features."
+msgstr "Ģeolokāciju var pieprasīt tikai droši avoti, piemēram, HTTPS."
+
+#: src/views/widgets/SettingsDialog.qml:343
+#, kde-format
+msgid "Allow Running Insecure Content"
+msgstr "Atļaut palaist nedrošu saturu"
+
+#: src/views/widgets/SettingsDialog.qml:344
+#, kde-format
+msgid ""
+"By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
+"from HTTP URLs."
+msgstr ""
+"Pēc noklusējuma HTTPS lapas nevar palaist JavaScript, CSS, spraudņus vai "
+"tīmekļa ligzdas no HTTP saitēm."
+
+#: src/views/widgets/SettingsDialog.qml:358
+#, kde-format
+msgid "DNS Prefetch Enabled"
+msgstr "Ieslēgt DNS priekšielādēšanu"
+
+#: src/views/widgets/SettingsDialog.qml:359
+#, kde-format
+msgid ""
+"Enables speculative prefetching of DNS records for HTML links before they "
+"are activated."
+msgstr ""
+"Ieslēdz DNS ierakstu spekulatīvu priekšielādēšanu HTML saitēm pirms tās "
+"atverat."
+
+#: src/views/widgets/SettingsDialog.qml:372
+#, kde-format
+msgid "Local Content Can Access File Urls"
+msgstr "Lokālais saturs var piekļūt datņu URL"
+
+#: src/views/widgets/SettingsDialog.qml:373
+#, kde-format
+msgid "Allows locally loaded documents to access other local URLs."
+msgstr "Atļauj lokāli ielādētiem dokumentiem piekļūt citām lokālām URL."
+
+#: src/views/widgets/SettingsDialog.qml:386
+#, kde-format
+msgid "Local Content Can Access Remote Urls"
+msgstr "Lokālais saturs var piekļūt attālām URL"
+
+#: src/views/widgets/SettingsDialog.qml:387
+#, kde-format
+msgid "Allows locally loaded documents to access remote URLs."
+msgstr "Ļauj lokāli ielādēt dokumentus, lai piekļūtu attālām URL."
+
+#: src/views/widgets/SettingsDialog.qml:400
+#, kde-format
+msgid "Local Storage"
+msgstr "Ielādēt krātuvi"
+
+#: src/views/widgets/SettingsDialog.qml:401
+#, kde-format
+msgid "Enables support for the HTML 5 local storage feature."
+msgstr "Ieslēdz atbalstu HTML 5 lokālās krātuves iespējai."
+
+#: src/views/widgets/SettingsDialog.qml:414
+#, kde-format
+msgid "WebRTC Public Interfaces Only"
+msgstr "Tikai „WebRTC“ publiskās saskarnes"
+
+#: src/views/widgets/SettingsDialog.qml:415
+#, kde-format
+msgid ""
+"Limits WebRTC to public IP addresses only. When disabled WebRTC may also use "
+"local network IP addresses, but remote hosts can also see your local network "
+"IP address."
+msgstr ""
+"„WebRTC“ ierobežo tikai līdz publiskām IP adresēm. Kad izslēgts „WebRTC“ var "
+"izmantot arī lokālā tīkla IP adreses, tomēr tādā gadījumā arī attālais "
+"resursdators var redzēt jūsu lokālo tīkla IP adresi."
