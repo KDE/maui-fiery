@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Fiery
+Name[ar]=ناري
 Name[ca]=Fiery
 Name[ca@valencia]=Fiery
 Name[cs]=Fiery
@@ -29,6 +30,7 @@ Name[uk]=Fiery
 Name[x-test]=xxFieryxx
 Name[zh_TW]=Fiery
 Comment=Web Browser and Manager
+Comment[ar]=متصفح الويب ومدير
 Comment[ca]=Navegador i gestor web
 Comment[ca@valencia]=Navegador i gestor web
 Comment[cs]=Webový prohlížeč a správce
@@ -69,6 +71,7 @@ Terminal=false
 Type=Application
 Categories=Qt;KDE;Network;WebBrowser;
 GenericName=Web Browser
+GenericName[ar]=متصفّح وبّ
 GenericName[ca]=Navegador web
 GenericName[ca@valencia]=Navegador web
 GenericName[cs]=Webový prohlížeč
