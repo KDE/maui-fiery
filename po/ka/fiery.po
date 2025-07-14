@@ -223,7 +223,7 @@ msgstr "მოძებნეთ ან შეიყვანეთ URL"
 #: src/views/browser/BrowserView.qml:149
 #, kde-format
 msgid "Search on default search engine"
-msgstr "ნაგულისხმებ საძიებო სისტემაში მოძებნა"
+msgstr "ნაგულისხმევ საძიებო სისტემაში მოძებნა"
 
 #: src/views/browser/BrowserView.qml:165
 #, kde-format
@@ -380,7 +380,7 @@ msgstr "ძებნის ძრავი"
 #: src/views/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Engine to be use for default searching content."
-msgstr "ნაგულისხმები ძებნის შემცველობისთვის გამოყენებული ძრავა."
+msgstr "ნაგულისხმევი ძებნის შემცველობისთვის გამოყენებული ძრავა."
 
 #: src/views/widgets/SettingsDialog.qml:138
 #, kde-format
@@ -527,7 +527,7 @@ msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
 "from HTTP URLs."
 msgstr ""
-"ნაგულისხმებად HTTPS გვერდებს JavasScript-ის გაშვება, CSS, დამატებების და "
+"ნაგულისხმევად HTTPS გვერდებს JavasScript-ის გაშვება, CSS, დამატებების და "
 "სოკეტების გამოძახება HTTP ბმულებიდან არ შეუძლია."
 
 #: src/views/widgets/SettingsDialog.qml:358
