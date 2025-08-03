@@ -1,13 +1,13 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the maui-fiery package.
 #
-# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-18 01:56+0000\n"
-"PO-Revision-Date: 2025-01-10 09:59+0200\n"
+"PO-Revision-Date: 2025-08-02 21:45+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 25.04.3\n"
 
 #: src/main.cpp:36
 #, kde-format
@@ -349,7 +349,7 @@ msgstr "כללי"
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Configure global preferences."
-msgstr "הגדרת העדפות כלליות."
+msgstr "הגדרת העדפות מקיפות."
 
 #: src/views/widgets/SettingsDialog.qml:89
 #: src/views/widgets/SettingsDialog.qml:173
@@ -499,7 +499,7 @@ msgstr "אבטחה ופרטיות"
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
-msgstr "הגדרת המראה והתחושה של העורך. ההגדרות חלות באופן כוללני"
+msgstr "הגדרת המראה והתחושה של העורך. ההגדרות חלות באופן מקיף"
 
 #: src/views/widgets/SettingsDialog.qml:329
 #, kde-format
