@@ -365,7 +365,7 @@ msgstr "ضبط ملحقات المتصفح ومميزاته."
 #: src/views/widgets/SettingsDialog.qml:110
 #, kde-format
 msgid "Home Page"
-msgstr "الصفحة الرئيسية"
+msgstr "الصفحة الرئيسة"
 
 #: src/views/widgets/SettingsDialog.qml:111
 #, kde-format
