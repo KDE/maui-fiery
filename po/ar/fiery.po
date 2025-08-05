@@ -323,12 +323,12 @@ msgstr "عند فتح رابط جديد اقفز إلى لسان جديد."
 #: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
 msgid "Auto Load Images"
-msgstr "تحميل آلي للصور"
+msgstr "تحميل آليّ للصور"
 
 #: src/views/widgets/SettingsDialog.qml:48
 #, kde-format
 msgid "Automatically loads images on web pages."
-msgstr "يحمل الصور آليًا على صفحات الويب."
+msgstr "يحمل الصور آليًّا على صفحات الويب."
 
 #: src/views/widgets/SettingsDialog.qml:61
 #, kde-format
@@ -395,7 +395,7 @@ msgstr "اختر مسارًا حيث ستحفظ الملفات فيه."
 #: src/views/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Auto Save"
-msgstr "حفظ تلقائي"
+msgstr "حفظ آليّ"
 
 #: src/views/widgets/SettingsDialog.qml:151
 #, kde-format
