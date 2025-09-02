@@ -391,7 +391,7 @@ msgstr "Camí de les baixades"
 #: src/views/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Pick a path where files will be saved."
-msgstr "Seleccioneu un camí a on es guardaran els fitxers."
+msgstr "Trieu un camí cap a on es guardaran els fitxers."
 
 #: src/views/widgets/SettingsDialog.qml:150
 #, kde-format
