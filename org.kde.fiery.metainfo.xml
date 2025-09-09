@@ -34,7 +34,6 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="sv">Fiery</name>
   <name xml:lang="tr">Fiery</name>
   <name xml:lang="uk">Fiery</name>
-  <name xml:lang="x-test">xxFieryxx</name>
   <name xml:lang="zh-TW">Fiery</name>
   <summary>Web browser</summary>
   <summary xml:lang="ar">متصفح ويب</summary>
@@ -63,7 +62,6 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="sv">Webbläsare</summary>
   <summary xml:lang="tr">Web Tarayıcısı</summary>
   <summary xml:lang="uk">Переглядач інтернету</summary>
-  <summary xml:lang="x-test">xxWeb browserxx</summary>
   <summary xml:lang="zh-TW">網頁瀏覽器</summary>
   <description>
     <p>Fiery is a convergent web browser.</p>
@@ -92,7 +90,6 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="sv">Fiery är en konvergent webbläsare.</p>
     <p xml:lang="tr">Fiery, yakınsak bir web tarayıcısıdır.</p>
     <p xml:lang="uk">Fiery — зручна програма для перегляду інтернету.</p>
-    <p xml:lang="x-test">xxFiery is a convergent web browser.xx</p>
     <p xml:lang="zh-TW">Fiery 是一個響應式網頁瀏覽器。</p>
   </description>
   <url type="homepage">https://mauikit.org/</url>
@@ -127,7 +124,6 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="sv">Fiery</caption>
       <caption xml:lang="tr">Fiery</caption>
       <caption xml:lang="uk">Fiery</caption>
-      <caption xml:lang="x-test">xxFieryxx</caption>
       <caption xml:lang="zh-TW">Fiery</caption>
       <image type="source" width="1024" height="723">
         https://mauikit.org/wp-content/uploads/2022/11/fiery.jpg
