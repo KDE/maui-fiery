@@ -4,6 +4,14 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 remove_definitions(-DQT_NO_CAST_FROM_ASCII -DQT_STRICT_ITERATORS -DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_URL_CAST_FROM_STRING)
 
+if (Qt6Core_VERSION VERSION_GREATER_EQUAL "6.10.0")
+    find_package(Qt6CorePrivate ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE)
+endif()
+
+if (Qt6WebEngineQuick_VERSION VERSION_GREATER_EQUAL "6.10.0")
+    find_package(Qt6WebEngineQuickPrivate ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE)
+endif()
+
 set(fiery_SRCS
     main.cpp
     models/historymodel.cpp
