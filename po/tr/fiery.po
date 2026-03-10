@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2026 This file is copyright:
 # This file is distributed under the same license as the maui-sol package.
 #
-# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2026 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:51+0000\n"
-"PO-Revision-Date: 2023-07-14 00:32+0300\n"
+"PO-Revision-Date: 2026-03-09 22:23+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,12 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.07.70\n"
+"X-Generator: Lokalize 25.12.2\n"
 
 #: src/main.cpp:36
 #, kde-format
 msgid "Browse and organize the web."
-msgstr "Web'de gezinin ve bilgi toplayın."
+msgstr "Web’de gezinin ve bilgi toplayın."
 
 #: src/main.cpp:41
 #, kde-format
@@ -484,12 +484,12 @@ msgstr "JavaScript execCommand(paste) etkinleştirir."
 #: src/views/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
-msgstr "JavaScript'ten Pencere Etkinleştirmeye İzin Ver"
+msgstr "JavaScript’ten Pencere Etkinleştirmeye İzin Ver"
 
 #: src/views/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
-msgstr "JavaScript'teki window,focus() yöntemine izin verir."
+msgstr "JavaScript’teki window,focus() yöntemine izin verir."
 
 #: src/views/widgets/SettingsDialog.qml:307
 #: src/views/widgets/SettingsDialog.qml:323
@@ -508,7 +508,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:329
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
-msgstr "Güvenli Olmayan Kökenlerde Coğrafi Konumlandırmaya İzin Ver"
+msgstr "Güvenli Olmayan Kökenlerde Coğrafî Konumlandırmaya İzin Ver"
 
 #: src/views/widgets/SettingsDialog.qml:330
 #, kde-format
@@ -516,7 +516,7 @@ msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
 "features."
 msgstr ""
-"Yalnızca HTTPS gibi güvenli kökenler coğrafi konumlandırma gibi özelliklere "
+"Yalnızca HTTPS gibi güvenli kökenler coğrafî konumlandırma gibi özelliklere "
 "erişebilirler."
 
 #: src/views/widgets/SettingsDialog.qml:343
@@ -530,7 +530,7 @@ msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
 "from HTTP URLs."
 msgstr ""
-"Öntanımlı olarak HTTPS sayfaları, HTTP URL'lerinden JavaScript, CSS, "
+"Öntanımlı olarak HTTPS sayfaları, HTTP URL’lerinden JavaScript, CSS, "
 "eklentiler veya web yuvalarını çalıştıramazlar."
 
 #: src/views/widgets/SettingsDialog.qml:358
@@ -550,23 +550,23 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:372
 #, kde-format
 msgid "Local Content Can Access File Urls"
-msgstr "Yerel İçerik Dosya URL'lerine Erişebilir"
+msgstr "Yerel İçerik Dosya URL’lerine Erişebilir"
 
 #: src/views/widgets/SettingsDialog.qml:373
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
-"Yerel olarak yüklü belgelerin diğer yerel URL'lere erişmesine izin verir."
+"Yerel olarak yüklü belgelerin diğer yerel URL’lere erişmesine izin verir."
 
 #: src/views/widgets/SettingsDialog.qml:386
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
-msgstr "Yerel İçerik Uzak URL'lere Erişebilir"
+msgstr "Yerel İçerik Uzak URL’lere Erişebilir"
 
 #: src/views/widgets/SettingsDialog.qml:387
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
-msgstr "Yerel olarak yüklü belgelerin uzak URL'lere erişmesine izin verir."
+msgstr "Yerel olarak yüklü belgelerin uzak URL’lere erişmesine izin verir."
 
 #: src/views/widgets/SettingsDialog.qml:400
 #, kde-format
@@ -590,6 +590,6 @@ msgid ""
 "local network IP addresses, but remote hosts can also see your local network "
 "IP address."
 msgstr ""
-"WebRTC'yi yalnızca genel IP adresleriyle sınırlar. WebRTC devre dışı "
+"WebRTC’yi yalnızca genel IP adresleriyle sınırlar. WebRTC devre dışı "
 "bırakıldığında yerel ağ IP adreslerini de kullanabilir, ancak uzak ana "
 "bilgisayarlar yerel ağ IP adresinizi de görebilir."
