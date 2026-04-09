@@ -12,8 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.12.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/main.cpp:36
 #, kde-format
@@ -26,31 +26,29 @@ msgid "Developer"
 msgstr "Vývojár"
 
 #: src/main.qml:94
-#, fuzzy, kde-format
-#| msgid "Open Link"
+#, kde-format
 msgid "Open"
-msgstr "Otvoriť odkaz"
+msgstr "Otvoriť"
 
 #: src/main.qml:102
 #, kde-format
 msgid "Accept"
-msgstr ""
+msgstr "Prijať"
 
 #: src/main.qml:123
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Download Finished"
 msgstr "Sťahovania"
 
 #: src/main.qml:123
 #, kde-format
 msgid "File has been saved."
-msgstr ""
+msgstr "File bol uložený."
 
 #: src/main.qml:141
 #, kde-format
 msgid "Do you want to download and save this file?"
-msgstr ""
+msgstr "Naozaj chcete download and save this file?"
 
 #: src/views/AppView.qml:42
 #, kde-format
@@ -82,7 +80,7 @@ msgstr "Pozastaviť"
 #: src/views/AppView.qml:129
 #, kde-format
 msgid "Continue"
-msgstr ""
+msgstr "Pokračovať"
 
 #: src/views/browser/ActionsMenu.qml:43
 #, kde-format
@@ -127,12 +125,12 @@ msgstr ""
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
 msgid "Save Video"
-msgstr ""
+msgstr "Hľadať súbor..."
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
 msgid "Open Video"
-msgstr ""
+msgstr "Open Video"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
@@ -207,7 +205,7 @@ msgstr "Chyba"
 #: src/views/browser/Browser.qml:127 src/views/browser/BrowserView.qml:217
 #, kde-format
 msgid "Start Browsing"
-msgstr ""
+msgstr "Start Browsing"
 
 #: src/views/browser/Browser.qml:128 src/views/browser/BrowserView.qml:218
 #, kde-format
@@ -225,15 +223,14 @@ msgid "Search on default search engine"
 msgstr ""
 
 #: src/views/browser/BrowserView.qml:165
-#, fuzzy, kde-format
-#| msgid "Search Engine"
+#, kde-format
 msgid "Search on page."
 msgstr "Vyhľadávací stroj"
 
 #: src/views/browser/BrowserView.qml:225
 #, kde-format
 msgid "Detach"
-msgstr ""
+msgstr "Odpojiť"
 
 #: src/views/browser/BrowserView.qml:294
 #, kde-format
@@ -243,7 +240,7 @@ msgstr "Prepnúť bočný panel"
 #: src/views/browser/BrowserView.qml:304
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "Predošlý"
 
 #: src/views/browser/BrowserView.qml:311
 #, kde-format
@@ -263,7 +260,7 @@ msgstr "Nová karta"
 #: src/views/browser/BrowserView.qml:411
 #, kde-format
 msgid "Incognito Tab"
-msgstr ""
+msgstr "Incognito Tab"
 
 #: src/views/browser/BrowserView.qml:420
 #, kde-format
@@ -303,12 +300,12 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Restore Session"
-msgstr ""
+msgstr "Obnoviť sedenie"
 
 #: src/views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Open previous tabs."
-msgstr ""
+msgstr "Otvoriť predchádzajúce karty."
 
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
@@ -323,7 +320,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
 msgid "Auto Load Images"
-msgstr ""
+msgstr "Auto Load Images"
 
 #: src/views/widgets/SettingsDialog.qml:48
 #, kde-format
@@ -333,7 +330,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:61
 #, kde-format
 msgid "Hyperlink Auditing"
-msgstr ""
+msgstr "Hyperlink Auditing"
 
 #: src/views/widgets/SettingsDialog.qml:62
 #, kde-format
@@ -344,7 +341,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:106
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Všeobecné"
 
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
@@ -383,8 +380,7 @@ msgid "Engine to be use for default searching content."
 msgstr ""
 
 #: src/views/widgets/SettingsDialog.qml:138
-#, fuzzy, kde-format
-#| msgid "Downloads"
+#, kde-format
 msgid "Downloads Path"
 msgstr "Sťahovania"
 
@@ -396,7 +392,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:150
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "Automatické prehrávanie"
 
 #: src/views/widgets/SettingsDialog.qml:151
 #, kde-format
@@ -430,7 +426,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:207
 #, kde-format
 msgid "Plugins Enabled"
-msgstr ""
+msgstr "Plugins Enabled"
 
 #: src/views/widgets/SettingsDialog.qml:208
 #, kde-format
@@ -451,7 +447,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:247
 #, kde-format
 msgid "Javascript Enabled"
-msgstr ""
+msgstr "Javascript Enabled"
 
 #: src/views/widgets/SettingsDialog.qml:248
 #, kde-format
@@ -471,7 +467,7 @@ msgstr ""
 #: src/views/widgets/SettingsDialog.qml:275
 #, kde-format
 msgid "Javascript Can Paste"
-msgstr ""
+msgstr "Javascript Can Paste"
 
 #: src/views/widgets/SettingsDialog.qml:276
 #, kde-format
