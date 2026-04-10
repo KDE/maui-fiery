@@ -18,7 +18,7 @@ msgstr ""
 #: src/main.cpp:36
 #, kde-format
 msgid "Browse and organize the web."
-msgstr ""
+msgstr "Prechádzajte a organizujte web."
 
 #: src/main.cpp:41
 #, kde-format
@@ -70,7 +70,7 @@ msgstr "Sťahovania"
 #: src/views/AppView.qml:99
 #, kde-format
 msgid "Your downloads will be listed in here."
-msgstr ""
+msgstr "Vaše stiahnuté súbory budú zobrazené tu."
 
 #: src/views/AppView.qml:121 src/views/browser/ActionsMenu.qml:200
 #, kde-format
@@ -115,12 +115,12 @@ msgstr "Otvoriť odkaz"
 #: src/views/browser/ActionsMenu.qml:112
 #, kde-format
 msgid "Open Link in Split View"
-msgstr ""
+msgstr "Otvoriť odkaz v rozdelenom zobrazení"
 
 #: src/views/browser/ActionsMenu.qml:123
 #, kde-format
 msgid "Open Link in New Window"
-msgstr ""
+msgstr "Otvoriť odkaz v novom okne"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
@@ -190,7 +190,7 @@ msgstr "Celá obrazovka"
 #: src/views/browser/ActionsMenu.qml:273
 #, kde-format
 msgid "Hide controls"
-msgstr ""
+msgstr "Skryť ovládacie prvky"
 
 #: src/views/browser/ActionsMenu.qml:274
 #, kde-format
@@ -210,17 +210,17 @@ msgstr "Start Browsing"
 #: src/views/browser/Browser.qml:128 src/views/browser/BrowserView.qml:218
 #, kde-format
 msgid "Enter a new URL or open a recent site."
-msgstr ""
+msgstr "Zadajte novú URL adresu alebo otvorte nedávnu stránku."
 
 #: src/views/browser/BrowserView.qml:106
 #, kde-format
 msgid "Search or enter URL"
-msgstr ""
+msgstr "Hľadať alebo zadať URL"
 
 #: src/views/browser/BrowserView.qml:149
 #, kde-format
 msgid "Search on default search engine"
-msgstr ""
+msgstr "Hľadať v predvolenom vyhľadávači"
 
 #: src/views/browser/BrowserView.qml:165
 #, kde-format
@@ -295,7 +295,7 @@ msgstr "Navigácia"
 #: src/views/widgets/SettingsDialog.qml:14
 #, kde-format
 msgid "Configure the app basic navigation features."
-msgstr ""
+msgstr "Nastaviť základné navigačné funkcie aplikácie."
 
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
@@ -310,12 +310,12 @@ msgstr "Otvoriť predchádzajúce karty."
 #: src/views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Switch to Tab"
-msgstr ""
+msgstr "Prepnúť na kartu"
 
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "When opening a new link jump to the new tab."
-msgstr ""
+msgstr "Pri otvorení nového odkazu prejsť na novú kartu."
 
 #: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
@@ -325,7 +325,7 @@ msgstr "Auto Load Images"
 #: src/views/widgets/SettingsDialog.qml:48
 #, kde-format
 msgid "Automatically loads images on web pages."
-msgstr ""
+msgstr "Automaticky načítava obrázky na webových stránkach."
 
 #: src/views/widgets/SettingsDialog.qml:61
 #, kde-format
@@ -335,7 +335,7 @@ msgstr "Hyperlink Auditing"
 #: src/views/widgets/SettingsDialog.qml:62
 #, kde-format
 msgid "Enables support for the ping attribute for hyperlinks."
-msgstr ""
+msgstr "Povolí podporu atribútu ping pre hypertextové odkazy."
 
 #: src/views/widgets/SettingsDialog.qml:76
 #: src/views/widgets/SettingsDialog.qml:106
@@ -346,7 +346,7 @@ msgstr "Všeobecné"
 #: src/views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Configure global preferences."
-msgstr ""
+msgstr "Nastaviť globálne predvoľby."
 
 #: src/views/widgets/SettingsDialog.qml:89
 #: src/views/widgets/SettingsDialog.qml:173
@@ -357,7 +357,7 @@ msgstr "Funkcie"
 #: src/views/widgets/SettingsDialog.qml:90
 #, kde-format
 msgid "Configure the browser plugins and features."
-msgstr ""
+msgstr "Nastaviť moduly a funkcie prehliadača."
 
 #: src/views/widgets/SettingsDialog.qml:110
 #, kde-format
@@ -367,7 +367,7 @@ msgstr "Domovská stránka"
 #: src/views/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Page to load initially and default."
-msgstr ""
+msgstr "Stránka na počiatočné a predvolené načítanie."
 
 #: src/views/widgets/SettingsDialog.qml:122
 #, kde-format
@@ -377,7 +377,7 @@ msgstr "Vyhľadávací stroj"
 #: src/views/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Engine to be use for default searching content."
-msgstr ""
+msgstr "Vyhľadávací nástroj na predvolené vyhľadávanie obsahu."
 
 #: src/views/widgets/SettingsDialog.qml:138
 #, kde-format
@@ -387,7 +387,7 @@ msgstr "Sťahovania"
 #: src/views/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Pick a path where files will be saved."
-msgstr ""
+msgstr "Vyberte cestu, kam sa budú ukladať súbory."
 
 #: src/views/widgets/SettingsDialog.qml:150
 #, kde-format
@@ -397,12 +397,12 @@ msgstr "Automatické prehrávanie"
 #: src/views/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Download files without asking."
-msgstr ""
+msgstr "Sťahovať súbory bez opýtania."
 
 #: src/views/widgets/SettingsDialog.qml:179
 #, kde-format
 msgid "Accelerated 2D Canvas"
-msgstr ""
+msgstr "Akcelerované 2D plátno"
 
 #: src/views/widgets/SettingsDialog.qml:180
 #, kde-format
@@ -410,11 +410,13 @@ msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
 "makes many painting operations faster, but slows down pixel access."
 msgstr ""
+"Určuje, či má byť 2D plátno HTML 5 OpenGL framebuffer. Toto zrýchľuje mnohé "
+"kresliace operácie, ale spomaľuje iné."
 
 #: src/views/widgets/SettingsDialog.qml:193
 #, kde-format
 msgid "PDF Viewer"
-msgstr ""
+msgstr "Prehliadač PDF"
 
 #: src/views/widgets/SettingsDialog.qml:194
 #, kde-format
@@ -422,6 +424,7 @@ msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
 msgstr ""
+"Dokumenty PDF sa otvoria v internom prehliadači PDF namiesto stiahnutia."
 
 #: src/views/widgets/SettingsDialog.qml:207
 #, kde-format
@@ -431,7 +434,7 @@ msgstr "Plugins Enabled"
 #: src/views/widgets/SettingsDialog.qml:208
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
-msgstr ""
+msgstr "Povolí podporu modulov Pepper, ako je prehrávač Flash."
 
 #: src/views/widgets/SettingsDialog.qml:224
 #: src/views/widgets/SettingsDialog.qml:241
@@ -442,7 +445,7 @@ msgstr "JavaScript"
 #: src/views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid "Configure JavaScript behaviour."
-msgstr ""
+msgstr "Nastaviť správanie JavaScriptu."
 
 #: src/views/widgets/SettingsDialog.qml:247
 #, kde-format
@@ -452,17 +455,18 @@ msgstr "Javascript Enabled"
 #: src/views/widgets/SettingsDialog.qml:248
 #, kde-format
 msgid "Enables the running of JavaScript programs."
-msgstr ""
+msgstr "Povolí spúšťanie programov JavaScript."
 
 #: src/views/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Javascript Can Access Clipboard"
-msgstr ""
+msgstr "JavaScript môže pristupovať k schránke"
 
 #: src/views/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr ""
+"Povoľuje programom JavaScript čítať zo schránky alebo do nej zapisovať."
 
 #: src/views/widgets/SettingsDialog.qml:275
 #, kde-format
@@ -472,17 +476,17 @@ msgstr "Javascript Can Paste"
 #: src/views/widgets/SettingsDialog.qml:276
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
-msgstr ""
+msgstr "Povolí JavaScript execCommand(paste)."
 
 #: src/views/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
-msgstr ""
+msgstr "Povoliť aktiváciu okna z JavaScriptu"
 
 #: src/views/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
-msgstr ""
+msgstr "Povoľuje metódu window.focus() v JavaScripte."
 
 #: src/views/widgets/SettingsDialog.qml:307
 #: src/views/widgets/SettingsDialog.qml:323
@@ -494,24 +498,24 @@ msgstr "Zabezpečenie a súkromie"
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
-msgstr ""
+msgstr "Nastaviť vzhľad editora. Nastavenia sa používajú globálne"
 
 #: src/views/widgets/SettingsDialog.qml:329
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
-msgstr ""
+msgstr "Povoliť geolokáciu na nezabezpečených zdrojoch"
 
 #: src/views/widgets/SettingsDialog.qml:330
 #, kde-format
 msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
 "features."
-msgstr ""
+msgstr "Iba zabezpečené zdroje ako HTTPS mohli požadovať funkcie geolokácie."
 
 #: src/views/widgets/SettingsDialog.qml:343
 #, kde-format
 msgid "Allow Running Insecure Content"
-msgstr ""
+msgstr "Povoliť spúšťanie nezabezpečeného obsahu"
 
 #: src/views/widgets/SettingsDialog.qml:344
 #, kde-format
@@ -519,11 +523,13 @@ msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
 "from HTTP URLs."
 msgstr ""
+"Predvolene stránky HTTPS nemôžu spúšťať JavaScript, CSS, moduly alebo web-"
+"sockety z HTTP URL adries."
 
 #: src/views/widgets/SettingsDialog.qml:358
 #, kde-format
 msgid "DNS Prefetch Enabled"
-msgstr ""
+msgstr "DNS prefetch povolený"
 
 #: src/views/widgets/SettingsDialog.qml:359
 #, kde-format
@@ -531,26 +537,30 @@ msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
 "are activated."
 msgstr ""
+"Povolí špekulatívne predbežné načítanie DNS záznamov pre HTML odkazy pred "
+"ich aktiváciou."
 
 #: src/views/widgets/SettingsDialog.qml:372
 #, kde-format
 msgid "Local Content Can Access File Urls"
-msgstr ""
+msgstr "Lokálny obsah môže pristupovať k URL súborov"
 
 #: src/views/widgets/SettingsDialog.qml:373
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
+"Povoľuje lokálne načítaným dokumentom prístup k iným lokálnym URL adresám."
 
 #: src/views/widgets/SettingsDialog.qml:386
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
-msgstr ""
+msgstr "Lokálny obsah môže pristupovať k vzdialeným URL"
 
 #: src/views/widgets/SettingsDialog.qml:387
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
 msgstr ""
+"Povoľuje lokálne načítaným dokumentom prístup k vzdialeným URL adresám."
 
 #: src/views/widgets/SettingsDialog.qml:400
 #, kde-format
@@ -560,12 +570,12 @@ msgstr "Lokálne úložisko"
 #: src/views/widgets/SettingsDialog.qml:401
 #, kde-format
 msgid "Enables support for the HTML 5 local storage feature."
-msgstr ""
+msgstr "Povolí podporu funkcie HTML 5 lokálneho úložiska."
 
 #: src/views/widgets/SettingsDialog.qml:414
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
-msgstr ""
+msgstr "WebRTC iba verejné rozhrania"
 
 #: src/views/widgets/SettingsDialog.qml:415
 #, kde-format
@@ -574,6 +584,9 @@ msgid ""
 "local network IP addresses, but remote hosts can also see your local network "
 "IP address."
 msgstr ""
+"Obmedzuje WebRTC iba na verejné IP adresy. Keď je zakázané, WebRTC môže "
+"používať aj lokálne sieťové IP adresy, ale to môže odhaliť niektoré "
+"informácie o lokálnej sieti používateľa."
 
 #~ msgid "Fiery"
 #~ msgstr "Fiery"
