@@ -1,26 +1,27 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2026 This file is copyright:
 # This file is distributed under the same license as the maui-sol package.
 # Vit Pelcak <vit@pelcak.org>, 2021, 2023.
+# SPDX-FileCopyrightText: 2026 Libor Filípek <libor.filipek@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-sol\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:51+0000\n"
-"PO-Revision-Date: 2023-06-05 11:48+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2026-05-21 11:38+0200\n"
+"Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #: src/main.cpp:36
 #, kde-format
 msgid "Browse and organize the web."
-msgstr ""
+msgstr "Procházejte a organizujte si web."
 
 #: src/main.cpp:41
 #, kde-format
@@ -72,7 +73,7 @@ msgstr "Stahování"
 #: src/views/AppView.qml:99
 #, kde-format
 msgid "Your downloads will be listed in here."
-msgstr ""
+msgstr "Zde se zobrazí seznam vašich stažených souborů."
 
 #: src/views/AppView.qml:121 src/views/browser/ActionsMenu.qml:200
 #, kde-format
@@ -222,7 +223,7 @@ msgstr "Hledat nebo zadat URL"
 #: src/views/browser/BrowserView.qml:149
 #, kde-format
 msgid "Search on default search engine"
-msgstr ""
+msgstr "Hledat pomocí výchozího vyhledávače"
 
 #: src/views/browser/BrowserView.qml:165
 #, kde-format
@@ -262,7 +263,7 @@ msgstr "Nová karta"
 #: src/views/browser/BrowserView.qml:411
 #, kde-format
 msgid "Incognito Tab"
-msgstr ""
+msgstr "Karta v anonymním režimu"
 
 #: src/views/browser/BrowserView.qml:420
 #, kde-format
@@ -297,7 +298,7 @@ msgstr "Navigace"
 #: src/views/widgets/SettingsDialog.qml:14
 #, kde-format
 msgid "Configure the app basic navigation features."
-msgstr ""
+msgstr "Nastavte základní navigační funkce aplikace."
 
 #: src/views/widgets/SettingsDialog.qml:19
 #, kde-format
@@ -317,27 +318,27 @@ msgstr "Přepnout na kartu"
 #: src/views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "When opening a new link jump to the new tab."
-msgstr ""
+msgstr "Při otevření nového odkazu se stránka otevře v nové kartě."
 
 #: src/views/widgets/SettingsDialog.qml:47
 #, kde-format
 msgid "Auto Load Images"
-msgstr ""
+msgstr "Automatické načítání obrázků"
 
 #: src/views/widgets/SettingsDialog.qml:48
 #, kde-format
 msgid "Automatically loads images on web pages."
-msgstr ""
+msgstr "Automaticky načítá obrázky na webových stránkách."
 
 #: src/views/widgets/SettingsDialog.qml:61
 #, kde-format
 msgid "Hyperlink Auditing"
-msgstr ""
+msgstr "Kontrola hypertextových odkazů"
 
 #: src/views/widgets/SettingsDialog.qml:62
 #, kde-format
 msgid "Enables support for the ping attribute for hyperlinks."
-msgstr ""
+msgstr "Zapíná podporu atributu ping pro hypertextové odkazy."
 
 #: src/views/widgets/SettingsDialog.qml:76
 #: src/views/widgets/SettingsDialog.qml:106
@@ -359,7 +360,7 @@ msgstr "Vlastnosti"
 #: src/views/widgets/SettingsDialog.qml:90
 #, kde-format
 msgid "Configure the browser plugins and features."
-msgstr ""
+msgstr "Nastavení modulů a funkcí prohlížeče."
 
 #: src/views/widgets/SettingsDialog.qml:110
 #, kde-format
@@ -369,7 +370,7 @@ msgstr "Domovská stránka"
 #: src/views/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Page to load initially and default."
-msgstr ""
+msgstr "Výchozí stránka, která se načte na začátku."
 
 #: src/views/widgets/SettingsDialog.qml:122
 #, kde-format
@@ -379,7 +380,7 @@ msgstr "Vyhledávací stroj"
 #: src/views/widgets/SettingsDialog.qml:123
 #, kde-format
 msgid "Engine to be use for default searching content."
-msgstr ""
+msgstr "Vyhledávač, který se použije pro standardní vyhledávání obsahu."
 
 #: src/views/widgets/SettingsDialog.qml:138
 #, kde-format
@@ -389,7 +390,7 @@ msgstr "Cesta k adresáři se staženými soubory"
 #: src/views/widgets/SettingsDialog.qml:139
 #, kde-format
 msgid "Pick a path where files will be saved."
-msgstr ""
+msgstr "Vyberte umístění, kam se mají ukládat soubory."
 
 #: src/views/widgets/SettingsDialog.qml:150
 #, kde-format
@@ -399,12 +400,12 @@ msgstr "Automatické ukládání"
 #: src/views/widgets/SettingsDialog.qml:151
 #, kde-format
 msgid "Download files without asking."
-msgstr ""
+msgstr "Stahovat soubory bez dotazování."
 
 #: src/views/widgets/SettingsDialog.qml:179
 #, kde-format
 msgid "Accelerated 2D Canvas"
-msgstr ""
+msgstr "Akcelerované 2D plátno"
 
 #: src/views/widgets/SettingsDialog.qml:180
 #, kde-format
@@ -412,6 +413,8 @@ msgid ""
 "Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
 "makes many painting operations faster, but slows down pixel access."
 msgstr ""
+"Určuje, zda má být 2D plátno HTML5 vyrovnávací pamětí OpenGL. Tím se zrychlí "
+"mnoho operací vykreslování, ale zpomalí se přístup k pixelům."
 
 #: src/views/widgets/SettingsDialog.qml:193
 #, kde-format
@@ -424,16 +427,18 @@ msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
 msgstr ""
+"Dokumenty ve formátu PDF se budou otevírat ve vestavěném prohlížeči PDF, "
+"místo toho, aby se stahovaly."
 
 #: src/views/widgets/SettingsDialog.qml:207
 #, kde-format
 msgid "Plugins Enabled"
-msgstr ""
+msgstr "Moduly povoleny"
 
 #: src/views/widgets/SettingsDialog.qml:208
 #, kde-format
 msgid "Enables support for Pepper plugins, such as the Flash player."
-msgstr ""
+msgstr "Zapíná podporu pluginů Pepper, jako je například Flash Player."
 
 #: src/views/widgets/SettingsDialog.qml:224
 #: src/views/widgets/SettingsDialog.qml:241
@@ -454,37 +459,38 @@ msgstr "JavaScript povolen"
 #: src/views/widgets/SettingsDialog.qml:248
 #, kde-format
 msgid "Enables the running of JavaScript programs."
-msgstr ""
+msgstr "Umožňuje spouštění programů v jazyce JavaScript."
 
 #: src/views/widgets/SettingsDialog.qml:261
 #, kde-format
 msgid "Javascript Can Access Clipboard"
-msgstr ""
+msgstr "Javascript má přístup ke schránce"
 
 #: src/views/widgets/SettingsDialog.qml:262
 #, kde-format
 msgid "Allows JavaScript programs to read from or write to the clipboard."
 msgstr ""
+"Umožňuje programům v jazyce JavaScript číst ze schránky nebo do ní zapisovat."
 
 #: src/views/widgets/SettingsDialog.qml:275
 #, kde-format
 msgid "Javascript Can Paste"
-msgstr ""
+msgstr "Javascript umožňuje vkládat"
 
 #: src/views/widgets/SettingsDialog.qml:276
 #, kde-format
 msgid "Enables JavaScript execCommand(paste)."
-msgstr ""
+msgstr "Povoluje funkci JavaScriptu execCommand(vložit)."
 
 #: src/views/widgets/SettingsDialog.qml:289
 #, kde-format
 msgid "Allow Window Activation From JavaScript"
-msgstr ""
+msgstr "Povolit aktivaci oken z JavaScriptu"
 
 #: src/views/widgets/SettingsDialog.qml:290
 #, kde-format
 msgid "Allows the window.focus() method in JavaScript."
-msgstr ""
+msgstr "Umožňuje použití metody window.focus() v jazyce JavaScript."
 
 #: src/views/widgets/SettingsDialog.qml:307
 #: src/views/widgets/SettingsDialog.qml:323
@@ -496,12 +502,12 @@ msgstr "Zabezpečení a soukromí"
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
-msgstr ""
+msgstr "Nastavte vzhled a chování editoru. Nastavení se použije globálně"
 
 #: src/views/widgets/SettingsDialog.qml:329
 #, kde-format
 msgid "Allow Geolocation On Insecure Origins"
-msgstr ""
+msgstr "Povolit geolokaci u nezabezpečených zdrojů"
 
 #: src/views/widgets/SettingsDialog.qml:330
 #, kde-format
@@ -509,11 +515,13 @@ msgid ""
 "Only secure origins such as HTTPS have been able to request Geolocation "
 "features."
 msgstr ""
+"O funkce geolokace mohou žádat pouze zabezpečené zdroje, jako je například "
+"HTTPS."
 
 #: src/views/widgets/SettingsDialog.qml:343
 #, kde-format
 msgid "Allow Running Insecure Content"
-msgstr ""
+msgstr "Povolit spouštění nezabezpečeného obsahu"
 
 #: src/views/widgets/SettingsDialog.qml:344
 #, kde-format
@@ -521,11 +529,13 @@ msgid ""
 "By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
 "from HTTP URLs."
 msgstr ""
+"Ve výchozím nastavení nelze na stránkách HTTPS spouštět skripty JavaScript, "
+"soubory CSS, pluginy ani webové sokety z adres URL protokolu HTTP."
 
 #: src/views/widgets/SettingsDialog.qml:358
 #, kde-format
 msgid "DNS Prefetch Enabled"
-msgstr ""
+msgstr "Přednačítání DNS povoleno"
 
 #: src/views/widgets/SettingsDialog.qml:359
 #, kde-format
@@ -533,26 +543,30 @@ msgid ""
 "Enables speculative prefetching of DNS records for HTML links before they "
 "are activated."
 msgstr ""
+"Umožňuje preventivní načítání záznamů DNS pro odkazy v HTML ještě před "
+"jejich aktivací."
 
 #: src/views/widgets/SettingsDialog.qml:372
 #, kde-format
 msgid "Local Content Can Access File Urls"
-msgstr ""
+msgstr "Místní obsah má přístup k URL adresám souborů"
 
 #: src/views/widgets/SettingsDialog.qml:373
 #, kde-format
 msgid "Allows locally loaded documents to access other local URLs."
 msgstr ""
+"Umožňuje místně načteným dokumentům přistupovat k jiným místním adresám URL."
 
 #: src/views/widgets/SettingsDialog.qml:386
 #, kde-format
 msgid "Local Content Can Access Remote Urls"
-msgstr ""
+msgstr "Místní obsah může přistupovat ke vzdáleným URL adresám"
 
 #: src/views/widgets/SettingsDialog.qml:387
 #, kde-format
 msgid "Allows locally loaded documents to access remote URLs."
 msgstr ""
+"Umožňuje lokálně načteným dokumentům přistupovat ke vzdáleným URL adresám."
 
 #: src/views/widgets/SettingsDialog.qml:400
 #, kde-format
@@ -567,7 +581,7 @@ msgstr "Povoluje podporu místního úložiště, vlastnosti HTML 5."
 #: src/views/widgets/SettingsDialog.qml:414
 #, kde-format
 msgid "WebRTC Public Interfaces Only"
-msgstr ""
+msgstr "Pouze veřejná rozhraní WebRTC"
 
 #: src/views/widgets/SettingsDialog.qml:415
 #, kde-format
@@ -576,3 +590,6 @@ msgid ""
 "local network IP addresses, but remote hosts can also see your local network "
 "IP address."
 msgstr ""
+"Omezuje WebRTC pouze na veřejné IP adresy. Je-li tato funkce vypnutá, může "
+"WebRTC využívat i IP adresy v místní síti, ale vzdálené servery pak mohou "
+"vidět i vaši IP adresu v místní síti."
