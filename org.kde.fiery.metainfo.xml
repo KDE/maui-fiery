@@ -33,6 +33,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="sl">Fiery</name>
   <name xml:lang="sv">Fiery</name>
   <name xml:lang="tr">Fiery</name>
+  <name xml:lang="ug">Fiery</name>
   <name xml:lang="uk">Fiery</name>
   <name xml:lang="zh-TW">Fiery</name>
   <summary>Web browser</summary>
@@ -61,6 +62,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="sl">Spletni brskalnik</summary>
   <summary xml:lang="sv">Webbläsare</summary>
   <summary xml:lang="tr">Web Tarayıcısı</summary>
+  <summary xml:lang="ug">توركۆرگۈ</summary>
   <summary xml:lang="uk">Переглядач інтернету</summary>
   <summary xml:lang="zh-TW">網頁瀏覽器</summary>
   <description>
@@ -90,6 +92,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="sl">Fiery je konvergentni spletni brskalnik.</p>
     <p xml:lang="sv">Fiery är en konvergent webbläsare.</p>
     <p xml:lang="tr">Fiery, yakınsak bir web tarayıcısıdır.</p>
+    <p xml:lang="ug">Fiery توپلانما توركۆرگۈ.</p>
     <p xml:lang="uk">Fiery — зручна програма для перегляду інтернету.</p>
     <p xml:lang="zh-TW">Fiery 是一個響應式網頁瀏覽器。</p>
   </description>
@@ -124,6 +127,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="sl">Fiery</caption>
       <caption xml:lang="sv">Fiery</caption>
       <caption xml:lang="tr">Fiery</caption>
+      <caption xml:lang="ug">Fiery</caption>
       <caption xml:lang="uk">Fiery</caption>
       <caption xml:lang="zh-TW">Fiery</caption>
       <image type="source" width="1024" height="723">
