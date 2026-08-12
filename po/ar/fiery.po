@@ -426,7 +426,7 @@ msgstr "عارض بي دي اف"
 msgid ""
 "PDF documents will be opened in the internal PDF viewer instead of being "
 "downloaded."
-msgstr "ستُفتح مستندات بي دي إف في عارض بي دي إف الداخلي بدلاً من تنزيلها."
+msgstr "ستُفتح مستندات بي دي إف في عارض بي دي إف الداخلي بدلًا من تنزيلها."
 
 #: src/views/widgets/SettingsDialog.qml:207
 #, kde-format
