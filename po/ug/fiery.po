@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-fiery\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:51+0000\n"
-"PO-Revision-Date: 2026-05-23 16:53+0900\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -107,7 +107,7 @@ msgstr "تېكىست كۆچۈر"
 #: src/views/browser/ActionsMenu.qml:90
 #, kde-format
 msgid "Copy Link"
-msgstr ""
+msgstr "ئۇلانما كۆچۈر"
 
 #: src/views/browser/ActionsMenu.qml:101
 #, kde-format
@@ -122,12 +122,12 @@ msgstr ""
 #: src/views/browser/ActionsMenu.qml:123
 #, kde-format
 msgid "Open Link in New Window"
-msgstr ""
+msgstr "ئۇلانمىنى يېڭى كۆزنەكتە ئاچ"
 
 #: src/views/browser/ActionsMenu.qml:152
 #, kde-format
 msgid "Save Video"
-msgstr ""
+msgstr "سىن ساقلا"
 
 #: src/views/browser/ActionsMenu.qml:160
 #, kde-format
