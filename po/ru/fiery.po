@@ -1,0 +1,598 @@
+# Translation of fiery into Russian.
+# This file is distributed under the same license as the maui-fiery package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fiery\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-17 11:51+0000\n"
+"PO-Revision-Date: 2026-10-10 12:39+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: src/main.cpp:36
+#, kde-format
+msgid "Browse and organize the web."
+msgstr "Просмотр и упорядочивание веб-страниц."
+
+#: src/main.cpp:41
+#, kde-format
+msgid "Developer"
+msgstr "Разработчик"
+
+#: src/main.qml:94
+#, kde-format
+msgid "Open"
+msgstr "Открыть"
+
+#: src/main.qml:102
+#, kde-format
+msgid "Accept"
+msgstr "Принять"
+
+#: src/main.qml:123
+#, kde-format
+msgid "Download Finished"
+msgstr "Загрузка завершена"
+
+#: src/main.qml:123
+#, kde-format
+msgid "File has been saved."
+msgstr "Файл сохранён."
+
+#: src/main.qml:141
+#, kde-format
+msgid "Do you want to download and save this file?"
+msgstr "Загрузить и сохранить этот файл?"
+
+#: src/views/AppView.qml:42
+#, kde-format
+msgid "Home"
+msgstr "Домашняя страница"
+
+#: src/views/AppView.qml:50
+#, kde-format
+msgid "Recent"
+msgstr "Недавние"
+
+#: src/views/AppView.qml:58 src/views/AppView.qml:98
+#: src/views/browser/BrowserView.qml:435
+#: src/views/widgets/SettingsDialog.qml:134
+#, kde-format
+msgid "Downloads"
+msgstr "Загрузки"
+
+#: src/views/AppView.qml:99
+#, kde-format
+msgid "Your downloads will be listed in here."
+msgstr "Здесь будут показаны загрузки."
+
+#: src/views/AppView.qml:121 src/views/browser/ActionsMenu.qml:200
+#, kde-format
+msgid "Pause"
+msgstr "Приостановить"
+
+#: src/views/AppView.qml:129
+#, kde-format
+msgid "Continue"
+msgstr "Продолжить"
+
+#: src/views/browser/ActionsMenu.qml:43
+#, kde-format
+msgid "Paste"
+msgstr "Вставить"
+
+#: src/views/browser/ActionsMenu.qml:56
+#, kde-format
+msgid "Translate"
+msgstr "Перевести"
+
+#: src/views/browser/ActionsMenu.qml:67
+#, kde-format
+msgid "Select All"
+msgstr "Выбрать все"
+
+#: src/views/browser/ActionsMenu.qml:79
+#, kde-format
+msgid "Copy Text"
+msgstr "Копировать текст"
+
+#: src/views/browser/ActionsMenu.qml:90
+#, kde-format
+msgid "Copy Link"
+msgstr "Копировать ссылку"
+
+#: src/views/browser/ActionsMenu.qml:101
+#, kde-format
+msgid "Open Link"
+msgstr "Открыть ссылку"
+
+#: src/views/browser/ActionsMenu.qml:112
+#, kde-format
+msgid "Open Link in Split View"
+msgstr "Открыть ссылку в разделённом окне"
+
+#: src/views/browser/ActionsMenu.qml:123
+#, kde-format
+msgid "Open Link in New Window"
+msgstr "Открыть ссылку в новом окне"
+
+#: src/views/browser/ActionsMenu.qml:152
+#, kde-format
+msgid "Save Video"
+msgstr "Сохранить видео"
+
+#: src/views/browser/ActionsMenu.qml:160
+#, kde-format
+msgid "Open Video"
+msgstr "Открыть видео"
+
+#: src/views/browser/ActionsMenu.qml:160
+#, kde-format
+msgid "Open Audio"
+msgstr "Открыть аудио"
+
+#: src/views/browser/ActionsMenu.qml:171
+#, kde-format
+msgid "Save Image"
+msgstr "Сохранить изображение"
+
+#: src/views/browser/ActionsMenu.qml:179
+#, kde-format
+msgid "Copy Image"
+msgstr "Копировать изображение"
+
+#: src/views/browser/ActionsMenu.qml:187
+#, kde-format
+msgid "Open Image"
+msgstr "Открыть изображение"
+
+#: src/views/browser/ActionsMenu.qml:199
+#, kde-format
+msgid "Play"
+msgstr "Воспроизвести"
+
+#: src/views/browser/ActionsMenu.qml:209
+#, kde-format
+msgid "Unmute"
+msgstr "Включить звук"
+
+#: src/views/browser/ActionsMenu.qml:210
+#, kde-format
+msgid "Mute"
+msgstr "Выключить звук"
+
+#: src/views/browser/ActionsMenu.qml:223
+#, kde-format
+msgid "Speed"
+msgstr "Скорость"
+
+#: src/views/browser/ActionsMenu.qml:249
+#, kde-format
+msgid "Loop"
+msgstr "Зациклить"
+
+#: src/views/browser/ActionsMenu.qml:258
+#, kde-format
+msgid "Exit fullscreen"
+msgstr "Выйти из полноэкранного режима"
+
+#: src/views/browser/ActionsMenu.qml:258
+#, kde-format
+msgid "Fullscreen"
+msgstr "Во весь экран"
+
+#: src/views/browser/ActionsMenu.qml:273
+#, kde-format
+msgid "Hide controls"
+msgstr "Скрыть элементы управления"
+
+#: src/views/browser/ActionsMenu.qml:274
+#, kde-format
+msgid "Show controls"
+msgstr "Показать элементы управления"
+
+#: src/views/browser/Browser.qml:127
+#, kde-format
+msgid "Error"
+msgstr "Ошибка"
+
+#: src/views/browser/Browser.qml:127 src/views/browser/BrowserView.qml:217
+#, kde-format
+msgid "Start Browsing"
+msgstr "Начните просмотр"
+
+#: src/views/browser/Browser.qml:128 src/views/browser/BrowserView.qml:218
+#, kde-format
+msgid "Enter a new URL or open a recent site."
+msgstr "Введите новый URL или откройте недавний сайт."
+
+#: src/views/browser/BrowserView.qml:106
+#, kde-format
+msgid "Search or enter URL"
+msgstr "Поиск или ввод адреса"
+
+#: src/views/browser/BrowserView.qml:149
+#, kde-format
+msgid "Search on default search engine"
+msgstr "Искать в поисковой системе по умолчанию"
+
+#: src/views/browser/BrowserView.qml:165
+#, kde-format
+msgid "Search on page."
+msgstr "Поиск на странице."
+
+#: src/views/browser/BrowserView.qml:225
+#, kde-format
+msgid "Detach"
+msgstr "Открепить"
+
+#: src/views/browser/BrowserView.qml:294
+#, kde-format
+msgid "Toggle sidebar"
+msgstr "Показать или скрыть боковую панель"
+
+#: src/views/browser/BrowserView.qml:304
+#, kde-format
+msgid "Previous"
+msgstr "Предыдущее"
+
+#: src/views/browser/BrowserView.qml:311
+#, kde-format
+msgid "Next"
+msgstr "Следующее"
+
+#: src/views/browser/BrowserView.qml:364
+#, kde-format
+msgid "Share"
+msgstr "Поделиться"
+
+#: src/views/browser/BrowserView.qml:404
+#, kde-format
+msgid "New Tab"
+msgstr "Новая вкладка"
+
+#: src/views/browser/BrowserView.qml:411
+#, kde-format
+msgid "Incognito Tab"
+msgstr "Вкладка «Инкогнито»"
+
+#: src/views/browser/BrowserView.qml:420
+#, kde-format
+msgid "Bookmarks"
+msgstr "Закладки"
+
+#: src/views/browser/BrowserView.qml:427
+#, kde-format
+msgid "History"
+msgstr "Журнал"
+
+#: src/views/browser/BrowserView.qml:445
+#, kde-format
+msgid "Find In Page"
+msgstr "Найти на странице"
+
+#: src/views/browser/BrowserView.qml:455
+#, kde-format
+msgid "Settings"
+msgstr "Параметры"
+
+#: src/views/browser/BrowserView.qml:462
+#, kde-format
+msgid "About"
+msgstr "О программе"
+
+#: src/views/widgets/SettingsDialog.qml:13
+#, kde-format
+msgid "Navigation"
+msgstr "Навигация"
+
+#: src/views/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Configure the app basic navigation features."
+msgstr "Настройка основных средств навигации приложения."
+
+#: src/views/widgets/SettingsDialog.qml:19
+#, kde-format
+msgid "Restore Session"
+msgstr "Восстанавливать сеанс"
+
+#: src/views/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Open previous tabs."
+msgstr "Открывать предыдущие вкладки."
+
+#: src/views/widgets/SettingsDialog.qml:33
+#, kde-format
+msgid "Switch to Tab"
+msgstr "Переходить на вкладку"
+
+#: src/views/widgets/SettingsDialog.qml:34
+#, kde-format
+msgid "When opening a new link jump to the new tab."
+msgstr "Переходить на новую вкладку при открытии новой ссылки."
+
+#: src/views/widgets/SettingsDialog.qml:47
+#, kde-format
+msgid "Auto Load Images"
+msgstr "Автоматически загружать изображения"
+
+#: src/views/widgets/SettingsDialog.qml:48
+#, kde-format
+msgid "Automatically loads images on web pages."
+msgstr "Автоматически загружает изображения на веб-страницах."
+
+#: src/views/widgets/SettingsDialog.qml:61
+#, kde-format
+msgid "Hyperlink Auditing"
+msgstr "Проверка гиперссылок"
+
+#: src/views/widgets/SettingsDialog.qml:62
+#, kde-format
+msgid "Enables support for the ping attribute for hyperlinks."
+msgstr "Включает поддержку атрибута ping для гиперссылок."
+
+#: src/views/widgets/SettingsDialog.qml:76
+#: src/views/widgets/SettingsDialog.qml:106
+#, kde-format
+msgid "General"
+msgstr "Общие"
+
+#: src/views/widgets/SettingsDialog.qml:77
+#, kde-format
+msgid "Configure global preferences."
+msgstr "Настройка общих параметров."
+
+#: src/views/widgets/SettingsDialog.qml:89
+#: src/views/widgets/SettingsDialog.qml:173
+#, kde-format
+msgid "Features"
+msgstr "Возможности"
+
+#: src/views/widgets/SettingsDialog.qml:90
+#, kde-format
+msgid "Configure the browser plugins and features."
+msgstr "Настройка модулей и возможностей браузера."
+
+#: src/views/widgets/SettingsDialog.qml:110
+#, kde-format
+msgid "Home Page"
+msgstr "Домашняя страница"
+
+#: src/views/widgets/SettingsDialog.qml:111
+#, kde-format
+msgid "Page to load initially and default."
+msgstr "Страница, загружаемая при запуске и используемая по умолчанию."
+
+#: src/views/widgets/SettingsDialog.qml:122
+#, kde-format
+msgid "Search Engine"
+msgstr "Поисковая система"
+
+#: src/views/widgets/SettingsDialog.qml:123
+#, kde-format
+msgid "Engine to be use for default searching content."
+msgstr "Поисковая система, используемая по умолчанию."
+
+#: src/views/widgets/SettingsDialog.qml:138
+#, kde-format
+msgid "Downloads Path"
+msgstr "Папка загрузок"
+
+#: src/views/widgets/SettingsDialog.qml:139
+#, kde-format
+msgid "Pick a path where files will be saved."
+msgstr "Выбор папки для сохранения файлов."
+
+#: src/views/widgets/SettingsDialog.qml:150
+#, kde-format
+msgid "Auto Save"
+msgstr "Автосохранение"
+
+#: src/views/widgets/SettingsDialog.qml:151
+#, kde-format
+msgid "Download files without asking."
+msgstr "Загружать файлы без запроса."
+
+#: src/views/widgets/SettingsDialog.qml:179
+#, kde-format
+msgid "Accelerated 2D Canvas"
+msgstr "Ускоренный 2D-холст"
+
+#: src/views/widgets/SettingsDialog.qml:180
+#, kde-format
+msgid ""
+"Specifies whether the HTML 5 2D canvas should be an OpenGL framebuffer. This "
+"makes many painting operations faster, but slows down pixel access."
+msgstr ""
+"Определяет, должен ли двухмерный холст HTML 5 быть буфером кадров OpenGL. "
+"Это ускоряет многие операции рисования, но замедляет доступ к пикселям."
+
+#: src/views/widgets/SettingsDialog.qml:193
+#, kde-format
+msgid "PDF Viewer"
+msgstr "Программа просмотра PDF"
+
+#: src/views/widgets/SettingsDialog.qml:194
+#, kde-format
+msgid ""
+"PDF documents will be opened in the internal PDF viewer instead of being "
+"downloaded."
+msgstr ""
+"Документы PDF открываются во встроенной программе просмотра PDF, а не "
+"загружаются."
+
+#: src/views/widgets/SettingsDialog.qml:207
+#, kde-format
+msgid "Plugins Enabled"
+msgstr "Включить модули"
+
+#: src/views/widgets/SettingsDialog.qml:208
+#, kde-format
+msgid "Enables support for Pepper plugins, such as the Flash player."
+msgstr "Включает поддержку модулей Pepper, например проигрывателя Flash."
+
+#: src/views/widgets/SettingsDialog.qml:224
+#: src/views/widgets/SettingsDialog.qml:241
+#, kde-format
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: src/views/widgets/SettingsDialog.qml:225
+#, kde-format
+msgid "Configure JavaScript behaviour."
+msgstr "Настройка поведения JavaScript."
+
+#: src/views/widgets/SettingsDialog.qml:247
+#, kde-format
+msgid "Javascript Enabled"
+msgstr "Включить JavaScript"
+
+#: src/views/widgets/SettingsDialog.qml:248
+#, kde-format
+msgid "Enables the running of JavaScript programs."
+msgstr "Включает выполнение программ JavaScript."
+
+#: src/views/widgets/SettingsDialog.qml:261
+#, kde-format
+msgid "Javascript Can Access Clipboard"
+msgstr "Разрешать JavaScript доступ к буферу обмена"
+
+#: src/views/widgets/SettingsDialog.qml:262
+#, kde-format
+msgid "Allows JavaScript programs to read from or write to the clipboard."
+msgstr ""
+"Позволяет программам JavaScript читать данные из буфера обмена и записывать "
+"их в него."
+
+#: src/views/widgets/SettingsDialog.qml:275
+#, kde-format
+msgid "Javascript Can Paste"
+msgstr "Разрешать JavaScript вставку"
+
+#: src/views/widgets/SettingsDialog.qml:276
+#, kde-format
+msgid "Enables JavaScript execCommand(paste)."
+msgstr "Включает JavaScript execCommand(paste)."
+
+#: src/views/widgets/SettingsDialog.qml:289
+#, kde-format
+msgid "Allow Window Activation From JavaScript"
+msgstr "Разрешать активацию окна из JavaScript"
+
+#: src/views/widgets/SettingsDialog.qml:290
+#, kde-format
+msgid "Allows the window.focus() method in JavaScript."
+msgstr "Разрешает использование метода window.focus() в JavaScript."
+
+#: src/views/widgets/SettingsDialog.qml:307
+#: src/views/widgets/SettingsDialog.qml:323
+#, kde-format
+msgid "Security & Privacy"
+msgstr "Безопасность и конфиденциальность"
+
+# BUGME: description of the Security & Privacy page talks about an editor --ayavorsky 2026-10-10
+#: src/views/widgets/SettingsDialog.qml:308
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+"Настройка внешнего вида и поведения редактора. Параметры применяются "
+"глобально"
+
+#: src/views/widgets/SettingsDialog.qml:329
+#, kde-format
+msgid "Allow Geolocation On Insecure Origins"
+msgstr "Разрешать определение местоположения на незащищённых источниках"
+
+#: src/views/widgets/SettingsDialog.qml:330
+#, kde-format
+msgid ""
+"Only secure origins such as HTTPS have been able to request Geolocation "
+"features."
+msgstr ""
+"Запрашивать функции определения местоположения могут только безопасные "
+"источники, например HTTPS."
+
+#: src/views/widgets/SettingsDialog.qml:343
+#, kde-format
+msgid "Allow Running Insecure Content"
+msgstr "Разрешать выполнение небезопасного содержимого"
+
+#: src/views/widgets/SettingsDialog.qml:344
+#, kde-format
+msgid ""
+"By default, HTTPS pages cannot run JavaScript, CSS, plugins or web-sockets "
+"from HTTP URLs."
+msgstr ""
+"По умолчанию страницы HTTPS не могут запускать JavaScript, CSS, модули и веб-"
+"сокеты с URL-адресов HTTP."
+
+#: src/views/widgets/SettingsDialog.qml:358
+#, kde-format
+msgid "DNS Prefetch Enabled"
+msgstr "Включить предварительную загрузку DNS"
+
+#: src/views/widgets/SettingsDialog.qml:359
+#, kde-format
+msgid ""
+"Enables speculative prefetching of DNS records for HTML links before they "
+"are activated."
+msgstr ""
+"Включает упреждающую выборку записей DNS для ссылок HTML до их активации."
+
+#: src/views/widgets/SettingsDialog.qml:372
+#, kde-format
+msgid "Local Content Can Access File Urls"
+msgstr "Разрешать локальному содержимому доступ к URL-адресам файлов"
+
+#: src/views/widgets/SettingsDialog.qml:373
+#, kde-format
+msgid "Allows locally loaded documents to access other local URLs."
+msgstr ""
+"Позволяет локально загруженным документам обращаться к другим локальным "
+"адресам URL."
+
+#: src/views/widgets/SettingsDialog.qml:386
+#, kde-format
+msgid "Local Content Can Access Remote Urls"
+msgstr "Разрешать локальному содержимому доступ к удалённым URL-адресам"
+
+#: src/views/widgets/SettingsDialog.qml:387
+#, kde-format
+msgid "Allows locally loaded documents to access remote URLs."
+msgstr ""
+"Позволяет локально загруженным документам обращаться к удалённым адресам URL."
+
+#: src/views/widgets/SettingsDialog.qml:400
+#, kde-format
+msgid "Local Storage"
+msgstr "Локальное хранилище"
+
+#: src/views/widgets/SettingsDialog.qml:401
+#, kde-format
+msgid "Enables support for the HTML 5 local storage feature."
+msgstr "Включает поддержку функции локального хранилища HTML 5."
+
+#: src/views/widgets/SettingsDialog.qml:414
+#, kde-format
+msgid "WebRTC Public Interfaces Only"
+msgstr "Использовать только общедоступные интерфейсы WebRTC"
+
+#: src/views/widgets/SettingsDialog.qml:415
+#, kde-format
+msgid ""
+"Limits WebRTC to public IP addresses only. When disabled WebRTC may also use "
+"local network IP addresses, but remote hosts can also see your local network "
+"IP address."
+msgstr ""
+"Ограничивает использование WebRTC только публичными IP-адресами. Если "
+"отключено, WebRTC может также использовать IP-адреса локальной сети, но "
+"удалённые узлы смогут видеть IP-адрес в локальной сети."
